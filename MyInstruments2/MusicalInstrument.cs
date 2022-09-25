@@ -16,6 +16,7 @@ namespace MyInstruments2
         public string Serial { get; set; }
         public string Color { get; set; }
 
+        /// combines the Make and Model for simpler code in Main
         public string InstrumentName
         {
             get
@@ -23,6 +24,7 @@ namespace MyInstruments2
                 return Make + " " + Model;
             }
         }
+        /// calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
         public int Age
         {
             get

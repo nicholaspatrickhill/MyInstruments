@@ -23,7 +23,7 @@ namespace MyInstruments2
             Console.WriteLine("......................");
             Console.WriteLine();
             Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
-            Console.WriteLine("Type All to see a list of all of your instruments. Type Quit to exit the program.");
+            Console.WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Quit\" to exit the program.");
             Console.WriteLine();
             
             //loops through possible user inputs 
@@ -50,7 +50,7 @@ namespace MyInstruments2
                 }
                 else
                 {
-                    Console.WriteLine("That instrument is not in your collection.");
+                    Console.WriteLine("That instrument is not in your collection. Please type \"All\" to see a list of all of your instruments.");
                     Console.WriteLine();
                 }
             }
