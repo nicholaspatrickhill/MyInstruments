@@ -17,6 +17,9 @@ namespace MyInstruments2
                 { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", } },
             };
 
+            // setting console size
+            Console.SetWindowSize(138, 40);
+
             // header code to start the program
             Console.WriteLine("........................");
             Console.WriteLine("... MyInstruments2.0 ...");
