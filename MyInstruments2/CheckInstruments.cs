@@ -17,6 +17,10 @@ namespace MyInstruments2
                 { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "electric bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", StringBrand = "GHS", StringType = "Pressure Wound", StringGauge = "44-106", } },
             };
 
+            {
+                ZeroInput.YearConversion();
+            }
+
             // setting console size
             Console.SetWindowSize(138, 40);
 
