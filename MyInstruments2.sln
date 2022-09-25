@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInstruments2", "MyInstrum
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalInstrumentNameCheck", "MusicalInstrumentNameCheck\MusicalInstrumentNameCheck.csproj", "{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentNameUnitTest", "InstrumentNameUnitTest\InstrumentNameUnitTest.csproj", "{09952137-AE18-4CD5-A482-016A5F3F8AC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalInstrumentAgeCheck", "MusicalInstrumentAgeCheck\MusicalInstrumentAgeCheck.csproj", "{9ACC2933-39F2-46A4-86AC-433DD9A91FD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentAgeUnitTest", "InstrumentAgeUnitTest\InstrumentAgeUnitTest.csproj", "{1B302A5E-DA42-44F0-B1E4-DFF17742E145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentStringUnitTest", "InstrumentStringUnitTest\InstrumentStringUnitTest.csproj", "{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,21 +23,26 @@ Global
 		{41D957DB-B3A5-451D-89F8-6A650E069883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41D957DB-B3A5-451D-89F8-6A650E069883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41D957DB-B3A5-451D-89F8-6A650E069883}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9ACC2933-39F2-46A4-86AC-433DD9A91FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9ACC2933-39F2-46A4-86AC-433DD9A91FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9ACC2933-39F2-46A4-86AC-433DD9A91FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9ACC2933-39F2-46A4-86AC-433DD9A91FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09952137-AE18-4CD5-A482-016A5F3F8AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09952137-AE18-4CD5-A482-016A5F3F8AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09952137-AE18-4CD5-A482-016A5F3F8AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09952137-AE18-4CD5-A482-016A5F3F8AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B302A5E-DA42-44F0-B1E4-DFF17742E145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B302A5E-DA42-44F0-B1E4-DFF17742E145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B302A5E-DA42-44F0-B1E4-DFF17742E145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B302A5E-DA42-44F0-B1E4-DFF17742E145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
-		{9ACC2933-39F2-46A4-86AC-433DD9A91FD8} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
+		{09952137-AE18-4CD5-A482-016A5F3F8AC7} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
+		{1B302A5E-DA42-44F0-B1E4-DFF17742E145} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
+		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {409D667E-F260-4FF1-9A67-3A66FA770FEC}

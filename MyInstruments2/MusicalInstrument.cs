@@ -15,6 +15,7 @@ namespace MyInstruments2
         public int Year { get; set; }
         public string Serial { get; set; }
         public string Color { get; set; }
+        public string StringBrand { get; set; }
         public string StringType { get; set; }
         public string StringGauge { get; set; }
 
@@ -27,11 +28,20 @@ namespace MyInstruments2
             }
         }
         // calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
-        public int Age
+        public int InstrumentAge
         {
             get
             {
                 return DateTime.Now.Year - Year;
+            }
+        }
+
+        // combines the string Brand, Type and gauge for simpler code in Main
+        public string InstrumentString
+        {
+            get
+            {
+                return StringBrand + " " + StringType + " " + StringGauge;
             }
         }
 
