@@ -6,7 +6,7 @@ namespace MyInstruments2
     {
         public static void Main(string[] args)
         {
-            /// dictionary contains all instruments available to the program
+            // dictionary contains all instruments available to the program
             Dictionary<string, MusicalInstrument> instruments = new Dictionary<string, MusicalInstrument>()
             {
                 { "Fender Jazzmaster", new MusicalInstrument() { Make = "Fender", Model = "Jazzmaster", Type = "guitar", Country = "Japan", Year = 1997, Serial = "A019459", Color = "Sunburst", } },
@@ -17,16 +17,16 @@ namespace MyInstruments2
                 { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", } },
             };
 
-            ///header code to start the program
-            Console.WriteLine("......................");
-            Console.WriteLine(".. MyInstruments2.0 ..");
-            Console.WriteLine("......................");
+            // header code to start the program
+            Console.WriteLine("........................");
+            Console.WriteLine("... MyInstruments2.0 ...");
+            Console.WriteLine("........................");
             Console.WriteLine();
             Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
             Console.WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Quit\" to exit the program.");
             Console.WriteLine();
             
-            //loops through possible user inputs 
+            // loops through possible user inputs 
             while (true)
             {
                 Console.WriteLine("Hello. Which instrument would you like to review?");

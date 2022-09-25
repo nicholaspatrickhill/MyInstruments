@@ -12,14 +12,14 @@ namespace MyInstruments2
         // this method is not working as intended yet. i want it to change my 0 values recorded for year and age to the word "unknown." 
         public static void YearConversion()
         {
-            int modelYear = 0;
-            if (modelYear == 0) ;
+            int Model = 0;
+            if (Model == 0);
             {
-                Convert.ToString(modelYear);
+                Convert.ToString(Model);
 
-                string oldValue = modelYear.ToString();
+                string oldValue = Model.ToString();
 
-                string newValue = modelYear.ToString().Replace("0", "unknown");
+                string newValue = Model.ToString().Replace("0", "unknown");
 
                 Console.WriteLine(newValue);
             }
