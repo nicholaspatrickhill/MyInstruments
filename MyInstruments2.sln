@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInstruments2", "MyInstruments2\MyInstruments2.csproj", "{41D957DB-B3A5-451D-89F8-6A650E069883}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalInstrumentNameCheck", "MusicalInstrumentNameCheck\MusicalInstrumentNameCheck.csproj", "{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{41D957DB-B3A5-451D-89F8-6A650E069883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41D957DB-B3A5-451D-89F8-6A650E069883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41D957DB-B3A5-451D-89F8-6A650E069883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5D66FB1-C7AE-4A82-A0FF-E2EC6F6B8D7E} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {409D667E-F260-4FF1-9A67-3A66FA770FEC}
