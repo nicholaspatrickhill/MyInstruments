@@ -3993,11 +3993,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstrumentNameCheck\\MusicalInstrumentNameCheck.csproj",
-      "projectName": "MusicalInstrumentNameCheck",
-      "projectPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstrumentNameCheck\\MusicalInstrumentNameCheck.csproj",
+      "projectUniqueName": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MusicalInstrumentAgeCheck\\MusicalInstrumentAgeCheck.csproj",
+      "projectName": "MusicalInstrumentAgeCheck",
+      "projectPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MusicalInstrumentAgeCheck\\MusicalInstrumentAgeCheck.csproj",
       "packagesPath": "C:\\Users\\nicho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstrumentNameCheck\\obj\\",
+      "outputPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MusicalInstrumentAgeCheck\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

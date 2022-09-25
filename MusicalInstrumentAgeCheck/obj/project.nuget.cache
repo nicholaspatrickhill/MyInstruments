@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aip8NVKj4XGkvsS6sczLgwx9eDG9GzjiWVjqWZadzXTD7GNgC6wS258H1ktPw3G2rpEMYzg4LyAhNCoOLx+TWw==",
+  "dgSpecHash": "7/+AQmq3/MRy+/g5HiBiQb+Odn0iqpNpc4mcLem/qpZkBsauA2OukS6fntOig4jLeFxLRR2JYtSzu5AayVYEZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstrumentNameCheck\\MusicalInstrumentNameCheck.csproj",
+  "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MusicalInstrumentAgeCheck\\MusicalInstrumentAgeCheck.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicho\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
