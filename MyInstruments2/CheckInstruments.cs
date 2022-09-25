@@ -8,12 +8,12 @@ namespace MyInstruments2
         {
             Dictionary<string, MusicalInstrument> instruments = new Dictionary<string, MusicalInstrument>()
             {
-                { "Jazzmaster", new MusicalInstrument() { Make = "Fender", Model = "Jazzmaster", Type = "guitar", Country = "Japan", Year = 1997, Serial = "A019459", Color = "Sunburst", } },
-                { "Jaguar", new MusicalInstrument() { Make = "Fender", Model = "Jaguar", Type = "guitar", Country = "Japan", Year = 1997, Serial = "A035931", Color = "White" } },
-                { "MIA Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type ="guitar", Country = "USA", Year = 2018, Serial = "US18004688", Color = "Black", } },
-                { "MIJ Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "guitar", Country = "Japan", Year = 1993, Serial= "P038686", Color =  "Transparent Blue", } },
-                { "Hofner", new MusicalInstrument() { Make = "Hofner", Model = "Club", Type = "bass", Country = "China", Serial = "X0501H152", Color = "Black", } },
-                /// MusicalInstrument PrecisionBass = new MusicalInstrument("Fender", "Precision Bass", "bass", "Mexico", 2021, DateTime.Now.Year - 2021, "MX21254822", "Buttercream");
+                { "Fender Jazzmaster", new MusicalInstrument() { Make = "Fender", Model = "Jazzmaster", Type = "guitar", Country = "Japan", Year = 1997, Serial = "A019459", Color = "Sunburst", } },
+                { "Fender Jaguar", new MusicalInstrument() { Make = "Fender", Model = "Jaguar", Type = "guitar", Country = "Japan", Year = 1997, Serial = "A035931", Color = "White" } },
+                { "MIA Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type ="guitar", Country = "USA", Year = 2018, Serial = "US18004688", Color = "Black", } },
+                { "MIJ Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "guitar", Country = "Japan", Year = 1993, Serial= "P038686", Color =  "Transparent Blue", } },
+                { "Hofner Club Bass", new MusicalInstrument() { Make = "Hofner", Model = "Club", Type = "bass", Country = "China", Serial = "X0501H152", Color = "Black", } },
+                { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", } },
             };
 
             while (true)
