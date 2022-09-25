@@ -17,9 +17,10 @@ namespace MyInstruments2
                     "-USA Fender Stratocaster",
                     "-Japan Fender Stratocaster",
                     "-Hofner Club",
-                    "-Fender Precision Bass"
+                    "-Fender Precision Bass",
                     };
             Array.Sort(instrumentInventory);
+            Console.WriteLine();
             foreach (string i in instrumentInventory)
                 Console.WriteLine(i);
         }

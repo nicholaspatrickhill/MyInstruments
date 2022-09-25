@@ -16,9 +16,18 @@ namespace MyInstruments2
                 { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", } },
             };
 
+            Console.WriteLine("......................");
+            Console.WriteLine(".. MyInstruments2.0 ..");
+            Console.WriteLine("......................");
+            Console.WriteLine();
+            Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
+            Console.WriteLine("Type All to see a list of all of your instruments. Type Quit to exit the program.");
+            Console.WriteLine();
+            
+
             while (true)
             {
-                Console.WriteLine("Hello. Which instrument would you like to review? Type Quit to exit the program.");
+                Console.WriteLine("Hello. Which instrument would you like to review?");
                 string input = Console.ReadLine();
 
                 if (input == "Quit")
@@ -35,10 +44,12 @@ namespace MyInstruments2
                 else if (input == "All")
                 {
                     MakeList.InstrumentInventory();
+                    Console.WriteLine();
                 }
                 else
                 {
                     Console.WriteLine("That instrument is not in your collection.");
+                    Console.WriteLine();
                 }
             }
         }
