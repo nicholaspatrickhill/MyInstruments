@@ -15,8 +15,8 @@ namespace MyInstruments2
             {
                     "-Fender Jazzmaster",
                     "-Fender Jaguar",
-                    "-USA Fender Stratocaster",
-                    "-Japan Fender Stratocaster",
+                    "-MIA Fender Stratocaster",
+                    "-MIJ Fender Stratocaster",
                     "-Hofner Club",
                     "-Fender Precision Bass",
                     };
