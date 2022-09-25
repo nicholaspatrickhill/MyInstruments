@@ -9,12 +9,12 @@ namespace MyInstruments2
             // dictionary contains all instruments available to the program
             Dictionary<string, MusicalInstrument> instruments = new Dictionary<string, MusicalInstrument>()
             {
-                { "Fender Jazzmaster", new MusicalInstrument() { Make = "Fender", Model = "Jazzmaster", Type = "guitar", Country = "Japan", Year = 1997, Serial = "A019459", Color = "Sunburst", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "11", } },
-                { "Fender Jaguar", new MusicalInstrument() { Make = "Fender", Model = "Jaguar", Type = "guitar", Country = "Japan", Year = 1997, Serial = "A035931", Color = "White" } },
-                { "MIA Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type ="guitar", Country = "USA", Year = 2018, Serial = "US18004688", Color = "Black", } },
-                { "MIJ Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "guitar", Country = "Japan", Year = 1993, Serial= "P038686", Color =  "Transparent Blue", } },
-                { "Hofner Club Bass", new MusicalInstrument() { Make = "Hofner", Model = "Club", Type = "bass", Country = "China", Serial = "X0501H152", Color = "Black", } },
-                { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", } },
+                { "Fender Jazzmaster", new MusicalInstrument() { Make = "Fender", Model = "Jazzmaster", Type = "electric guitar", Country = "Japan", Year = 1997, Serial = "A019459", Color = "Sunburst", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "11-48", } },
+                { "Fender Jaguar", new MusicalInstrument() { Make = "Fender", Model = "Jaguar", Type = "electric guitar", Country = "Japan", Year = 1997, Serial = "A035931", Color = "White", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "11-48", } },
+                { "MIA Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "electric guitar", Country = "USA", Year = 2018, Serial = "US18004688", Color = "Black", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "9-41"} },
+                { "MIJ Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "electric guitar", Country = "Japan", Year = 1993, Serial= "P038686", Color =  "Transparent Blue", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "10-45", } },
+                { "Hofner Club Bass", new MusicalInstrument() { Make = "Hofner", Model = "Club", Type = "electric bass", Country = "China", Serial = "X0501H152", Color = "Black", StringBrand = "La Bella", StringType = "Deep Talkin' Bass", StringGauge = "39-96", } },
+                { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "electric bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", StringBrand = "GHS", StringType = "Pressure Wound", StringGauge = "44-106", } },
             };
 
             // setting console size
