@@ -48,7 +48,7 @@ namespace MyInstruments2
                     MusicalInstrument instrument = instruments[input];
                     Console.WriteLine($"Your {instrument.InstrumentName} is an {instrument.Type} that was made in {instrument.Country} in {instrument.Year}. ");
                     Console.WriteLine($"It is {instrument.InstrumentAge} years old. It is {instrument.Color} in color. Its serial number is {instrument.Serial}.");
-                    Console.WriteLine($"It uses {instrument.InstrumentString} gauge strings");
+                    Console.WriteLine($"It uses {instrument.InstrumentString} gauge strings.");
                     Console.WriteLine();
                 }
                 else if (input == "All")
