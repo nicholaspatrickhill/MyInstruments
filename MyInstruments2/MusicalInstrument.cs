@@ -44,7 +44,5 @@ namespace MyInstruments2
                 return StringBrand + " " + StringType + " " + StringGauge;
             }
         }
-
-
     }
 }
