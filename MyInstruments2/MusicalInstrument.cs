@@ -45,4 +45,12 @@ namespace MyInstruments2
             }
         }
     }
+    public class Guitar : MusicalInstrument
+    {
+
+    }
+    public class Bass : MusicalInstrument
+    {
+
+    }
 }
