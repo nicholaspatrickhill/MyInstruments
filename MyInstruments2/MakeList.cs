@@ -19,6 +19,7 @@ namespace MyInstruments2
                     "-MIJ Fender Stratocaster",
                     "-Hofner Club",
                     "-Fender Precision Bass",
+                    "-Fender Dimension Bass",
                     };
             Array.Sort(instrumentInventory);
             Console.WriteLine();
