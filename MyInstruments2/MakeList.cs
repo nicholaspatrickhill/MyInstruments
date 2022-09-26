@@ -15,11 +15,17 @@ namespace MyInstruments2
             {
                     "-Fender Jazzmaster",
                     "-Fender Jaguar",
+                    "-Fender Mustang",
                     "-MIA Fender Stratocaster",
                     "-MIJ Fender Stratocaster",
-                    "-Hofner Club",
+                    "-Gibson Les Paul",
+                    "-Gretsch Electromatic 12-String",
+                    "-Ibanez ArtCore",
+                    "-Martin Auditorium",
+                    "-Hofner Club Bass",
                     "-Fender Precision Bass",
                     "-Fender Dimension Bass",
+                    "-Fender Mustang Bass"
                     };
             Array.Sort(instrumentInventory);
             Console.WriteLine();
