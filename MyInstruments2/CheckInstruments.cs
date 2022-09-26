@@ -9,13 +9,19 @@ namespace MyInstruments2
             // dictionary contains all instruments available to the program
             Dictionary<string, MusicalInstrument> instruments = new Dictionary<string, MusicalInstrument>()
             {
-                { "Fender Jazzmaster", new MusicalInstrument() { Make = "Fender", Model = "Jazzmaster", Type = "electric guitar", Country = "Japan", Year = 1997, Serial = "A019459", Color = "Sunburst", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "11-48", } },
-                { "Fender Jaguar", new MusicalInstrument() { Make = "Fender", Model = "Jaguar", Type = "electric guitar", Country = "Japan", Year = 1997, Serial = "A035931", Color = "White", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "11-48", } },
-                { "MIA Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "electric guitar", Country = "USA", Year = 2018, Serial = "US18004688", Color = "Black", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "9-41"} },
-                { "MIJ Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "electric guitar", Country = "Japan", Year = 1993, Serial= "P038686", Color =  "Transparent Blue", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "10-45", } },
-                { "Hofner Club Bass", new MusicalInstrument() { Make = "Hofner", Model = "Club", Type = "electric bass", Country = "China",  Year = 2020, Serial = "X0501H152", Color = "Black", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "39-96", } },
-                { "Fender Dimension Bass", new MusicalInstrument() { Make = "Fender", Model = "Dimension Bass", Type = "electric bass", Country = "USA", Year = 2016, Serial = "US16030876", Color = "Black", StringBrand = "D'Addario", StringType = "Chrome Custom Light", StringGauge= "40-100", } },
-                { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "electric bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", StringBrand = "GHS", StringType = "Pressure Wound Medium", StringGauge = "44-106", } },
+                { "Fender Jaguar", new MusicalInstrument() { Make = "Fender", Model = "Jaguar", Type = "electric guitar", Country = "Japan", Year = 1997, Serial = "A035931", Color = "White", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "Medium: 11-48", } },
+                { "Fender Jazzmaster", new MusicalInstrument() { Make = "Fender", Model = "Jazzmaster", Type = "electric guitar", Country = "Japan", Year = 1997, Serial = "A019459", Color = "Sunburst", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "Medium: 11-48", } },
+                { "Fender Mustang", new MusicalInstrument() },
+                { "MIA Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "electric guitar", Country = "USA", Year = 2018, Serial = "US18004688", Color = "Black", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "Super Light: 9-41"} },
+                { "MIJ Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "electric guitar", Country = "Japan", Year = 1993, Serial= "P038686", Color =  "Transparent Blue", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "Light: 10-45", } },
+                { "Gibson Les Paul", new MusicalInstrument() { Make = "Gibson", Model = "Les Paul Studio", Type = "electric guitar", Country = "USA", Year = 2011, Serial = "133310680", Color = "Walnut", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "Medium: 11-48", } },
+                { "Grestch", new MusicalInstrument() },
+                { "Ibanez", new MusicalInstrument() },
+                { "Martin", new MusicalInstrument() },
+                { "Fender Dimension Bass", new MusicalInstrument() { Make = "Fender", Model = "Dimension Bass", Type = "electric bass", Country = "USA", Year = 2016, Serial = "US16030876", Color = "Black", StringBrand = "D'Addario", StringType = "Chrome", StringGauge= " Custom Light: 40-100", } },
+                { "Fender Mustang Bass", new MusicalInstrument() },
+                { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "electric bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", StringBrand = "GHS", StringType = "Pressure Wound Medium", StringGauge = "Medium: 44-106", } },
+                { "Hofner Club Bass", new MusicalInstrument() { Make = "Hofner", Model = "Club", Type = "electric bass", Country = "China",  Year = 2020, Serial = "X0501H152", Color = "Black", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
             };
 
             // setting console size
