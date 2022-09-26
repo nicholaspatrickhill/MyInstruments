@@ -45,9 +45,10 @@ namespace MyInstruments2
             }
         }
     }
+    // Guitar class inherits from MusicalInstrument for seperate organization of guitars
     public class Guitar : MusicalInstrument
     {
-
+    // Bass class inherits from MusicalInstrument for seperate organization of basses
     }
     public class Bass : MusicalInstrument
     {

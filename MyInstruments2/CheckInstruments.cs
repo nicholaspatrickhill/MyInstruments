@@ -7,7 +7,7 @@ namespace MyInstruments2
     {
         public static void Main(string[] args)
         {
-            // dictionary contains all instruments available to the program
+            // dictionary contains all guitars available to the program
             Dictionary<string, Guitar> guitars = new Dictionary<string, Guitar>()
             {
                 { "Fender Jaguar", new Guitar() { Make = "Fender", Model = "Jaguar", Type = "solid-body electric guitar", Country = "Japan", Year = 1997, Serial = "A035931", Color = "White", StringBrand = "D'Addario", StringType = "Pure Nickel XL", StringGauge = "Medium: 11-48", } },
@@ -20,6 +20,7 @@ namespace MyInstruments2
                 { "Ibanez Artcore", new Guitar() { Make = "Ibanez", Model = "Artcore AS83", Type = "semi-hollow electric guitar", Country = "China", Year = 2005, Serial = "S05101444", Color = "Tobacco Burst", StringBrand = "D'Addario", StringType = "Pure Nickel XL", StringGauge = "Medium 11-48", } },
                 { "Martin Auditorium", new Guitar() { Make = "Martin", Model = "00016-SGT Auditorium", Type = "hollow-body acoustic guitar", Country = "USA", Year = 2003, Serial = "921955", Color = "Natural", StringBrand = "D'Addario", StringType = "Phosphor Bronze", StringGauge ="Light: 12-53", } },
             };
+            // dictionary contains all basses available to the program
             Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
             { 
                 { "Fender Dimension Bass", new Bass() { Make = "Fender", Model = "Dimension Bass", Type = "solid-body electric bass", Country = "USA", Year = 2016, Serial = "US16030876", Color = "Black", StringBrand = "D'Addario", StringType = "Chrome Flat Wound Long Scale", StringGauge= "Custom Light: 40-100", } },
@@ -53,7 +54,7 @@ namespace MyInstruments2
                 else if (guitars.ContainsKey(input))
                 {
                     Guitar guitar = guitars[input];
-                    Console.WriteLine($"Your {guitar.InstrumentName} is a {guitar.Type} that was made in {guitar.Country} in {guitar.Year}. ");
+                    Console.WriteLine($"Your {guitar.InstrumentName} is a {guitar.Type} that was made in {guitar.Country} in {guitar.Year}.");
                     Console.WriteLine($"It is {guitar.InstrumentAge} years old. It is {guitar.Color} in color. Its serial number is {guitar.Serial}.");
                     Console.WriteLine($"It uses {guitar.InstrumentString} gauge strings.");
                     Console.WriteLine();
@@ -61,7 +62,7 @@ namespace MyInstruments2
                 else if (basses.ContainsKey(input))
                 { 
                     Bass bass = basses[input];
-                    Console.WriteLine($"Your {bass.InstrumentName}" ); Console.WriteLine($"Your {bass.InstrumentName} is a {bass.Type} that was made in {bass.Country} in {bass.Year}. ");
+                    Console.WriteLine($"Your {bass.InstrumentName}" ); Console.WriteLine($"Your {bass.InstrumentName} is a {bass.Type} that was made in {bass.Country} in {bass.Year}.");
                     Console.WriteLine($"It is {bass.InstrumentAge} years old. It is {bass.Color} in color. Its serial number is {bass.Serial}.");
                     Console.WriteLine($"It uses {bass.InstrumentString} gauge strings.");
                     Console.WriteLine();
