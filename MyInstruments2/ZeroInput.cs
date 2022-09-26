@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MyInstruments2
 {
+    /* --// abandoned this method as it became unnecessary to the program
     public class ZeroInput
     {
-        // this method is not working as intended yet. i want it to change my 0 values recorded for year to the text "unknown." 
         public static void YearConversion()
         {
             var musicalInstrument = new MusicalInstrument();
@@ -22,5 +22,5 @@ namespace MyInstruments2
                 string newValue = musicalInstrument.Year.ToString().Replace("0", "unknown");                
             }
         }
-    }
+    }*/
 }
