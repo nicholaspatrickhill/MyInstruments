@@ -13,14 +13,10 @@ namespace MyInstruments2
                 { "Fender Jaguar", new MusicalInstrument() { Make = "Fender", Model = "Jaguar", Type = "electric guitar", Country = "Japan", Year = 1997, Serial = "A035931", Color = "White", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "11-48", } },
                 { "MIA Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "electric guitar", Country = "USA", Year = 2018, Serial = "US18004688", Color = "Black", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "9-41"} },
                 { "MIJ Fender Stratocaster", new MusicalInstrument() { Make = "Fender", Model = "Stratocaster", Type = "electric guitar", Country = "Japan", Year = 1993, Serial= "P038686", Color =  "Transparent Blue", StringBrand = "D'Addario", StringType = "Pure Nickel", StringGauge = "10-45", } },
-                { "Hofner Club Bass", new MusicalInstrument() { Make = "Hofner", Model = "Club", Type = "electric bass", Country = "China",  Year = 0, Serial = "X0501H152", Color = "Black", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "39-96", } },
+                { "Hofner Club Bass", new MusicalInstrument() { Make = "Hofner", Model = "Club", Type = "electric bass", Country = "China",  Year = 2020, Serial = "X0501H152", Color = "Black", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "39-96", } },
                 { "Fender Dimension Bass", new MusicalInstrument(){ Make = "Fender", Model = "Dimension Bass", Type = "electric bass", Country = "China", Year = 2016, Serial = "US16030876", Color = "Black", StringBrand = "D'Addario", StringType = "Chrome Custom Light" , StringGauge= "40-100", } },
                 { "Fender Precision Bass",  new MusicalInstrument() { Make = "Fender", Model = "Precision Bass", Type = "electric bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", StringBrand = "GHS", StringType = "Pressure Wound Medium", StringGauge = "44-106", } },
             };
-
-            {
-                ZeroInput.YearConversion();
-            }
 
             // setting console size
             Console.SetWindowSize(138, 40);

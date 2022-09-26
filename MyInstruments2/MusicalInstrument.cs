@@ -32,7 +32,7 @@ namespace MyInstruments2
         {
             get
             {
-                return (int)(DateTime.Now.Year - Year);
+                return (DateTime.Now.Year - Year);
             }
         }
 
