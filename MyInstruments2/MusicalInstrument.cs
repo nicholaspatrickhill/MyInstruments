@@ -54,4 +54,8 @@ namespace MyInstruments2
         // Bass class inherits from MusicalInstrument for seperate organization of basses
         public string Scale { get; set; }
     }
+    public class Ukulele : MusicalInstrument
+    {
+        public string Size { get; set; }
+    }
 }
