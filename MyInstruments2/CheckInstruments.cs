@@ -34,7 +34,7 @@ namespace MyInstruments2
 
             // header code to start the program
             Console.WriteLine("........................");
-            Console.WriteLine("...  MyInstruments2v ...");
+            Console.WriteLine("...  MyInstruments2  ...");
             Console.WriteLine("........................");
             Console.WriteLine();
             Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
