@@ -52,5 +52,6 @@ namespace MyInstruments2
     public class Bass : MusicalInstrument
     {
         // Bass class inherits from MusicalInstrument for seperate organization of basses
+        public string Scale { get; set; }
     }
 }
