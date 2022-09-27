@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments2
 {
-    public class MusicalInstrument
+    public class MusicalInstrument //--would like to build seperate unit tests for Guitar and Bass, remove the MI class unit tests and make this a public abstract class
     {
         public string Make { get; set; }
         public string Model { get; set; }
