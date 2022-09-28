@@ -25,7 +25,9 @@ namespace MyInstruments2
                     "-Hofner Club Bass",
                     "-Fender Precision Bass",
                     "-Fender Dimension Bass",
-                    "-Fender Mustang Bass"
+                    "-Fender Mustang Bass",
+                    "-Lanikai Ukulele",
+                    "-Cordoba Ukulele",
                     };
             Array.Sort(instrumentInventory);
             Console.WriteLine();

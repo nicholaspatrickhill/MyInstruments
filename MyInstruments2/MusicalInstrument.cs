@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace MyInstruments2
         public string Type { get; set; }
         public string Country { get; set; }
         public int Year { get; set; }
+
         public string Serial { get; set; }
         public string Color { get; set; }
         public string StringBrand { get; set; }
@@ -43,11 +45,5 @@ namespace MyInstruments2
                 return StringBrand + " " + StringType + " " + StringGauge;
             }
         }
-    }
-   
-    public class Bass : MusicalInstrument
-    {
-        // Bass class inherits from MusicalInstrument for seperate organization of basses
-        public string Scale { get; set; }
     }
 }

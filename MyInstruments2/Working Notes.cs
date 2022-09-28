@@ -8,7 +8,6 @@ namespace MyInstruments2
 {
     // -add an else if for "Commands" which lists all commands.
     // -other functionality ideas would be to use dictionary to print number of guitars, number of basses to console. look at some other dictionary functionality for other ideas.
-    
-    // -add ukuleles to ukulele class
-    // -make the Console print for else if guit input and else if bass input methods in the musical instrument class that are called in main, review polymorphism and abstraction for this
+    // -add ukulele unit tests
+    // -use foreach to make Console print only the keys of each dictionary based on user input like "Guitars", "Basses" or "Ukuleles"
 }

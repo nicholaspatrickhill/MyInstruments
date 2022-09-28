@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Xml.Schema;
 using static MyInstruments2.Ukulele;
 using static MyInstruments2.Guitar;
+using static MyInstruments2.Bass;
 
 namespace MyInstruments2
 {
@@ -11,16 +12,6 @@ namespace MyInstruments2
     {
         public static void Main(string[] args)
         {
-           
-            // this dictionary contains all basses available to the program
-            Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
-            { 
-                { "Fender Dimension Bass", new Bass() { Make = "Fender", Model = "Dimension Bass", Type = "solid-body electric bass", Country = "USA", Year = 2016, Serial = "US16030876", Color = "Black", Scale = "long", StringBrand = "D'Addario", StringType = "Chrome Flat Wound Long Scale", StringGauge= "Custom Light: 40-100", } },
-                { "Fender Mustang Bass", new Bass() { Make = "Fender", Model = "Justin Meldal-Johnsen Signature Mustang Bass", Type = "solid-body electric bass", Country = "Mexico", Year = 2017, Serial = "MX17972532", Color = "Daphne Blue", Scale = "short", StringBrand = "D'Addario", StringType = "Chrome Flatwound Medium Scale", StringGauge = "Light: 45-100" } },
-                { "Fender Precision Bass",  new Bass() { Make = "Fender", Model = "Precision Bass", Type = "solid-body electric bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", Scale = "long", StringBrand = "GHS", StringType = "Pressure Wound", StringGauge = "Medium: 44-106", } },
-                { "Hofner Club Bass", new Bass() { Make = "Hofner", Model = "Club", Type = "hollow-body electric bass", Country = "China",  Year = 2020, Serial = "X0501H152", Color = "Black", Scale = "short", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
-            };
-
             // setting console size
             Console.SetWindowSize(138, 40);
 
@@ -42,6 +33,10 @@ namespace MyInstruments2
                 if (input == "Quit")
                 {
                     break;
+                }
+                else if (input == "Commands")
+                {
+                    Console.WriteLine($"Type \"All\" to see a list of all of your instruments.");
                 }
                 else if (guitars.ContainsKey(input))
                 {
@@ -84,7 +79,7 @@ namespace MyInstruments2
                 }
                 else
                 {
-                    Console.WriteLine("That instrument is not in your collection. Please type \"All\" to see a list of all of your instruments.");
+                    Console.WriteLine("That instrument is not in your collection. Please type \"All\" to see a list of all of your instruments or try again.");
                     Console.WriteLine();
                 }
             }
