@@ -12,10 +12,11 @@ namespace MyInstruments2
     {
         public string Size { get; set; }
 
+        // this dictionary contains all ukuleles available to the program
         public static Dictionary<string, Ukulele> ukuleles = new Dictionary<string, Ukulele>
         {
-            { "Lanikai", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic", Country = "China", Year = 2012, Serial = "Y31107", Color = "Natural Nato", Size = "Soprano",  } },
-            { "Cordoba", new Ukulele() { Make = "Cordoba", Model = "20-TMCE", Type = "hollow-body acoustic", Country = "China", Year = 2017, Serial = "41638150", Color = "Natural Mahogany", Size = "Tenor", } },
+            { "Lanikai", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2012, Serial = "Y31107", Color = "Natural Nato", Size = "soprano",  } },
+            { "Cordoba", new Ukulele() { Make = "Cordoba", Model = "20-TMCE", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2017, Serial = "41638150", Color = "Natural Mahogany", Size = "tenor", } },
         };
         
     }
