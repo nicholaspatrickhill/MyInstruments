@@ -1,4 +1,6 @@
-﻿using System.Diagnostics.Metrics;
+﻿using System;
+using System.Diagnostics.Metrics;
+using System.Threading.Tasks;
 using System.Xml.Schema;
 
 namespace MyInstruments2

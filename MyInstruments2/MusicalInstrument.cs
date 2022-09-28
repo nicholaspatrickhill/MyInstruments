@@ -35,7 +35,6 @@ namespace MyInstruments2
                 return (DateTime.Now.Year - Year);
             }
         }
-
         // combines the string Brand, Type and gauge for simpler code in Main
         public string InstrumentString
         {

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInstruments2", "MyInstruments2\MyInstruments2.csproj", "{41D957DB-B3A5-451D-89F8-6A650E069883}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyInstruments2", "MyInstruments2\MyInstruments2.csproj", "{41D957DB-B3A5-451D-89F8-6A650E069883}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentNameUnitTest", "InstrumentNameUnitTest\InstrumentNameUnitTest.csproj", "{09952137-AE18-4CD5-A482-016A5F3F8AC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentNameUnitTest", "InstrumentNameUnitTest\InstrumentNameUnitTest.csproj", "{09952137-AE18-4CD5-A482-016A5F3F8AC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentAgeUnitTest", "InstrumentAgeUnitTest\InstrumentAgeUnitTest.csproj", "{1B302A5E-DA42-44F0-B1E4-DFF17742E145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentAgeUnitTest", "InstrumentAgeUnitTest\InstrumentAgeUnitTest.csproj", "{1B302A5E-DA42-44F0-B1E4-DFF17742E145}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentStringUnitTest", "InstrumentStringUnitTest\InstrumentStringUnitTest.csproj", "{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentStringUnitTest", "InstrumentStringUnitTest\InstrumentStringUnitTest.csproj", "{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarUnitTests", "GuitarUnitTests\GuitarUnitTests.csproj", "{DBAA39B3-4B03-457A-A191-AD33C5A76F16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBAA39B3-4B03-457A-A191-AD33C5A76F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAA39B3-4B03-457A-A191-AD33C5A76F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBAA39B3-4B03-457A-A191-AD33C5A76F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBAA39B3-4B03-457A-A191-AD33C5A76F16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{09952137-AE18-4CD5-A482-016A5F3F8AC7} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
 		{1B302A5E-DA42-44F0-B1E4-DFF17742E145} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
 		{3A708BEF-4D80-4CDA-A1C1-FCB5B7F909F2} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
+		{DBAA39B3-4B03-457A-A191-AD33C5A76F16} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {409D667E-F260-4FF1-9A67-3A66FA770FEC}
