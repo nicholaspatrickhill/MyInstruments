@@ -2,6 +2,7 @@
 using System.Diagnostics.Metrics;
 using System.Threading.Tasks;
 using System.Xml.Schema;
+using static MyInstruments2.Ukulele;
 
 namespace MyInstruments2
 {
@@ -68,6 +69,12 @@ namespace MyInstruments2
                     Console.WriteLine($"It is {bass.InstrumentAge} years old. It is {bass.Color} in color. It is a {bass.Scale} scale bass. Its serial number is {bass.Serial}.");
                     Console.WriteLine($"It uses {bass.InstrumentString} gauge strings.");
                     Console.WriteLine();
+                }
+               else if (ukuleles.ContainsKey(input))
+                {
+                    Ukulele ukulele = ukuleles[input];
+                    Console.WriteLine($"Your {ukulele.InstrumentName}");
+
                 }
                 else if (input == "All")
                 {
