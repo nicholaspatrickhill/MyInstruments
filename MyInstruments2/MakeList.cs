@@ -28,7 +28,7 @@ namespace MyInstruments2
                     "-Fender Mustang Bass",
                     "-Lanikai Ukulele",
                     "-Cordoba Ukulele",
-                    };
+            };
             Array.Sort(instrumentInventory);
             Console.WriteLine();
             foreach (string i in instrumentInventory)
