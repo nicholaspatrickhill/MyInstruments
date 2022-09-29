@@ -14,15 +14,13 @@ namespace MyInstruments2
         {
             // setting console size
             Console.SetWindowSize(138, 40);
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.White;
 
             // header code to start the program
             Console.WriteLine("........................");
             Console.WriteLine("...  MyInstruments2  ...");
             Console.WriteLine("........................");
             Console.WriteLine();
-
-            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
             Console.WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Quit\" to exit the program.");
             Console.WriteLine("Type \"Commands\" to view a list of other commands.");
@@ -74,7 +72,8 @@ namespace MyInstruments2
                 }
                 else if (input == "Guitars")
                 {
-                    foreach(KeyValuePair<string, Guitar> pair in guitars)
+                    Console.WriteLine();
+                    foreach (KeyValuePair<string, Guitar> pair in guitars)
                         Console.WriteLine(pair.Key);
                         Console.WriteLine();
                 }
