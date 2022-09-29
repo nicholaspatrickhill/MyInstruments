@@ -77,6 +77,13 @@ namespace MyInstruments2
                         Console.WriteLine(pair.Key);
                         Console.WriteLine();
                 }
+                else if (input == "Basses")
+                {
+                    Console.WriteLine();
+                    foreach (KeyValuePair<string, Bass> pair in basses)
+                        Console.WriteLine(pair.Key);
+                    Console.WriteLine();
+                }
                 else if (input == "Clear")
                 {
                     Console.Clear();
