@@ -67,7 +67,8 @@ namespace MyInstruments2
                 }
                 else if (input == "All")
                 {
-                    MakeList.InstrumentInventory();
+                    Console.WriteLine();
+                    MakeList2.InstrumentInventory2();
                     Console.WriteLine();
                 }
                 else if (input == "Guitars")
