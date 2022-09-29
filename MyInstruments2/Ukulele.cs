@@ -12,13 +12,13 @@ namespace MyInstruments2
     {
         public string Size { get; set; }
 
-        // this dictionary contains all ukuleles available to the program
+         //--this dictionary contains all ukuleles available to the program
         public static Dictionary<string, Ukulele> ukuleles = new Dictionary<string, Ukulele>
         {
             { "Cordoba Ukulele", new Ukulele() { Make = "Cordoba", Model = "20-TMCE", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2017, Serial = "41638150", Color = "Natural Mahogany", Size = "tenor", } },
             { "Lanikai Ukulele", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2012, Serial = "Y31107", Color = "Natural Nato", Size = "soprano", } },
         };
-
+         //--this method prints each key in the Ukulele dictionary
         public static void UkuleleList()
         {
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)

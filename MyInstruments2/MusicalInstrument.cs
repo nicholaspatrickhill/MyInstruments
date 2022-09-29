@@ -21,7 +21,7 @@ namespace MyInstruments2
         public string StringType { get; set; }
         public string StringGauge { get; set; }
 
-        // combines the Make and Model for simpler code in Main
+         //--combines the Make and Model for simpler code in Main
         public string InstrumentName
         {
             get
@@ -29,7 +29,7 @@ namespace MyInstruments2
                 return Make + " " + Model;
             }
         }
-        // calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
+         //--calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
         public int InstrumentAge
         {
             get
@@ -37,7 +37,7 @@ namespace MyInstruments2
                 return (DateTime.Now.Year - Year);
             }
         }
-        // combines the string Brand, Type and gauge for simpler code in Main
+         //--combines the string Brand, Type and gauge for simpler code in Main
         public string InstrumentString
         {
             get

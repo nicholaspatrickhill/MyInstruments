@@ -11,6 +11,7 @@ namespace MyInstruments2
 {
     internal class MakeList2
     {
+         //--this method prints each key from each dictionary as one master list
         public static void InstrumentInventory2()
         {
             Guitar.GuitarList();

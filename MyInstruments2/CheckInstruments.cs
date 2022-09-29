@@ -12,21 +12,16 @@ namespace MyInstruments2
     {
         public static void Main(string[] args)
         {
-            // setting console size
+             //--setting console size
             Console.SetWindowSize(138, 40);
             Console.ForegroundColor = ConsoleColor.White;
 
             // header code to start the program
-            Console.WriteLine("........................");
-            Console.WriteLine("...  MyInstruments2  ...");
-            Console.WriteLine("........................");
-            Console.WriteLine();
-            Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
-            Console.WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Quit\" to exit the program.");
-            Console.WriteLine("Type \"Commands\" to view a list of other commands.");
-            Console.WriteLine();
+            {
+                Header.HeaderText();
+            }
 
-            // loops through possible user inputs 
+             //--loops through possible user inputs 
             while (true)
             {
                 Console.WriteLine("Hello. Which instrument would you like to review?");
@@ -92,13 +87,7 @@ namespace MyInstruments2
                 else if (input == "Clear")
                 {
                     Console.Clear();
-                    Console.WriteLine("........................");
-                    Console.WriteLine("...  MyInstruments2  ...");
-                    Console.WriteLine("........................");
-                    Console.WriteLine();
-                    Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
-                    Console.WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Quit\" to exit the program. Type \"Clear\" to clear the console and start over.");
-                    Console.WriteLine();
+                    Header.HeaderText();
                 }
                 else
                 {
