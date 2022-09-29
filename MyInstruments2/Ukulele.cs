@@ -18,6 +18,12 @@ namespace MyInstruments2
             { "Cordoba Ukulele", new Ukulele() { Make = "Cordoba", Model = "20-TMCE", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2017, Serial = "41638150", Color = "Natural Mahogany", Size = "tenor", } },
             { "Lanikai Ukulele", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2012, Serial = "Y31107", Color = "Natural Nato", Size = "soprano", } },
         };
+
+        public static void UkuleleList()
+        {
+            foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
+                Console.WriteLine(pair.Key);
+        }
     }
 }
 

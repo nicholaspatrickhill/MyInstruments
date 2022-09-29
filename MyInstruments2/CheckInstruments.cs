@@ -74,22 +74,19 @@ namespace MyInstruments2
                 else if (input == "Guitars")
                 {
                     Console.WriteLine();
-                    foreach (KeyValuePair<string, Guitar> pair in guitars)
-                        Console.WriteLine(pair.Key);
-                        Console.WriteLine();
+                    Guitar.GuitarList();
+                    Console.WriteLine();
                 }
                 else if (input == "Basses")
                 {
                     Console.WriteLine();
-                    foreach (KeyValuePair<string, Bass> pair in basses)
-                        Console.WriteLine(pair.Key);
+                    Bass.BassList();
                     Console.WriteLine();
                 }
                 else if (input == "Ukuleles")
                 {
                     Console.WriteLine();
-                    foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
-                        Console.WriteLine(pair.Key);
+                    Ukulele.UkuleleList();
                     Console.WriteLine();
                 }
                 else if (input == "Clear")

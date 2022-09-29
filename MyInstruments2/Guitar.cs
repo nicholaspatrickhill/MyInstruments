@@ -21,5 +21,11 @@ namespace MyInstruments2
             { "Ibanez Artcore", new Guitar() { Make = "Ibanez", Model = "Artcore AS83", Type = "semi-hollow electric guitar", Country = "China", Year = 2005, Serial = "S05101444", Color = "Tobacco Burst", StringBrand = "D'Addario", StringType = "Pure Nickel XL", StringGauge = "Medium 11-48", } },
             { "Martin Auditorium", new Guitar() { Make = "Martin", Model = "00016-SGT Auditorium", Type = "hollow-body acoustic guitar", Country = "USA", Year = 2003, Serial = "921955", Color = "Natural Spruce", StringBrand = "D'Addario", StringType = "Phosphor Bronze", StringGauge ="Light: 12-53", } },
         };
+
+        public static void GuitarList()
+        {
+            foreach (KeyValuePair<string, Guitar> pair in guitars)
+                Console.WriteLine(pair.Key);
+        }
     }
 }

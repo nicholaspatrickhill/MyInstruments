@@ -13,12 +13,9 @@ namespace MyInstruments2
     {
         public static void InstrumentInventory2()
         {
-            foreach (KeyValuePair<string, Guitar> pair in guitars)
-                Console.WriteLine(pair.Key);
-            foreach (KeyValuePair<string, Bass> pair in basses)
-                Console.WriteLine(pair.Key);
-            foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
-                Console.WriteLine(pair.Key);
+            Guitar.GuitarList();
+            Bass.BassList();
+            Ukulele.UkuleleList();
         }
     }
 }
