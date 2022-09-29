@@ -30,7 +30,7 @@ namespace MyInstruments2
             while (true)
             {
                 Console.WriteLine("Hello. Which instrument would you like to review?");
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Green;
                 string input = Console.ReadLine();
                 Console.ForegroundColor= ConsoleColor.White;
 
