@@ -30,7 +30,7 @@ namespace MyInstruments2
             while (true)
             {
                 Console.WriteLine("Hello. Which instrument would you like to review?");
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 string input = Console.ReadLine();
                 Console.ForegroundColor= ConsoleColor.White;
 
@@ -81,6 +81,13 @@ namespace MyInstruments2
                 {
                     Console.WriteLine();
                     foreach (KeyValuePair<string, Bass> pair in basses)
+                        Console.WriteLine(pair.Key);
+                    Console.WriteLine();
+                }
+                else if (input == "Ukuleles")
+                {
+                    Console.WriteLine();
+                    foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
                         Console.WriteLine(pair.Key);
                     Console.WriteLine();
                 }
