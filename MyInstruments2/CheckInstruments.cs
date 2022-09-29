@@ -17,9 +17,9 @@ namespace MyInstruments2
             Console.ForegroundColor = ConsoleColor.Yellow;
 
             // header code to start the program
-            Console.WriteLine(          "........................");
-            Console.WriteLine(          "...  MyInstruments2  ...");
-            Console.WriteLine(          "........................");
+            Console.WriteLine("........................");
+            Console.WriteLine("...  MyInstruments2  ...");
+            Console.WriteLine("........................");
             Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.White;
@@ -71,6 +71,12 @@ namespace MyInstruments2
                 {
                     MakeList.InstrumentInventory();
                     Console.WriteLine();
+                }
+                else if (input == "Guitars")
+                {
+                    foreach(KeyValuePair<string, Guitar> pair in guitars)
+                        Console.WriteLine(pair.Key);
+                        Console.WriteLine();
                 }
                 else if (input == "Clear")
                 {
