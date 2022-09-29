@@ -16,7 +16,7 @@ namespace MyInstruments2
             Console.SetWindowSize(138, 40);
             Console.ForegroundColor = ConsoleColor.White;
 
-            // header code to start the program
+             //--calls the HeaderText method to start the program
             {
                 Header.HeaderText();
             }
@@ -87,7 +87,7 @@ namespace MyInstruments2
                 else if (input == "Clear")
                 {
                     Console.Clear();
-                    Header.HeaderText();
+                    Header.HeaderText(); //--calls on the HeaderText method after the console is cleared
                 }
                 else
                 {

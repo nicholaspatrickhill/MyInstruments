@@ -8,7 +8,8 @@ namespace MyInstruments2
 {
     public class Commands
     {
-        public static void CommandList()
+         //--lists the commands available to the user in the Console app
+        public static void CommandList() 
         {
             Console.WriteLine();
             Console.WriteLine("Type \"Quit\" to exit the program.");

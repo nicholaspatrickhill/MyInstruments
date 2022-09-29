@@ -8,6 +8,7 @@ namespace MyInstruments2
 {
     internal class Header
     {
+         //--this method prints the Header text to start the program and after the console has been cleared
         public static void HeaderText()
         {
             Console.WriteLine("........................");
