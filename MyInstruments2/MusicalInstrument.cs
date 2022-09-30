@@ -45,7 +45,8 @@ namespace MyInstruments2
                 return StringBrand + " " + StringType + " " + StringGauge;
             }
         }
-         //--abstract method 
+         //--abstract method to generate lists of each key in the dictionaries
         public abstract void InstrumentList();
+       
     }
 }

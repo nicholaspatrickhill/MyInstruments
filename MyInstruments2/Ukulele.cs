@@ -24,7 +24,7 @@ namespace MyInstruments2
         {
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
                 Console.WriteLine(pair.Key);
-        }   
+        }
     }
 }
 

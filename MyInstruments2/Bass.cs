@@ -24,6 +24,5 @@ namespace MyInstruments2
             foreach (KeyValuePair<string, Bass> pair in basses)
                 Console.WriteLine(pair.Key);
        }
-
     }
 }
