@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyInstruments2", "MyInstrum
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarUnitTests", "GuitarUnitTests\GuitarUnitTests.csproj", "{DBAA39B3-4B03-457A-A191-AD33C5A76F16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuitarUnitTests", "GuitarUnitTests\GuitarUnitTests.csproj", "{DBAA39B3-4B03-457A-A191-AD33C5A76F16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BassUnitTests", "BassUnitTests\BassUnitTests.csproj", "{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BassUnitTests", "BassUnitTests\BassUnitTests.csproj", "{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkuleleUnitTests", "UkuleleUnitTests\UkuleleUnitTests.csproj", "{479DF79A-F07B-43B1-BEF9-DBC78E331447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479DF79A-F07B-43B1-BEF9-DBC78E331447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479DF79A-F07B-43B1-BEF9-DBC78E331447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479DF79A-F07B-43B1-BEF9-DBC78E331447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479DF79A-F07B-43B1-BEF9-DBC78E331447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DBAA39B3-4B03-457A-A191-AD33C5A76F16} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
 		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
+		{479DF79A-F07B-43B1-BEF9-DBC78E331447} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {409D667E-F260-4FF1-9A67-3A66FA770FEC}

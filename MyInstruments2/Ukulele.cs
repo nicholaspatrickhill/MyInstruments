@@ -5,6 +5,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Schema;
+using static MyInstruments2.CheckInstruments;
 
 namespace MyInstruments2
 {
@@ -23,7 +24,7 @@ namespace MyInstruments2
         {
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
                 Console.WriteLine(pair.Key);
-        }
+        }   
     }
 }
 
