@@ -45,5 +45,7 @@ namespace MyInstruments2
                 return StringBrand + " " + StringType + " " + StringGauge;
             }
         }
+         //--abstract method 
+        public abstract void InstrumentList();
     }
 }

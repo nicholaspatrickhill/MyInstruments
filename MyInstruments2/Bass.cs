@@ -19,7 +19,7 @@ namespace MyInstruments2
             { "Hofner Club Bass", new Bass() { Make = "Hofner", Model = "Club", Type = "hollow-body electric bass", Country = "China",  Year = 2020, Serial = "X0501H152", Color = "Black", Scale = "short", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
        };
         //-- this method prints each key in the Bass dictionary
-       public static void BassList()
+       public override void InstrumentList()
        {
             foreach (KeyValuePair<string, Bass> pair in basses)
                 Console.WriteLine(pair.Key);

@@ -14,9 +14,13 @@ namespace MyInstruments2
          //--this method prints each key from each dictionary as one master list
         public static void InstrumentInventory2()
         {
-            Guitar.GuitarList();
-            Bass.BassList();
-            Ukulele.UkuleleList();
+            Guitar guitar = new Guitar();
+            Bass bass = new Bass();
+            Ukulele ukulele = new Ukulele();
+
+            guitar.InstrumentList();
+            bass.InstrumentList();
+            ukulele.InstrumentList();
         }
     }
 }

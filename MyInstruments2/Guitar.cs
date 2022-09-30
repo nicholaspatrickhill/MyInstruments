@@ -22,7 +22,7 @@ namespace MyInstruments2
             { "Martin Auditorium", new Guitar() { Make = "Martin", Model = "00016-SGT Auditorium", Type = "hollow-body acoustic guitar", Country = "USA", Year = 2003, Serial = "921955", Color = "Natural Spruce", StringBrand = "D'Addario", StringType = "Phosphor Bronze", StringGauge ="Light: 12-53", } },
         };
          //--this method prints each key in the Guitar dictionary
-        public static void GuitarList()
+        public override void InstrumentList()
         {
             foreach (KeyValuePair<string, Guitar> pair in guitars)
                 Console.WriteLine(pair.Key);

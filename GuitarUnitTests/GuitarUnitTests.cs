@@ -43,7 +43,7 @@ namespace GuitarUnitTests
             Assert.AreEqual(expected, actual);
         }
     }
-    public class InstrumentStringTest
+    public class GuitarStringTest
     {
         [Test]
         public void GuitarStringTestValid()

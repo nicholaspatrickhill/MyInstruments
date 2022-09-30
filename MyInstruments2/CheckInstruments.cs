@@ -5,6 +5,7 @@ using System.Xml.Schema;
 using static MyInstruments2.Ukulele;
 using static MyInstruments2.Guitar;
 using static MyInstruments2.Bass;
+using static MyInstruments2.MusicalInstrument;
 
 namespace MyInstruments2
 {
@@ -68,20 +69,23 @@ namespace MyInstruments2
                 }
                 else if (input == "Guitars")
                 {
+                    Guitar guitar = new Guitar();
                     Console.WriteLine();
-                    Guitar.GuitarList();
+                    guitar.InstrumentList();
                     Console.WriteLine();
                 }
                 else if (input == "Basses")
                 {
+                    Bass bass = new Bass();
                     Console.WriteLine();
-                    Bass.BassList();
+                    bass.InstrumentList();
                     Console.WriteLine();
                 }
                 else if (input == "Ukuleles")
                 {
+                    Ukulele ukulele = new Ukulele();
                     Console.WriteLine();
-                    Ukulele.UkuleleList();
+                    ukulele.InstrumentList();
                     Console.WriteLine();
                 }
                 else if (input == "Clear")

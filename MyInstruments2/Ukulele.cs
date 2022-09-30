@@ -20,7 +20,7 @@ namespace MyInstruments2
             { "Lanikai Ukulele", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2012, Serial = "Y31107", Color = "Natural Nato", Size = "soprano", } },
         };
          //--this method prints each key in the Ukulele dictionary
-        public static void UkuleleList()
+        public override void InstrumentList()
         {
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
                 Console.WriteLine(pair.Key);
