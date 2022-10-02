@@ -25,6 +25,13 @@ namespace MyInstruments2
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
                 Console.WriteLine(pair.Key);
         }
+        /*public static void AddUkulele(Ukulele)
+        {
+            Console.WriteLine("Please type the keyword for the instrument you'd like to add (ex. \"Fender Telecaster\".)");
+            var ukulele = new Ukulele();
+            string input = Console.ReadLine();
+            ukuleles.Add(input, value: ukulele);
+        }*/
     }
 }
 

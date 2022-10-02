@@ -9,17 +9,22 @@ using static MyInstruments2.Bass;
 
 namespace MyInstruments2
 {
-    internal class MakeList2
+    internal class MakeList
     {
          //--this method prints each key from each dictionary as one master list
-        public static void InstrumentInventory2()
+        public static void InstrumentInventory()
         {
             Guitar guitar = new Guitar();
             Bass bass = new Bass();
             Ukulele ukulele = new Ukulele();
 
+            Console.WriteLine("Guitars:");
             guitar.InstrumentList();
+            Console.WriteLine();
+            Console.WriteLine("Basses:");
             bass.InstrumentList();
+            Console.WriteLine();
+            Console.WriteLine("Ukuleles:");
             ukulele.InstrumentList();
         }
     }
