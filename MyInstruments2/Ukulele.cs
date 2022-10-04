@@ -19,6 +19,7 @@ namespace MyInstruments2
             { "Cordoba Ukulele", new Ukulele() { make = "Cordoba", model = "20-TMCE", type = "hollow-body acoustic ukulele", country = "China", year = 2017, serial = "41638150", color = "Natural Mahogany", size = "tenor", } },
             { "Lanikai Ukulele", new Ukulele() { make = "Lanikai", model = "LU-11", type = "hollow-body acoustic ukulele", country = "China", year = 2012, serial = "Y31107", color = "Natural Nato", size = "soprano", } },
         };
+
          //--this method prints each key in the Ukulele dictionary
         public override void InstrumentList()
         {
@@ -27,6 +28,7 @@ namespace MyInstruments2
                 Console.WriteLine(pair.Key);
             Console.WriteLine();
         }
+
          //--implements the IPrintInstrument interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
         {
@@ -34,6 +36,7 @@ namespace MyInstruments2
             Console.WriteLine($"It is {instrumentAge} years old. It is {color} in color. It is a {size} sized instrument. Its serial number is {serial}.");
             Console.WriteLine();
         }
+
         /*public static void AddUkulele(Ukulele)
         {
             Console.WriteLine("Please type the keyword for the instrument you'd like to add (ex. \"Fender Telecaster\".)");

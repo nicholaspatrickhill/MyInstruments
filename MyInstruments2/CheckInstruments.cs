@@ -13,7 +13,7 @@ namespace MyInstruments2
     {
         public static void Main(string[] args)
         {
-             //--setting console size
+             //--sets console size & color
             Console.SetWindowSize(138, 40);
             Console.ForegroundColor = ConsoleColor.White;
 
@@ -27,10 +27,10 @@ namespace MyInstruments2
             {
                 Console.WriteLine("Hello. Which instrument would you like to review?");
                 
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Green; //--sets user text to green
                 string input = Console.ReadLine();
                 
-                Console.ForegroundColor= ConsoleColor.White;
+                Console.ForegroundColor= ConsoleColor.White; //--sets console text back to white
 
                 if (input == "Quit")
                 {

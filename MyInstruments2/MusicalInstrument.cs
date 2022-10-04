@@ -29,6 +29,7 @@ namespace MyInstruments2
                 return make + " " + model;
             }
         }
+
          //--calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
         public int instrumentAge
         {
@@ -37,6 +38,7 @@ namespace MyInstruments2
                 return (DateTime.Now.Year - year);
             }
         }
+
          //--combines the string Brand, Type and gauge for simpler code in Main
         public string instrumentString
         {
@@ -45,6 +47,7 @@ namespace MyInstruments2
                 return stringBrand + " " + stringType + " " + stringGauge;
             }
         }
+
          //--abstract method to generate lists of each key in the dictionaries
         public abstract void InstrumentList(); 
     }

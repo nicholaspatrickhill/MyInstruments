@@ -8,7 +8,7 @@ namespace MyInstruments2
 {
     public class Commands
     {
-         //--lists the commands available to the user in the Console app
+         //--prints all of the commands available to the user in the console app
         public static void CommandList() 
         {
             Console.WriteLine();

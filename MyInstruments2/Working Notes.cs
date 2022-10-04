@@ -10,6 +10,5 @@ namespace MyInstruments2
     // -print the instruments to a seperate text file
     // -add unit tests for each instrument class that generates the sentences in main
     // -center header text in main
-    // -make each instrument's text in main methods in their own classes that are called in main
     // -ability to add or delete new instruments in each dictionary - ADD GUITAR, ADD BASS, ADD UKULELE, DELETE GUITAR, DELETE BASS, DELETE UKULELE
 }
