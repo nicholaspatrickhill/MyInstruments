@@ -26,8 +26,10 @@ namespace MyInstruments2
             while (true)
             {
                 Console.WriteLine("Hello. Which instrument would you like to review?");
+                
                 Console.ForegroundColor = ConsoleColor.Green;
                 string input = Console.ReadLine();
+                
                 Console.ForegroundColor= ConsoleColor.White;
 
                 if (input == "Quit")
@@ -41,10 +43,7 @@ namespace MyInstruments2
                 else if (guitars.ContainsKey(input))
                 {
                     Guitar guitar = guitars[input];
-                    Console.WriteLine($"Your {guitar.instrumentName} is a {guitar.type} that was made in {guitar.country} in {guitar.year}.");
-                    Console.WriteLine($"It is {guitar.instrumentAge} years old. It is {guitar.color} in color. Its serial number is {guitar.serial}.");
-                    Console.WriteLine($"It uses {guitar.instrumentString} gauge strings.");
-                    Console.WriteLine();
+                    guitar.PrintInstrument();
                 }
                 else if (basses.ContainsKey(input))
                 { 
