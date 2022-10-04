@@ -21,13 +21,10 @@ namespace MyInstruments2
             Console.WriteLine();
             Console.WriteLine("Guitars:");
             guitar.InstrumentList();
-            Console.WriteLine();
             Console.WriteLine("Basses:");
             bass.InstrumentList();
-            Console.WriteLine();
             Console.WriteLine("Ukuleles:");
             ukulele.InstrumentList();
-            Console.WriteLine();
         }
     }
 }

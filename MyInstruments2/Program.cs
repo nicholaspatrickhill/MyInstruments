@@ -9,7 +9,7 @@ using static MyInstruments2.MusicalInstrument;
 
 namespace MyInstruments2
 {
-    public class CheckInstruments
+    public class Program
     {
         public static void Main(string[] args)
         {
