@@ -9,7 +9,7 @@ using static MyInstruments2.CheckInstruments;
 
 namespace MyInstruments2
 {
-    public class Ukulele : MusicalInstrument //--inherits from Musical Instrument
+    public class Ukulele : MusicalInstrument, IPrintInstrument //--inherits from Musical Instrument
     {
         public string size { get; set; }
 
@@ -24,6 +24,12 @@ namespace MyInstruments2
         {
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
                 Console.WriteLine(pair.Key);
+        }
+        public void PrintInstrument()
+        {
+            Console.WriteLine($"Your {instrumentName} is a {type} that was made in {country} in {year}.");
+            Console.WriteLine($"It is {instrumentAge} years old. It is {color} in color. It is a {size} sized instrument. Its serial number is {serial}.");
+            Console.WriteLine();
         }
         /*public static void AddUkulele(Ukulele)
         {

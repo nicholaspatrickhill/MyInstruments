@@ -57,9 +57,7 @@ namespace MyInstruments2
                else if (ukuleles.ContainsKey(input))
                 {
                     Ukulele ukulele = ukuleles[input];
-                    Console.WriteLine($"Your {ukulele.instrumentName} is a {ukulele.type} that was made in {ukulele.country} in {ukulele.year}.");
-                    Console.WriteLine($"It is {ukulele.instrumentAge} years old. It is {ukulele.color} in color. It is a {ukulele.size} sized instrument. Its serial number is {ukulele.serial}.");
-                    Console.WriteLine();
+                    ukulele.PrintInstrument();
                 }
                 else if (input == "All")
                 {
