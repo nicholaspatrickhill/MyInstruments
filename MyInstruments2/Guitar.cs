@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments2
 {
-    public class Guitar : MusicalInstrument //--inherits from MusicalInstrument
+    public class Guitar : MusicalInstrument, IPrintInstrument //--inherits from MusicalInstrument
     {
          //--this dictionary contains all guitars available to the program
         public static Dictionary<string, Guitar> guitars = new Dictionary<string, Guitar>()
@@ -29,6 +29,13 @@ namespace MyInstruments2
             foreach (KeyValuePair<string, Guitar> pair in guitars)
                 Console.WriteLine(pair.Key);
             Console.WriteLine();
-        }      
+        }
+        public void PrintInstrument()
+        {
+            Console.WriteLine($"Your {instrumentName} is a {type} that was made in {country} in {year}.");
+            Console.WriteLine($"It is {instrumentAge} years old. It is {color} in color. Its serial number is {serial}.");
+            Console.WriteLine($"It uses {instrumentString} gauge strings.");
+            Console.WriteLine();
+        }
     }
 }

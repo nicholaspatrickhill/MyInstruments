@@ -9,7 +9,7 @@ using static MyInstruments2.CheckInstruments;
 
 namespace MyInstruments2
 {
-    public class Ukulele : MusicalInstrument, IPrintInstrument //--inherits from Musical Instrument
+    public class Ukulele : MusicalInstrument, IPrintInstrument //--inherits from Musical Instrument and implements the IPrintInstrument interface
     {
         public string size { get; set; }
 
@@ -27,6 +27,7 @@ namespace MyInstruments2
                 Console.WriteLine(pair.Key);
             Console.WriteLine();
         }
+         //--implements the IPrintInstrument interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
         {
             Console.WriteLine($"Your {instrumentName} is a {type} that was made in {country} in {year}.");
