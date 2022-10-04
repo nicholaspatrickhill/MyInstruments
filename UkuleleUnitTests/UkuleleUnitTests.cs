@@ -10,13 +10,13 @@ namespace UkuleleUnitTests
             //--Arrange
             Ukulele ukulele = new Ukulele
             {
-                Make = "Martin",
-                Model = "T1K"
+                make = "Martin",
+                model = "T1K"
             };
             string expected = "Martin T1K";
 
             //--Act
-            string actual = ukulele.InstrumentName;
+            string actual = ukulele.instrumentName;
 
             //--Assert
             Assert.AreEqual(expected, actual);
@@ -31,12 +31,12 @@ namespace UkuleleUnitTests
             //--Arrange
             Ukulele ukulele = new Ukulele
             {
-                Year = 2000
+                year = 2000
             };
             int expected = 22;
 
             //--Act
-            int actual = ukulele.InstrumentAge;
+            int actual = ukulele.instrumentAge;
 
             //--Assert
             Assert.AreEqual(expected, actual);
@@ -50,15 +50,15 @@ namespace UkuleleUnitTests
             //--Arrange
             Ukulele ukulele = new Ukulele
             {
-                StringBrand = "Martin",
-                StringType = "Tenor Fluorocarbon",
-                StringGauge = "22"
+                stringBrand = "Martin",
+                stringType = "Tenor Fluorocarbon",
+                stringGauge = "22"
 
             };
             string expected = "Martin Tenor Fluorocarbon 22";
 
             //--Act
-            string actual = ukulele.InstrumentString;
+            string actual = ukulele.instrumentString;
 
             //--Assert
             Assert.AreEqual(expected, actual);

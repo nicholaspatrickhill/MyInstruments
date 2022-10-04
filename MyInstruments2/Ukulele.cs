@@ -11,13 +11,13 @@ namespace MyInstruments2
 {
     public class Ukulele : MusicalInstrument //--inherits from Musical Instrument
     {
-        public string Size { get; set; }
+        public string size { get; set; }
 
          //--this dictionary contains all ukuleles available to the program
         public static Dictionary<string, Ukulele> ukuleles = new Dictionary<string, Ukulele>
         {
-            { "Cordoba Ukulele", new Ukulele() { Make = "Cordoba", Model = "20-TMCE", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2017, Serial = "41638150", Color = "Natural Mahogany", Size = "tenor", } },
-            { "Lanikai Ukulele", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2012, Serial = "Y31107", Color = "Natural Nato", Size = "soprano", } },
+            { "Cordoba Ukulele", new Ukulele() { make = "Cordoba", model = "20-TMCE", type = "hollow-body acoustic ukulele", country = "China", year = 2017, serial = "41638150", color = "Natural Mahogany", size = "tenor", } },
+            { "Lanikai Ukulele", new Ukulele() { make = "Lanikai", model = "LU-11", type = "hollow-body acoustic ukulele", country = "China", year = 2012, serial = "Y31107", color = "Natural Nato", size = "soprano", } },
         };
          //--this method prints each key in the Ukulele dictionary
         public override void InstrumentList()

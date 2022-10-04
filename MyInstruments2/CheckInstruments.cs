@@ -41,24 +41,24 @@ namespace MyInstruments2
                 else if (guitars.ContainsKey(input))
                 {
                     Guitar guitar = guitars[input];
-                    Console.WriteLine($"Your {guitar.InstrumentName} is a {guitar.Type} that was made in {guitar.Country} in {guitar.Year}.");
-                    Console.WriteLine($"It is {guitar.InstrumentAge} years old. It is {guitar.Color} in color. Its serial number is {guitar.Serial}.");
-                    Console.WriteLine($"It uses {guitar.InstrumentString} gauge strings.");
+                    Console.WriteLine($"Your {guitar.instrumentName} is a {guitar.type} that was made in {guitar.country} in {guitar.year}.");
+                    Console.WriteLine($"It is {guitar.instrumentAge} years old. It is {guitar.color} in color. Its serial number is {guitar.serial}.");
+                    Console.WriteLine($"It uses {guitar.instrumentString} gauge strings.");
                     Console.WriteLine();
                 }
                 else if (basses.ContainsKey(input))
                 { 
                     Bass bass = basses[input];
-                    Console.WriteLine($"Your {bass.InstrumentName} is a {bass.Type} that was made in {bass.Country} in {bass.Year}.");
-                    Console.WriteLine($"It is {bass.InstrumentAge} years old. It is {bass.Color} in color. It is a {bass.Scale} scale bass. Its serial number is {bass.Serial}.");
-                    Console.WriteLine($"It uses {bass.InstrumentString} gauge strings.");
+                    Console.WriteLine($"Your {bass.instrumentName} is a {bass.type} that was made in {bass.country} in {bass.year}.");
+                    Console.WriteLine($"It is {bass.instrumentAge} years old. It is {bass.color} in color. It is a {bass.scale} scale bass. Its serial number is {bass.serial}.");
+                    Console.WriteLine($"It uses {bass.instrumentString} gauge strings.");
                     Console.WriteLine();
                 }
                else if (ukuleles.ContainsKey(input))
                 {
                     Ukulele ukulele = ukuleles[input];
-                    Console.WriteLine($"Your {ukulele.InstrumentName} is a {ukulele.Type} that was made in {ukulele.Country} in {ukulele.Year}.");
-                    Console.WriteLine($"It is {ukulele.InstrumentAge} years old. It is {ukulele.Color} in color. It is a {ukulele.Size} sized instrument. Its serial number is {ukulele.Serial}.");
+                    Console.WriteLine($"Your {ukulele.instrumentName} is a {ukulele.type} that was made in {ukulele.country} in {ukulele.year}.");
+                    Console.WriteLine($"It is {ukulele.instrumentAge} years old. It is {ukulele.color} in color. It is a {ukulele.size} sized instrument. Its serial number is {ukulele.serial}.");
                     Console.WriteLine();
                 }
                 else if (input == "All")

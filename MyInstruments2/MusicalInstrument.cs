@@ -9,40 +9,40 @@ namespace MyInstruments2
 {
     public abstract class MusicalInstrument
     {
-        public string Make { get; set; }
-        public string Model { get; set; }
-        public string Type { get; set; }
-        public string Country { get; set; }
-        public int Year { get; set; }
+        public string make { get; set; }
+        public string model { get; set; }
+        public string type { get; set; }
+        public string country { get; set; }
+        public int year { get; set; }
 
-        public string Serial { get; set; }
-        public string Color { get; set; }
-        public string StringBrand { get; set; }
-        public string StringType { get; set; }
-        public string StringGauge { get; set; }
+        public string serial { get; set; }
+        public string color { get; set; }
+        public string stringBrand { get; set; }
+        public string stringType { get; set; }
+        public string stringGauge { get; set; }
 
          //--combines the Make and Model for simpler code in Main
-        public string InstrumentName
+        public string instrumentName
         {
             get
             {
-                return Make + " " + Model;
+                return make + " " + model;
             }
         }
          //--calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
-        public int InstrumentAge
+        public int instrumentAge
         {
             get
             {
-                return (DateTime.Now.Year - Year);
+                return (DateTime.Now.Year - year);
             }
         }
          //--combines the string Brand, Type and gauge for simpler code in Main
-        public string InstrumentString
+        public string instrumentString
         {
             get
             {
-                return StringBrand + " " + StringType + " " + StringGauge;
+                return stringBrand + " " + stringType + " " + stringGauge;
             }
         }
          //--abstract method to generate lists of each key in the dictionaries

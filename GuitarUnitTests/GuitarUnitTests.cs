@@ -11,13 +11,13 @@ namespace GuitarUnitTests
             //--Arrange
             Guitar guitar = new Guitar
             {
-                Make = "Fender",
-                Model = "Starcaster"
+                make = "Fender",
+                model = "Starcaster"
             };
             string expected = "Fender Starcaster";
 
             //--Act
-            string actual = guitar.InstrumentName;
+            string actual = guitar.instrumentName;
 
             //--Assert
             Assert.AreEqual(expected, actual);
@@ -32,12 +32,12 @@ namespace GuitarUnitTests
             //--Arrange
             Guitar guitar = new Guitar
             {
-                Year = 2000
+                year = 2000
             };
             int expected = 22;
 
             //--Act
-            int actual = guitar.InstrumentAge;
+            int actual = guitar.instrumentAge;
 
             //--Assert
             Assert.AreEqual(expected, actual);
@@ -51,15 +51,15 @@ namespace GuitarUnitTests
             //--Arrange
             Guitar guitar = new Guitar
             {
-                StringBrand = "Ernie Ball",
-                StringType = "Regular Slinky",
-                StringGauge = "10-46"
+                stringBrand = "Ernie Ball",
+                stringType = "Regular Slinky",
+                stringGauge = "10-46"
 
             };
             string expected = "Ernie Ball Regular Slinky 10-46";
 
             //--Act
-            string actual = guitar.InstrumentString;
+            string actual = guitar.instrumentString;
 
             //--Assert
             Assert.AreEqual(expected, actual);

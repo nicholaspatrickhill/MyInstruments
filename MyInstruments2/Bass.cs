@@ -8,15 +8,15 @@ namespace MyInstruments2
 {
     public class Bass : MusicalInstrument //--Bass class inherits from MusicalInstrument for seperate organization of basses
     {
-       public string Scale { get; set; }
+       public string scale { get; set; }
 
         //--this dictionary contains all basses available to the program
        public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
        {
-            { "Fender Dimension Bass", new Bass() { Make = "Fender", Model = "Dimension Bass", Type = "solid-body electric bass", Country = "USA", Year = 2016, Serial = "US16030876", Color = "Black", Scale = "long", StringBrand = "D'Addario", StringType = "Chrome Flat Wound Long Scale", StringGauge= "Custom Light: 40-100", } },
-            { "Fender Mustang Bass", new Bass() { Make = "Fender", Model = "Justin Meldal-Johnsen Signature Mustang Bass", Type = "solid-body electric bass", Country = "Mexico", Year = 2017, Serial = "MX17972532", Color = "Daphne Blue", Scale = "short", StringBrand = "D'Addario", StringType = "Chrome Flatwound Medium Scale", StringGauge = "Light: 45-100" } },
-            { "Fender Precision Bass",  new Bass() { Make = "Fender", Model = "Precision Bass", Type = "solid-body electric bass", Country = "Mexico", Year = 2021, Serial = "MX21254822", Color = "Buttercream", Scale = "long", StringBrand = "GHS", StringType = "Pressure Wound", StringGauge = "Medium: 44-106", } },
-            { "Hofner Club Bass", new Bass() { Make = "Hofner", Model = "Club", Type = "hollow-body electric bass", Country = "China",  Year = 2020, Serial = "X0501H152", Color = "Black", Scale = "short", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
+            { "Fender Dimension Bass", new Bass() { make = "Fender", model = "Dimension Bass", type = "solid-body electric bass", country = "USA", year = 2016, serial = "US16030876", color = "Black", scale = "long", stringBrand = "D'Addario", stringType = "Chrome Flat Wound Long Scale", stringGauge= "Custom Light: 40-100", } },
+            { "Fender Mustang Bass", new Bass() { make = "Fender", model = "Justin Meldal-Johnsen Signature Mustang Bass", type = "solid-body electric bass", country = "Mexico", year = 2017, serial = "MX17972532", color = "Daphne Blue", scale = "short", stringBrand = "D'Addario", stringType = "Chrome Flatwound Medium Scale", stringGauge = "Light: 45-100" } },
+            { "Fender Precision Bass",  new Bass() { make = "Fender", model = "Precision Bass", type = "solid-body electric bass", country = "Mexico", year = 2021, serial = "MX21254822", color = "Buttercream", scale = "long", stringBrand = "GHS", stringType = "Pressure Wound", stringGauge = "Medium: 44-106", } },
+            { "Hofner Club Bass", new Bass() { make = "Hofner", model = "Club", type = "hollow-body electric bass", country = "China",  year = 2020, serial = "X0501H152", color = "Black", scale = "short", stringBrand = "La Bella", stringType = "Deep Talkin' Beatle Bass", stringGauge = "Light: 39-96", } },
        };
         //-- this method prints each key in the Bass dictionary
        public override void InstrumentList()
