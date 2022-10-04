@@ -18,6 +18,7 @@ namespace MyInstruments2
             Bass bass = new Bass();
             Ukulele ukulele = new Ukulele();
 
+            Console.WriteLine();
             Console.WriteLine("Guitars:");
             guitar.InstrumentList();
             Console.WriteLine();
@@ -26,6 +27,7 @@ namespace MyInstruments2
             Console.WriteLine();
             Console.WriteLine("Ukuleles:");
             ukulele.InstrumentList();
+            Console.WriteLine();
         }
     }
 }

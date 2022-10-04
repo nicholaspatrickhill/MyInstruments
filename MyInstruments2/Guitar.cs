@@ -25,8 +25,10 @@ namespace MyInstruments2
          //--this method prints each key in the Guitar dictionary
         public override void InstrumentList()
         {
+            Console.WriteLine();
             foreach (KeyValuePair<string, Guitar> pair in guitars)
                 Console.WriteLine(pair.Key);
+            Console.WriteLine();
         }      
     }
 }

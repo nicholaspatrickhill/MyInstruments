@@ -22,8 +22,10 @@ namespace MyInstruments2
          //--this method prints each key in the Ukulele dictionary
         public override void InstrumentList()
         {
+            Console.WriteLine();
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
                 Console.WriteLine(pair.Key);
+            Console.WriteLine();
         }
         public void PrintInstrument()
         {

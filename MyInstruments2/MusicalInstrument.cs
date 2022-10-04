@@ -46,7 +46,6 @@ namespace MyInstruments2
             }
         }
          //--abstract method to generate lists of each key in the dictionaries
-        public abstract void InstrumentList();
-       
+        public abstract void InstrumentList(); 
     }
 }

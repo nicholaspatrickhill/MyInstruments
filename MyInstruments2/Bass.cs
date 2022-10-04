@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments2
 {
-    public class Bass : MusicalInstrument //--Bass class inherits from MusicalInstrument for seperate organization of basses
+    public class Bass : MusicalInstrument, IPrintInstrument //--Bass class inherits from MusicalInstrument for seperate organization of basses
     {
        public string scale { get; set; }
 
@@ -21,8 +21,17 @@ namespace MyInstruments2
         //-- this method prints each key in the Bass dictionary
        public override void InstrumentList()
        {
+            Console.WriteLine();
             foreach (KeyValuePair<string, Bass> pair in basses)
                 Console.WriteLine(pair.Key);
+            Console.WriteLine();
        }
+        public void PrintInstrument()
+        {
+            Console.WriteLine($"Your {instrumentName} is a {type} that was made in {country} in {year}.");
+            Console.WriteLine($"It is {instrumentAge} years old. It is {color} in color. It is a {scale} scale bass. Its serial number is {serial}.");
+            Console.WriteLine($"It uses {instrumentString} gauge strings.");
+            Console.WriteLine();
+        }
     }
 }

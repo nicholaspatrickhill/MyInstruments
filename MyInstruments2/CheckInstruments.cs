@@ -49,42 +49,32 @@ namespace MyInstruments2
                 else if (basses.ContainsKey(input))
                 { 
                     Bass bass = basses[input];
-                    Console.WriteLine($"Your {bass.instrumentName} is a {bass.type} that was made in {bass.country} in {bass.year}.");
-                    Console.WriteLine($"It is {bass.instrumentAge} years old. It is {bass.color} in color. It is a {bass.scale} scale bass. Its serial number is {bass.serial}.");
-                    Console.WriteLine($"It uses {bass.instrumentString} gauge strings.");
-                    Console.WriteLine();
+                    bass.PrintInstrument();
                 }
                else if (ukuleles.ContainsKey(input))
-                {
+               {
                     Ukulele ukulele = ukuleles[input];
                     ukulele.PrintInstrument();
                 }
                 else if (input == "All")
                 {
-                    Console.WriteLine();
                     MakeList.InstrumentInventory();
-                    Console.WriteLine();
                 }
                 else if (input == "Guitars")
                 {
                     Guitar guitar = new Guitar();
-                    Console.WriteLine();
                     guitar.InstrumentList();
-                    Console.WriteLine();
                 }
                 else if (input == "Basses")
                 {
                     Bass bass = new Bass();
-                    Console.WriteLine();
                     bass.InstrumentList();
-                    Console.WriteLine();
+
                 }
                 else if (input == "Ukuleles")
                 {
-                    Ukulele ukulele = new Ukulele();
-                    Console.WriteLine();
+                    Ukulele ukulele = new Ukulele(); 
                     ukulele.InstrumentList();
-                    Console.WriteLine();
                 }
                 else if (input == "Clear")
                 {
