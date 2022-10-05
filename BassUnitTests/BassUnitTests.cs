@@ -2,6 +2,7 @@ using MyInstruments2;
 
 namespace BassUnitTests
 {
+    // Fulfills Feature List Requirement: "Create 3 or more unit tests for your application"
     public class BassNameTest
     {
         [Test]
