@@ -10,7 +10,6 @@ namespace MyInstruments2
     public class Guitar : MusicalInstrument, IPrintInstrument 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
-        //--this dictionary contains all guitars available to the program
         //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Guitar> guitars = new Dictionary<string, Guitar>()
         {

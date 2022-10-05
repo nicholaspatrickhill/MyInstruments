@@ -22,7 +22,8 @@ namespace MyInstruments2
                 Header.HeaderText();
             }
 
-             //--loops through possible user inputs 
+            /*--Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
+                can repeatedly enter commands/perform actions, including choosing to exit the program" */
             while (true)
             {
                 Console.WriteLine("Hello. Which instrument would you like to review?");

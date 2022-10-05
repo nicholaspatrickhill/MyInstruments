@@ -14,12 +14,11 @@ namespace MyInstruments2
     {
         public string size { get; set; }
 
-        //--this dictionary contains all ukuleles available to the program
         //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Ukulele> ukuleles = new Dictionary<string, Ukulele>
         {
-            { "Cordoba Ukulele", new Ukulele() { make = "Cordoba", model = "20-TMCE", type = "hollow-body acoustic ukulele", country = "China", year = 2017, serial = "41638150", color = "Natural Mahogany", size = "tenor", } },
-            { "Lanikai Ukulele", new Ukulele() { make = "Lanikai", model = "LU-11", type = "hollow-body acoustic ukulele", country = "China", year = 2012, serial = "Y31107", color = "Natural Nato", size = "soprano", } },
+            { "Cordoba Ukulele", new Ukulele() { make = "Cordoba", model = "20-TMCE", type = "hollow-body acoustic ukulele", country = "China", year = 2017, serial = "41638150", color = "Natural Mahogany", size = "tenor", stringBrand = "D'Addario", stringType = "Fluorocarbon", stringGauge = "Tenor: 20-22", } },
+            { "Lanikai Ukulele", new Ukulele() { make = "Lanikai", model = "LU-11", type = "hollow-body acoustic ukulele", country = "China", year = 2012, serial = "Y31107", color = "Natural Nato", size = "soprano", stringBrand = "D'Addario", stringType = "Fluorocarbon", stringGauge = "Soprano: 20-22", } },
         };
 
          //--this method prints each key in the Ukulele dictionary
@@ -36,6 +35,7 @@ namespace MyInstruments2
         {
             Console.WriteLine($"Your {instrumentName} is a {type} that was made in {country} in {year}.");
             Console.WriteLine($"It is {instrumentAge} years old. It is {color} in color. It is a {size} sized instrument. Its serial number is {serial}.");
+            Console.WriteLine($"It uses {instrumentString} gauge strings.");
             Console.WriteLine();
         }
 
