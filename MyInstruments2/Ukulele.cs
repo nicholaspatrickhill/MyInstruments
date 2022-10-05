@@ -5,15 +5,17 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Schema;
-using static MyInstruments2.CheckInstruments;
+using static MyInstruments2.Program;
 
 namespace MyInstruments2
 {
-    public class Ukulele : MusicalInstrument, IPrintInstrument //--inherits from Musical Instrument and implements the IPrintInstrument interface
+    public class Ukulele : MusicalInstrument, IPrintInstrument 
+        //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string size { get; set; }
 
-         //--this dictionary contains all ukuleles available to the program
+        //--this dictionary contains all ukuleles available to the program
+        //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Ukulele> ukuleles = new Dictionary<string, Ukulele>
         {
             { "Cordoba Ukulele", new Ukulele() { make = "Cordoba", model = "20-TMCE", type = "hollow-body acoustic ukulele", country = "China", year = 2017, serial = "41638150", color = "Natural Mahogany", size = "tenor", } },

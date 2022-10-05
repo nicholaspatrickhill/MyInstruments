@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyInstruments2
 {
-    public class Bass : MusicalInstrument, IPrintInstrument //--Bass class inherits from MusicalInstrument and implements the IPrintInstrument interface
+    public class Bass : MusicalInstrument, IPrintInstrument 
+        //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
-       public string scale { get; set; }
+        public string scale { get; set; }
 
-        //--this dictionary contains all basses available to the program
-       public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
+        //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
+        public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
        {
             { "Fender Dimension Bass", new Bass() { make = "Fender", model = "Dimension Bass", type = "solid-body electric bass", country = "USA", year = 2016, serial = "US16030876", color = "Black", scale = "long", stringBrand = "D'Addario", stringType = "Chrome Flat Wound Long Scale", stringGauge= "Custom Light: 40-100", } },
             { "Fender Mustang Bass", new Bass() { make = "Fender", model = "Justin Meldal-Johnsen Signature Mustang Bass", type = "solid-body electric bass", country = "Mexico", year = 2017, serial = "MX17972532", color = "Daphne Blue", scale = "short", stringBrand = "D'Addario", stringType = "Chrome Flatwound Medium Scale", stringGauge = "Light: 45-100" } },
