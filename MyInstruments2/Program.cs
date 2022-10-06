@@ -2,12 +2,12 @@
 using System.Diagnostics.Metrics;
 using System.Threading.Tasks;
 using System.Xml.Schema;
-using static MyInstruments2.Ukulele;
-using static MyInstruments2.Guitar;
-using static MyInstruments2.Bass;
-using static MyInstruments2.MusicalInstrument;
+using static MyInstruments.Ukulele;
+using static MyInstruments.Guitar;
+using static MyInstruments.Bass;
+using static MyInstruments.MusicalInstrument;
 
-namespace MyInstruments2
+namespace MyInstruments
 {
     public class Program
     {

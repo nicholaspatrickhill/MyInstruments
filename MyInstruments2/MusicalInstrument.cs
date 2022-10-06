@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyInstruments2
+namespace MyInstruments
 {
     public abstract class MusicalInstrument
     {

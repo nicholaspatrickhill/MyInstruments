@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyInstruments2", "MyInstruments2\MyInstruments2.csproj", "{41D957DB-B3A5-451D-89F8-6A650E069883}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyInstruments", "MyInstruments2\MyInstruments.csproj", "{41D957DB-B3A5-451D-89F8-6A650E069883}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}"
 EndProject
@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuitarUnitTests", "GuitarUn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BassUnitTests", "BassUnitTests\BassUnitTests.csproj", "{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkuleleUnitTests", "UkuleleUnitTests\UkuleleUnitTests.csproj", "{479DF79A-F07B-43B1-BEF9-DBC78E331447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UkuleleUnitTests", "UkuleleUnitTests\UkuleleUnitTests.csproj", "{479DF79A-F07B-43B1-BEF9-DBC78E331447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

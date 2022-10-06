@@ -1,0 +1,15 @@
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\MyInstruments.exe
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\MyInstruments.deps.json
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\MyInstruments.runtimeconfig.json
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\MyInstruments.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\MyInstruments.pdb
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.csproj.AssemblyReference.cache
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.AssemblyInfoInputs.cache
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.AssemblyInfo.cs
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.csproj.CoreCompileInputs.cache
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\refint\MyInstruments.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.pdb
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.genruntimeconfig.cache
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\ref\MyInstruments.dll

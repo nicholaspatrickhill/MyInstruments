@@ -5,9 +5,9 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Schema;
-using static MyInstruments2.Program;
+using static MyInstruments.Program;
 
-namespace MyInstruments2
+namespace MyInstruments
 {
     public class Ukulele : MusicalInstrument, IPrintInstrument 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"

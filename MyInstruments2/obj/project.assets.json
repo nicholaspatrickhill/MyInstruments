@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments2.csproj",
-      "projectName": "MyInstruments2",
-      "projectPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments2.csproj",
+      "projectUniqueName": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments.csproj",
+      "projectName": "MyInstruments",
+      "projectPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments.csproj",
       "packagesPath": "C:\\Users\\nicho\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\obj\\",
       "projectStyle": "PackageReference",

@@ -974,14 +974,14 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "MyInstruments2/1.0.0": {
+      "MyInstruments/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/MyInstruments2.dll": {}
+          "bin/placeholder/MyInstruments.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MyInstruments2.dll": {}
+          "bin/placeholder/MyInstruments.dll": {}
         }
       }
     }
@@ -3967,16 +3967,16 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "MyInstruments2/1.0.0": {
+    "MyInstruments/1.0.0": {
       "type": "project",
-      "path": "../MyInstruments2/MyInstruments2.csproj",
-      "msbuildProject": "../MyInstruments2/MyInstruments2.csproj"
+      "path": "../MyInstruments2/MyInstruments.csproj",
+      "msbuildProject": "../MyInstruments2/MyInstruments.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 17.1.0",
-      "MyInstruments2 >= 1.0.0",
+      "MyInstruments >= 1.0.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
@@ -4016,8 +4016,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments2.csproj": {
-              "projectPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments2.csproj"
+            "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments.csproj": {
+              "projectPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments.csproj"
             }
           }
         }

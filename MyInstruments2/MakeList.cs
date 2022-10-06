@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static MyInstruments2.Ukulele;
-using static MyInstruments2.Guitar;
-using static MyInstruments2.Bass;
+using static MyInstruments.Ukulele;
+using static MyInstruments.Guitar;
+using static MyInstruments.Bass;
 
-namespace MyInstruments2
+namespace MyInstruments
 {
     internal class MakeList
     {

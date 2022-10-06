@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyInstruments2
+namespace MyInstruments
 {
     public class Guitar : MusicalInstrument, IPrintInstrument 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"

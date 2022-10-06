@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyInstruments2
+namespace MyInstruments
 {
     // -other functionality ideas with dictionary > look at some other dictionary functionality for other ideas.
     // -print the instruments to a seperate text file
