@@ -39,6 +39,11 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
+        public void CountInstruments()
+        {
+            Console.WriteLine("You have" + ukuleles.Count + "guitars.");
+        }
+
         /*public static void AddUkulele(Ukulele)
         {
             Console.WriteLine("Please type the keyword for the instrument you'd like to add (ex. \"Fender Telecaster\".)");

@@ -76,6 +76,11 @@ namespace MyInstruments
                     Ukulele ukulele = new Ukulele(); 
                     ukulele.InstrumentList();
                 }
+                else if (input == "Count Guitars")
+                {
+                    Guitar guitar = new Guitar();
+                    guitar.CountInstruments();
+                }
                 else if (input == "Clear")
                 {
                     Console.Clear();

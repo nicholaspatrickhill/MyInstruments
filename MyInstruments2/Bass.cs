@@ -37,5 +37,10 @@ namespace MyInstruments
             Console.WriteLine($"It uses {instrumentString} gauge strings.");
             Console.WriteLine();
        }
+
+        public void CountInstruments()
+        {
+            Console.WriteLine("You have" + basses.Count + "guitars.");
+        }
     }
 }
