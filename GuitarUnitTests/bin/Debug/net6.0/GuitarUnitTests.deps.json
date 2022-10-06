@@ -9,7 +9,7 @@
       "GuitarUnitTests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.1.0",
-          "MyInstruments2": "1.0.0",
+          "MyInstruments": "1.0.0",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.3.0",
           "NUnit3TestAdapter": "4.2.1",
@@ -653,9 +653,9 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "MyInstruments2/1.0.0": {
+      "MyInstruments/1.0.0": {
         "runtime": {
-          "MyInstruments2.dll": {}
+          "MyInstruments.dll": {}
         }
       }
     }
@@ -995,7 +995,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "MyInstruments2/1.0.0": {
+    "MyInstruments/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

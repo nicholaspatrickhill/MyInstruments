@@ -1,4 +1,4 @@
-using MyInstruments2;
+using MyInstruments;
 using NUnit.Framework.Constraints;
 
 namespace GuitarUnitTests

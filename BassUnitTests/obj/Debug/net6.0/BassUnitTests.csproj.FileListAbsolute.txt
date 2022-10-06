@@ -1,8 +1,5 @@
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\CoverletSourceRootsMapping
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\testhost.dll
-C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments2.deps.json
-C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments2.runtimeconfig.json
-C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments2.exe
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\testhost.exe
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\NUnit3.TestAdapter.dll
@@ -90,8 +87,6 @@ C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\zh-Han
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments2.dll
-C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments2.pdb
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\obj\Debug\net6.0\BassUnitTests.csproj.AssemblyReference.cache
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\obj\Debug\net6.0\BassUnitTests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\obj\Debug\net6.0\BassUnitTests.AssemblyInfoInputs.cache
@@ -103,3 +98,8 @@ C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\obj\Debug\net6.0\refint
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\obj\Debug\net6.0\BassUnitTests.pdb
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\obj\Debug\net6.0\BassUnitTests.genruntimeconfig.cache
 C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\obj\Debug\net6.0\ref\BassUnitTests.dll
+C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments.deps.json
+C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments.runtimeconfig.json
+C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments.exe
+C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments.dll
+C:\Users\nicho\source\repos\MyInstruments2\BassUnitTests\bin\Debug\net6.0\MyInstruments.pdb

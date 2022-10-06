@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "MyInstruments2/1.0.0": {
+      "MyInstruments/1.0.0": {
         "runtime": {
-          "MyInstruments2.dll": {}
+          "MyInstruments.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "MyInstruments2/1.0.0": {
+    "MyInstruments/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

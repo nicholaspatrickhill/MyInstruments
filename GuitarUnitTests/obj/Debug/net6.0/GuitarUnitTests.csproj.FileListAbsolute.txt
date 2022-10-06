@@ -1,8 +1,5 @@
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\CoverletSourceRootsMapping
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\testhost.dll
-C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments2.deps.json
-C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments2.runtimeconfig.json
-C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments2.exe
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\testhost.exe
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\NUnit3.TestAdapter.dll
@@ -90,8 +87,6 @@ C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\zh-H
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments2.dll
-C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments2.pdb
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\obj\Debug\net6.0\GuitarUnitTests.csproj.AssemblyReference.cache
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\obj\Debug\net6.0\GuitarUnitTests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\obj\Debug\net6.0\GuitarUnitTests.AssemblyInfoInputs.cache
@@ -103,3 +98,8 @@ C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\obj\Debug\net6.0\refi
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\obj\Debug\net6.0\GuitarUnitTests.pdb
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\obj\Debug\net6.0\GuitarUnitTests.genruntimeconfig.cache
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\obj\Debug\net6.0\ref\GuitarUnitTests.dll
+C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments.deps.json
+C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments.runtimeconfig.json
+C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments.exe
+C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments.dll
+C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MyInstruments.pdb
