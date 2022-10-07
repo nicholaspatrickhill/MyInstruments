@@ -48,8 +48,5 @@ namespace MyInstruments
                 return stringBrand + " " + stringType + " " + stringGauge;
             }
         }
-
-         //--abstract method to generate lists of each key in the dictionaries
-        public abstract void InstrumentList(); 
     }
 }

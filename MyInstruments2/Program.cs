@@ -69,7 +69,6 @@ namespace MyInstruments
                 {
                     Bass bass = new Bass();
                     bass.InstrumentList();
-
                 }
                 else if (input == "Ukuleles")
                 {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    public class Guitar : MusicalInstrument, IMusicalInstrument
+    public class Guitar : MusicalInstrument, IMusicalInstrumentMethods
     //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
@@ -24,8 +24,8 @@ namespace MyInstruments
             { "Martin Auditorium", new Guitar() { make = "Martin",model = "00016-SGT Auditorium", type = "hollow-body acoustic guitar", country = "USA", year = 2003, serial = "921955", color = "Natural Spruce", stringBrand = "D'Addario", stringType = "Phosphor Bronze", stringGauge ="Light: 12-53", } },
         };
 
-        //--this method prints each key in the Guitar dictionary
-        public override void InstrumentList()
+        //--implements the IMusicalInstrumentMethods interface, prints each key in the Guitar dictionary
+        public void InstrumentList()
         {
             Console.WriteLine();
             foreach (KeyValuePair<string, Guitar> pair in guitars)
@@ -33,7 +33,7 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-        //--implements the IPrintInstrument interface, provides the unique body for the PrintInstrument method
+        //--implements the IMusicalInstrumentMethods interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
         {
             Console.WriteLine($"Your {instrumentName} is a {type} that was made in {country} in {year}.");
@@ -42,6 +42,7 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
+        //-implements the IMusicalInstrumentMethods interface, counts the number of guitars in the dictionary
         public void CountInstruments()
         {
             Console.WriteLine("You have " + guitars.Count + " guitars.");

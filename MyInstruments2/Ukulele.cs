@@ -9,7 +9,7 @@ using static MyInstruments.Program;
 
 namespace MyInstruments
 {
-    public class Ukulele : MusicalInstrument, IMusicalInstrument 
+    public class Ukulele : MusicalInstrument, IMusicalInstrumentMethods 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string size { get; set; }
@@ -22,7 +22,7 @@ namespace MyInstruments
         };
 
          //--this method prints each key in the Ukulele dictionary
-        public override void InstrumentList()
+        public void InstrumentList()
         {
             Console.WriteLine();
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)

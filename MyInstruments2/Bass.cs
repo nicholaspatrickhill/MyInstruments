@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    public class Bass : MusicalInstrument, IMusicalInstrument 
+    public class Bass : MusicalInstrument, IMusicalInstrumentMethods 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string scale { get; set; }
@@ -21,7 +21,7 @@ namespace MyInstruments
        };
 
         //-- this method prints each key in the Bass dictionary
-       public override void InstrumentList()
+       public void InstrumentList()
        {
             Console.WriteLine();
             foreach (KeyValuePair<string, Bass> pair in basses)
@@ -40,7 +40,7 @@ namespace MyInstruments
 
         public void CountInstruments()
         {
-            Console.WriteLine("You have " + basses.Count + " guitars.");
+            Console.WriteLine("You have " + basses.Count + " basses.");
             Console.WriteLine();
         }
     }
