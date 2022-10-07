@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    interface IPrintInstrument //--this interface is used by the musical instrument classes to generate their unique console replies
+    interface IMusicalInstrument //--this interface is used by the musical instrument classes to generate their unique console replies
     {
         public void PrintInstrument();
         public void CountInstruments();

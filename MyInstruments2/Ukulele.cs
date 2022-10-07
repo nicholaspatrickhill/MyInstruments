@@ -9,7 +9,7 @@ using static MyInstruments.Program;
 
 namespace MyInstruments
 {
-    public class Ukulele : MusicalInstrument, IPrintInstrument 
+    public class Ukulele : MusicalInstrument, IMusicalInstrument 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string size { get; set; }
@@ -41,7 +41,8 @@ namespace MyInstruments
 
         public void CountInstruments()
         {
-            Console.WriteLine("You have" + ukuleles.Count + "guitars.");
+            Console.WriteLine("You have " + ukuleles.Count + " guitars.");
+            Console.WriteLine();
         }
 
         /*public static void AddUkulele(Ukulele)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    public class Bass : MusicalInstrument, IPrintInstrument 
+    public class Bass : MusicalInstrument, IMusicalInstrument 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string scale { get; set; }
@@ -40,7 +40,8 @@ namespace MyInstruments
 
         public void CountInstruments()
         {
-            Console.WriteLine("You have" + basses.Count + "guitars.");
+            Console.WriteLine("You have " + basses.Count + " guitars.");
+            Console.WriteLine();
         }
     }
 }

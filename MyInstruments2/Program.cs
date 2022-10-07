@@ -81,6 +81,16 @@ namespace MyInstruments
                     Guitar guitar = new Guitar();
                     guitar.CountInstruments();
                 }
+                else if (input == "Count Basses")
+                {
+                    Bass bass = new Bass();
+                    bass.CountInstruments();
+                }
+                else if (input == "Count Ukuleles")
+                {
+                    Ukulele ukulele = new Ukulele();
+                    ukulele.CountInstruments();
+                }
                 else if (input == "Clear")
                 {
                     Console.Clear();
