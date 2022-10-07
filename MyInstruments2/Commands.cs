@@ -12,15 +12,17 @@ namespace MyInstruments
         public static void CommandList() 
         {
             Console.WriteLine();
-            Console.WriteLine("Type \"Quit\" to exit the program.");
-            Console.WriteLine("Type \"Clear\" to clear the console.");
-            Console.WriteLine("Type \"All\" to see a list of all of your instruments.");
-            Console.WriteLine("Type \"Guitars\" to see a list of all of your guitars.");
-            Console.WriteLine("Type \"Basses\" to see a list of all of your basses.");
-            Console.WriteLine("Type \"Ukulele\" to see a list of all of your Ukuleles.");
-            Console.WriteLine("Type \"Count Guitars\" to see the quantity of guitars in your collection.");
-            Console.WriteLine("Type \"Count Basses\" to see the quantity of basses in your collection.");
-            Console.WriteLine("Type \"Count Ukuleles\" to see the quantity of ukuleles in your collection.");
+            Console.WriteLine("Type...");
+            Console.WriteLine("\"Quit\" to exit the program.");
+            Console.WriteLine("\"Clear\" to clear the console.");
+            Console.WriteLine("\"All\" to see a list of all of your instruments.");
+            Console.WriteLine("\"Guitars\" to see a list of all of your guitars.");
+            Console.WriteLine("\"Basses\" to see a list of all of your basses.");
+            Console.WriteLine("\"Ukuleles\" to see a list of all of your Ukuleles.");
+            Console.WriteLine("\"Count All\" to see the total quantity of instruments in your collection.");
+            Console.WriteLine("\"Count Guitars\" to see the quantity of guitars in your collection.");
+            Console.WriteLine("\"Count Basses\" to see the quantity of basses in your collection.");
+            Console.WriteLine("\"Count Ukuleles\" to see the quantity of ukuleles in your collection.");
             Console.WriteLine();
         }
     }
