@@ -12,16 +12,16 @@ namespace MyInstruments
     public class Ukulele : MusicalInstrument, IMusicalInstrumentMethods 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
-        public string size { get; set; }
+        public string Size { get; set; }
 
-        //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
+         //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Ukulele> ukuleles = new Dictionary<string, Ukulele>
         {
-            { "Cordoba Ukulele", new Ukulele() { make = "Cordoba", model = "20-TMCE", type = "hollow-body acoustic ukulele", country = "China", year = 2017, serial = "41638150", color = "Natural Mahogany", size = "tenor", stringBrand = "D'Addario", stringType = "Fluorocarbon", stringGauge = "Tenor: 20-22", } },
-            { "Lanikai Ukulele", new Ukulele() { make = "Lanikai", model = "LU-11", type = "hollow-body acoustic ukulele", country = "China", year = 2012, serial = "Y31107", color = "Natural Nato", size = "soprano", stringBrand = "D'Addario", stringType = "Fluorocarbon", stringGauge = "Soprano: 20-22", } },
+            { "Cordoba Ukulele", new Ukulele() { Make = "Cordoba", Model = "20-TMCE", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2017, Serial = "41638150", Color = "Natural Mahogany", Size = "tenor", StringBrand = "D'Addario", StringType = "Fluorocarbon", StringGauge = "Tenor: 20-22", } },
+            { "Lanikai Ukulele", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2012, Serial = "Y31107", Color = "Natural Nato", Size = "soprano", StringBrand = "D'Addario", StringType = "Fluorocarbon", StringGauge = "Soprano: 20-22", } },
         };
 
-         //--this method prints each key in the Ukulele dictionary
+        //--implements the IMusicalInstrumentMethods interface, prints each key in the Ukulele dictionary
         public void InstrumentList()
         {
             Console.WriteLine();
@@ -30,18 +30,19 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-         //--implements the IPrintInstrument interface, provides the unique body for the PrintInstrument method
+         //--implements the IMusicalInstrumentMethods interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
         {
-            Console.WriteLine($"Your {instrumentName} is a {type} that was made in {country} in {year}.");
-            Console.WriteLine($"It is {instrumentAge} years old. It is {color} in color. It is a {size} sized instrument. Its serial number is {serial}.");
-            Console.WriteLine($"It uses {instrumentString} gauge strings.");
+            Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
+            Console.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It is a {Size} sized instrument. Its serial number is {Serial}.");
+            Console.WriteLine($"It uses {InstrumentString} gauge strings.");
             Console.WriteLine();
         }
 
+         //-implements the IMusicalInstrumentMethods interface, counts the number of ukuleles in the dictionary
         public void CountInstruments()
         {
-            Console.WriteLine("You have " + ukuleles.Count + " guitars.");
+            Console.WriteLine("You have " + ukuleles.Count + " ukuleles.");
             Console.WriteLine();
         }
 

@@ -9,43 +9,43 @@ namespace MyInstruments
 {
     public abstract class MusicalInstrument
     {
-        public string make { get; set; }
-        public string model { get; set; }
-        public string type { get; set; }
-        public string country { get; set; }
-        public int year { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public string Type { get; set; }
+        public string Country { get; set; }
+        public int Year { get; set; }
 
-        public string serial { get; set; }
-        public string color { get; set; }
-        public string stringBrand { get; set; }
-        public string stringType { get; set; }
-        public string stringGauge { get; set; }
+        public string Serial { get; set; }
+        public string Color { get; set; }
+        public string StringBrand { get; set; }
+        public string StringType { get; set; }
+        public string StringGauge { get; set; }
 
          //--combines the Make and Model for simpler code in Main
-        public string instrumentName
+        public string InstrumentName
         {
             get
             {
-                return make + " " + model;
+                return Make + " " + Model;
             }
         }
 
         //--calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
         //--Fulfills Feature List Requirement: "Calculate and display data based on an external factor"
-        public int instrumentAge
+        public int InstrumentAge
         {
             get
             {
-                return (DateTime.Now.Year - year);
+                return (DateTime.Now.Year - Year);
             }
         }
 
          //--combines the string Brand, Type and gauge for simpler code in Main
-        public string instrumentString
+        public string InstrumentString
         {
             get
             {
-                return stringBrand + " " + stringType + " " + stringGauge;
+                return StringBrand + " " + StringType + " " + StringGauge;
             }
         }
     }
