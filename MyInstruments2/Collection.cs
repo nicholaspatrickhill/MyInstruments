@@ -25,6 +25,7 @@ namespace MyInstruments
             Console.WriteLine("You have " + num4 + " total instruments in your collection.");
             Console.WriteLine();
         }
+
         public static void ListAll()
         {
             Guitar guitar = new Guitar();

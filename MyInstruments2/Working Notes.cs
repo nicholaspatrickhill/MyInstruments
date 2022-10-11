@@ -15,5 +15,5 @@ namespace MyInstruments
     // -make PrintInstrument a method that each of the instrument classes calls versus writing it out in each class.
     // -if i do the step above, need to put unique properties for uke and bass in their own console writelines after calling that method
     // -add classes for pianos/keyed instruments? percussion? other?
-    // -make a stringed instrument bass class that takes string-specific properties out of MusicalInstrument
+    // -make a stringed instrument base class that takes string-specific properties out of MusicalInstrument
 }
