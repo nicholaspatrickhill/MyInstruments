@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    public class Guitar : MusicalInstrument, IMusicalInstrumentMethods
+    public class Guitar : MusicalInstrument, IDictionaryMethods
     //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
@@ -34,13 +34,13 @@ namespace MyInstruments
         }
 
         //--implements the IMusicalInstrumentMethods interface, provides the unique body for the PrintInstrument method
-        public void PrintInstrument()
+        /*public void PrintInstrument()
         {
             Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
             Console.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. Its serial number is {Serial}.");
             Console.WriteLine($"It uses {InstrumentString} gauge strings.");
             Console.WriteLine();
-        }
+        }*/
 
         //-implements the IMusicalInstrumentMethods interface, counts the number of guitars in the dictionary
         public void CountInstruments()
@@ -48,5 +48,6 @@ namespace MyInstruments
             Console.WriteLine("You have " + guitars.Count + " guitars.");
             Console.WriteLine();
         }
+
     }
 }
