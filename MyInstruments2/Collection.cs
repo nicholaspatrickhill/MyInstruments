@@ -9,7 +9,7 @@ using static MyInstruments.Ukulele;
 
 namespace MyInstruments
 {
-    public class CollectionSize
+    public class Collection
     {
         public static void CountAll()
         {
@@ -24,6 +24,20 @@ namespace MyInstruments
 
             Console.WriteLine("You have " + num4 + " total instruments in your collection.");
             Console.WriteLine();
+        }
+        public static void ListAll()
+        {
+            Guitar guitar = new Guitar();
+            Bass bass = new Bass();
+            Ukulele ukulele = new Ukulele();
+
+            Console.WriteLine();
+            Console.WriteLine("Guitars:");
+            guitar.InstrumentList();
+            Console.WriteLine("Basses:");
+            bass.InstrumentList();
+            Console.WriteLine("Ukuleles:");
+            ukulele.InstrumentList();
         }
     }
 }

@@ -58,7 +58,7 @@ namespace MyInstruments
                 }
                 else if (input == "All")
                 {
-                    InstrumentInventory.ListInstruments();
+                    Collection.ListAll();
                 }
                 else if (input == "Guitars")
                 {
@@ -77,7 +77,7 @@ namespace MyInstruments
                 }
                 else if (input == "Count All")
                 {
-                    CollectionSize.CountAll();
+                    Collection.CountAll();
                 }
                 else if (input == "Count Guitars")
                 {

@@ -49,10 +49,5 @@ namespace MyInstruments
             Console.WriteLine("You have " + guitars.Count + " guitars.");
             Console.WriteLine();
         }
-        
-        public void PrintGuitar()
-        {
-            // InstrumentText.PrintInstrument();
-        }
     }
 }
