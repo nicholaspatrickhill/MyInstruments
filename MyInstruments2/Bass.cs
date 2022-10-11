@@ -25,7 +25,7 @@ namespace MyInstruments
        };
 
         //--implements the IDictionaryMethods interface, prints each key in the Bass dictionary
-        public void InstrumentList()
+        public void ListInstruments()
        {
             Console.WriteLine();
             foreach (KeyValuePair<string, Bass> pair in basses)

@@ -37,7 +37,7 @@ namespace MyInstruments
         };
 
         //--implements the IDictionaryMethods interface, prints each key in the Guitar dictionary
-        public void InstrumentList()
+        public void ListInstruments()
         {
             Console.WriteLine();
             foreach (KeyValuePair<string, Guitar> pair in guitars)

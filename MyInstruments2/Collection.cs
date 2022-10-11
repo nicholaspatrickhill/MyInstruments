@@ -34,11 +34,11 @@ namespace MyInstruments
 
             Console.WriteLine();
             Console.WriteLine("Guitars:");
-            guitar.InstrumentList();
+            guitar.ListInstruments();
             Console.WriteLine("Basses:");
-            bass.InstrumentList();
+            bass.ListInstruments();
             Console.WriteLine("Ukuleles:");
-            ukulele.InstrumentList();
+            ukulele.ListInstruments();
         }
     }
 }

@@ -24,7 +24,7 @@ namespace MyInstruments
         };
 
         //--implements the IDictionaryMethods interface, prints each key in the Ukulele dictionary
-        public void InstrumentList()
+        public void ListInstruments()
         {
             Console.WriteLine();
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)

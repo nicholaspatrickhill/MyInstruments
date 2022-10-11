@@ -11,7 +11,7 @@ namespace MyInstruments
 {
     interface IDictionaryMethods 
     {
-        public void InstrumentList(); //--generates lists of each key in the dictionaries
+        public void ListInstruments(); //--generates lists of each key in the dictionaries
 
         public void PrintInstrument(); //--prints the unique text body for each musical instrument object  
         

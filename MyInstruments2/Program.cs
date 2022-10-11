@@ -63,17 +63,17 @@ namespace MyInstruments
                 else if (input == "Guitars")
                 {
                     Guitar guitar = new Guitar();
-                    guitar.InstrumentList();
+                    guitar.ListInstruments();
                 }
                 else if (input == "Basses")
                 {
                     Bass bass = new Bass();
-                    bass.InstrumentList();
+                    bass.ListInstruments();
                 }
                 else if (input == "Ukuleles")
                 {
                     Ukulele ukulele = new Ukulele(); 
-                    ukulele.InstrumentList();
+                    ukulele.ListInstruments();
                 }
                 else if (input == "Count All")
                 {
