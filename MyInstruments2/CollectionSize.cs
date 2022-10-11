@@ -9,7 +9,7 @@ using static MyInstruments.Ukulele;
 
 namespace MyInstruments
 {
-    public class Count
+    public class CollectionSize
     {
         public static void CountAll()
         {

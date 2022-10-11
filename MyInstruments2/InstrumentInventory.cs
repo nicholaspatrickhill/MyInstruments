@@ -9,7 +9,7 @@ using static MyInstruments.Bass;
 
 namespace MyInstruments
 {
-    internal class InstrumentInventory
+    public class InstrumentInventory
     {
          //--this method prints each key from each dictionary as one master list
         public static void ListInstruments()

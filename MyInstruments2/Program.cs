@@ -19,7 +19,7 @@ namespace MyInstruments
 
              //--calls the HeaderText method to start the program
             {
-                Header.HeaderText();
+                Header.PrintHeader();
             }
 
             /*--Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
@@ -39,7 +39,7 @@ namespace MyInstruments
                 }
                 else if (input == "Commands")
                 {
-                    Commands.CommandList();
+                    Commands.PrintCommands();
                 }
                 else if (guitars.ContainsKey(input))
                 {
@@ -77,7 +77,7 @@ namespace MyInstruments
                 }
                 else if (input == "Count All")
                 {
-                    Count.CountAll();
+                    CollectionSize.CountAll();
                 }
                 else if (input == "Count Guitars")
                 {
@@ -97,7 +97,7 @@ namespace MyInstruments
                 else if (input == "Clear")
                 {
                     Console.Clear();
-                    Header.HeaderText(); //--calls on the HeaderText method after the console is cleared
+                    Header.PrintHeader(); //--calls on the HeaderText method after the console is cleared
                 }
                 else
                 {
