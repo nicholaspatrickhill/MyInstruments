@@ -9,10 +9,10 @@ using static MyInstruments.Bass;
 
 namespace MyInstruments
 {
-    internal class MakeList
+    internal class InstrumentInventory
     {
          //--this method prints each key from each dictionary as one master list
-        public static void InstrumentInventory()
+        public static void ListInstruments()
         {
             Guitar guitar = new Guitar();
             Bass bass = new Bass();

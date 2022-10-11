@@ -20,7 +20,7 @@ namespace MyInstruments
             { "Hofner Club Bass", new Bass() { Make = "Hofner", Model = "Club", Type = "hollow-body electric bass", Country = "China",  Year = 2020, Serial = "X0501H152", Color = "Black", Scale = "short", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
        };
 
-        //--implements the IMusicalInstrumentMethods interface, prints each key in the Bass dictionary
+        //--implements the IDictionaryMethods interface, prints each key in the Bass dictionary
         public void InstrumentList()
        {
             Console.WriteLine();
@@ -29,7 +29,7 @@ namespace MyInstruments
             Console.WriteLine();
        }
 
-        //--implements the IMusicalInstrumentMethods interface, provides the unique body for the PrintInstrument method
+        //--implements the IDictionaryMethods interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
        {
             Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
@@ -38,7 +38,7 @@ namespace MyInstruments
             Console.WriteLine();
        }
 
-        //-implements the IMusicalInstrumentMethods interface, counts the number of basses in the dictionary
+        //-implements the IDictionaryMethods interface, counts the number of basses in the dictionary
         public void CountInstruments()
         {
             Console.WriteLine("You have " + basses.Count + " basses.");

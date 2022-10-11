@@ -58,7 +58,7 @@ namespace MyInstruments
                 }
                 else if (input == "All")
                 {
-                    ListAll.InstrumentInventory();
+                    InstrumentInventory.ListInstruments();
                 }
                 else if (input == "Guitars")
                 {

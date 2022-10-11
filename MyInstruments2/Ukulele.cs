@@ -21,7 +21,7 @@ namespace MyInstruments
             { "Lanikai Ukulele", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2012, Serial = "Y31107", Color = "Natural Nato", Size = "soprano", StringBrand = "D'Addario", StringType = "Fluorocarbon", StringGauge = "Soprano: 20-22", } },
         };
 
-        //--implements the IMusicalInstrumentMethods interface, prints each key in the Ukulele dictionary
+        //--implements the IDictionaryMethods interface, prints each key in the Ukulele dictionary
         public void InstrumentList()
         {
             Console.WriteLine();
@@ -30,7 +30,7 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-         //--implements the IMusicalInstrumentMethods interface, provides the unique body for the PrintInstrument method
+         //--implements the IDictionaryMethods interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
         {
             Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
@@ -39,7 +39,7 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-         //-implements the IMusicalInstrumentMethods interface, counts the number of ukuleles in the dictionary
+         //-implements the IDictionaryMethods interface, counts the number of ukuleles in the dictionary
         public void CountInstruments()
         {
             Console.WriteLine("You have " + ukuleles.Count + " ukuleles.");
