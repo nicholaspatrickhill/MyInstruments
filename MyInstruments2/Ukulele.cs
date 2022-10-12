@@ -12,7 +12,7 @@ namespace MyInstruments
     public class Ukulele : MusicalInstrument, IDictionaryMethods 
         //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
-        public string Size { get; set; }
+        public string? Size { get; set; }
 
          //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Ukulele> ukuleles = new Dictionary<string, Ukulele>

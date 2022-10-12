@@ -12,6 +12,7 @@ namespace MyInstruments
 {
     public class InstrumentText : MusicalInstrument
     {
+        //not in use yet, does not work without object reference
         public void PrintInstrument()
         {
             Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
