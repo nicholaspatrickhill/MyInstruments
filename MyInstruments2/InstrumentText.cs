@@ -10,7 +10,7 @@ using static MyInstruments.MusicalInstrument;
 
 namespace MyInstruments
 {
-    public class InstrumentText : MusicalInstrument
+    class InstrumentText : MusicalInstrument
     {
         // Not in use yet, does not work without object reference
         public void PrintInstrument()

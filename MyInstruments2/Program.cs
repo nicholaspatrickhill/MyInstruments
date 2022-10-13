@@ -16,7 +16,6 @@ namespace MyInstruments
             
             Console.ForegroundColor = ConsoleColor.White;
 
-            // Calls the HeaderText method to start the program
             {
                 AppWindow.PrintHeader();
             }
@@ -43,7 +42,7 @@ namespace MyInstruments
 
                 else if (input == "Commands")
                 {
-                    Commands.PrintCommands();
+                    AppWindow.PrintCommands();
                 }
 
                 else if (guitars.ContainsKey(input))

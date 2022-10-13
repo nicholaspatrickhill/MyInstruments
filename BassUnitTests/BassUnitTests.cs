@@ -20,7 +20,7 @@ namespace BassUnitTests
             string actual = bass.InstrumentName;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
     }
@@ -40,7 +40,7 @@ namespace BassUnitTests
             int actual = bass.InstrumentAge;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
     public class BassStringTest
@@ -62,7 +62,7 @@ namespace BassUnitTests
             string actual = bass.InstrumentString;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }

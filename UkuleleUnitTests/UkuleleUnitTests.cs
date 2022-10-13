@@ -20,7 +20,7 @@ namespace UkuleleUnitTests
             string actual = ukulele.InstrumentName;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
     }
@@ -40,7 +40,7 @@ namespace UkuleleUnitTests
             int actual = ukulele.InstrumentAge;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
     public class UkuleleStringTest
@@ -62,7 +62,7 @@ namespace UkuleleUnitTests
             string actual = ukulele.InstrumentString;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }
