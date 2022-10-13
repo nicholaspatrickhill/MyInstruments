@@ -21,7 +21,7 @@ namespace GuitarUnitTests
             string actual = guitar.InstrumentName;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
     }
@@ -41,7 +41,7 @@ namespace GuitarUnitTests
             int actual = guitar.InstrumentAge;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
     public class GuitarStringTest
@@ -63,7 +63,7 @@ namespace GuitarUnitTests
             string actual = guitar.InstrumentString;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }
