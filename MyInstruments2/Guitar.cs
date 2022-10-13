@@ -9,9 +9,9 @@ using static MyInstruments.InstrumentText;
 namespace MyInstruments
 {
     public class Guitar : MusicalInstrument, IDictionaryMethods
-    //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
+    // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
-        //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
+        // Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Guitar> guitars = new Dictionary<string, Guitar>()
         {
             { "Cort Mirage", new Guitar() { Make = "Cort", Model = "M-700 Mirage", Type = "solid-body electric guitar", Country = "Korea", Year = 2000,
@@ -36,7 +36,6 @@ namespace MyInstruments
                 Serial = "921955", Color = "Natural Spruce", StringBrand = "D'Addario", StringType = "Phosphor Bronze", StringGauge ="Light: 12-53", } },
         };
 
-        //--implements the IDictionaryMethods interface, prints each key in the Guitar dictionary
         public void ListInstruments()
         {
             Console.WriteLine();
@@ -45,7 +44,6 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-        //--implements the IDictionaryMethods interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
         {
             Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
@@ -54,7 +52,6 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-        //-implements the IDictionaryMethods interface, counts the number of guitars in the dictionary
         public void CountInstruments()
         {
             Console.WriteLine("You have " + guitars.Count + " guitars.");

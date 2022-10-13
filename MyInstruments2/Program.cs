@@ -13,25 +13,28 @@ namespace MyInstruments
     {
         public static void Main(string[] args)
         {
-            //--sets console color
-            //Console.SetWindowSize(138, 40);
+            
             Console.ForegroundColor = ConsoleColor.White;
 
-            //--calls the HeaderText method to start the program
+            // Calls the HeaderText method to start the program
             {
                 Header.PrintHeader();
             }
 
-            /*--Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
+            /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
                 can repeatedly enter commands/perform actions, including choosing to exit the program" */
             while (true)
             {
                 Console.WriteLine("Hello. Which instrument would you like to review?");
 
-                Console.ForegroundColor = ConsoleColor.Green; //--sets user text to green
+                Guitar guitar = new Guitar();
+                Bass bass = new Bass();
+                Ukulele ukulele = new Ukulele();
+
+                Console.ForegroundColor = ConsoleColor.Green;
                 string input = Console.ReadLine();
 
-                Console.ForegroundColor = ConsoleColor.White; //--sets console text back to white
+                Console.ForegroundColor = ConsoleColor.White;
 
                 if (input == "Quit")
                 {
@@ -45,20 +48,20 @@ namespace MyInstruments
 
                 else if (guitars.ContainsKey(input))
                 {
-                    Guitar guitar = guitars[input];
-                    guitar.PrintInstrument();
+                    Guitar guitarChoice = guitars[input];
+                    guitarChoice.PrintInstrument();
                 }
 
                 else if (basses.ContainsKey(input))
                 {
-                    Bass bass = basses[input];
-                    bass.PrintInstrument();
+                    Bass bassChoice = basses[input];
+                    bassChoice.PrintInstrument();
                 }
 
                 else if (ukuleles.ContainsKey(input))
                 {
-                    Ukulele ukulele = ukuleles[input];
-                    ukulele.PrintInstrument();
+                    Ukulele ukuleleChoice = ukuleles[input];
+                    ukuleleChoice.PrintInstrument();
                 }
                 
                 else if (input == "All")
@@ -68,19 +71,16 @@ namespace MyInstruments
                 
                 else if (input == "Guitars")
                 {
-                    Guitar guitar = new Guitar();
                     guitar.ListInstruments();
                 }
                 
                 else if (input == "Basses")
-                {
-                    Bass bass = new Bass();
+                {   
                     bass.ListInstruments();
                 }
                
                 else if (input == "Ukuleles")
                 {
-                    Ukulele ukulele = new Ukulele();
                     ukulele.ListInstruments();
                 }
                 
@@ -91,26 +91,22 @@ namespace MyInstruments
                 
                 else if (input == "Count Guitars")
                 {
-                    Guitar guitar = new Guitar();
                     guitar.CountInstruments();
                 }
                 
                 else if (input == "Count Basses")
                 {
-                    Bass bass = new Bass();
                     bass.CountInstruments();
                 }
                 
                 else if (input == "Count Ukuleles")
                 {
-                    Ukulele ukulele = new Ukulele();
                     ukulele.CountInstruments();
                 }
                 
                 else if (input == "Clear")
                 {
-                    Console.Clear();
-                    Header.PrintHeader(); //--calls on the HeaderText method after the console is cleared
+                    AppWindow.ClearConsole();
                 }
 
                 else

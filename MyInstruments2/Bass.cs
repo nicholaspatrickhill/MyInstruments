@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace MyInstruments
 {
     public class Bass : MusicalInstrument, IDictionaryMethods 
-        //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
+        // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string Scale { get; set; }
 
-        //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
+        // Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
        {
             { "Fender Dimension Bass", new Bass() { Make = "Fender", Model = "Dimension Bass", Type = "solid-body electric bass", Country = "USA", Year = 2016, 
@@ -24,7 +24,6 @@ namespace MyInstruments
                 Serial = "X0501H152", Color = "Black", Scale = "short", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
        };
 
-        //--implements the IDictionaryMethods interface, prints each key in the Bass dictionary
         public void ListInstruments()
        {
             Console.WriteLine();
@@ -33,7 +32,6 @@ namespace MyInstruments
             Console.WriteLine();
        }
 
-        //--implements the IDictionaryMethods interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
        {
             Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
@@ -42,7 +40,6 @@ namespace MyInstruments
             Console.WriteLine();
        }
 
-        //-implements the IDictionaryMethods interface, counts the number of basses in the dictionary
         public void CountInstruments()
         {
             Console.WriteLine("You have " + basses.Count + " basses.");

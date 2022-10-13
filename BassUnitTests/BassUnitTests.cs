@@ -8,7 +8,7 @@ namespace BassUnitTests
         [Test]
         public void BassNameTestValid()
         {
-            //--Arrange
+            // Arrange
             Bass bass = new Bass
             {
                 Make = "Guild",
@@ -16,10 +16,10 @@ namespace BassUnitTests
             };
             string expected = "Guild Starfire";
 
-            //--Act
+            // Act
             string actual = bass.InstrumentName;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
 
@@ -29,17 +29,17 @@ namespace BassUnitTests
         [Test]
         public void BassAgeTestValid()
         {
-            //--Arrange
+            // Arrange
             Bass bass = new Bass
             {
                 Year = 2000
             };
             int expected = 22;
 
-            //--Act
+            // Act
             int actual = bass.InstrumentAge;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
     }
@@ -48,7 +48,7 @@ namespace BassUnitTests
         [Test]
         public void BassStringTestValid()
         {
-            //--Arrange
+            // Arrange
             Bass bass = new Bass
             {
                 StringBrand = "Ernie Ball",
@@ -58,10 +58,10 @@ namespace BassUnitTests
             };
             string expected = "Ernie Ball Regular Slinky Bass 45-105";
 
-            //--Act
+            // Act
             string actual = bass.InstrumentString;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
     }

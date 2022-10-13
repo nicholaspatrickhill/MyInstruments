@@ -10,11 +10,11 @@ using static MyInstruments.Program;
 namespace MyInstruments
 {
     public class Ukulele : MusicalInstrument, IDictionaryMethods 
-        //--Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
+        // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string? Size { get; set; }
 
-         //--Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
+         // Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Ukulele> ukuleles = new Dictionary<string, Ukulele>
         {
             { "Cordoba Ukulele", new Ukulele() { Make = "Cordoba", Model = "20-TMCE", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2017, 
@@ -22,8 +22,7 @@ namespace MyInstruments
             { "Lanikai Ukulele", new Ukulele() { Make = "Lanikai", Model = "LU-11", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2012, 
                 Serial = "Y31107", Color = "Natural Nato", Size = "soprano", StringBrand = "D'Addario", StringType = "Fluorocarbon", StringGauge = "Soprano: 20-22", } },
         };
-
-        //--implements the IDictionaryMethods interface, prints each key in the Ukulele dictionary
+        
         public void ListInstruments()
         {
             Console.WriteLine();
@@ -32,7 +31,6 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-         //--implements the IDictionaryMethods interface, provides the unique body for the PrintInstrument method
         public void PrintInstrument()
         {
             Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
@@ -41,7 +39,6 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-         //-implements the IDictionaryMethods interface, counts the number of ukuleles in the dictionary
         public void CountInstruments()
         {
             Console.WriteLine("You have " + ukuleles.Count + " ukuleles.");

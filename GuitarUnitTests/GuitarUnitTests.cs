@@ -9,7 +9,7 @@ namespace GuitarUnitTests
         [Test]
         public void GuitarNameTestValid()
         {
-            //--Arrange
+            // Arrange
             Guitar guitar = new Guitar
             {
                 Make = "Fender",
@@ -17,10 +17,10 @@ namespace GuitarUnitTests
             };
             string expected = "Fender Starcaster";
 
-            //--Act
+            // Act
             string actual = guitar.InstrumentName;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
 
@@ -30,17 +30,17 @@ namespace GuitarUnitTests
         [Test]
         public void GuitarAgeTestValid()
         {
-            //--Arrange
+            // Arrange
             Guitar guitar = new Guitar
             {
                 Year = 2000
             };
             int expected = 22;
 
-            //--Act
+            // Act
             int actual = guitar.InstrumentAge;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
     }
@@ -49,7 +49,7 @@ namespace GuitarUnitTests
         [Test]
         public void GuitarStringTestValid()
         {
-            //--Arrange
+            // Arrange
             Guitar guitar = new Guitar
             {
                 StringBrand = "Ernie Ball",
@@ -59,10 +59,10 @@ namespace GuitarUnitTests
             };
             string expected = "Ernie Ball Regular Slinky 10-46";
 
-            //--Act
+            // Act
             string actual = guitar.InstrumentString;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
     }

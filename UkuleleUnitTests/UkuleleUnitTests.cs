@@ -8,7 +8,7 @@ namespace UkuleleUnitTests
         [Test]
         public void UkuleleNameTestValid()
         {
-            //--Arrange
+            // Arrange
             Ukulele ukulele = new Ukulele
             {
                 Make = "Martin",
@@ -16,10 +16,10 @@ namespace UkuleleUnitTests
             };
             string expected = "Martin T1K";
 
-            //--Act
+            // Act
             string actual = ukulele.InstrumentName;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
 
@@ -29,17 +29,17 @@ namespace UkuleleUnitTests
         [Test]
         public void UkuleleAgeTestValid()
         {
-            //--Arrange
+            // Arrange
             Ukulele ukulele = new Ukulele
             {
                 Year = 2000
             };
             int expected = 22;
 
-            //--Act
+            // Act
             int actual = ukulele.InstrumentAge;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
     }
@@ -48,7 +48,7 @@ namespace UkuleleUnitTests
         [Test]
         public void UkuleleStringTestValid()
         {
-            //--Arrange
+            // Arrange
             Ukulele ukulele = new Ukulele
             {
                 StringBrand = "Martin",
@@ -58,10 +58,10 @@ namespace UkuleleUnitTests
             };
             string expected = "Martin Tenor Fluorocarbon 22";
 
-            //--Act
+            // Act
             string actual = ukulele.InstrumentString;
 
-            //--Assert
+            // Assert
             Assert.AreEqual(expected, actual);
         }
     }

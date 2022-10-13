@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    interface IDictionaryMethods 
+    interface IDictionaryMethods
     {
-        public void ListInstruments(); //--generates lists of each key in the dictionaries
+        public void ListInstruments();
 
-        public void PrintInstrument(); //--prints the unique text body for each musical instrument object  
-        
-        public void CountInstruments(); //--counts the number of each collection of instruments 
+        public void PrintInstrument();
+
+        public void CountInstruments();
     }
 }
