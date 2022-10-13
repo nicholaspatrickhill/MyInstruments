@@ -18,7 +18,7 @@ namespace MyInstruments
 
             // Calls the HeaderText method to start the program
             {
-                Header.PrintHeader();
+                AppWindow.PrintHeader();
             }
 
             /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
@@ -63,47 +63,47 @@ namespace MyInstruments
                     Ukulele ukuleleChoice = ukuleles[input];
                     ukuleleChoice.PrintInstrument();
                 }
-                
+
                 else if (input == "All")
                 {
                     Collection.ListAll();
                 }
-                
+
                 else if (input == "Guitars")
                 {
                     guitar.ListInstruments();
                 }
-                
+
                 else if (input == "Basses")
-                {   
+                {
                     bass.ListInstruments();
                 }
-               
+
                 else if (input == "Ukuleles")
                 {
                     ukulele.ListInstruments();
                 }
-                
+
                 else if (input == "Count All")
                 {
                     Collection.CountAll();
                 }
-                
+
                 else if (input == "Count Guitars")
                 {
                     guitar.CountInstruments();
                 }
-                
+
                 else if (input == "Count Basses")
                 {
                     bass.CountInstruments();
                 }
-                
+
                 else if (input == "Count Ukuleles")
                 {
                     ukulele.CountInstruments();
                 }
-                
+
                 else if (input == "Clear")
                 {
                     AppWindow.ClearConsole();
@@ -111,8 +111,7 @@ namespace MyInstruments
 
                 else
                 {
-                    Console.WriteLine("That instrument is not in your collection. Please type \"All\" to see a list of all of your instruments or try again.");
-                    Console.WriteLine();
+                    AppWindow.PrintErrorMessage();
                 }
             }
         }
