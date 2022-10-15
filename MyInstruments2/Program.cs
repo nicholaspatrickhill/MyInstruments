@@ -34,8 +34,17 @@ namespace MyInstruments
 
                 Console.ForegroundColor = ConsoleColor.White;
 
-                if (input == "Quit")
-                break;
+                if (input == "Quit") break;
+                else if (input == "Commands") AppWindow.PrintCommands();
+                else if (input == "All") Collection.ListAll();
+                else if (input == "Guitars") guitar.ListInstruments();
+                else if (input == "Basses") bass.ListInstruments();
+                else if (input == "Ukuleles") ukulele.ListInstruments();
+                else if (input == "Count All") Collection.CountAll();
+                else if (input == "Count Guitars") guitar.CountInstruments();
+                else if (input == "Count Basses") bass.CountInstruments();
+                else if (input == "Count Ukuleles") ukulele.CountInstruments();
+                else if (input == "Clear") AppWindow.ClearConsole();
 
                 else if (guitars.ContainsKey(input))
                 {
@@ -55,38 +64,7 @@ namespace MyInstruments
                     ukuleleChoice.PrintInstrument();
                 }
 
-                else if (input == "Commands")
-                    AppWindow.PrintCommands();
-
-                else if (input == "All")
-                    Collection.ListAll();  
-                
-                else if (input == "Guitars")
-                    guitar.ListInstruments();
-
-                else if (input == "Basses")
-                    bass.ListInstruments();
-
-                else if (input == "Ukuleles")
-                    ukulele.ListInstruments();
-
-                else if (input == "Count All")
-                    Collection.CountAll();
-
-                else if (input == "Count Guitars")
-                    guitar.CountInstruments();
-
-                else if (input == "Count Basses")
-                    bass.CountInstruments();
-
-                else if (input == "Count Ukuleles")
-                    ukulele.CountInstruments();
-
-                else if (input == "Clear")
-                    AppWindow.ClearConsole();
-
-                else
-                    AppWindow.PrintErrorMessage();
+                else AppWindow.PrintErrorMessage();                 
             }
         }
     }
