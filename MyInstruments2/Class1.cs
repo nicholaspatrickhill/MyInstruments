@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static MyInstruments.Guitar;
-using static MyInstruments.Bass;
-using static MyInstruments.Ukulele;
-using static MyInstruments.MusicalInstrument;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static MyInstruments.Guitar;
+//using static MyInstruments.Bass;
+//using static MyInstruments.Ukulele;
+//using static MyInstruments.MusicalInstrument;
 
 //namespace MyInstruments
 //{
@@ -14,28 +14,28 @@ using static MyInstruments.MusicalInstrument;
 //    {
 //        public static void Main(string[] args)
 //        {
-//            //--sets console size & color
-//            Console.SetWindowSize(138, 40);
+            
 //            Console.ForegroundColor = ConsoleColor.White;
-
-//            //--calls the HeaderText method to start the program
-//            {
-//                Header.PrintHeader();
-//            }
+//            AppWindow.PrintHeader();
 
 //            /*--Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
-//                can repeatedly enter commands/perform actions, including choosing to exit the program" */
+//              can repeatedly enter commands/perform actions, including choosing to exit the program" */
+//            while (true)
+//            Console.WriteLine("Hello. Which instrument would you like to review?");
 
-//            var repeat = true;
-//            while (repeat)
-//            { 
+//            var allUkuleles = Ukulele.ukuleles;
+//            Ukulele.ChooseUkulele();
+          
+
+            
+//            {
 //                string input = Console.ReadLine();
 //                switch (input)
 //                {
 //                    case "Quit":
 //                        {
 //                            repeat = false;
- 
+
 //                        }
 //                        break;
 //                    case "Commands":
@@ -129,7 +129,7 @@ using static MyInstruments.MusicalInstrument;
 //                            Console.WriteLine();
 //                        }
 //                        break;
-//                }       
+//                }
 //            }
 
 //        }

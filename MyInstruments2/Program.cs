@@ -6,6 +6,8 @@ using static MyInstruments.Ukulele;
 using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.MusicalInstrument;
+using System.Security.Cryptography.X509Certificates;
+using System.Runtime.CompilerServices;
 
 namespace MyInstruments
 {
@@ -13,30 +15,27 @@ namespace MyInstruments
     {
         public static void Main(string[] args)
         {
-            
+            Guitar guitar = new Guitar();
+            Bass bass = new Bass();
+            Ukulele ukulele = new Ukulele();
+
             Console.ForegroundColor = ConsoleColor.White;
-
-            {
-                AppWindow.PrintHeader();
-            }
-
+            AppWindow.PrintHeader();
+            
             /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
                 can repeatedly enter commands/perform actions, including choosing to exit the program" */
             while (true)
-            {
+            {  
                 Console.WriteLine("Hello. Which instrument would you like to review?");
 
-                Guitar guitar = new Guitar();
-                Bass bass = new Bass();
-                Ukulele ukulele = new Ukulele();
-
                 Console.ForegroundColor = ConsoleColor.Green;
-                string input = Console.ReadLine();              
+
+                string input = Console.ReadLine();
 
                 Console.ForegroundColor = ConsoleColor.White;
 
-                if (input == "Quit") 
-                    break; 
+                if (input == "Quit")
+                break;
 
                 else if (guitars.ContainsKey(input))
                 {
@@ -60,8 +59,8 @@ namespace MyInstruments
                     AppWindow.PrintCommands();
 
                 else if (input == "All")
-                    Collection.ListAll();
-
+                    Collection.ListAll();  
+                
                 else if (input == "Guitars")
                     guitar.ListInstruments();
 
