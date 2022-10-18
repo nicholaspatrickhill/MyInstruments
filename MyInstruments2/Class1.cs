@@ -29,12 +29,14 @@ namespace MyInstruments
                 var bass = new Bass();
                 var ukulele = new Ukulele();
 
-                string input = Console.ReadLine();
-                repeat = NewMethod(repeat, guitar, bass, ukulele, input);
+                Console.ForegroundColor = ConsoleColor.Green;
+                string? input = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.White;
+                repeat = SelectInstrument(repeat, guitar, bass, ukulele, input);
             }
         }
 
-        private static bool NewMethod(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
+        private static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
         {
             if (guitars.ContainsKey(input))
             {
@@ -51,7 +53,13 @@ namespace MyInstruments
                 Ukulele ukuleleChoice = ukuleles[input];
                 ukuleleChoice.PrintInstrument();
             }
-            else switch (input)
+            else repeat = SelectCommand(repeat, guitar, bass, ukulele, input);
+
+            return repeat;
+
+            static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
+            {
+                switch (input)
                 {
                     case "Quit":
                         repeat = false;
@@ -91,7 +99,8 @@ namespace MyInstruments
                         break;
                 }
 
-            return repeat;
+                return repeat;
+            }
         }
     }
 }
