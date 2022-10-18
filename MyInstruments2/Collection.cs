@@ -26,6 +26,23 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
+        //public static void CountInstruments()
+        //{
+        //    string guitar = 
+        //    if (input = "Guitars")
+        //    {
+        //        var guitar = new Guitar();
+        //        guitar.CountInstruments();
+        //    }
+        //        case "Basses":
+        //            var bass = new Bass();
+        //            bass.CountInstruments();
+                    
+        //        case "Ukuleles":
+        //            var ukulele = new Ukulele();
+        //            ukulele.CountInstruments();
+        //}
+
         public static void ListAll()
         {
             Guitar guitar = new Guitar();

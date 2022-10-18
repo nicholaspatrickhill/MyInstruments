@@ -9,63 +9,63 @@ using static MyInstruments.MusicalInstrument;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.CompilerServices;
 
-namespace MyInstruments
-{
-    class Program
-    {
-        public static void Main(string[] args)
-        {
-            Guitar guitar = new Guitar();
-            Bass bass = new Bass();
-            Ukulele ukulele = new Ukulele();
+//namespace MyInstruments
+//{
+//    class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Console.ForegroundColor = ConsoleColor.White;
+//            AppWindow.PrintHeader();
 
-            Console.ForegroundColor = ConsoleColor.White;
-            AppWindow.PrintHeader();
-            
-            /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
-                can repeatedly enter commands/perform actions, including choosing to exit the program" */
-            while (true)
-            {  
-                Console.WriteLine("Hello. Which instrument would you like to review?");
+//            /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
+//                can repeatedly enter commands/perform actions, including choosing to exit the program" */
+//            while (true)
+//            {
+//                Console.WriteLine("Hello. Which instrument would you like to review?");
 
-                Console.ForegroundColor = ConsoleColor.Green;
+//                Console.ForegroundColor = ConsoleColor.Green;
 
-                string input = Console.ReadLine();
+//                string input = Console.ReadLine();
 
-                Console.ForegroundColor = ConsoleColor.White;
+//                Console.ForegroundColor = ConsoleColor.White;
 
-                if (input == "Quit") break;
-                else if (input == "Commands") AppWindow.PrintCommands();
-                else if (input == "All") Collection.ListAll();
-                else if (input == "Guitars") guitar.ListInstruments();
-                else if (input == "Basses") bass.ListInstruments();
-                else if (input == "Ukuleles") ukulele.ListInstruments();
-                else if (input == "Count All") Collection.CountAll();
-                else if (input == "Count Guitars") guitar.CountInstruments();
-                else if (input == "Count Basses") bass.CountInstruments();
-                else if (input == "Count Ukuleles") ukulele.CountInstruments();
-                else if (input == "Clear") AppWindow.ClearConsole();
+//                Guitar guitar = new Guitar();
+//                Bass bass = new Bass();
+//                Ukulele ukulele = new Ukulele();
 
-                else if (guitars.ContainsKey(input))
-                {
-                    Guitar guitarChoice = guitars[input];
-                    guitarChoice.PrintInstrument();
-                }
+//                if (input == "Quit") break;
+//                else if (input == "Commands") AppWindow.PrintCommands();
+//                else if (input == "All") Collection.ListAll();
+//                else if (input == "Guitars") guitar.ListInstruments();
+//                else if (input == "Basses") bass.ListInstruments();
+//                else if (input == "Ukuleles") ukulele.ListInstruments();
+//                else if (input == "Count All") Collection.CountAll();
+//                else if (input == "Count Guitars") guitar.CountInstruments();
+//                else if (input == "Count Basses") bass.CountInstruments();
+//                else if (input == "Count Ukuleles") ukulele.CountInstruments();
+//                else if (input == "Clear") AppWindow.ClearConsole();
 
-                else if (basses.ContainsKey(input))
-                {
-                    Bass bassChoice = basses[input];
-                    bassChoice.PrintInstrument();
-                }
+//                else if (guitars.ContainsKey(input))
+//                {
+//                    Guitar guitarChoice = guitars[input];
+//                    guitarChoice.PrintInstrument();
+//                }
 
-                else if (ukuleles.ContainsKey(input))
-                {
-                    Ukulele ukuleleChoice = ukuleles[input];
-                    ukuleleChoice.PrintInstrument();
-                }
+//                else if (basses.ContainsKey(input))
+//                {
+//                    Bass bassChoice = basses[input];
+//                    bassChoice.PrintInstrument();
+//                }
 
-                else AppWindow.PrintErrorMessage();                 
-            }
-        }
-    }
-}
+//                if (ukuleles.ContainsKey(input))
+//                {
+//                    Ukulele ukuleleChoice = ukuleles[input];
+//                    ukuleleChoice.PrintInstrument();
+//                }
+
+//                else AppWindow.PrintErrorMessage();
+//            }
+//        }
+//    }
+//}

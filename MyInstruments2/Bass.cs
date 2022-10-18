@@ -13,7 +13,7 @@ namespace MyInstruments
 
         // Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
-       {
+        {
             { "Fender Dimension Bass", new Bass() { Make = "Fender", Model = "Dimension Bass", Type = "solid-body electric bass", Country = "USA", Year = 2016, 
                 Serial = "US16030876", Color = "Black", Scale = "long", StringBrand = "D'Addario", StringType = "Chrome Flat Wound Long Scale", StringGauge= "Custom Light: 40-100", } },
             { "Fender Mustang Bass", new Bass() { Make = "Fender", Model = "Justin Meldal-Johnsen Signature Mustang Bass", Type = "solid-body electric bass", Country = "Mexico", Year = 2017, 
@@ -22,23 +22,43 @@ namespace MyInstruments
                 Serial = "MX21254822", Color = "Buttercream", Scale = "long", StringBrand = "GHS", StringType = "Pressure Wound", StringGauge = "Medium: 44-106", } },
             { "Hofner Club Bass", new Bass() { Make = "Hofner", Model = "Club", Type = "hollow-body electric bass", Country = "China",  Year = 2020, 
                 Serial = "X0501H152", Color = "Black", Scale = "short", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
-       };
+        };
 
         public void ListInstruments()
-       {
+        {
             Console.WriteLine();
             foreach (KeyValuePair<string, Bass> pair in basses)
                 Console.WriteLine(pair.Key);
             Console.WriteLine();
-       }
+        }
 
         public void PrintInstrument()
-       {
+        {
             Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
             Console.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It is a {Scale} scale bass. Its serial number is {Serial}.");
             Console.WriteLine($"It uses {InstrumentString} gauge strings.");
             Console.WriteLine();
-       }
+        }
+
+        public static void ChooseBass() //not used at the moment but almost works... just doesn't loop
+        {
+            Bass bass = new Bass();
+            string input = Console.ReadLine();
+            bool bassAvailable = basses.TryGetValue(input, out bass);
+            if (bassAvailable)
+            {
+                Bass bassChoice = basses[input];
+                Console.WriteLine($"Your {bassChoice.InstrumentName} is a {bassChoice.Type} that was made in {bassChoice.Country} in {bassChoice.Year}.");
+                Console.WriteLine($"It is {bassChoice.InstrumentAge} years old. It is {bassChoice.Color} in color. It is a {bassChoice.Scale} sized instrument. Its serial number is {bassChoice.Serial}.");
+                Console.WriteLine($"It uses {bassChoice.InstrumentString} gauge strings.");
+                Console.WriteLine();
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input");
+            }
+        }
 
         public void CountInstruments()
         {
