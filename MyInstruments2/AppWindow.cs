@@ -11,9 +11,9 @@ namespace MyInstruments
     {
         public static void PrintHeader()
         {
-            Console.WriteLine(".........................");
-            Console.WriteLine("...   MyInstruments   ...");
-            Console.WriteLine(".........................");
+            Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "............................."));
+            Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", ".....   MyInstruments   ....."));
+            Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "............................."));
             Console.WriteLine();
             Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
             Console.WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Quit\" to exit the program.");
