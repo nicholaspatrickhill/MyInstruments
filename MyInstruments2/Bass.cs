@@ -9,7 +9,7 @@ namespace MyInstruments
     public class Bass : MusicalInstrument, IDictionaryMethods 
         // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
-        public string Scale { get; set; }
+        public string? Scale { get; set; }
 
         // Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
@@ -38,26 +38,6 @@ namespace MyInstruments
             Console.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It is a {Scale} scale bass. Its serial number is {Serial}.");
             Console.WriteLine($"It uses {InstrumentString} gauge strings.");
             Console.WriteLine();
-        }
-
-        public static void ChooseBass() //not used at the moment but almost works... just doesn't loop
-        {
-            Bass bass = new Bass();
-            string input = Console.ReadLine();
-            bool bassAvailable = basses.TryGetValue(input, out bass);
-            if (bassAvailable)
-            {
-                Bass bassChoice = basses[input];
-                Console.WriteLine($"Your {bassChoice.InstrumentName} is a {bassChoice.Type} that was made in {bassChoice.Country} in {bassChoice.Year}.");
-                Console.WriteLine($"It is {bassChoice.InstrumentAge} years old. It is {bassChoice.Color} in color. It is a {bassChoice.Scale} sized instrument. Its serial number is {bassChoice.Serial}.");
-                Console.WriteLine($"It uses {bassChoice.InstrumentString} gauge strings.");
-                Console.WriteLine();
-                return;
-            }
-            else
-            {
-                Console.WriteLine("Invalid Input");
-            }
         }
 
         public void CountInstruments()

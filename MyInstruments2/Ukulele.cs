@@ -41,25 +41,6 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-        public static void ChooseUkulele() //not used at the moment but almost works... just doesn't loop
-        {
-            Ukulele ukulele = new Ukulele();
-            string input = Console.ReadLine();
-            bool ukuleleAvailable = ukuleles.TryGetValue(input, out ukulele);
-            if (ukuleleAvailable)
-            {
-                Ukulele ukuleleChoice = ukuleles[input];
-                Console.WriteLine($"Your {ukuleleChoice.InstrumentName} is a {ukuleleChoice.Type} that was made in {ukuleleChoice.Country} in {ukuleleChoice.Year}.");
-                Console.WriteLine($"It is {ukuleleChoice.InstrumentAge} years old. It is {ukuleleChoice.Color} in color. It is a {ukuleleChoice.Size} sized instrument. Its serial number is {ukuleleChoice.Serial}.");
-                Console.WriteLine($"It uses {ukuleleChoice.InstrumentString} gauge strings.");
-                Console.WriteLine();
-            }
-            else
-            {
-                Console.WriteLine("Invalid Input");
-            }
-        }
-
         public void CountInstruments()
         {
             Console.WriteLine("You have " + ukuleles.Count + " ukuleles.");
