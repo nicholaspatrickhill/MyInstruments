@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    public class Bass : MusicalInstrument, IDictionaryMethods 
+    public class Bass : MusicalInstrument, IMusicalInstrument 
         // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string? Scale { get; set; }

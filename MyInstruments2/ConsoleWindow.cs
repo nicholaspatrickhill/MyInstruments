@@ -7,7 +7,7 @@ using static MyInstruments.Program;
 
 namespace MyInstruments
 {
-    class AppWindow
+    class ConsoleWindow
     {
         public static void PrintHeader()
         {
@@ -25,7 +25,7 @@ namespace MyInstruments
         public static void ClearConsole()
         {
             Console.Clear();
-            AppWindow.PrintHeader();
+            ConsoleWindow.PrintHeader();
         }
         public static void PrintErrorMessage()
         {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    interface IDictionaryMethods
+    interface IMusicalInstrument
     {
         public void ListInstruments();
 

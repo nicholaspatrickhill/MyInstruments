@@ -43,13 +43,13 @@ namespace MyInstruments
                         repeat = false;
                         break;
                     case "Commands":
-                        AppWindow.PrintCommands();
+                        ConsoleWindow.PrintCommands();
                         break;
                     case "All":
                         Collection.ListAll();
                         break;
                     case "Clear":
-                        AppWindow.ClearConsole();
+                        ConsoleWindow.ClearConsole();
                         break;
                     case "Guitars":
                     case "Basses":
@@ -65,7 +65,7 @@ namespace MyInstruments
                         Collection.CountInstrument(guitar, bass, ukulele, input);
                         break; 
                     default:
-                        AppWindow.PrintErrorMessage();
+                        ConsoleWindow.PrintErrorMessage();
                         break;
                 }
 

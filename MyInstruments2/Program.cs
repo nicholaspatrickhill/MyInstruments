@@ -17,7 +17,7 @@ namespace MyInstruments
     {
         public static void Main(string[] args)
         { 
-            AppWindow.PrintHeader();
+            ConsoleWindow.PrintHeader();
 
             /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
                 can repeatedly enter commands/perform actions, including choosing to exit the program" */
