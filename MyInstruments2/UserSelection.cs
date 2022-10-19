@@ -10,7 +10,7 @@ using static MyInstruments.MusicalInstrument;
 
 namespace MyInstruments
 {
-    public class InstrumentChoice
+    public class UserSelection
     {
         public static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
         {
@@ -46,30 +46,22 @@ namespace MyInstruments
                     case "All":
                         Collection.ListAll();
                         break;
+                    case "Clear":
+                        AppWindow.ClearConsole();
+                        break;
                     case "Guitars":
-                        guitar.ListInstruments();
-                        break;
                     case "Basses":
-                        bass.ListInstruments();
-                        break;
                     case "Ukuleles":
-                        ukulele.ListInstruments();
+                            Collection.ListInstrument(guitar, bass, ukulele, input);
                         break;
                     case "Count All":
                         Collection.CountAll();
                         break;
-                    case "Count Guitars":
-                        guitar.CountInstruments();
-                        break;
-                    case "Count Basses":
-                        bass.CountInstruments();
-                        break;
+                    case "Count Guitars":           
+                    case "Count Basses":      
                     case "Count Ukuleles":
-                        ukulele.CountInstruments();
-                        break;
-                    case "Clear":
-                        AppWindow.ClearConsole();
-                        break;
+                        Collection.CountInstrument(guitar, bass, ukulele, input);
+                        break; 
                     default:
                         AppWindow.PrintErrorMessage();
                         break;
@@ -78,5 +70,8 @@ namespace MyInstruments
                 return repeat;
             }
         }
+
+
+
     }
 }

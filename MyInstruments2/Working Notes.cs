@@ -16,6 +16,6 @@ namespace MyInstruments
     // -if i do the step above, need to put unique properties for uke and bass in their own console writelines after calling that method
     // -add classes for pianos/keyed instruments? percussion? other?
     // -make a stringed instrument base class that takes string-specific properties out of MusicalInstrument
-    // -REDO the main program as a switch or ternary
+    
     // - try right click and extract method wherever possible to refactor code 
 }

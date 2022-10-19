@@ -9,19 +9,19 @@ namespace MyInstruments
 {
     public abstract class MusicalInstrument
     {
-        public string Make { get; set; }
-        public string Model { get; set; }
-        public string Type { get; set; }
-        public string Country { get; set; }
+        public string? Make { get; set; }
+        public string? Model { get; set; }
+        public string? Type { get; set; }
+        public string? Country { get; set; }
         public int Year { get; set; }
 
-        public string Serial { get; set; }
-        public string Color { get; set; }
-        public string StringBrand { get; set; }
-        public string StringType { get; set; }
-        public string StringGauge { get; set; }
+        public string? Serial { get; set; }
+        public string? Color { get; set; }
+        public string? StringBrand { get; set; }
+        public string? StringType { get; set; }
+        public string? StringGauge { get; set; }
 
-        public string InstrumentName
+        public string? InstrumentName
         {
             get
             {
@@ -39,7 +39,7 @@ namespace MyInstruments
             }
         }
 
-        public string InstrumentString
+        public string? InstrumentString
         {
             get
             {

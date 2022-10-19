@@ -1,71 +1,44 @@
 ﻿using System;
-using System.Diagnostics.Metrics;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Schema;
-using static MyInstruments.Ukulele;
 using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
+using static MyInstruments.Ukulele;
 using static MyInstruments.MusicalInstrument;
-using System.Security.Cryptography.X509Certificates;
-using System.Runtime.CompilerServices;
+using static MyInstruments.UserSelection;
+using System.Runtime.InteropServices;
+using System.Net.Http.Headers;
 
-//namespace MyInstruments
-//{
-//    class Program
-//    {
-//        public static void Main(string[] args)
-//        {
-//            Console.ForegroundColor = ConsoleColor.White;
-//            AppWindow.PrintHeader();
+namespace MyInstruments
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            AppWindow.PrintHeader();
 
-//            /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
-//                can repeatedly enter commands/perform actions, including choosing to exit the program" */
-//            while (true)
-//            {
-//                Console.WriteLine("Hello. Which instrument would you like to review?");
+            /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
+                can repeatedly enter commands/perform actions, including choosing to exit the program" */
+            var repeat = true;
+            while (repeat)
+            {
+                Console.WriteLine("Hello. Which instrument would you like to review?");
 
-//                Console.ForegroundColor = ConsoleColor.Green;
+                var guitar = new Guitar();
+                var bass = new Bass();
+                var ukulele = new Ukulele();
 
-//                string input = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Green;
+                string? input = Console.ReadLine();
 
-//                Console.ForegroundColor = ConsoleColor.White;
+                Console.ForegroundColor = ConsoleColor.White;
+                repeat = SelectInstrument(repeat, guitar, bass, ukulele, input);
+            }
+ 
+        }
+    }
+}
 
-//                Guitar guitar = new Guitar();
-//                Bass bass = new Bass();
-//                Ukulele ukulele = new Ukulele();
-
-//                if (input == "Quit") break;
-//                else if (input == "Commands") AppWindow.PrintCommands();
-//                else if (input == "All") Collection.ListAll();
-//                else if (input == "Guitars") guitar.ListInstruments();
-//                else if (input == "Basses") bass.ListInstruments();
-//                else if (input == "Ukuleles") ukulele.ListInstruments();
-//                else if (input == "Count All") Collection.CountAll();
-//                else if (input == "Count Guitars") guitar.CountInstruments();
-//                else if (input == "Count Basses") bass.CountInstruments();
-//                else if (input == "Count Ukuleles") ukulele.CountInstruments();
-//                else if (input == "Clear") AppWindow.ClearConsole();
-
-//                else if (guitars.ContainsKey(input))
-//                {
-//                    Guitar guitarChoice = guitars[input];
-//                    guitarChoice.PrintInstrument();
-//                }
-
-//                else if (basses.ContainsKey(input))
-//                {
-//                    Bass bassChoice = basses[input];
-//                    bassChoice.PrintInstrument();
-//                }
-
-//                if (ukuleles.ContainsKey(input))
-//                {
-//                    Ukulele ukuleleChoice = ukuleles[input];
-//                    ukuleleChoice.PrintInstrument();
-//                }
-
-//                else AppWindow.PrintErrorMessage();
-//            }
-//        }
-//    }
-//}

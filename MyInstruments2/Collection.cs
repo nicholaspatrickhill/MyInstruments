@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.Ukulele;
+using static MyInstruments.MusicalInstrument;
 
 namespace MyInstruments
 {
@@ -13,10 +14,6 @@ namespace MyInstruments
     {
         public static void CountAll()
         {
-            Guitar guitar = new Guitar();
-            Bass bass = new Bass();
-            Ukulele ukulele = new Ukulele();
-
             int num1 = guitars.Count;
             int num2 = basses.Count;
             int num3 = ukuleles.Count;
@@ -25,23 +22,6 @@ namespace MyInstruments
             Console.WriteLine("You have " + num4 + " total instruments in your collection.");
             Console.WriteLine();
         }
-
-        //public static void CountInstruments()
-        //{
-        //    string guitar = 
-        //    if (input = "Guitars")
-        //    {
-        //        var guitar = new Guitar();
-        //        guitar.CountInstruments();
-        //    }
-        //        case "Basses":
-        //            var bass = new Bass();
-        //            bass.CountInstruments();
-                    
-        //        case "Ukuleles":
-        //            var ukulele = new Ukulele();
-        //            ukulele.CountInstruments();
-        //}
 
         public static void ListAll()
         {
@@ -56,6 +36,38 @@ namespace MyInstruments
             bass.ListInstruments();
             Console.WriteLine("Ukuleles:");
             ukulele.ListInstruments();
+        }
+
+        public static void CountInstrument(Guitar guitar, Bass bass, Ukulele ukulele, string input)
+        {
+            if (input == "Count Guitars")
+            {
+                guitar.CountInstruments();
+            }
+            else if (input == "Count Basses")
+            {
+                bass.CountInstruments();
+            }
+            else if (input == "Count Ukuleles")
+            {
+                ukulele.CountInstruments();
+            }
+        }
+
+        public static void ListInstrument(Guitar guitar, Bass bass, Ukulele ukulele, string input)
+        {
+            if (input == "Guitars")
+            {
+                guitar.ListInstruments();
+            }
+            else if (input == "Basses")
+            {
+                bass.ListInstruments();
+            }
+            else if (input == "Ukuleles")
+            {
+                ukulele.ListInstruments();
+            }
         }
     }
 }
