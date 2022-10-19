@@ -11,7 +11,7 @@ using static MyInstruments.Program;
 
 namespace MyInstruments
 {
-    public class Ukulele : MusicalInstrument, IDictionaryMethods 
+    public class Ukulele : MusicalInstrument, IMusicalInstrument 
         // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string? Size { get; set; }
