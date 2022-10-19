@@ -16,8 +16,7 @@ namespace MyInstruments
     class Program
     {
         public static void Main(string[] args)
-        {
-            Console.ForegroundColor = ConsoleColor.White;
+        { 
             AppWindow.PrintHeader();
 
             /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
@@ -30,14 +29,17 @@ namespace MyInstruments
                 var guitar = new Guitar();
                 var bass = new Bass();
                 var ukulele = new Ukulele();
+                string? input = UserInput();
 
-                Console.ForegroundColor = ConsoleColor.Green;
-                string? input = Console.ReadLine();
-
-                Console.ForegroundColor = ConsoleColor.White;
                 repeat = SelectInstrument(repeat, guitar, bass, ukulele, input);
             }
- 
+        }
+
+        private static string? UserInput()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            string? input = Console.ReadLine();
+            return input;
         }
     }
 }

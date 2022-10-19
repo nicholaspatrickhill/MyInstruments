@@ -11,6 +11,8 @@ namespace MyInstruments
     {
         public static void PrintHeader()
         {
+            Console.ForegroundColor = ConsoleColor.White;
+
             Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "............................."));
             Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", ".....   MyInstruments   ....."));
             Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "............................."));
@@ -27,7 +29,7 @@ namespace MyInstruments
         }
         public static void PrintErrorMessage()
         {
-            Console.WriteLine("That instrument is not in your collection. Please type \"All\" to see a list of all of your instruments or try again.");
+            Console.WriteLine("Invalid Command. Please type \"All\" to see a list of all of your instruments or try again.");
             Console.WriteLine();
         }
         public static void PrintCommands()

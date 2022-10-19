@@ -14,6 +14,8 @@ namespace MyInstruments
     {
         public static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
         {
+            Console.ForegroundColor = ConsoleColor.White;
+
             if (guitars.ContainsKey(input))
             {
                 Guitar guitarChoice = guitars[input];
@@ -52,7 +54,7 @@ namespace MyInstruments
                     case "Guitars":
                     case "Basses":
                     case "Ukuleles":
-                            Collection.ListInstrument(guitar, bass, ukulele, input);
+                        Collection.ListInstrument(guitar, bass, ukulele, input);
                         break;
                     case "Count All":
                         Collection.CountAll();
@@ -70,8 +72,5 @@ namespace MyInstruments
                 return repeat;
             }
         }
-
-
-
     }
 }
