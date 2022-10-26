@@ -31,5 +31,5 @@ The following items from the "Feature List" are implemented:
 #### NOTES & INSTRUCTIONS
 The easiest way to get started is to type "All" to see a list of all musical instruments available for review. 
 Then you can review any instrument individually by typing its name as it appears in the main list. 
-Please note that names are case specific and you will have to follow the case as indicated by the main list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about the individual instruments.)
+Please note that names are case specific and you will have to follow the case as indicated by the main list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. as written in the main ilst to see data about those individual instruments.)
 For a list of other commands, type "Commands". Type "Quit" to exit the program.
