@@ -59,11 +59,11 @@ namespace MyInstruments
                     case "Count All":
                         Collection.CountAll();
                         break;
-                    case "Count Guitars":           
-                    case "Count Basses":      
+                    case "Count Guitars":
+                    case "Count Basses":
                     case "Count Ukuleles":
                         Collection.CountInstrument(guitar, bass, ukulele, input);
-                        break; 
+                        break;
                     default:
                         ConsoleWindow.PrintErrorMessage();
                         break;

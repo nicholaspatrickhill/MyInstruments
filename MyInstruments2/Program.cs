@@ -16,7 +16,7 @@ namespace MyInstruments
     class Program
     {
         public static void Main(string[] args)
-        { 
+        {
             ConsoleWindow.PrintHeader();
 
             /* Fulfills Feature List requirement: "Implement a “master loop” console application where the user 
