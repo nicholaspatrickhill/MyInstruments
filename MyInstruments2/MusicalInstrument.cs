@@ -17,9 +17,6 @@ namespace MyInstruments
 
         public string? Serial { get; set; }
         public string? Color { get; set; }
-        public string? StringBrand { get; set; }
-        public string? StringType { get; set; }
-        public string? StringGauge { get; set; }
 
         public string? InstrumentName
         {
@@ -28,7 +25,6 @@ namespace MyInstruments
                 return Make + " " + Model;
             }
         }
-
         // Fulfills Feature List Requirement: "Calculate and display data based on an external factor"
         // Calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
         public int InstrumentAge
@@ -36,14 +32,6 @@ namespace MyInstruments
             get
             {
                 return (DateTime.Now.Year - Year);
-            }
-        }
-
-        public string? InstrumentString
-        {
-            get
-            {
-                return StringBrand + " " + StringType + " " + StringGauge;
             }
         }
     }
