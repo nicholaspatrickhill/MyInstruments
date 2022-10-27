@@ -32,45 +32,43 @@ namespace MyInstruments
                 ukuleleChoice.PrintInstrument();
             }
             else repeat = SelectCommand(repeat, guitar, bass, ukulele, input);
-
             return repeat;
-
-            static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
-            {
-                switch (input)
-                {
-                    case "Quit":
-                        repeat = false;
-                        break;
-                    case "Commands":
-                        ConsoleWindow.PrintCommands();
-                        break;
-                    case "All":
-                        Collection.ListAll();
-                        break;
-                    case "Clear":
-                        ConsoleWindow.ClearConsole();
-                        break;
-                    case "Guitars":
-                    case "Basses":
-                    case "Ukuleles":
-                        Collection.ListInstrument(guitar, bass, ukulele, input);
-                        break;
-                    case "Count All":
-                        Collection.CountAll();
-                        break;
-                    case "Count Guitars":
-                    case "Count Basses":
-                    case "Count Ukuleles":
-                        Collection.CountInstrument(guitar, bass, ukulele, input);
-                        break;
-                    default:
-                        ConsoleWindow.PrintErrorMessage();
-                        break;
-                }
-
-                return repeat;
-            }
         }
-    }
+
+        static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
+        {
+            switch (input)
+            {
+            case "Quit":
+                repeat = false;
+                break;
+            case "Commands":
+                ConsoleWindow.PrintCommands();
+                break;
+            case "All":
+                Collection.ListAll();
+                break;
+            case "Clear":
+                ConsoleWindow.ClearConsole();
+                break;
+            case "Guitars":
+            case "Basses":
+            case "Ukuleles":
+                Collection.ListInstrument(guitar, bass, ukulele, input);
+                break;
+            case "Count All":
+                Collection.CountAll();
+                break;
+            case "Count Guitars":
+            case "Count Basses":
+            case "Count Ukuleles":
+                Collection.CountInstrument(guitar, bass, ukulele, input);
+                break;
+            default:
+                ConsoleWindow.PrintErrorMessage();
+                break;
+            }
+            return repeat;
+        }
+    }  
 }
