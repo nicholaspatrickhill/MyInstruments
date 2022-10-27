@@ -18,20 +18,23 @@ namespace MyInstruments
             Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "............................."));
             Console.WriteLine();
             Console.WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
-            Console.WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Quit\" to exit the program.");
-            Console.WriteLine("Type \"Commands\" to view a list of other commands.");
+            Console.WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Commands\" to view a list of other commands.");
+            Console.WriteLine("Type \"Quit\" to exit the program.");
             Console.WriteLine();
         }
+
         public static void ClearConsole()
         {
             Console.Clear();
             ConsoleWindow.PrintHeader();
         }
+
         public static void PrintErrorMessage()
         {
-            Console.WriteLine("Invalid Command. Please type \"All\" to see a list of all of your instruments or try again.");
+            Console.WriteLine("Invalid Command. Please type \"Commands\" to see a list of available commands or try again.");
             Console.WriteLine();
         }
+
         public static void PrintCommands()
         {
             Console.WriteLine();
