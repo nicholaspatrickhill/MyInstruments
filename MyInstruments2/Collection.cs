@@ -74,17 +74,21 @@ namespace MyInstruments
         public static void PrintAllToFile()
         {
             using StreamWriter file = new StreamWriter("MyInstruments.txt");
-            file.WriteLine("Your instruments:");
-            file.WriteLine();
-            foreach (KeyValuePair<string, Guitar> entry in guitars)
-                file.WriteLine("{0}", entry.Key);
-            foreach (KeyValuePair<string, Bass> entry2 in basses)
-                file.WriteLine("{0}", entry2.Key);
-            foreach (KeyValuePair<string, Ukulele> entry3 in ukuleles)
-                file.WriteLine("{0}", entry3.Key);
+            {
+                file.WriteLine("Your instruments:");
+                file.WriteLine();
+                foreach (KeyValuePair<string, Guitar> entry in guitars)
+                    file.WriteLine("{0}", entry.Key);
+                foreach (KeyValuePair<string, Bass> entry2 in basses)
+                    file.WriteLine("{0}", entry2.Key);
+                foreach (KeyValuePair<string, Ukulele> entry3 in ukuleles)
+                    file.WriteLine("{0}", entry3.Key);
+            }
+            file.Close();
 
             Console.WriteLine("Your instruments have been printed to a text file.");
             Console.WriteLine();
         }
     }
 }
+
