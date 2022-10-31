@@ -73,7 +73,11 @@ namespace MyInstruments
 
         public static void PrintAllToFile()
         {
-            using StreamWriter file = new StreamWriter("MyInstruments.txt");
+            string myInstruments = @"TextFiles\\MyInstruments.txt";
+            myInstruments = Path.GetFullPath(myInstruments);
+            Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
+
+            using StreamWriter file = new StreamWriter(myInstruments, true);
             {
                 file.WriteLine("Your instruments:");
                 file.WriteLine();
