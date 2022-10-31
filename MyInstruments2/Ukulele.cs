@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,13 +48,15 @@ namespace MyInstruments
             Console.WriteLine();
         }
 
-        /*public static void AddUkulele(Ukulele)
-        {
-            Console.WriteLine("Please type the keyword for the instrument you'd like to add (ex. \"Fender Telecaster\".)");
-            var ukulele = new Ukulele();
-            string input = Console.ReadLine();
-            ukuleles.Add(input, value: ukulele);
-        }*/
+        //public static string UkulelesToString(Dictionary < string, string > ukuleles)
+        //{
+        //    string dictionaryString = "{";
+        //    foreach (KeyValuePair<string, string> keyValues in ukuleles)
+        //    {
+        //        dictionaryString += keyValues.Key + " : " + keyValues.Value + ", ";
+        //    }
+        //    return dictionaryString.TrimEnd(',', ' ') + "}";
+        //}
     }
 }
 

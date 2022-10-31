@@ -49,6 +49,7 @@ namespace MyInstruments
             Console.WriteLine("\"Count Guitars\" to see the quantity of guitars in your collection.");
             Console.WriteLine("\"Count Basses\" to see the quantity of basses in your collection.");
             Console.WriteLine("\"Count Ukuleles\" to see the quantity of ukuleles in your collection.");
+            Console.WriteLine("\"Print To File\" to print a list of all your instruments to a text file.");
             Console.WriteLine();
         }
     }
