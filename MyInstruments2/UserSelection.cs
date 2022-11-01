@@ -65,7 +65,7 @@ namespace MyInstruments
                 Collection.CountInstrument(guitar, bass, ukulele, input);
                 break;
             case "Print":
-                case "Print to File":
+            case "Print to File":
                 Collection.PrintAllToFile();
                 break;
             default:

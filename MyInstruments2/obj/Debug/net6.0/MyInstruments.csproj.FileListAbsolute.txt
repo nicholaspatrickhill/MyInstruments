@@ -13,3 +13,10 @@ C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\refin
 C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.pdb
 C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.genruntimeconfig.cache
 C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\ref\MyInstruments.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\log4net.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyInstruments.csproj.CopyComplete
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\MyInstruments.dll.config

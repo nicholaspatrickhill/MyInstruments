@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static MyInstruments.Guitar;
-using static MyInstruments.Bass;
-using static MyInstruments.Ukulele;
-using static MyInstruments.MusicalInstrument;
-using static MyInstruments.UserSelection;
-using System.Runtime.InteropServices;
-using System.Net.Http.Headers;
+﻿using static MyInstruments.UserSelection;
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 
 namespace MyInstruments
 {
     class Program
     {
+        private static readonly log4net.ILog log = LogHelper.GetLogger(); //log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public static void Main(string[] args)
         {
             ConsoleWindow.PrintHeader();
@@ -40,6 +31,7 @@ namespace MyInstruments
             Console.ForegroundColor = ConsoleColor.Green;
             string? input = Console.ReadLine();
             return input;
+            log.Info("Info logging");
         }
     }
 }

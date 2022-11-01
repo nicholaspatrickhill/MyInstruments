@@ -8,6 +8,8 @@ using static MyInstruments.Bass;
 using static MyInstruments.Ukulele;
 using static MyInstruments.MusicalInstrument;
 using System.Collections;
+using System.Diagnostics.Metrics;
+using System.Drawing;
 
 namespace MyInstruments
 {
@@ -73,11 +75,12 @@ namespace MyInstruments
 
         public static void PrintAllToFile()
         {
-            string myInstruments = @"TextFiles\\MyInstruments.txt";
+            string myInstruments = @"TextFiles\MyInstruments.txt";
             myInstruments = Path.GetFullPath(myInstruments);
             Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
 
             using StreamWriter file = new StreamWriter(myInstruments, true);
+            //using StreamWriter file = new StreamWriter("%~/%\\MyInstruments.txt");
             {
                 file.WriteLine("Your instruments:");
                 file.WriteLine();
@@ -87,10 +90,11 @@ namespace MyInstruments
                     file.WriteLine("{0}", entry2.Key);
                 foreach (KeyValuePair<string, Ukulele> entry3 in ukuleles)
                     file.WriteLine("{0}", entry3.Key);
+                file.Close();
             }
             file.Close();
 
-            Console.WriteLine("Your instruments have been printed to a text file.");
+            Console.WriteLine("Your instruments have been printed to a text file at TextFiles\\MyInstruments.txt.");
             Console.WriteLine();
         }
     }

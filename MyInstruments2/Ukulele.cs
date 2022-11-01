@@ -12,8 +12,8 @@ using static MyInstruments.Program;
 
 namespace MyInstruments
 {
-    public class Ukulele : StringedInstrument, IMusicalInstrument 
-        // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
+    public class Ukulele : StringedInstrument, IMusicalInstrument
+    // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string? Size { get; set; }
 
@@ -26,7 +26,19 @@ namespace MyInstruments
                 Serial = "Y31107", Color = "Natural Nato", Size = "soprano", StringBrand = "D'Addario", StringType = "Fluorocarbon", StringGauge = "Soprano: 20-22", } },
         };
 
-        public void ListInstruments()
+        //public void PrintUkesToFile()
+        //{
+        //    using StreamWriter file = new StreamWriter("MyUkuleles.txt");
+        //    foreach (var entry in ukuleles)
+        //    {
+        //        file.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
+        //        file.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It is a {Size} sized instrument. Its serial number is {Serial}.");
+        //        file.WriteLine($"It uses {InstrumentString} gauge strings.");
+        //        file.WriteLine();
+        //    }
+        //}
+
+    public void ListInstruments()
         {
             Console.WriteLine();
             foreach (KeyValuePair<string, Ukulele> pair in ukuleles)
@@ -47,16 +59,6 @@ namespace MyInstruments
             Console.WriteLine("You have " + ukuleles.Count + " ukuleles.");
             Console.WriteLine();
         }
-
-        //public static string UkulelesToString(Dictionary < string, string > ukuleles)
-        //{
-        //    string dictionaryString = "{";
-        //    foreach (KeyValuePair<string, string> keyValues in ukuleles)
-        //    {
-        //        dictionaryString += keyValues.Key + " : " + keyValues.Value + ", ";
-        //    }
-        //    return dictionaryString.TrimEnd(',', ' ') + "}";
-        //}
     }
 }
 
