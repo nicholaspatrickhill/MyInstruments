@@ -53,7 +53,7 @@ This data is called by the user in the master loop.
 These classes contain additional methods that are implementations of the signatures in the IMusicalInstrument interface.
 
 The Tests folder contains several unit tests for each instrument class. 
-These quickly and safely test string concatenations and methods contained within the individual instrument classes and their base classes.
+These quickly and safely test string concatenations and methods contained within the instrument classes.
 
 The log4net nuget package is configured within the program to record invalid user input and write it to a text file as a log.
 
