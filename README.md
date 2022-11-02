@@ -27,7 +27,7 @@ The following items from the "Feature List" are implemented:
 
 ⦁	Calculate and display data based on an external factor (ex: get the current date, and display how mant days remaining until some event).
 
-⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
+⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.
 
 #### NOTES
 MyInstruments implements a master loop in the Main method where the user can enter different commands to review data about the instruments in my collection. 
@@ -47,7 +47,7 @@ The abstract Musical Instrument class sets properties that are shared by the var
 The InstrumentAge property uses an external factor (the current date) to calculate the age of the instrument. 
 The StringedInstrument class inherits from MusicalInstrument and sets additional properties which are shared by the stringed instruments. 
 Guitar, Bass and Ukulele classes inherit from StringedInstrument. 
-Each of those classes contains a dictionary with all of the instrument objects available to the program. 
+Each of those classes contains a dictionary where all of the instrument objects are instantiated. 
 The object properties are defined in the dictionary. 
 This data is called by the user in the master loop. 
 These classes contain additional methods that are implementations of the signatures in the IMusicalInstrument interface.
