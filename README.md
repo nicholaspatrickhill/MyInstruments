@@ -33,9 +33,9 @@ MyInstruments implements a master loop in the Main method where the user can ent
 The user can elect to review data specific to an individual instrument or may review data about the collection as a whole. 
 The user can exit the master loop at any time by typing "Quit."
 
-The user input is first looped through an If-Else block to search various dictionaries for a matching key. 
+The user input is first looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
 If the user elected to review a specific instrument, the program will call this information from the dictionary and print it to the console. 
-If the user input is not pertaining to a specific instrument, it exits the If-Else block and enters a switch. 
+If the user input is not pertaining to a specific instrument, it exits the If-Else block and enters a switch in the UserCommands class. 
 The cases in the switch call various different methods, mostly pertaining to reviewing the collection as a whole. 
 These Methods are contained in the Collection class. 
 Collection methods allow the user to see lists of all of the instruments in the collection, or lists of each type of instrument, or to count all of the instruments, or to count each type of instrument, or to print all of the instruments to a text file. 
