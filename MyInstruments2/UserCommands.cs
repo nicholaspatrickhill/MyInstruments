@@ -10,7 +10,7 @@ namespace MyInstruments
     public class UserCommands
     {
         private static readonly log4net.ILog log = LogHelper.GetLogger();
-        public static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
+        public static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, string input)
         {
             switch (input)
             {
@@ -29,7 +29,8 @@ namespace MyInstruments
                 case "Guitars":
                 case "Basses":
                 case "Ukuleles":
-                    Collection.ListInstrument(guitar, bass, ukulele, input);
+                case "Banjos":
+                    Collection.ListInstrument(guitar, bass, ukulele, banjo, input);
                     break;
                 case "Count All":
                     Collection.CountAll();
@@ -37,7 +38,8 @@ namespace MyInstruments
                 case "Count Guitars":
                 case "Count Basses":
                 case "Count Ukuleles":
-                    Collection.CountInstrument(guitar, bass, ukulele, input);
+                case "Count Banjos":
+                    Collection.CountInstrument(guitar, bass, ukulele, banjo, input);
                     break;
                 case "Print":
                 case "Print to File":

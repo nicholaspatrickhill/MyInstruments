@@ -7,13 +7,14 @@ using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.Ukulele;
 using static MyInstruments.MusicalInstrument;
+using static MyInstruments.Banjo;
 using static MyInstruments.UserCommands;
 
 namespace MyInstruments
 {
     public class UserSelection
     {
-        public static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
+        public static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, string input)
         {
             Console.ForegroundColor = ConsoleColor.White;
 
@@ -32,7 +33,12 @@ namespace MyInstruments
                 Ukulele ukuleleChoice = ukuleles[input];
                 ukuleleChoice.PrintInstrument();
             }
-            else repeat = SelectCommand(repeat, guitar, bass, ukulele, input);
+            else if (banjos.ContainsKey(input))
+            {
+                Banjo banjoChoice = banjos[input];
+                banjoChoice.PrintInstrument();
+            }
+            else repeat = SelectCommand(repeat, guitar, bass, ukulele, banjo, input);
             return repeat;
         }
     }  

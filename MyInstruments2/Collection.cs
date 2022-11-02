@@ -7,6 +7,7 @@ using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.Ukulele;
 using static MyInstruments.MusicalInstrument;
+using static MyInstruments.Banjo;
 using System.Collections;
 using System.Diagnostics.Metrics;
 using System.Drawing;
@@ -20,9 +21,10 @@ namespace MyInstruments
             int num1 = guitars.Count;
             int num2 = basses.Count;
             int num3 = ukuleles.Count;
-            int num4 = num1 + num2 + num3;
+            int num4 = banjos.Count;
+            int num5 = num1 + num2 + num3 + num4;
 
-            Console.WriteLine("You have " + num4 + " total instruments in your collection.");
+            Console.WriteLine("You have " + num5 + " total instruments in your collection.");
             Console.WriteLine();
         }
 
@@ -31,6 +33,7 @@ namespace MyInstruments
             Guitar guitar = new Guitar();
             Bass bass = new Bass();
             Ukulele ukulele = new Ukulele();
+            Banjo banjo = new Banjo();
 
             Console.WriteLine();
             Console.WriteLine("Guitars:");
@@ -39,9 +42,11 @@ namespace MyInstruments
             bass.ListInstruments();
             Console.WriteLine("Ukuleles:");
             ukulele.ListInstruments();
+            Console.WriteLine("Banjos:");
+            banjo.ListInstruments();
         }
 
-        public static void CountInstrument(Guitar guitar, Bass bass, Ukulele ukulele, string input)
+        public static void CountInstrument(Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, string input)
         {
             if (input == "Count Guitars")
             {
@@ -55,9 +60,13 @@ namespace MyInstruments
             {
                 ukulele.CountInstruments();
             }
+            else if (input == "Count Banjos")
+            {
+                banjo.CountInstruments();
+            }
         }
 
-        public static void ListInstrument(Guitar guitar, Bass bass, Ukulele ukulele, string input)
+        public static void ListInstrument(Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, string input)
         {
             if (input == "Guitars")
             {
@@ -70,6 +79,10 @@ namespace MyInstruments
             else if (input == "Ukuleles")
             {
                 ukulele.ListInstruments();
+            }
+            else if (input == "Banjos")
+            {
+                banjo.ListInstruments();
             }
         }
 
@@ -89,6 +102,8 @@ namespace MyInstruments
                     file.WriteLine("{0}", entry2.Key);
                 foreach (KeyValuePair<string, Ukulele> entry3 in ukuleles)
                     file.WriteLine("{0}", entry3.Key);
+                foreach (KeyValuePair<string, Banjo> entry4 in banjos)
+                    file.WriteLine("{0}", entry4.Key);
                 file.Close();
             }
             file.Close();
