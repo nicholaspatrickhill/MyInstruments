@@ -26,18 +26,6 @@ namespace MyInstruments
                 Serial = "Y31107", Color = "Natural Nato", Size = "soprano", StringBrand = "D'Addario", StringType = "Fluorocarbon", StringGauge = "Soprano: 20-22", } },
         };
 
-        //public void PrintUkesToFile()
-        //{
-        //    using StreamWriter file = new StreamWriter("MyUkuleles.txt");
-        //    foreach (var entry in ukuleles)
-        //    {
-        //        file.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
-        //        file.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It is a {Size} sized instrument. Its serial number is {Serial}.");
-        //        file.WriteLine($"It uses {InstrumentString} gauge strings.");
-        //        file.WriteLine();
-        //    }
-        //}
-
     public void ListInstruments()
         {
             Console.WriteLine();
