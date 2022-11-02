@@ -50,8 +50,7 @@ Guitar, Bass and Ukulele classes inherit from StringedInstrument.
 Each of those classes contains a dictionary with all of the instrument objects available to the program. 
 The object properties are defined in the dictionary. 
 This data is called by the user in the master loop. 
-Additional methods which are specific to those classes are also contained within. 
-These methods are implementations of the signatures in the IMusicalInstrument interface.
+These classes contain additional methods that are implementations of the signatures in the IMusicalInstrument interface.
 
 The tests folder contains several unit tests for each instrument class. 
 These quickly and safely test string concatenations and methods contained within the individual instrument classes and their base classes.
