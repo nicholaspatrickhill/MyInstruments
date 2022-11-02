@@ -13,7 +13,7 @@ The long-term goal for this app is to develop a web and/or mobile version that o
 
 
 #### FEATURES
-Whenever a "Feature List" item is implemented it is clearly designated in the code comments.
+Whenever a "Feature List" item is implemented it is designated in the code with a comment.
 
 The following items from the "Feature List" are implemented:
 
@@ -27,6 +27,7 @@ The following items from the "Feature List" are implemented:
 
 ⦁	Calculate and display data based on an external factor (ex: get the current date, and display how mant days remaining until some event).
 
+⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
 
 #### NOTES & INSTRUCTIONS
 The easiest way to get started is to type "All" to see a list of all musical instruments available for review. 
