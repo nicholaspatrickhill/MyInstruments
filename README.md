@@ -29,7 +29,7 @@ The following items from the "Feature List" are implemented:
 
 ⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
 
-#### NOTES & INSTRUCTIONS
+#### NOTES
 MyInstruments implements a master loop in the Main method where the user can enter different commands to review data about the instruments in my collection. 
 The user can elect to review data specific to an individual instrument or may review data about the collection as a whole. 
 The user can exit the master loop at any time by typing "Quit."
@@ -58,6 +58,7 @@ These quickly and safely test string concatenations and methods contained within
 
 The log4net nuget package is configured in the program to record invalid user input and write it to a text file.
 
+#### INSTRUCTIONS
 The easiest way to get started is to type "All" to see a list of all the musical instruments available for review. 
 Then you can review any individual instrument by typing its name exactly as it appears in the list. 
 Please note that names are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.) 
