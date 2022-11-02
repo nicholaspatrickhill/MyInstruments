@@ -75,7 +75,7 @@ namespace MyInstruments
 
         public static void PrintAllToFile()
         {
-            string myInstruments = @"C:\MyInstrumentsTextFiles\MyInstruments.txt";
+            string myInstruments = @"C:\MyInstrumentsFiles\TextFiles\MyInstruments.txt";
             myInstruments = Path.GetFullPath(myInstruments);
             Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
 
