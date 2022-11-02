@@ -1,11 +1,13 @@
 ﻿using static MyInstruments.UserSelection;
+
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]
 
 namespace MyInstruments
 {
     class Program
     {
-        private static readonly log4net.ILog log = LogHelper.GetLogger(); //log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly log4net.ILog log = LogHelper.GetLogger(); 
+        //private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public static void Main(string[] args)
         {
             ConsoleWindow.PrintHeader();
@@ -15,12 +17,14 @@ namespace MyInstruments
             var repeat = true;
             while (repeat)
             {
-                Console.WriteLine("Hello. Which instrument would you like to review?");
+                Console.WriteLine("Hello. What would you like to review?");
 
                 var guitar = new Guitar();
                 var bass = new Bass();
                 var ukulele = new Ukulele();
                 string? input = UserInput();
+
+                log.Error("This is my error message");
 
                 repeat = SelectInstrument(repeat, guitar, bass, ukulele, input);
             }
@@ -31,7 +35,6 @@ namespace MyInstruments
             Console.ForegroundColor = ConsoleColor.Green;
             string? input = Console.ReadLine();
             return input;
-            log.Info("Info logging");
         }
     }
 }
