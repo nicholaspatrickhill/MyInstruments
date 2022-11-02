@@ -70,6 +70,7 @@ namespace MyInstruments
                 Collection.PrintAllToFile();
                 break;
             default:
+                // Fulfills feature list requirement: "Implement a log that records invalid inputs and writes them to a text file"
                 log4net.GlobalContext.Properties["UserInput"] = input;
                 log.Error("Invalid User Input");
                 ConsoleWindow.PrintErrorMessage();

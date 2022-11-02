@@ -1,12 +1,12 @@
 ﻿using static MyInstruments.UserSelection;
 
+// Fulfills feature list requirement: "Implement a log that records invalid inputs and writes them to a text file"
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]
 
 namespace MyInstruments
 {
     class Program
     {
-        //private static readonly log4net.ILog log = LogHelper.GetLogger(); 
         public static void Main(string[] args)
         {
             ConsoleWindow.PrintHeader();
