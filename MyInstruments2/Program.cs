@@ -6,8 +6,7 @@ namespace MyInstruments
 {
     class Program
     {
-        private static readonly log4net.ILog log = LogHelper.GetLogger(); 
-        //private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        //private static readonly log4net.ILog log = LogHelper.GetLogger(); 
         public static void Main(string[] args)
         {
             ConsoleWindow.PrintHeader();
@@ -23,8 +22,6 @@ namespace MyInstruments
                 var bass = new Bass();
                 var ukulele = new Ukulele();
                 string? input = UserInput();
-
-                log.Error("This is my error message");
 
                 repeat = SelectInstrument(repeat, guitar, bass, ukulele, input);
             }

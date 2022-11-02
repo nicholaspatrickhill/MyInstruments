@@ -12,6 +12,7 @@ namespace MyInstruments
 {
     public class UserSelection
     {
+        private static readonly log4net.ILog log = LogHelper.GetLogger();
         public static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, string input)
         {
             Console.ForegroundColor = ConsoleColor.White;
@@ -69,6 +70,8 @@ namespace MyInstruments
                 Collection.PrintAllToFile();
                 break;
             default:
+                log4net.GlobalContext.Properties["UserInput"] = input;
+                log.Error("Invalid User Input");
                 ConsoleWindow.PrintErrorMessage();
                 break;
             }
