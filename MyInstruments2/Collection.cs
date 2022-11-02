@@ -79,8 +79,7 @@ namespace MyInstruments
             myInstruments = Path.GetFullPath(myInstruments);
             Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
 
-            using StreamWriter file = new StreamWriter(myInstruments, true);
-            //using StreamWriter file = new StreamWriter("%~/%\\MyInstruments.txt");
+            using StreamWriter file = new StreamWriter(myInstruments);
             {
                 file.WriteLine("Your instruments:");
                 file.WriteLine();
