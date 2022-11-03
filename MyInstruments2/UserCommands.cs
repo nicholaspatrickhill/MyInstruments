@@ -10,7 +10,7 @@ namespace MyInstruments
     public class UserCommands
     {
         private static readonly log4net.ILog log = LogHelper.GetLogger();
-        public static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, string input)
+        public static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, KeyboardInstrument keyboard, string input)
         {
             switch (input)
             {
@@ -30,7 +30,8 @@ namespace MyInstruments
                 case "Basses":
                 case "Ukuleles":
                 case "Banjos":
-                    Collection.ListInstrument(guitar, bass, ukulele, banjo, input);
+                case "Keyboards":
+                    Collection.ListInstrument(guitar, bass, ukulele, banjo, keyboard, input);
                     break;
                 case "Count All":
                     Collection.CountAll();
@@ -39,11 +40,12 @@ namespace MyInstruments
                 case "Count Basses":
                 case "Count Ukuleles":
                 case "Count Banjos":
-                    Collection.CountInstrument(guitar, bass, ukulele, banjo, input);
+                case "Count Keyboards":
+                    Collection.CountInstrument(guitar, bass, ukulele, banjo, keyboard, input);
                     break;
                 case "Save":
                 case "Save File":
-                    Collection.SaveAllToFile();
+                    Collection.SaveFile();
                     break;
                 default:
                     // Fulfills feature list requirement: "Implement a log that records invalid inputs and writes them to a text file"

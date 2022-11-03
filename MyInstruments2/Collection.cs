@@ -8,6 +8,7 @@ using static MyInstruments.Bass;
 using static MyInstruments.Ukulele;
 using static MyInstruments.MusicalInstrument;
 using static MyInstruments.Banjo;
+using static MyInstruments.KeyboardInstrument;
 using System.Collections;
 using System.Diagnostics.Metrics;
 using System.Drawing;
@@ -22,9 +23,10 @@ namespace MyInstruments
             int num2 = basses.Count;
             int num3 = ukuleles.Count;
             int num4 = banjos.Count;
-            int num5 = num1 + num2 + num3 + num4;
+            int num5 = keyboards.Count;
+            int num6 = num1 + num2 + num3 + num4 + num5;
 
-            Console.WriteLine("You have " + num5 + " total instruments in your collection.");
+            Console.WriteLine("You have " + num6 + " total instruments in your collection.");
             Console.WriteLine();
         }
 
@@ -34,19 +36,22 @@ namespace MyInstruments
             Bass bass = new Bass();
             Ukulele ukulele = new Ukulele();
             Banjo banjo = new Banjo();
+            KeyboardInstrument keyboardInstrument = new KeyboardInstrument();
 
             Console.WriteLine();
-            Console.WriteLine("Guitars:");
+            Console.Write("Guitars:");
             guitar.ListInstruments();
-            Console.WriteLine("Basses:");
+            Console.Write("Basses:");
             bass.ListInstruments();
-            Console.WriteLine("Ukuleles:");
+            Console.Write("Ukuleles:");
             ukulele.ListInstruments();
-            Console.WriteLine("Banjos:");
+            Console.Write("Banjos:");
             banjo.ListInstruments();
+            Console.Write("Keyboards:");
+            keyboardInstrument.ListInstruments();
         }
 
-        public static void CountInstrument(Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, string input)
+        public static void CountInstrument(Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, KeyboardInstrument keyboard, string input)
         {
             if (input == "Count Guitars")
             {
@@ -64,9 +69,13 @@ namespace MyInstruments
             {
                 banjo.CountInstruments();
             }
+            else if (input == "Count Keyboards")
+            {
+                keyboard.CountInstruments();
+            }
         }
 
-        public static void ListInstrument(Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, string input)
+        public static void ListInstrument(Guitar guitar, Bass bass, Ukulele ukulele, Banjo banjo, KeyboardInstrument keyboard, string input)
         {
             if (input == "Guitars")
             {
@@ -84,9 +93,13 @@ namespace MyInstruments
             {
                 banjo.ListInstruments();
             }
+            else if (input == "Keyboards")
+            {
+                keyboard.ListInstruments();
+            }
         }
 
-        public static void SaveAllToFile()
+        public static void SaveFile()
         {
             string myInstruments = @"C:\temp\MyInstruments.txt";
             myInstruments = Path.GetFullPath(myInstruments);
@@ -96,22 +109,30 @@ namespace MyInstruments
             {
                 file.WriteLine("MY INSTRUMENTS");
                 file.WriteLine();
+
                 file.WriteLine("Guitars:");
                 foreach (KeyValuePair<string, Guitar> entry in guitars)
                     file.WriteLine("{0}", entry.Key);
                 file.WriteLine();
+
                 file.WriteLine("Basses:");
                 foreach (KeyValuePair<string, Bass> entry2 in basses)
                     file.WriteLine("{0}", entry2.Key);
                 file.WriteLine();
+
                 file.WriteLine("Ukuleles:");
                 foreach (KeyValuePair<string, Ukulele> entry3 in ukuleles)
                     file.WriteLine("{0}", entry3.Key);
                 file.WriteLine();
+
                 file.WriteLine("Banjos:");
                 foreach (KeyValuePair<string, Banjo> entry4 in banjos)
                     file.WriteLine("{0}", entry4.Key);
-                file.Close();
+                file.WriteLine();
+
+                file.WriteLine("Keyboards:");
+                foreach (KeyValuePair<string, KeyboardInstrument> entry5 in keyboards)
+                    file.WriteLine("{0}", entry5.Key);   
             }
             file.Close();
 
