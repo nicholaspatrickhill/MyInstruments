@@ -44,7 +44,7 @@ These include the methods to view a list of all commands available to the user, 
 The abstract MusicalInstrument class sets properties that are shared by the various instrument classes. 
 The InstrumentAge property uses an external factor (the current date) to calculate the age of the instrument. 
 The StringInstrument class inherits from MusicalInstrument and sets additional properties which are shared by the stringed instrument classes. 
-Guitar, Bass, Ukulele and Banjo classes inherit from StringInstrument.
+The Guitar, Bass, and OtherStringInstrument classes inherit from StringInstrument.
 KeyboardInstrument inherits from MusicalInstrument.
 Each of those classes contains a unique dictionary. 
 My musical instruments are instantiated as objects within each dictionary. 
