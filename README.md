@@ -37,7 +37,7 @@ The user input is first looped through an If-Else block in the UserSelection cla
 If the user elected to review a specific instrument, the program will call this information from the dictionary and print it to the console. 
 If the user input is not pertaining to a specific instrument, it exits the If-Else block and enters a switch in the UserCommands class. 
 The cases in the switch call various methods from the Collection and ConsoleWindow classes.
-Collection methods allow the user to see lists of all of the instruments in the collection, or lists of each type of instrument, or to count all of the instruments, or to count each type of instrument, or to print all of the instruments to a text file. 
+Collection methods allow the user to see lists of all of the instruments in the collection, or lists of each type of instrument, or to count all of the instruments, or to count each type of instrument, or to save all of the instruments to a text file. 
 Additional methods are contained in the ConsoleWindow class. 
 These include the methods to view a list of all commands available to the user, to clear the console, to print an error message to the screen when invalid input is received and to print the header text to the screen to start the program. 
 
