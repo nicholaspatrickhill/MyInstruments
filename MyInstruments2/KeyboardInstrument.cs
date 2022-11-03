@@ -14,7 +14,7 @@ namespace MyInstruments
 
         public static Dictionary<string, KeyboardInstrument> keyboards = new Dictionary<string, KeyboardInstrument>
         {
-            { "Casio CDP-100", new KeyboardInstrument() { Make = "Casio", Model = "CDP-100", Type = "digital piano", Country = "China", Year = ,
+            { "Casio CDP-100", new KeyboardInstrument() { Make = "Casio", Model = "CDP-100", Type = "digital piano", Country = "China", Year = 2009,
                 Serial = "6032098R", Color = "Black", NumberOfKeys = "88", KeyWeight = "Weighted"} },
         };
 

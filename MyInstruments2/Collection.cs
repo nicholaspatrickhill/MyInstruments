@@ -88,7 +88,7 @@ namespace MyInstruments
 
         public static void PrintAllToFile()
         {
-            string myInstruments = @"C:\MyInstrumentsFiles\TextFiles\MyInstruments.txt";
+            string myInstruments = @"C:\temp\MyInstruments.txt";
             myInstruments = Path.GetFullPath(myInstruments);
             Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
 
@@ -108,7 +108,7 @@ namespace MyInstruments
             }
             file.Close();
 
-            Console.WriteLine("Your instruments have been printed to a text file at C:\\MyInstrumentsTextFiles\\MyInstruments.txt.");
+            Console.WriteLine("Your instruments have been printed to a text file at C:\\temp\\MyInstruments.txt.");
             Console.WriteLine();
         }
     }
