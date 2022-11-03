@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    public abstract class StringedInstrument : MusicalInstrument
+    public abstract class StringInstrument : MusicalInstrument
     {
         public string? StringBrand { get; set; }
         public string? StringType { get; set; }

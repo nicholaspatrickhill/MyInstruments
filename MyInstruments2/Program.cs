@@ -20,12 +20,11 @@ namespace MyInstruments
 
                 var guitar = new Guitar();
                 var bass = new Bass();
-                var ukulele = new Ukulele();
-                var banjo = new Banjo();
+                var otherStringInstrument = new OtherStringInstrument();
                 var keyboard = new KeyboardInstrument();
                 string? input = UserInput();
 
-                repeat = SelectInstrument(repeat, guitar, bass, ukulele, banjo, keyboard, input);
+                repeat = SelectInstrument(repeat, guitar, bass, otherStringInstrument, keyboard, input);
             }
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Xjvt9VQ0p9VfH55JEpWTgsTCqpIflVDLtox4lC6OLDseVcrQmLTFfuqUhOOEAN21GDUTskS4JSgprzL4swr1g==",
+  "dgSpecHash": "79AL8Hy5ZXo8IWezqOuLbkbiIyYyPk4YjMceSEk83JV3Cl74aWL7J6OS3fQdAsp0W44LfgIUXVcMxYyLJfdH2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\UkuleleUnitTests\\UkuleleUnitTests.csproj",
+  "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\UkuleleUnitTests\\OtherStringInstrumentTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicho\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",

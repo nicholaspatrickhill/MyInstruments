@@ -4296,9 +4296,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\UkuleleUnitTests\\UkuleleUnitTests.csproj",
-      "projectName": "UkuleleUnitTests",
-      "projectPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\UkuleleUnitTests\\UkuleleUnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\UkuleleUnitTests\\OtherStringInstrumentTests.csproj",
+      "projectName": "OtherStringInstrumentTests",
+      "projectPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\UkuleleUnitTests\\OtherStringInstrumentTests.csproj",
       "packagesPath": "C:\\Users\\nicho\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\UkuleleUnitTests\\obj\\",
       "projectStyle": "PackageReference",

@@ -44,13 +44,13 @@ namespace MyInstruments
             Console.WriteLine("\"All\" to see a list of all of your instruments.");
             Console.WriteLine("\"Guitars\" to see a list of all of your guitars.");
             Console.WriteLine("\"Basses\" to see a list of all of your basses.");
-            Console.WriteLine("\"Ukuleles\" to see a list of all of your Ukuleles.");
-            Console.WriteLine("\"Banjos\" to see a list of all of your Banjos.");
+            Console.WriteLine("\"Other String Instruments\" to see a list of all of your ukuleles.");
+            Console.WriteLine("\"Keyboards\" to see a list of all of your keyboard instruments");
             Console.WriteLine("\"Count All\" to see the total quantity of instruments in your collection.");
             Console.WriteLine("\"Count Guitars\" to see the quantity of guitars in your collection.");
             Console.WriteLine("\"Count Basses\" to see the quantity of basses in your collection.");
-            Console.WriteLine("\"Count Ukuleles\" to see the quantity of ukuleles in your collection.");
-            Console.WriteLine("\"Count Banjos\" to see the quantity of banjos in your collection.");
+            Console.WriteLine("\"Count Other String Instruments\" to see the quantity of ukuleles in your collection.");
+            Console.WriteLine("\"Count Keyboards\" to see the quantity of keyboard instruments in your collection.");
             Console.WriteLine("\"Save File\" to save a list of all your instruments to a text file.");
             Console.WriteLine();
         }
