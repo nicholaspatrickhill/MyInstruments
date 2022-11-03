@@ -2,7 +2,7 @@
 
 **MyInstruments** is my capstone project for Code Kentucky's Software Development Part 1. 
 This console application was developed to help me manage my collection of musical instruments. 
-It is often difficult to recall specific details about each instrument in my collection from memory. 
+It can be difficult to recall specific details about each instrument in my collection from memory. 
 I am often seeking out information like an instrument's string gauge, serial number and country or age of manufacture. 
 An interactive console app makes this process easier, faster and more fun.
 
@@ -36,8 +36,7 @@ The user can exit the master loop at any time by typing "Quit."
 The user input is first looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
 If the user elected to review a specific instrument, the program will call this information from the dictionary and print it to the console. 
 If the user input is not pertaining to a specific instrument, it exits the If-Else block and enters a switch in the UserCommands class. 
-The cases in the switch call various different methods, mostly pertaining to reviewing the collection as a whole. 
-These Methods are contained in the Collection class. 
+The cases in the switch call various methods from the Collection and ConsoleWindow classes.
 Collection methods allow the user to see lists of all of the instruments in the collection, or lists of each type of instrument, or to count all of the instruments, or to count each type of instrument, or to print all of the instruments to a text file. 
 Additional methods are contained in the ConsoleWindow class. 
 These include the methods to view a list of all commands available to the user, to clear the console, to print an error message to the screen when invalid input is received and to print the header text to the screen to start the program. 
