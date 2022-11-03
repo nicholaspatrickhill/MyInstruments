@@ -41,9 +41,9 @@ namespace MyInstruments
                 case "Count Banjos":
                     Collection.CountInstrument(guitar, bass, ukulele, banjo, input);
                     break;
-                case "Print":
-                case "Print to File":
-                    Collection.PrintAllToFile();
+                case "Save":
+                case "Save File":
+                    Collection.SaveAllToFile();
                     break;
                 default:
                     // Fulfills feature list requirement: "Implement a log that records invalid inputs and writes them to a text file"
