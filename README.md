@@ -56,13 +56,21 @@ These quickly and safely test string concatenations and methods contained within
 
 #### INSTRUCTIONS
 The easiest way to get started is to select "List Instruments" to see a list of the keys that correspond to the musical instruments that are available for review.
+
 Then return to the main menu and select "Review Instruments."
-Here you can review any individual instrument in my collection by typing the key exactly as it appeared in the list. 
+Her,e you can review any individual instrument in my collection by typing the key exactly as it appeared in the list.
+
 Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
+
 You can clear the console by typing "Clear."
+
 Type "Menu" to return to the Main Menu and select another option.
+
 "Count Instruments" will provide a count of each instrument type and the total number of instruments in the collection.
+
 "Save Text File" will save a list of the instrument keys to a .txt file in the temp folder on the C drive.
+
 "About This App" provides some information about the application's purpose and author.
+
 "Exit" will exit the program.
 
