@@ -27,17 +27,18 @@ The following items from the "Feature List" are implemented:
 ⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.
 
 #### NOTES
-MyInstruments implements a master loop in the Main method where the user can enter different commands to review data about the instruments in my collection. 
-The user can elect to review data specific to an individual instrument or may review data about the collection as a whole. 
-The user can exit the master loop at any time by typing "Quit."
+MyInstruments begins by creating an instance of MainMenu to call RunMainMenu which generates an arrow-key driven menu in the console. The menu's properties are established in the Menu class. The user can select an action by moving the cursor with the UP and DOWN arrows keys to the desired command and pressing enter. The user's arrow key input calls cases in a Switch which call methods to the corresponding action desired by the user.
 
-The user input is first looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
+Selecting "Review Instruments" calls the ReviewAll method which generates a master loop where the user can enter a key to review data about the instruments in my collection. 
+The user input is looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
 If the user elected to review a specific instrument, the program will call this information from the dictionary and print it to the console. 
 If the user input is not pertaining to a specific instrument, it exits the If-Else block and enters a switch in the UserCommands class. 
-The cases in the switch call various methods from the Collection and ConsoleWindow classes.
-Collection methods allow the user to see lists of all of the instruments in the collection, or lists of each type of instrument, or to count all of the instruments, or to count each type of instrument, or to save all of the instruments to a text file. 
-Additional methods are contained in the ConsoleWindow class. 
-These include the methods to view a list of all commands available to the user, to clear the console, to print an error message to the screen when invalid input is received and to print the header text to the screen to start the program. 
+The UserCommands switch allows the user to clear the console, return to the Main Menu screen or generates an Invalid Input response. 
+The log4net nuget package is configured within the program to record invalid user input and write the log to .txt file in the temp folder on the C drive.
+
+Selecting "List Instruments", "Count Instruments", "Save Text File," and "About This App" call corresponding methods from the Collection and ConsoleWindow classes.
+
+Selecting "Exit" exits the program.
 
 The abstract MusicalInstrument class sets properties that are shared by the various instrument classes. 
 The InstrumentAge property uses an external factor (the current date) to calculate the age of the instrument. 
@@ -47,17 +48,21 @@ KeyboardInstrument inherits from MusicalInstrument.
 Each of those classes contains a unique dictionary. 
 My musical instruments are instantiated as objects within each dictionary. 
 The objects' properties are defined in the dictionary. 
-This data is called by the user in the master loop. 
+This data is what is called by the user in the master loop. 
 These classes contain additional methods that are implementations of the signatures in the IMusicalInstrument interface.
 
 The Tests folder contains several unit tests for each instrument class. 
 These quickly and safely test string concatenations and methods contained within the instrument classes.
 
-The log4net nuget package is configured within the program to record invalid user input and write it to a text file as a log.
-
 #### INSTRUCTIONS
-The easiest way to get started is to type "All" to see a list of all the musical instruments available for review. 
-Then you can review any individual instrument by typing its name exactly as it appears in the list. 
-Please note that names are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.) 
-For a list of other commands, like those to count instruments and clear the console, type "Commands". 
-Type "Quit" to exit the program.
+The easiest way to get started is to select "List Instruments" to see a list of the keys that correspond to the musical instruments that are available for review.
+Then return to the main menu and select "Review Instruments."
+Here you can review any individual instrument in my collection by typing the key exactly as it appeared in the list. 
+Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
+You can clear the console by typing "Clear."
+Type "Menu" to return to the Main Menu and select another option.
+"Count Instruments" will provide a count of each instrument type and the total number of instruments in the collection.
+"Save Text File" will save a list of the instrument keys to a .txt file in the temp folder on the C drive.
+"About This App" provides some information about the application's purpose and author.
+"Exit" will exit the program.
+
