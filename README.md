@@ -71,7 +71,7 @@ Type "Menu" to return to the Main Menu and select another option.
 "Count Instruments" will provide a count of each instrument type and the total number of instruments in the collection.
 
 "Save Text File" will save a list of the instrument keys to a .txt file in the temp folder on the C drive.
-This can be a handy reference when in the "Review Instruments" feature.
+This can be a handy reference guide when woking in the "Review Instruments" component.
 
 "About This App" provides some information about the application's purpose and author.
 
