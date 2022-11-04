@@ -12,8 +12,6 @@ The long-term goal for this app is to develop a web and/or mobile version using 
 
 
 #### FEATURES
-Whenever a "Feature List" item is implemented it is designated in the code by a comment for clarity.
-
 The following items from the "Feature List" are implemented:
 
 ⦁	Implement a "master loop" console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program.
