@@ -26,6 +26,8 @@ namespace MyInstruments
                 Serial = "Y31107", Color = "Natural Nato", Size = "soprano", StringBrand = "D'Addario", StringType = "Fluorocarbon", StringGauge = "Soprano: 20-22", } },
             { "Vega Banjo", new OtherStringInstrument() { Make = "Vega", Model = "SS-5 Folklore", Type =  "open-back acoustic banjo", Country = "USA", Year = 1963,
                 Serial = "A-12107", Color = "Natural Maple", Size = "long neck", StringBrand = "John Pearse", StringType = "Nickel Wound X-Long", StringGauge = "Medium: 10-23", } },
+            { "Rogue Lap Steel", new OtherStringInstrument() { Make = "Rogue", Model = "EA-3", Type = "electric lap steel guitar", Country = "Korea", Year = 2011,
+                Serial = "unknown", Color = "Black",  Size = "short-scale", StringBrand = "Asher", StringType = "Electro Hawaiian EH6-15 Nickel-Wound", StringGauge = "Medium: 15-58"} },
         };
 
     public void ListInstruments()
