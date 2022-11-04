@@ -10,23 +10,17 @@ namespace MyInstruments
 {
     public class MainMenu
     {
-        public void Start()
-        {
-            Title = "MyInstruments";        
-            RunMainMenu();
-        }
-
-        private void RunMainMenu()
+        public void RunMainMenu()
         {
             ForegroundColor = ConsoleColor.White;
-            string prompt = @".............................
-.....   MyInstruments   .....
-.............................
+            string prompt = @".......................................
+..........   MyInstruments   ..........
+.......................................
 
 Welcome to MyInstruments. What would you like to do? 
 Use the arrow keys to cycle through options and press enter to select an option.
 ";
-            string[] options = { "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "About", "Exit" };
+            string[] options = { "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "About This App", "Exit" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
@@ -42,7 +36,7 @@ Use the arrow keys to cycle through options and press enter to select an option.
                     CountInstruments();
                     break;
                 case 3:
-                    SaveAFile();
+                    SaveTextFile();
                     break;
                 case 4:
                     DisplayAboutInfo();
@@ -77,7 +71,7 @@ Use the arrow keys to cycle through options and press enter to select an option.
             RunMainMenu();
         }
 
-        private void SaveAFile()
+        private void SaveTextFile()
         {
             Clear();
             Collection.SaveFile();
@@ -89,7 +83,7 @@ Use the arrow keys to cycle through options and press enter to select an option.
         private void DisplayAboutInfo()
         {
             Clear();
-            WriteLine("This console app was created by Nick Hill in 2022.");
+            ConsoleWindow.PrintAboutInfo();
             WriteLine("Press any key to return to the menu.");
             ReadKey(true);
             RunMainMenu();

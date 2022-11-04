@@ -10,49 +10,21 @@ namespace MyInstruments
 {
     class ConsoleWindow
     {
-        public static void PrintHeader()
-        {
-            ForegroundColor = ConsoleColor.White;
-
-            WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "............................."));
-            WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", ".....   MyInstruments   ....."));
-            WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "............................."));
-            WriteLine();
-            WriteLine("Welcome to MyInstruments! To get started, please type the name of the instrument that you would like to review.");
-            WriteLine("Type \"All\" to see a list of all of your instruments. Type \"Commands\" to view a list of other commands.");
-            WriteLine("Type \"Quit\" to exit the program.");
-            WriteLine();
-        }
-
-        public static void ClearConsole()
-        {
-            Clear();
-            //ConsoleWindow.PrintHeader();
-        }
-
         public static void PrintErrorMessage()
         {
             WriteLine("Invalid Command. Please type \"Commands\" to see a list of available commands or try again.");
             WriteLine();
         }
 
-        public static void PrintCommands()
+        public static void PrintAboutInfo()
         {
+            WriteLine("MyInstruments was created by Nick Hill in 2022.");
             WriteLine();
-            WriteLine("Type...");
-            WriteLine("\"Quit\" to exit the program.");
-            WriteLine("\"Clear\" to clear the console.");
-            WriteLine("\"All\" to see a list of all of your instruments.");
-            WriteLine("\"Guitars\" to see a list of all of your guitars.");
-            WriteLine("\"Basses\" to see a list of all of your basses.");
-            WriteLine("\"Other String Instruments\" to see a list of all of your ukuleles.");
-            WriteLine("\"Keyboards\" to see a list of all of your keyboard instruments");
-            WriteLine("\"Count All\" to see the total quantity of instruments in your collection.");
-            WriteLine("\"Count Guitars\" to see the quantity of guitars in your collection.");
-            WriteLine("\"Count Basses\" to see the quantity of basses in your collection.");
-            WriteLine("\"Count Other String Instruments\" to see the quantity of ukuleles in your collection.");
-            WriteLine("\"Count Keyboards\" to see the quantity of keyboard instruments in your collection.");
-            WriteLine("\"Save File\" to save a list of all your instruments to a text file.");
+            WriteLine("MyInstruments was developed as my capstone project for Session One of Code Kentucky's Software Development class.");
+            WriteLine("The app was created to help me manage data about my collection of musical instruments.");
+            WriteLine("It can be difficult to recall specific details about each instrument in my collection from memory.");
+            WriteLine("I am often seeking out information like an instrument's string gauge, serial number and country or age of manufacture.");
+            WriteLine("An interactive console app makes this process easier, faster and more fun!");
             WriteLine();
         }
     }

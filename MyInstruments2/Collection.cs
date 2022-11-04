@@ -48,6 +48,7 @@ namespace MyInstruments
                 }
             }
         }
+
         public static void CountAll()
         {
             int num1 = guitars.Count;
@@ -55,13 +56,13 @@ namespace MyInstruments
             int num3 = otherStringInstruments.Count;
             int num4 = keyboards.Count;
             int num5 = num1 + num2 + num3 + num4;
-
-            WriteLine("You have " + num5 + " total instruments in your collection.");
-            WriteLine();
+            
             WriteLine("You have " + num1 + " guitars.");
             WriteLine("You have " + num2 + " basses.");
             WriteLine("You have " + num3 + " other string instruments.");
             WriteLine("You have " + num4 + " keyboard instruments.");
+            WriteLine();
+            WriteLine("You have " + num5 + " total instruments in your collection.");
             WriteLine();
 
         }
@@ -84,27 +85,6 @@ namespace MyInstruments
             Write("Keyboards:");
             keyboardInstrument.ListInstruments();
         }
-
-     
-        //public static void CountInstrument(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
-        //{
-        //    if (input == "Count Guitars")
-        //    {
-        //        guitar.CountInstruments();
-        //    }
-        //    else if (input == "Count Basses")
-        //    {
-        //        bass.CountInstruments();
-        //    }
-        //    else if (input == "Count Other String Instruments")
-        //    {
-        //        otherStringInstrument.CountInstruments();
-        //    }
-        //    else if (input == "Count Keyboards")
-        //    {
-        //        keyboard.CountInstruments();
-        //    }
-        //}
 
         //public static void ListInstrument(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
         //{

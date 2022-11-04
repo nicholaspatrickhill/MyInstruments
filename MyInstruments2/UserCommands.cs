@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace MyInstruments
 {
@@ -14,41 +15,13 @@ namespace MyInstruments
         {
             switch (input)
             {
-                //case "Quit":
-                //    repeat = false;
-                //    break;
-                //case "Commands":
-                //    ConsoleWindow.PrintCommands();
-                //    break;
-                //case "All":
-                //    Collection.ListAll();
-                //    break;
                 case "Clear":
-                    ConsoleWindow.ClearConsole();
+                    Clear();
                     break;
                 case "Menu":
-                    MainMenu mainMenu = new MainMenu();
-                    mainMenu.Start();
-                    break;
-                //case "Guitars":
-                //case "Basses":
-                //case "Other String Instruments":
-                //case "Keyboards":
-                //    Collection.ListInstrument(guitar, bass, otherStringInstrument, keyboard, input);
-                //    break;
-                //case "Count All":
-                //    Collection.CountAll();
-                //    break;
-                //case "Count Guitars":
-                //case "Count Basses":
-                //case "Count Other String Instruments":
-                //case "Count Keyboards":
-                //    Collection.CountInstrument(guitar, bass, otherStringInstrument, keyboard, input);
-                //    break;
-                //case "Save":
-                //case "Save File":
-                //    Collection.SaveFile();
-                //    break;
+                    var mainMenu = new MainMenu();
+                    mainMenu.RunMainMenu();
+                    break;            
                 default:
                     // Fulfills feature list requirement: "Implement a log that records invalid inputs and writes them to a text file"
                     log4net.GlobalContext.Properties["UserInput"] = input;
