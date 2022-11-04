@@ -64,7 +64,7 @@ Here you can review any individual instrument in my collection by typing the key
 
 **Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
 
-If the console is becoming clogged with user input and information you may refresh it by typing "Clear."
+If the console is becoming clogged with user input and data you may refresh it by typing "Clear."
 
 Type "Menu" to return to the Main Menu and select another option.
 
