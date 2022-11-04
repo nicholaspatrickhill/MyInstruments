@@ -31,10 +31,12 @@ MyInstruments begins by creating an instance of MainMenu to call RunMainMenu whi
 
 Selecting "Review Instruments" calls the ReviewAll method which generates a master loop where the user can enter a key to review data about the instruments in my collection. 
 The user input is looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
-If the user elected to review a specific instrument, the program will call this information from the dictionary and print it to the console. 
-If the user input is not pertaining to a specific instrument, it exits the If-Else block and enters a switch in the UserCommands class. 
-The UserCommands switch allows the user to clear the console, return to the Main Menu screen or generates an Invalid Input response. 
-The log4net nuget package is configured within the program to record invalid user input and write the log to .txt file in the temp folder on the C drive.
+If the user elected to review a specific instrument, the program will call this information from the dictionary and print it to the console.
+The console will then prompt the user to enter a new key.
+The user will stay in this loop until they elect to return to the main menu.
+If the user input is not a matching key, it exits the UserSelection If-Else block and enters a switch in the UserCommands class. 
+The UserCommands switch allows the user to clear the console, return to the main menu screen or generates an Invalid Input response. 
+The log4net nuget package is configured within the program to record invalid user input and write the log to a .txt file in the temp folder on the C drive.
 
 Selecting "List Instruments", "Count Instruments", "Save Text File," and "About This App" call corresponding methods from the Collection and ConsoleWindow classes.
 
@@ -52,23 +54,24 @@ This data is what is called by the user in the master loop.
 These classes contain additional methods that are implementations of the signatures in the IMusicalInstrument interface.
 
 The Tests folder contains several unit tests for each instrument class. 
-These quickly and safely test string concatenations and methods contained within the instrument classes.
+These quickly and safely test the string concatenations and methods contained within the instrument classes and their parent classes.
 
 #### INSTRUCTIONS
 The easiest way to get started is to select "List Instruments" to see a list of the keys that correspond to the musical instruments that are available for review.
 
 Then return to the main menu and select "Review Instruments."
-Her,e you can review any individual instrument in my collection by typing the key exactly as it appeared in the list.
+Here you can review any individual instrument in my collection by typing the key exactly as it appeared in the list.
 
-Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
+**Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
 
-You can clear the console by typing "Clear."
+If the console is becoming clogged with user input and information you may refresh it by typing "Clear."
 
 Type "Menu" to return to the Main Menu and select another option.
 
 "Count Instruments" will provide a count of each instrument type and the total number of instruments in the collection.
 
 "Save Text File" will save a list of the instrument keys to a .txt file in the temp folder on the C drive.
+This can be a handy reference when in the "Review Instruments" feature.
 
 "About This App" provides some information about the application's purpose and author.
 
