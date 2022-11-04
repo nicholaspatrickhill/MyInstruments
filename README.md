@@ -40,7 +40,7 @@ The log4net nuget package is configured within the program to record invalid use
 
 Selecting "List Instruments", "Count Instruments", "Save Text File," and "About This App" call corresponding methods from the Collection and ConsoleWindow classes.
 
-Selecting "Exit" exits the program.
+Selecting "Exit" uses an Exit method to terminate the program.
 
 The abstract MusicalInstrument class sets properties that are shared by the various instrument classes. 
 The InstrumentAge property uses an external factor (the current date) to calculate the age of the instrument. 
