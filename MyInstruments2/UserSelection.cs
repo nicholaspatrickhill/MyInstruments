@@ -9,6 +9,7 @@ using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.MusicalInstrument;
 using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.UserCommands;
+using static System.Console;
 
 namespace MyInstruments
 {
@@ -16,7 +17,7 @@ namespace MyInstruments
     {
         public static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
         {
-            Console.ForegroundColor = ConsoleColor.White;
+            ForegroundColor = ConsoleColor.White;
 
             if (guitars.ContainsKey(input))
             {

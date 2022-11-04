@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Formats.Asn1.AsnWriter;
+using static System.Console;
 
 namespace MyInstruments
 {
@@ -25,23 +26,23 @@ namespace MyInstruments
 
         public void ListInstruments()
         {
-            Console.WriteLine();
+            WriteLine();
             foreach (KeyValuePair<string, KeyboardInstrument> pair in keyboards)
-                Console.WriteLine(pair.Key);
-            Console.WriteLine();
+                WriteLine(pair.Key);
+            WriteLine();
         }
 
         public void PrintInstrument()
         {
-            Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
-            Console.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It has {NumberOfKeys} {KeyWeight} keys. Its serial number is {Serial}.");;
-            Console.WriteLine();
+            WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
+            WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It has {NumberOfKeys} {KeyWeight} keys. Its serial number is {Serial}.");;
+            WriteLine();
         }
 
         public void CountInstruments()
         {
-            Console.WriteLine("You have " + keyboards.Count + " keyboard instruments.");
-            Console.WriteLine();
+            WriteLine("You have " + keyboards.Count + " keyboard instruments.");
+            WriteLine();
         }
     }
 }

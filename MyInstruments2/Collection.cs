@@ -11,6 +11,8 @@ using static MyInstruments.KeyboardInstrument;
 using System.Collections;
 using System.Diagnostics.Metrics;
 using System.Drawing;
+using static System.Console;
+
 
 namespace MyInstruments
 {
@@ -24,8 +26,8 @@ namespace MyInstruments
             int num4 = keyboards.Count;
             int num5 = num1 + num2 + num3 + num4;
 
-            Console.WriteLine("You have " + num5 + " total instruments in your collection.");
-            Console.WriteLine();
+            WriteLine("You have " + num5 + " total instruments in your collection.");
+            WriteLine();
         }
 
         public static void ListAll()
@@ -35,14 +37,14 @@ namespace MyInstruments
             OtherStringInstrument otherStringInstrument = new OtherStringInstrument();
             KeyboardInstrument keyboardInstrument = new KeyboardInstrument();
 
-            Console.WriteLine();
-            Console.Write("Guitars:");
+            WriteLine();
+            Write("Guitars:");
             guitar.ListInstruments();
-            Console.Write("Basses:");
+            Write("Basses:");
             bass.ListInstruments();
-            Console.Write("Other String Instruments:");
+            Write("Other String Instruments:");
             otherStringInstrument.ListInstruments();
-            Console.Write("Keyboards:");
+            Write("Keyboards:");
             keyboardInstrument.ListInstruments();
         }
 
@@ -118,8 +120,8 @@ namespace MyInstruments
             }
             file.Close();
 
-            Console.WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
-            Console.WriteLine();
+            WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
+            WriteLine();
         }
     }
 }

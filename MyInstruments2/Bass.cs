@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace MyInstruments
 {
@@ -26,24 +27,24 @@ namespace MyInstruments
 
         public void ListInstruments()
         {
-            Console.WriteLine();
+            WriteLine();
             foreach (KeyValuePair<string, Bass> pair in basses)
-                Console.WriteLine(pair.Key);
-            Console.WriteLine();
+                WriteLine(pair.Key);
+            WriteLine();
         }
 
         public void PrintInstrument()
         {
-            Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
-            Console.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It is a {Scale} scale bass. Its serial number is {Serial}.");
-            Console.WriteLine($"It uses {InstrumentString} gauge strings.");
-            Console.WriteLine();
+            WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
+            WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It is a {Scale} scale bass. Its serial number is {Serial}.");
+            WriteLine($"It uses {InstrumentString} gauge strings.");
+            WriteLine();
         }
 
         public void CountInstruments()
         {
-            Console.WriteLine("You have " + basses.Count + " basses.");
-            Console.WriteLine();
+            WriteLine("You have " + basses.Count + " basses.");
+            WriteLine();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using static MyInstruments.UserSelection;
+using static System.Console;
 
 // Fulfills feature list requirement: "Implement a log that records invalid inputs and writes them to a text file"
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]
@@ -16,7 +17,7 @@ namespace MyInstruments
             var repeat = true;
             while (repeat)
             {
-                Console.WriteLine("Hello. What would you like to review?");
+                WriteLine("Hello. What would you like to review?");
 
                 var guitar = new Guitar();
                 var bass = new Bass();
@@ -30,8 +31,8 @@ namespace MyInstruments
 
         private static string? UserInput()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            string? input = Console.ReadLine();
+            ForegroundColor = ConsoleColor.Green;
+            string? input = ReadLine();
             return input;
         }
     }

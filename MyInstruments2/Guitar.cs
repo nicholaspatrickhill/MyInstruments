@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace MyInstruments
 {
@@ -37,24 +38,24 @@ namespace MyInstruments
 
         public void ListInstruments()
         {
-            Console.WriteLine();
+            WriteLine();
             foreach (KeyValuePair<string, Guitar> pair in guitars)
-                Console.WriteLine(pair.Key);
-            Console.WriteLine();
+                WriteLine(pair.Key);
+            WriteLine();
         }
 
         public void PrintInstrument()
         {
-            Console.WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
-            Console.WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. Its serial number is {Serial}.");
-            Console.WriteLine($"It uses {InstrumentString} gauge strings.");
-            Console.WriteLine();
+            WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
+            WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. Its serial number is {Serial}.");
+            WriteLine($"It uses {InstrumentString} gauge strings.");
+            WriteLine();
         }
 
         public void CountInstruments()
         {
-            Console.WriteLine("You have " + guitars.Count + " guitars.");
-            Console.WriteLine();
+            WriteLine("You have " + guitars.Count + " guitars.");
+            WriteLine();
         }
     }
 }
