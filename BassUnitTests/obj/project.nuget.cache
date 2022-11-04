@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nZkV7qBYeNE/cohVFCGMEi5BeohGuNBgMtaHNCcVtQevQH2ysiwZasfV+avTQWKH31zE7uPtI1ll/X96fRP00w==",
+  "dgSpecHash": "PD/VmHiBId75Z8EWMT33wpJg0ppWzx0dRR1e6fkqEnVUwOWy7+USLuHjYWGCzqWWY3LFLnpgAP/wQbwryEaZ7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\BassUnitTests\\BassUnitTests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nicho\\.nuget\\packages\\betterconsoletables\\1.1.3\\betterconsoletables.1.1.3.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

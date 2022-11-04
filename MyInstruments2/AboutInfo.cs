@@ -11,7 +11,7 @@ namespace MyInstruments
     {
         public void RunAboutInfo()
         {
-            WriteLine("This console app was created by Nick Hill in 2022");
+            WriteLine("This console app was created by Nick Hill in 2022.");
         }
     }
 }

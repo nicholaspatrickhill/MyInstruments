@@ -8,16 +8,46 @@ using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.MusicalInstrument;
 using static MyInstruments.KeyboardInstrument;
+using static MyInstruments.UserSelection;
 using System.Collections;
 using System.Diagnostics.Metrics;
 using System.Drawing;
 using static System.Console;
-
+using BetterConsoleTables;
+using System.Data;
+using System.Net.NetworkInformation;
 
 namespace MyInstruments
 {
     class Collection
     {
+        public static void ReviewAll()
+        {
+            var repeat = true;
+            while (repeat)
+            {
+                ForegroundColor = ConsoleColor.White;
+                WriteLine("Type \"Menu\" to return the Main Menu or type \"Clear\" to clear the console.");
+                WriteLine("Which instrument would you like to review?");
+                WriteLine();
+
+                var guitar = new Guitar();
+                var bass = new Bass();
+                var otherStringInstrument = new OtherStringInstrument();
+                var keyboard = new KeyboardInstrument();
+
+                string? input = UserInput();
+
+                repeat = SelectInstrument(repeat, guitar, bass, otherStringInstrument, keyboard, input);
+
+                static string? UserInput()
+                {
+                    ForegroundColor = ConsoleColor.Green;
+                    string? input = ReadLine();
+                    return input;
+                }
+            }
+        }
         public static void CountAll()
         {
             int num1 = guitars.Count;
@@ -38,10 +68,10 @@ namespace MyInstruments
 
         public static void ListAll()
         {
-            Guitar guitar = new Guitar();
-            Bass bass = new Bass();
-            OtherStringInstrument otherStringInstrument = new OtherStringInstrument();
-            KeyboardInstrument keyboardInstrument = new KeyboardInstrument();
+            var guitar = new Guitar();
+            var bass = new Bass();
+            var otherStringInstrument = new OtherStringInstrument();
+            var keyboardInstrument = new KeyboardInstrument();
 
             WriteLine("Your instruments:");
             WriteLine();
@@ -55,6 +85,7 @@ namespace MyInstruments
             keyboardInstrument.ListInstruments();
         }
 
+     
         //public static void CountInstrument(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
         //{
         //    if (input == "Count Guitars")
@@ -130,6 +161,7 @@ namespace MyInstruments
             WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
             WriteLine();
         }
+
     }
 }
 

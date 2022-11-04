@@ -1,6 +1,6 @@
 ﻿using static MyInstruments.UserSelection;
 using static System.Console;
-using static MyInstruments.Game;
+using static MyInstruments.MainMenu;
 
 // Fulfills feature list requirement: "Implement a log that records invalid inputs and writes them to a text file"
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]
@@ -29,8 +29,8 @@ namespace MyInstruments
             //    repeat = SelectInstrument(repeat, guitar, bass, otherStringInstrument, keyboard, input); 
             //}
             
-            Game myGame = new Game();
-            myGame.Start();
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Start();
         }
 
         private static string? UserInput()

@@ -27,8 +27,8 @@ namespace MyInstruments
                     ConsoleWindow.ClearConsole();
                     break;
                 case "Menu":
-                    Game myGame = new Game();
-                    myGame.Start();
+                    MainMenu mainMenu = new MainMenu();
+                    mainMenu.Start();
                     break;
                 //case "Guitars":
                 //case "Basses":
