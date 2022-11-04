@@ -17,10 +17,10 @@ namespace MyInstruments
 ..........   MyInstruments   ..........
 .......................................
 
-Welcome to MyInstruments. What would you like to do? 
+Welcome to MyInstruments! What would you like to do? 
 Use the arrow keys to cycle through options and press enter to select an option.
 ";
-            string[] options = { "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "About This App", "Exit" };
+            string[] options = { "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "Instructions", "About This App", "Exit" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
@@ -39,9 +39,12 @@ Use the arrow keys to cycle through options and press enter to select an option.
                     SaveTextFile();
                     break;
                 case 4:
-                    DisplayAboutInfo();
+                    DisplayInstructions();
                     break;
                 case 5:
+                    DisplayAboutInfo();
+                    break;
+                case 6:
                     ExitProgram();
                     break;
             }
@@ -75,6 +78,15 @@ Use the arrow keys to cycle through options and press enter to select an option.
         {
             Clear();
             Collection.SaveFile();
+            WriteLine("Press any key to return to the menu.");
+            ReadKey(true);
+            RunMainMenu();
+        }
+
+        private void DisplayInstructions()
+        {
+            Clear();
+            ConsoleWindow.PrintInstructions();
             WriteLine("Press any key to return to the menu.");
             ReadKey(true);
             RunMainMenu();
