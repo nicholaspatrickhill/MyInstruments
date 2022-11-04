@@ -38,7 +38,8 @@ namespace MyInstruments
             {
                 KeyboardInstrument keyboardChoice = keyboards[input];
                 keyboardChoice.PrintInstrument();
-            }
+            } 
+            
             else repeat = SelectCommand(repeat, guitar, bass, otherStringInstrument, keyboard, input);
             return repeat;
         }

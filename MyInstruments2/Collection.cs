@@ -28,6 +28,12 @@ namespace MyInstruments
 
             WriteLine("You have " + num5 + " total instruments in your collection.");
             WriteLine();
+            WriteLine("You have " + num1 + " guitars.");
+            WriteLine("You have " + num2 + " basses.");
+            WriteLine("You have " + num3 + " other string instruments.");
+            WriteLine("You have " + num4 + " keyboard instruments.");
+            WriteLine();
+
         }
 
         public static void ListAll()
@@ -37,6 +43,7 @@ namespace MyInstruments
             OtherStringInstrument otherStringInstrument = new OtherStringInstrument();
             KeyboardInstrument keyboardInstrument = new KeyboardInstrument();
 
+            WriteLine("Your instruments:");
             WriteLine();
             Write("Guitars:");
             guitar.ListInstruments();
@@ -48,45 +55,45 @@ namespace MyInstruments
             keyboardInstrument.ListInstruments();
         }
 
-        public static void CountInstrument(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
-        {
-            if (input == "Count Guitars")
-            {
-                guitar.CountInstruments();
-            }
-            else if (input == "Count Basses")
-            {
-                bass.CountInstruments();
-            }
-            else if (input == "Count Other String Instruments")
-            {
-                otherStringInstrument.CountInstruments();
-            }
-            else if (input == "Count Keyboards")
-            {
-                keyboard.CountInstruments();
-            }
-        }
+        //public static void CountInstrument(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
+        //{
+        //    if (input == "Count Guitars")
+        //    {
+        //        guitar.CountInstruments();
+        //    }
+        //    else if (input == "Count Basses")
+        //    {
+        //        bass.CountInstruments();
+        //    }
+        //    else if (input == "Count Other String Instruments")
+        //    {
+        //        otherStringInstrument.CountInstruments();
+        //    }
+        //    else if (input == "Count Keyboards")
+        //    {
+        //        keyboard.CountInstruments();
+        //    }
+        //}
 
-        public static void ListInstrument(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
-        {
-            if (input == "Guitars")
-            {
-                guitar.ListInstruments();
-            }
-            else if (input == "Basses")
-            {
-                bass.ListInstruments();
-            }
-            else if (input == "Other String Instruments")
-            {
-                otherStringInstrument.ListInstruments();
-            }
-            else if (input == "Keyboards")
-            {
-                keyboard.ListInstruments();
-            }
-        }
+        //public static void ListInstrument(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
+        //{
+        //    if (input == "Guitars")
+        //    {
+        //        guitar.ListInstruments();
+        //    }
+        //    else if (input == "Basses")
+        //    {
+        //        bass.ListInstruments();
+        //    }
+        //    else if (input == "Other String Instruments")
+        //    {
+        //        otherStringInstrument.ListInstruments();
+        //    }
+        //    else if (input == "Keyboards")
+        //    {
+        //        keyboard.ListInstruments();
+        //    }
+        //}
 
         public static void SaveFile()
         {
