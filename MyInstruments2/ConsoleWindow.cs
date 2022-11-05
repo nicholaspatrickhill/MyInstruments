@@ -24,7 +24,7 @@ namespace MyInstruments
         {
             WriteLine();
             WriteLine("Type the key of the instrument that you wish to review.");
-            WriteLine("Type \"Guitars\", \"Basses\", \"Other\", \"Keyboards\" or \"All\" to see the keys available for review.");
+            WriteLine("Type \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" to see the keys available for review.");
             WriteLine("Type \"Menu\" to return the Main Menu.");
             WriteLine("Type \"Clear\" to clear the console.");
             WriteLine();
@@ -50,7 +50,7 @@ namespace MyInstruments
             WriteLine();
             WriteLine("\"Review Instruments\" allows you to review any individual instrument in my collection by typing its key into the console.");
             WriteLine();
-            WriteLine("You may review the keys available to the program by typing \"Guitars\", \"Basses\", \"Other\", \"Keyboards\" or \"All\".");
+            WriteLine("You may review the keys available to the program by typing \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\".");
             WriteLine();
             WriteLine("**Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input.");
             WriteLine();
