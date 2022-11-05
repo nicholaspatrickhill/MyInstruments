@@ -21,7 +21,7 @@ namespace MyInstruments
 {
     class Collection
     {
-        public static void ReviewAll()
+        public static void ReviewAllInstruments()
         {
             ConsoleWindow.PrintHeader();
 
@@ -50,7 +50,7 @@ namespace MyInstruments
             }
         }
 
-        public static void CountAll()
+        public static void CountAllInstruments()
         {
             int num1 = guitars.Count;
             int num2 = basses.Count;
@@ -68,7 +68,7 @@ namespace MyInstruments
             WriteLine();
         }
 
-        public static void ListAll()
+        public static void ListAllInstruments()
         {
             var guitar = new Guitar();
             var bass = new Bass();
@@ -107,7 +107,7 @@ namespace MyInstruments
             }
         }
 
-        public static void SaveFile()
+        public static void SaveInstrumentsToTextFile()
         {
             string myInstruments = @"C:\temp\MyInstruments.txt";
             myInstruments = Path.GetFullPath(myInstruments);

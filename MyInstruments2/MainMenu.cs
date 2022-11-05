@@ -62,28 +62,28 @@ What would you like to do?
         private void ReviewInstruments()
         {
             Clear();
-            Collection.ReviewAll();
+            Collection.ReviewAllInstruments();
         }
 
         private void ListInstruments()
         {
             Clear();
             WriteLine();
-            Collection.ListAll();
+            Collection.ListAllInstruments();
             ReturnToMainMenu();
         }
 
         private void CountInstruments()
         {
             Clear();
-            Collection.CountAll();
+            Collection.CountAllInstruments();
             ReturnToMainMenu();
         }
 
         private void SaveTextFile()
         {
             Clear();
-            Collection.SaveFile();
+            Collection.SaveInstrumentsToTextFile();
             ReturnToMainMenu();
         }
 
