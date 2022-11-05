@@ -29,25 +29,23 @@ The following items from the "Feature List" are implemented:
 #### NOTES
 MyInstruments begins by calling the Start method.
 Start creates an instance of MainMenu and calls RunMainMenu to generate an arrow-key driven menu in the console. 
-RunMainMenu instantiates the Menu class.
-The menu's functionality is established in the Menu class.
+The menu's functionality and design is established by the Menu class.
 The user moves the cursor in the console with the UP and DOWN arrow keys on their keyboard to highlight the function they wish to perform.
 The user presses ENTER to perform the function.
 The user's keyboard input executes cases in a Switch to call methods that correspond to the action desired by the user.
 
 Selecting "Review Instruments" calls the ReviewAllInstruments method.
-ReviewAllInstruments generates a master loop where the user can enter a key to review data about the instruments in my collection. 
-The user input is looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
+ReviewAllInstruments loops the user input through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
 If there is a matching key, the program will call the information from the appropriate dictionary and print it to the console.
 The console will then prompt the user to enter a new key.
 If the user input is not a matching key, it exits the UserSelection If-Else block and enters a switch in the UserCommands class. 
-The UserCommands switch executes cases by searching user input that matches the case name.
+The UserCommands switch executes cases by searching for a case name that matches the user's input.
 The user may use these commands to review the keys available to the program, to clear the console or to return to the main menu screen.
 The UserCommands switch also generates an Invalid Input response when there is no matching key or command. 
 The log4net nuget package is configured within the program to record invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
 The user stays in this loop until they elect to return to the main menu by typing "Menu".
 
-Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" call corresponding methods from the Collection and ConsoleWindow classes.
+Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" calls corresponding methods from the Collection and ConsoleWindow classes.
 
 Selecting "Exit" uses an Exit method to terminate the program.
 
@@ -56,7 +54,7 @@ The InstrumentAge property uses an external factor (the current date) to calcula
 The StringInstrument class inherits from MusicalInstrument and sets additional properties which are shared by the stringed instrument classes. 
 The Guitar, Bass, and OtherStringInstrument classes inherit from StringInstrument.
 KeyboardInstrument inherits from MusicalInstrument.
-Each of those classes contains a unique dictionary. 
+Each of those instrument classes contains a unique dictionary. 
 My musical instruments are instantiated as objects within each dictionary. 
 The objects' properties are defined in the dictionary. 
 These properties are returned in ReviewAllInstruments as a concatenated string when the user types in a matching key. 
@@ -72,7 +70,7 @@ Use the UP and DOWN arrow keys to highlight the function that you wish to perfor
 
 "You may review the keys available to the program by typing "Guitars", "Basses", "Keyboards" or "Other".
 
-**Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
+**Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
 
 If the console is becoming clogged with user input and data you may refresh it by typing "Clear."
 
@@ -83,7 +81,7 @@ Type "Menu" to return to the Main Menu and select another option.
 "Count Instruments" provides a count of each instrument type and the total number of instruments in the collection.
 
 "Save Text File" saves a list of the instrument keys to a .txt file in the temp folder on the C:\ drive.  
-TIP: This can be a handy reference guide when woking in the "Review Instruments" component.
+TIP: This can be a handy reference guide when woking in the "Review Instruments" module.
 
 "Instructions" provides instructions for using the application.
 
