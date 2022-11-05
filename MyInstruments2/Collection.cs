@@ -16,6 +16,7 @@ using static System.Console;
 using BetterConsoleTables;
 using System.Data;
 using System.Net.NetworkInformation;
+using ConsoleTableExt;
 
 namespace MyInstruments
 {
@@ -148,6 +149,59 @@ namespace MyInstruments
             WriteLine();
         }
 
+        public static void ListInstrumentsInTable()
+        {
+            ConsoleWindow.PrintAppHeader();
+            WriteLine();
+
+            ConsoleTableBuilder
+                .From(guitars
+                    .Select(guitar=> new object[] 
+                    {
+                        guitar.Key,
+                    })
+                    .ToList())
+                .WithColumn("GUITARS")
+                .WithFormat(ConsoleTableBuilderFormat.Minimal)
+                .ExportAndWriteLine();
+            WriteLine();
+
+            ConsoleTableBuilder
+              .From(basses
+                  .Select(bass => new object[]
+                  {
+                        bass.Key,
+                  })
+                  .ToList())
+              .WithColumn("BASSES")
+              .WithFormat(ConsoleTableBuilderFormat.Minimal)
+              .ExportAndWriteLine();
+            WriteLine();
+
+            ConsoleTableBuilder
+              .From(otherStringInstruments
+                  .Select(otherStringInstrument => new object[]
+                  {
+                        otherStringInstrument.Key,
+                  })
+                  .ToList())
+              .WithColumn("OTHER STRING INSTRUMENTS")
+              .WithFormat(ConsoleTableBuilderFormat.Minimal)
+              .ExportAndWriteLine();
+            WriteLine();
+
+            ConsoleTableBuilder
+              .From(keyboards
+                  .Select(keyboard => new object[]
+                  {
+                        keyboard.Key,
+                  })
+                  .ToList())
+              .WithColumn("KEYBOARD INSTRUMENTS")
+              .WithFormat(ConsoleTableBuilderFormat.Minimal)
+              .ExportAndWriteLine();
+            WriteLine(); 
+        }
     }
 }
 

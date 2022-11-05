@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "73uPyaafs8hhnl6oVmUqGjkHYi+nI1Q5H6gnIma0f//uMS2D5Sy38MsO3SJ82knSJ1faTkUur+W9JxU4oqWAkw==",
+  "dgSpecHash": "Yc2NjLliaHFHaVFxcRwIj0ZM8arqeSqZIDFyirDnL5uCCZM65DUTWYL84gT0NAuOjtg8OAidc76nX6ueeTKPsw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\KeyboardUnitTests\\KeyboardUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicho\\.nuget\\packages\\betterconsoletables\\1.1.3\\betterconsoletables.1.1.3.nupkg.sha512",
+    "C:\\Users\\nicho\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
