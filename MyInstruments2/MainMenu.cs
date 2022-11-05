@@ -17,29 +17,31 @@ namespace MyInstruments
 ..........   MyInstruments   ..........
 .......................................
 
-Welcome to MyInstruments! What would you like to do? 
-Use the arrow keys to cycle through options and press enter to select an option.
+Welcome to MyInstruments!  
+Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
+
+What would you like to do?
 ";
-            string[] options = { "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "Instructions", "About This App", "Exit" };
+            string[] options = { "Instructions", "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "About This App", "Exit" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
             switch (selectedIndex)
             {
                 case 0:
-                    ReviewInstruments();
+                    DisplayInstructions();
                     break;
                 case 1:
-                    ListInstruments();
+                    ReviewInstruments();
                     break;
                 case 2:
-                    CountInstruments();
+                    ListInstruments();
                     break;
                 case 3:
-                    SaveTextFile();
+                    CountInstruments();
                     break;
                 case 4:
-                    DisplayInstructions();
+                    SaveTextFile();
                     break;
                 case 5:
                     DisplayAboutInfo();
@@ -48,6 +50,13 @@ Use the arrow keys to cycle through options and press enter to select an option.
                     ExitProgram();
                     break;
             }
+        }
+
+        private void DisplayInstructions()
+        {
+            Clear();
+            ConsoleWindow.PrintInstructions();
+            ReturnToMainMenu();
         }
 
         private void ReviewInstruments()
@@ -59,46 +68,30 @@ Use the arrow keys to cycle through options and press enter to select an option.
         private void ListInstruments()
         {
             Clear();
+            WriteLine();
             Collection.ListAll();
-            WriteLine("Press any key to return to the menu.");
-            ReadKey(true);
-            RunMainMenu();
+            ReturnToMainMenu();
         }
 
         private void CountInstruments()
         {
             Clear();
             Collection.CountAll();
-            WriteLine("Press any key to return to the menu.");
-            ReadKey(true);
-            RunMainMenu();
+            ReturnToMainMenu();
         }
 
         private void SaveTextFile()
         {
             Clear();
             Collection.SaveFile();
-            WriteLine("Press any key to return to the menu.");
-            ReadKey(true);
-            RunMainMenu();
-        }
-
-        private void DisplayInstructions()
-        {
-            Clear();
-            ConsoleWindow.PrintInstructions();
-            WriteLine("Press any key to return to the menu.");
-            ReadKey(true);
-            RunMainMenu();
+            ReturnToMainMenu();
         }
 
         private void DisplayAboutInfo()
         {
             Clear();
             ConsoleWindow.PrintAboutInfo();
-            WriteLine("Press any key to return to the menu.");
-            ReadKey(true);
-            RunMainMenu();
+            ReturnToMainMenu();
         }
 
         private void ExitProgram()
@@ -106,6 +99,13 @@ Use the arrow keys to cycle through options and press enter to select an option.
             WriteLine("\nPress any key to exit...");
             ReadKey(true);
             Environment.Exit(0);
+        }
+
+        private void ReturnToMainMenu()
+        {
+            WriteLine("Press any key to return to the menu.");
+            ReadKey(true);
+            RunMainMenu();
         }
     }
 }

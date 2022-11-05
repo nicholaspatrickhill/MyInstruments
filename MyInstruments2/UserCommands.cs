@@ -17,11 +17,21 @@ namespace MyInstruments
             {
                 case "Clear":
                     Clear();
+                    ConsoleWindow.PrintHeader();
                     break;
                 case "Menu":
                     var mainMenu = new MainMenu();
                     mainMenu.RunMainMenu();
-                    break;            
+                    break; 
+                case "Guitars": 
+                case "Basses":
+                case "Other":
+                case "Keyboards":
+                    Collection.ListInstrumentsByType(guitar, bass, otherStringInstrument, keyboard, input);
+                    break;
+                case "All":
+                    Collection.ListAll();
+                    break;
                 default:
                     // Fulfills feature list requirement: "Implement a log that records invalid inputs and writes them to a text file"
                     log4net.GlobalContext.Properties["UserInput"] = input;

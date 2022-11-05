@@ -23,13 +23,14 @@ namespace MyInstruments
     {
         public static void ReviewAll()
         {
+            ConsoleWindow.PrintHeader();
+
             var repeat = true;
             while (repeat)
             {
                 ForegroundColor = ConsoleColor.White;
-                WriteLine("Type \"Menu\" to return the Main Menu or type \"Clear\" to clear the console.");
+
                 WriteLine("Which instrument would you like to review?");
-                WriteLine();
 
                 var guitar = new Guitar();
                 var bass = new Bass();
@@ -56,7 +57,8 @@ namespace MyInstruments
             int num3 = otherStringInstruments.Count;
             int num4 = keyboards.Count;
             int num5 = num1 + num2 + num3 + num4;
-            
+
+            WriteLine();
             WriteLine("You have " + num1 + " guitars.");
             WriteLine("You have " + num2 + " basses.");
             WriteLine("You have " + num3 + " other string instruments.");
@@ -64,7 +66,6 @@ namespace MyInstruments
             WriteLine();
             WriteLine("You have " + num5 + " total instruments in your collection.");
             WriteLine();
-
         }
 
         public static void ListAll()
@@ -86,25 +87,25 @@ namespace MyInstruments
             keyboardInstrument.ListInstruments();
         }
 
-        //public static void ListInstrument(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
-        //{
-        //    if (input == "Guitars")
-        //    {
-        //        guitar.ListInstruments();
-        //    }
-        //    else if (input == "Basses")
-        //    {
-        //        bass.ListInstruments();
-        //    }
-        //    else if (input == "Other String Instruments")
-        //    {
-        //        otherStringInstrument.ListInstruments();
-        //    }
-        //    else if (input == "Keyboards")
-        //    {
-        //        keyboard.ListInstruments();
-        //    }
-        //}
+        public static void ListInstrumentsByType(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
+        {
+            if (input == "Guitars")
+            {
+                guitar.ListInstruments();
+            }
+            else if (input == "Basses")
+            {
+                bass.ListInstruments();
+            }
+            else if (input == "Other")
+            {
+                otherStringInstrument.ListInstruments();
+            }
+            else if (input == "Keyboards")
+            {
+                keyboard.ListInstruments();
+            }
+        }
 
         public static void SaveFile()
         {
@@ -138,6 +139,7 @@ namespace MyInstruments
             }
             file.Close();
 
+            WriteLine();
             WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
             WriteLine();
         }
