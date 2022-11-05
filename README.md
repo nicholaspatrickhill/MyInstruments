@@ -37,7 +37,7 @@ The user will stay in this loop until they elect to return to the main menu.
 If the user input is not a matching key, it exits the UserSelection If-Else block and enters a switch in the UserCommands class. 
 The UserCommands switch allows the user to review the keys available to the program, to clear the console or to return to the main menu screen.
 It also generates an Invalid Input response. 
-The log4net nuget package is configured within the program to record invalid user input and write the log to a .txt file in the temp folder on the C drive.
+The log4net nuget package is configured within the program to record invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
 
 Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" call corresponding methods from the Collection and ConsoleWindow classes.
 
