@@ -23,6 +23,7 @@ namespace MyInstruments
 
         private void DisplayOptions()
         {
+            ConsoleWindow.PrintAppHeader();
             WriteLine(Prompt);
             for (int i = 0; i < Options.Length; i++)
             {
