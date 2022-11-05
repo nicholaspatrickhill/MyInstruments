@@ -27,7 +27,7 @@ The following items from the "Feature List" are implemented:
 ⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.
 
 #### NOTES
-MyInstruments begins by creating an instance of MainMenu to call RunMainMenu which generates an arrow-key driven menu in the console. The menu's properties are established in the Menu class. The user can select an action by moving the cursor with the UP and DOWN arrows keys to the desired command and pressing enter. The user's arrow key input calls cases in a Switch which call methods to the corresponding action desired by the user.
+MyInstruments begins by creating an instance of MainMenu to call RunMainMenu which generates an arrow-key driven menu in the console. The menu's properties are established in the Menu class. The user can select an action by moving the cursor with the UP and DOWN arrows on their keyboard to highlight the function they wish to perform and pressing enter. The keyboard input calls cases in a Switch which call methods that correspond to the action desired by the user.
 
 Selecting "Review Instruments" calls the ReviewAll method which generates a master loop where the user can enter a key to review data about the instruments in my collection. 
 The user input is looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
@@ -35,7 +35,8 @@ If the user elected to review a specific instrument, the program will call this 
 The console will then prompt the user to enter a new key.
 The user will stay in this loop until they elect to return to the main menu.
 If the user input is not a matching key, it exits the UserSelection If-Else block and enters a switch in the UserCommands class. 
-The UserCommands switch allows the user to clear the console, return to the main menu screen or generates an Invalid Input response. 
+The UserCommands switch allows the user to review the keys available to the program, to clear the console or to return to the main menu screen.
+It also generates an Invalid Input response. 
 The log4net nuget package is configured within the program to record invalid user input and write the log to a .txt file in the temp folder on the C drive.
 
 Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" call corresponding methods from the Collection and ConsoleWindow classes.
@@ -57,10 +58,11 @@ The Tests folder contains several unit tests for each instrument class.
 These quickly and safely test the string concatenations and methods contained within the instrument classes and their parent classes.
 
 #### INSTRUCTIONS
-The easiest way to get started is to select "List Instruments" to see a list of the keys that correspond to the musical instruments that are available for review.
+Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
-Then return to the main menu and select "Review Instruments."
-Here you can review any individual instrument in my collection by typing the key exactly as it appeared in the list.
+"Review Instruments" allows you to review any individual instrument in my collection by typing its key into the console.
+
+"You may review the keys available to the program by typing "Guitars", "Basses", "Other", "Keyboards" or "All".
 
 **Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
 
@@ -68,14 +70,16 @@ If the console is becoming clogged with user input and data you may refresh it b
 
 Type "Menu" to return to the Main Menu and select another option.
 
-"Count Instruments" will provide a count of each instrument type and the total number of instruments in the collection.
+"List Instruments" shows a complete list of the keys available to the program.
 
-"Save Text File" will save a list of the instrument keys to a .txt file in the temp folder on the C drive.
-This can be a handy reference guide when woking in the "Review Instruments" component.
+"Count Instruments" provides a count of each instrument type and the total number of instruments in the collection.
+
+"Save Text File" saves a list of the instrument keys to a .txt file in the temp folder on the C:\ drive.
+Tip: This can be a handy reference guide when woking in the "Review Instruments" component.
 
 "Instructions" provides instructions for using the application.
 
 "About This App" provides some information about the application's purpose and author.
 
-"Exit" will exit the program.
+"Exit" will terminate the program.
 
