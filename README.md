@@ -27,17 +27,25 @@ The following items from the "Feature List" are implemented:
 ⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.
 
 #### NOTES
-MyInstruments begins by calling the Start method which creates an instance of MainMenu and calls RunMainMenu to generate an arrow-key driven menu in the console. The menu's properties are established by the Menu class. The user can select an action by moving the cursor with the UP and DOWN arrows on their keyboard to highlight the function they wish to perform and pressing enter. The keyboard input calls cases in a Switch which call methods that correspond to the action desired by the user.
+MyInstruments begins by calling the Start method.
+Start creates an instance of MainMenu and calls RunMainMenu to generate an arrow-key driven menu in the console. 
+RunMainMenu instantiates the Menu class.
+The menu's functionality is established in the Menu class.
+The user moves the cursor in the console with the UP and DOWN arrow keys on their keyboard to highlight the function they wish to perform.
+The user presses ENTER to perform the function.
+The user's keyboard input executes cases in a Switch to call methods that correspond to the action desired by the user.
 
-Selecting "Review Instruments" calls the ReviewAll method which generates a master loop where the user can enter a key to review data about the instruments in my collection. 
+Selecting "Review Instruments" calls the ReviewAllInstruments method.
+ReviewAllInstruments generates a master loop where the user can enter a key to review data about the instruments in my collection. 
 The user input is looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
-If the user elected to review a specific instrument, the program will call this information from the dictionary and print it to the console.
+If there is a matching key, the program will call the information from the appropriate dictionary and print it to the console.
 The console will then prompt the user to enter a new key.
-The user will stay in this loop until they elect to return to the main menu.
 If the user input is not a matching key, it exits the UserSelection If-Else block and enters a switch in the UserCommands class. 
-The UserCommands switch allows the user to review the keys available to the program, to clear the console or to return to the main menu screen.
-It also generates an Invalid Input response. 
+The UserCommands switch executes cases by searching user input that matches the case name.
+The user may use these commands to review the keys available to the program, to clear the console or to return to the main menu screen.
+The UserCommands switch also generates an Invalid Input response when there is no matching key or command. 
 The log4net nuget package is configured within the program to record invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
+The user stays in this loop until they elect to return to the main menu by typing "Menu".
 
 Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" call corresponding methods from the Collection and ConsoleWindow classes.
 
@@ -51,8 +59,8 @@ KeyboardInstrument inherits from MusicalInstrument.
 Each of those classes contains a unique dictionary. 
 My musical instruments are instantiated as objects within each dictionary. 
 The objects' properties are defined in the dictionary. 
-This data is what is called by the user in the master loop. 
-These classes contain additional methods that are implementations of the signatures in the IMusicalInstrument interface.
+These properties are returned in ReviewAllInstruments as a concatenated string when the user types in a matching key. 
+These instrument classes contain additional methods that are implementations of the signatures in the IMusicalInstrument interface.
 
 The Tests folder contains several unit tests for each instrument class. 
 These quickly and safely test the string concatenations and methods contained within the instrument classes and their parent classes.
