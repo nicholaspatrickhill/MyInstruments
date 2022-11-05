@@ -62,7 +62,7 @@ Use the UP and DOWN arrow keys to highlight the function that you wish to perfor
 
 "Review Instruments" allows you to review any individual instrument in my collection by typing its key into the console.
 
-"You may review the keys available to the program by typing "Guitars", "Basses", "Other", "Keyboards" or "All".
+"You may review the keys available to the program by typing "Guitars", "Basses", "Keyboards" or "Other".
 
 **Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those individual instruments.)
 
