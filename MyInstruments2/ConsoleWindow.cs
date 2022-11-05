@@ -55,7 +55,7 @@ namespace MyInstruments
             WriteLine();
             WriteLine("You may review the keys available to the program by typing \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\".");
             WriteLine();
-            WriteLine("Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input.");
+            WriteLine("Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input.");
             WriteLine();
             WriteLine("If the console is becoming clogged with user input and data you may refresh it by typing \"Clear.\"");
             WriteLine();
@@ -66,7 +66,7 @@ namespace MyInstruments
             WriteLine("\"Count Instruments\" provides a count of each instrument type and the total number of instruments in the collection.");
             WriteLine();
             WriteLine("\"Save Text File\" saves a list of the instrument keys to a .txt file in the temp folder on the C:\\ drive.");
-            WriteLine("Tip: This can be a handy reference guide when woking in the \"Review Instruments\" component.");
+            WriteLine("Tip: This can be a handy reference guide when woking in the \"Review Instruments\" module.");
             WriteLine();
             WriteLine("\"Exit\" will terminate the program.");
             WriteLine();
