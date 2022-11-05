@@ -14,11 +14,9 @@ using static System.Console;
 namespace MyInstruments
 {
     public class OtherStringInstrument : StringInstrument, IMusicalInstrument
-    // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string? Size { get; set; }
 
-        // Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, OtherStringInstrument> otherStringInstruments = new Dictionary<string, OtherStringInstrument>
         {
             { "Cordoba Ukulele", new OtherStringInstrument() { Make = "Cordoba", Model = "20-TMCE", Type = "hollow-body acoustic ukulele", Country = "China", Year = 2017,

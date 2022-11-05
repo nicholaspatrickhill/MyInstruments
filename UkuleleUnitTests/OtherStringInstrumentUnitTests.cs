@@ -5,7 +5,6 @@ using System.Reflection;
 
 namespace OtherStringInstrumentUnitTests
 {
-    // Fulfills Feature List Requirement: "Create 3 or more unit tests for your application"
 
     public class OtherStringInstrumentNameTest
     {

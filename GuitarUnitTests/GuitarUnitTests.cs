@@ -3,7 +3,6 @@ using NUnit.Framework.Constraints;
 
 namespace GuitarUnitTests
 {
-    // Fulfills Feature List Requirement: "Create 3 or more unit tests for your application"
     public class GuitarNameTest
     {
         [Test]

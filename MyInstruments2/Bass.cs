@@ -8,11 +8,9 @@ using static System.Console;
 namespace MyInstruments
 {
     public class Bass : StringInstrument, IMusicalInstrument 
-        // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
     {
         public string? Scale { get; set; }
 
-        // Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
         {
             { "Fender Dimension Bass", new Bass() { Make = "Fender", Model = "Dimension Bass", Type = "solid-body electric bass", Country = "USA", Year = 2016, 

@@ -25,8 +25,7 @@ namespace MyInstruments
                 return Make + " " + Model;
             }
         }
-        // Fulfills Feature List Requirement: "Calculate and display data based on an external factor"
-        // Calculates the instrument's age by subtracting the instrument's year of manufacture from the current year
+
         public int InstrumentAge
         {
             get

@@ -4,7 +4,6 @@ using System.Xml.Schema;
 
 namespace KeyboardUnitTests
 {
-    // Fulfills Feature List Requirement: "Create 3 or more unit tests for your application"
 
     public class KeyboardNameTest
     {
