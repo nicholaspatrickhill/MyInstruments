@@ -23,7 +23,7 @@ namespace MyInstruments
     {
         public static void ReviewAllInstruments()
         {
-            ConsoleWindow.PrintHeader();
+            ConsoleWindow.PrintReviewInstrumentsHeader();
 
             var repeat = true;
             while (repeat)
@@ -58,6 +58,7 @@ namespace MyInstruments
             int num4 = keyboards.Count;
             int num5 = num1 + num2 + num3 + num4;
 
+            ConsoleWindow.PrintAppHeader();
             WriteLine();
             WriteLine("You have " + num1 + " guitars.");
             WriteLine("You have " + num2 + " basses.");
@@ -75,6 +76,8 @@ namespace MyInstruments
             var otherStringInstrument = new OtherStringInstrument();
             var keyboardInstrument = new KeyboardInstrument();
 
+            ConsoleWindow.PrintAppHeader();
+            WriteLine();
             WriteLine("Your instruments:");
             WriteLine();
             Write("Guitars:");
@@ -139,6 +142,7 @@ namespace MyInstruments
             }
             file.Close();
 
+            ConsoleWindow.PrintAppHeader();
             WriteLine();
             WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
             WriteLine();

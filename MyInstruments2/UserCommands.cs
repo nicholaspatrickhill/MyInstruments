@@ -17,11 +17,11 @@ namespace MyInstruments
             {
                 case "Clear":
                     Clear();
-                    ConsoleWindow.PrintHeader();
+                    ConsoleWindow.PrintReviewInstrumentsHeader();
                     break;
                 case "Menu":
                     var mainMenu = new MainMenu();
-                    mainMenu.RunMainMenu();
+                    MainMenu.Start();
                     break; 
                 case "Guitars": 
                 case "Basses":

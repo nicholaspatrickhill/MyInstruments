@@ -10,13 +10,22 @@ namespace MyInstruments
 {
     public class MainMenu
     {
-        public void RunMainMenu()
+        public static void Start()
+        {
+            var mainMenu = new MainMenu();
+            mainMenu.RunMainMenu();
+        }
+
+        private void RunMainMenu()
         {
             ForegroundColor = ConsoleColor.White;
-            string prompt = @".......................................
-..........   MyInstruments   ..........
-.......................................
-
+            string prompt = @"███╗   ███╗██╗   ██╗██╗███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗
+████╗ ████║╚██╗ ██╔╝██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝
+██╔████╔██║ ╚████╔╝ ██║██╔██╗ ██║███████╗   ██║   ██████╔╝██║   ██║██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗
+██║╚██╔╝██║  ╚██╔╝  ██║██║╚██╗██║╚════██║   ██║   ██╔══██╗██║   ██║██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║
+██║ ╚═╝ ██║   ██║   ██║██║ ╚████║███████║   ██║   ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ███████║
+╚═╝     ╚═╝   ╚═╝   ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
+                                                                                                                                                                                                                 
 Welcome to MyInstruments!  
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
@@ -68,7 +77,6 @@ What would you like to do?
         private void ListInstruments()
         {
             Clear();
-            WriteLine();
             Collection.ListAllInstruments();
             ReturnToMainMenu();
         }

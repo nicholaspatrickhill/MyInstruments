@@ -20,8 +20,9 @@ namespace MyInstruments
             WriteLine();
         }
 
-        public static void PrintHeader()
+        public static void PrintReviewInstrumentsHeader()
         {
+            PrintAppHeader();
             WriteLine();
             WriteLine("Type the key of the instrument that you wish to review.");
             WriteLine("Type \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" to see the keys available for review.");
@@ -32,11 +33,12 @@ namespace MyInstruments
 
         public static void PrintAboutInfo()
         {
+            PrintAppHeader();
             WriteLine();
             WriteLine("MyInstruments was created by Nick Hill in 2022.");
             WriteLine();
             WriteLine("MyInstruments was developed as my capstone project for Session One of Code Kentucky's Software Development class.");
-            WriteLine("The app was created to help me manage data about my collection of musical instruments.");
+            WriteLine("The app was created to help me manage my collection of musical instruments.");
             WriteLine("It can be difficult to recall specific details about each instrument in my collection from memory.");
             WriteLine("I am often seeking out information like an instrument's string gauge, serial number and country or age of manufacture.");
             WriteLine("An interactive console app makes this process easier, faster and more fun!");
@@ -44,15 +46,16 @@ namespace MyInstruments
         }
 
         public static void PrintInstructions()
-        {   
+        {
+            PrintAppHeader();
             WriteLine();
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
-            WriteLine("\"Review Instruments\" allows you to review any individual instrument in my collection by typing its key into the console.");
+            WriteLine("\"Review Instruments\" allows you to review any instrument in my collection by typing its key into the console.");
             WriteLine();
             WriteLine("You may review the keys available to the program by typing \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\".");
             WriteLine();
-            WriteLine("**Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input.");
+            WriteLine("Please note that keys are case specific and you will have to follow the case as indicated by the list for valid input.");
             WriteLine();
             WriteLine("If the console is becoming clogged with user input and data you may refresh it by typing \"Clear.\"");
             WriteLine();
@@ -67,6 +70,16 @@ namespace MyInstruments
             WriteLine();
             WriteLine("\"Exit\" will terminate the program.");
             WriteLine();
+        }
+
+        public static void PrintAppHeader()
+        {
+            WriteLine("███╗   ███╗██╗   ██╗██╗███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗");
+            WriteLine("████╗ ████║╚██╗ ██╔╝██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝");
+            WriteLine("██╔████╔██║ ╚████╔╝ ██║██╔██╗ ██║███████╗   ██║   ██████╔╝██║   ██║██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗");
+            WriteLine("██║╚██╔╝██║  ╚██╔╝  ██║██║╚██╗██║╚════██║   ██║   ██╔══██╗██║   ██║██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║");
+            WriteLine("██║ ╚═╝ ██║   ██║   ██║██║ ╚████║███████║   ██║   ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ███████║");
+            WriteLine("╚═╝     ╚═╝   ╚═╝   ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝");
         }
     }
 }

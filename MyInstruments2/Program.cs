@@ -9,9 +9,8 @@ namespace MyInstruments
     class Program
     {
         public static void Main(string[] args)
-        {       
-            var mainMenu = new MainMenu();
-            mainMenu.RunMainMenu();
+        {
+            MainMenu.Start();
         }
     }
 }
