@@ -9,7 +9,7 @@ namespace MyInstruments
 {
     public class Bass : StringInstrument, IMusicalInstrument 
     {
-        public string? Scale { get; set; }
+        private string? Scale { get; set; }
 
         public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
         {

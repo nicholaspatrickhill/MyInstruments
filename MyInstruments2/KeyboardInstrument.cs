@@ -11,8 +11,8 @@ namespace MyInstruments
 {
     public class KeyboardInstrument : MusicalInstrument
     {
-        public string? NumberOfKeys { get; set; }
-        public string? KeyWeight { get; set; }
+        private string? NumberOfKeys { get; set; }
+        private string? KeyWeight { get; set; }
 
         public static Dictionary<string, KeyboardInstrument> keyboards = new Dictionary<string, KeyboardInstrument>
         {

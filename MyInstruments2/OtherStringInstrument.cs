@@ -15,7 +15,7 @@ namespace MyInstruments
 {
     public class OtherStringInstrument : StringInstrument, IMusicalInstrument
     {
-        public string? Size { get; set; }
+        private string? Size { get; set; }
 
         public static Dictionary<string, OtherStringInstrument> otherStringInstruments = new Dictionary<string, OtherStringInstrument>
         {
