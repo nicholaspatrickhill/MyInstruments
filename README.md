@@ -27,7 +27,7 @@ The following items from the "Feature List" are implemented:
 ⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.
 
 #### NOTES
-MyInstruments begins by creating an instance of MainMenu to call RunMainMenu which generates an arrow-key driven menu in the console. The menu's properties are established in the Menu class. The user can select an action by moving the cursor with the UP and DOWN arrows on their keyboard to highlight the function they wish to perform and pressing enter. The keyboard input calls cases in a Switch which call methods that correspond to the action desired by the user.
+MyInstruments begins by calling the Start method which creates an instance of MainMenu and calls RunMainMenu to generate an arrow-key driven menu in the console. The menu's properties are established in the Menu class. The user can select an action by moving the cursor with the UP and DOWN arrows on their keyboard to highlight the function they wish to perform and pressing enter. The keyboard input calls cases in a Switch which call methods that correspond to the action desired by the user.
 
 Selecting "Review Instruments" calls the ReviewAll method which generates a master loop where the user can enter a key to review data about the instruments in my collection. 
 The user input is looped through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
