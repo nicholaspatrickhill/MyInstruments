@@ -30,25 +30,33 @@ The following items from the "Feature List" are implemented:
 MyInstruments begins by calling the Start method.
 Start creates an instance of MainMenu and calls RunMainMenu to generate an arrow-key driven menu in the console. 
 The menu's functionality and design is established by the Menu class.
-The user moves the cursor in the console with the UP and DOWN arrow keys on their keyboard to highlight the function they wish to perform.
-The user presses ENTER to perform the function.
-The user's keyboard input executes cases in a Switch to call methods that correspond to the action desired by the user.
+The RunMainMenu promps the user to move the cursor with the UP and DOWN arrow keys on their keyboard to highlight the function that they wish to perform.
+To perform the desired function the user is prompted to push enter.
+The user's input executes cases in a Switch that call methods that perform the function desired by the user.
 
-Selecting "Review Instruments" calls the ReviewAllInstruments method.
-ReviewAllInstruments loops the user input through an If-Else block in the UserSelection class to search various dictionaries for a matching key. 
-If there is a matching key, the program will call the information from the appropriate dictionary and print it to the console.
-The console will then prompt the user to enter a new key.
-If the user input is not a matching key, it exits the UserSelection If-Else block and enters a switch in the UserCommands class. 
-The UserCommands switch executes cases by searching for a case name that matches the user's input.
+Selecting "Review Instruments" calls the ReviewAnyInstrument method from the Collection class.
+ReviewAnyInstrument prompts the user to input a key pertaining to the musical instrument that they wish to review.
+ReviewAnyInstrument loops the user input through the SelectInstrument If-Else block in the UserSelection class to search various musical instrument dictionaries for a matching key. 
+If there is a matching key in one of the dictionaries, the program will call the PrintInstrument method from the appropriate musical instrument class.
+ReviewAnyInstrument then prompts the user to enter a new key.
+If the user input is not a matching key, it exits the UserSelection If-Else block and enters the SelectCommand switch in the UserCommands class. 
+The UserCommands switch searches case names for a match to the user's input.
+The switch executes cases if it finds a match.
 The user may use these commands to review the keys available to the program, to clear the console or to return to the main menu screen.
-The UserCommands switch also generates an Invalid Input response when there is no matching key or command. 
-The log4net nuget package is configured within the program to record invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
-The user stays in this loop until they elect to return to the main menu by typing "Menu".
+If the switch does not find a match it generates an Invalid Input response through its default case.
+In the event of invalid input, the PrintErrorMessage method is called from the ConsoleWindow class and the invalid input is logged.
+The log4net nuget package is configured within the program to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
+The user stays in the ReviewAnyInstrument loop until they elect to return to the main menu by typing "Menu".
 
-Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" calls corresponding methods from the Collection and ConsoleWindow classes. The dictionary keys are converted to Lists by the Collection class for repeated use by its methods.
+Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" calls corresponding methods from the Collection and ConsoleWindow classes. The various musical instrument dictionary keys are converted to Lists by the Collection class for repeated use by its methods.
 
-Selecting "Exit" loops user input through an If-Else block to confirm the user's wish to exit by pressing Y or N.
-Invalid input recycles the loop until the user inputs a valid command.
+Selecting "Exit" calls the ExitTheProgram method.
+ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "Y" or "N" and then pressing enter.
+The input is looped through an If-Else block.
+If the user typed "Y" the program is terminated by an Exit method.
+If the user typed "N" the Start method is called to recycle the program.
+Invalid input recycles the ExitTheProgram loop until the user inputs a valid command.
+Invalid input is recorded in the error log.
 
 The abstract MusicalInstrument class sets properties that are shared by the various musical instrument classes. 
 The InstrumentAge property uses an external factor (the current date) to calculate the age of the instrument. 
@@ -59,10 +67,10 @@ Each of those musical instrument classes contains a unique dictionary.
 My musical instruments are instantiated as objects within each dictionary. 
 The objects' properties are defined in the dictionary. 
 These properties are returned in ReviewAllInstruments as a concatenated string when the user types in a matching key. 
-This is achieved by an implementation of the signature in the IMusicalInstrument interface by each musical instrument class.
+This is achieved by calling the PrintInstrument method which is an implementation of the signature in the IMusicalInstrument interface by each musical instrument class.
 
-The Tests folder contains several unit tests for each instrument class. 
-These quickly and safely test the string concatenations and methods contained within the instrument classes and their parent classes.
+The Tests folder contains several unit tests for each musical instrument class. 
+These quickly and safely test the string concatenations and methods contained within the musical instrument classes and their parent classes.
 
 #### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
