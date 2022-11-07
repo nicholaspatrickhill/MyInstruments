@@ -8,7 +8,7 @@ using static System.Console;
 
 namespace MyInstruments
 {
-    public class ReviewAllInstrumentsUserCommands
+    public class UserCommands
     {
         private static readonly log4net.ILog log = LogHelper.GetLogger();
         public static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
@@ -17,7 +17,7 @@ namespace MyInstruments
             {
                 case "Clear":
                     Clear();
-                    ConsoleWindow.PrintInstrumentsHeader();
+                    ConsoleWindow.PrintReviewInstrumentsHeader();
                     break;
                 case "Menu":
                     MainMenu.Start();
@@ -34,6 +34,7 @@ namespace MyInstruments
                     ConsoleWindow.PrintErrorMessage();
                     break;
             }
+
             return repeat;
         }
     }

@@ -19,7 +19,7 @@ namespace MyInstruments
             WriteLine("Invalid Command. Please try again.");
         }
 
-        public static void PrintInstrumentsHeader()
+        public static void PrintReviewInstrumentsHeader()
         {
             PrintAppHeader();
             WriteLine();

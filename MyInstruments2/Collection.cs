@@ -1,24 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static MyInstruments.Guitar;
+﻿using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;
-using static MyInstruments.MusicalInstrument;
 using static MyInstruments.KeyboardInstrument;
-using static MyInstruments.ReviewAllInstrumentsUserSelection;
-using System.Collections;
-using System.Diagnostics.Metrics;
-using System.Drawing;
+using static MyInstruments.UserSelection;
 using static System.Console;
-using BetterConsoleTables;
-using System.Data;
-using System.Net.NetworkInformation;
-using ConsoleTableExt;
-using Spectre.Console;
-using System.Runtime.CompilerServices;
 
 namespace MyInstruments
 {
@@ -29,9 +14,9 @@ namespace MyInstruments
         public static List<string> otherStringInstrumentsKeyList = new List<string>(otherStringInstruments.Keys);
         public static List<string> keyboardInstrumentsKeyList = new List<string>(keyboards.Keys);
 
-        public static void ReviewAllInstruments()
+        public static void ReviewAnyInstrument()
         {
-            ConsoleWindow.PrintInstrumentsHeader();
+            ConsoleWindow.PrintReviewInstrumentsHeader();
 
             var repeat = true;
             while (repeat)

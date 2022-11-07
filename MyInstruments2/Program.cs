@@ -1,4 +1,4 @@
-﻿using static MyInstruments.ReviewAllInstrumentsUserSelection;
+﻿using static MyInstruments.UserSelection;
 using static System.Console;
 using static MyInstruments.MainMenu;
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static MyInstruments.ReviewAllInstrumentsUserSelection;
+using static MyInstruments.UserSelection;
 using static System.Console;
 
 namespace MyInstruments
@@ -62,7 +62,7 @@ namespace MyInstruments
         private static void ReviewInstruments()
         {
             Clear();
-            Collection.ReviewAllInstruments();
+            Collection.ReviewAnyInstrument();
         }
 
         private void ListInstruments()
