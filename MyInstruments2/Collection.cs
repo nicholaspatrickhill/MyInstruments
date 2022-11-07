@@ -130,7 +130,7 @@ namespace MyInstruments
             WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
         }
 
-        public static void ListOfAllInstruments()
+        public static void ListAllInstruments()
         {
             ConsoleWindow.PrintAppHeader();
             WriteLine();
