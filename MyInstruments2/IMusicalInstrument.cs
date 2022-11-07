@@ -15,6 +15,6 @@ namespace MyInstruments
 
         public void PrintInstrument();
 
-        public void CountInstruments();
+        //public void CountInstruments();
     }
 }

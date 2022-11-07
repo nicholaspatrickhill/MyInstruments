@@ -11,8 +11,8 @@ namespace MyInstruments
 {
     public class KeyboardInstrument : MusicalInstrument
     {
-        private string? NumberOfKeys { get; set; }
-        private string? KeyWeight { get; set; }
+        public string? NumberOfKeys { get; set; }
+        public string? KeyWeight { get; set; }
 
         public static Dictionary<string, KeyboardInstrument> keyboards = new Dictionary<string, KeyboardInstrument>
         {
@@ -39,10 +39,10 @@ namespace MyInstruments
             WriteLine();
         }
 
-        public void CountInstruments()
-        {
-            WriteLine("You have " + keyboards.Count + " keyboard instruments.");
-            WriteLine();
-        }
+        //public void CountInstruments()
+        //{
+        //    WriteLine("You have " + keyboards.Count + " keyboard instruments.");
+        //    WriteLine();
+        //}
     }
 }

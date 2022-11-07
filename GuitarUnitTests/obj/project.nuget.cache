@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s/yDzKBSxO5plUikO0zwesryMuine33zgdg8YlZD5vTGLXzxkDn24cjIHPPcaZWfVS6x3yoDKSi0s5z0s9eOOg==",
+  "dgSpecHash": "KXKt2tHVQupVVHTSv1Z9jHNYKEEVHxbuh4g4AZW/3aCPtR/YeHEFmqg+9gw5mek6BPCgcqWwCn5qf+baSaguqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\GuitarUnitTests\\GuitarUnitTests.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\nicho\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\nunit.analyzers\\3.3.0\\nunit.analyzers.3.3.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
+    "C:\\Users\\nicho\\.nuget\\packages\\spectre.console\\0.45.0\\spectre.console.0.45.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
@@ -32,6 +33,7 @@
     "C:\\Users\\nicho\\.nuget\\packages\\system.io.filesystem.primitives\\4.0.1\\system.io.filesystem.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.linq\\4.1.0\\system.linq.4.1.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.linq.expressions\\4.1.0\\system.linq.expressions.4.1.0.nupkg.sha512",
+    "C:\\Users\\nicho\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.reflection.emit\\4.0.1\\system.reflection.emit.4.0.1.nupkg.sha512",

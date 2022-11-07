@@ -9,7 +9,7 @@ namespace MyInstruments
 {
     public class Bass : StringInstrument, IMusicalInstrument 
     {
-        private string? Scale { get; set; }
+        public string? Scale { get; set; }
 
         public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
         {
@@ -39,10 +39,10 @@ namespace MyInstruments
             WriteLine();
         }
 
-        public void CountInstruments()
-        {
-            WriteLine("You have " + basses.Count + " basses.");
-            WriteLine();
-        }
+        //public void CountInstruments()
+        //{
+        //    WriteLine("You have " + basses.Count + " basses.");
+        //    WriteLine();
+        //}
     }
 }

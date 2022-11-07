@@ -45,6 +45,22 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Spectre.Console/0.45.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Configuration.ConfigurationManager/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -58,6 +74,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Security.AccessControl/4.5.0": {
@@ -211,6 +236,22 @@
         "version.txt"
       ]
     },
+    "Spectre.Console/0.45.0": {
+      "sha512": "e//13o8/BCrWmwN26eJ4zCzD2iq7iUlqQd+nDI9nJUdnJ/rYAanYiNFZZ7YHwlv48IKuKtRYYP6/wPt1DG67ww==",
+      "type": "package",
+      "path": "spectre.console/0.45.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Spectre.Console.dll",
+        "lib/net6.0/Spectre.Console.xml",
+        "lib/netstandard2.0/Spectre.Console.dll",
+        "lib/netstandard2.0/Spectre.Console.xml",
+        "small-logo.png",
+        "spectre.console.0.45.0.nupkg.sha512",
+        "spectre.console.nuspec"
+      ]
+    },
     "System.Configuration.ConfigurationManager/4.5.0": {
       "sha512": "UIFvaFfuKhLr9u5tWMxmVoDPkFeD+Qv8gUuap4aZgVGYSYMdERck4OhLN/2gulAc0nYTEigWXSJNNWshrmxnng==",
       "type": "package",
@@ -228,6 +269,29 @@
         "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
         "system.configuration.configurationmanager.4.5.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -384,6 +448,7 @@
     "net6.0": [
       "BetterConsoleTables >= 1.1.3",
       "ConsoleTableExt >= 3.2.0",
+      "Spectre.Console >= 0.45.0",
       "log4net >= 2.0.15"
     ]
   },
@@ -439,6 +504,10 @@
           "ConsoleTableExt": {
             "target": "Package",
             "version": "[3.2.0, )"
+          },
+          "Spectre.Console": {
+            "target": "Package",
+            "version": "[0.45.0, )"
           },
           "log4net": {
             "target": "Package",

@@ -22,3 +22,4 @@ C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\obj\Debug\net6.0\MyIns
 C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\MyInstruments.dll.config
 C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\BetterConsoleTables.dll
 C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\ConsoleTableExt.dll
+C:\Users\nicho\source\repos\MyInstruments2\MyInstruments2\bin\Debug\net6.0\Spectre.Console.dll

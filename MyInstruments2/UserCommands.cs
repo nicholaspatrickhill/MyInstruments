@@ -27,7 +27,7 @@ namespace MyInstruments
                 case "Basses":
                 case "Other":
                 case "Keyboards":
-                    Collection.ListInstrumentsByType(guitar, bass, otherStringInstrument, keyboard, input);
+                    Collection.ListInstrumentsByType( input);
                     break;
                 default:
                     log4net.GlobalContext.Properties["UserInput"] = input;

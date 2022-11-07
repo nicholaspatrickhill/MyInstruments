@@ -52,10 +52,10 @@ namespace MyInstruments
             WriteLine();
         }
 
-        public void CountInstruments()
-        {
-            WriteLine("You have " + guitars.Count + " guitars.");
-            WriteLine();
-        }
+        //public void CountInstruments()
+        //{
+        //    WriteLine("You have " + guitars.Count + " guitars.");
+        //    WriteLine();
+        //}
     }
 }

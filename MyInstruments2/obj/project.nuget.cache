@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yY01xkRpBw/LwCBORt0YV6i8S6EFUCr/x4ibLlA3LZ1PGvxUCSJGZl2o5WyZP3skHV7ZG6TVgmBIfM+OWtNuCg==",
+  "dgSpecHash": "Ho2HB6Y8M2hTJE00+ywoPrSQM3HWNdv1w95Mk0fjmgwEbw+aX4dq3k/0pcsWTtVHLNI3TURU6LRVLvVx4pT0EA==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,9 @@
     "C:\\Users\\nicho\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\nicho\\.nuget\\packages\\spectre.console\\0.45.0\\spectre.console.0.45.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\nicho\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",

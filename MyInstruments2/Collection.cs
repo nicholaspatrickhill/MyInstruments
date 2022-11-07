@@ -17,11 +17,18 @@ using BetterConsoleTables;
 using System.Data;
 using System.Net.NetworkInformation;
 using ConsoleTableExt;
+using Spectre.Console;
+using System.Runtime.CompilerServices;
 
 namespace MyInstruments
 {
     class Collection
     {
+        public static List<string> guitarsKeyList = new List<string>(guitars.Keys);
+        public static List<string> bassesKeyList = new List<string>(basses.Keys);
+        public static List<string> otherStringInstrumentsKeyList = new List<string>(otherStringInstruments.Keys);
+        public static List<string> keyboardInstrumentsKeyList = new List<string>(keyboards.Keys);
+
         public static void ReviewAllInstruments()
         {
             ConsoleWindow.PrintReviewInstrumentsHeader();
@@ -70,45 +77,66 @@ namespace MyInstruments
             WriteLine();
         }
 
-        public static void ListAllInstruments()
-        {
-            var guitar = new Guitar();
-            var bass = new Bass();
-            var otherStringInstrument = new OtherStringInstrument();
-            var keyboardInstrument = new KeyboardInstrument();
+        //public static void ListAllInstruments()
+        //{
+        //    var guitar = new Guitar();
+        //    var bass = new Bass();
+        //    var otherStringInstrument = new OtherStringInstrument();
+        //    var keyboardInstrument = new KeyboardInstrument();
 
-            ConsoleWindow.PrintAppHeader();
-            WriteLine();
-            WriteLine("Your instruments:");
-            WriteLine();
-            Write("Guitars:");
-            guitar.ListInstruments();
-            Write("Basses:");
-            bass.ListInstruments();
-            Write("Other String Instruments:");
-            otherStringInstrument.ListInstruments();
-            Write("Keyboards:");
-            keyboardInstrument.ListInstruments();
-        }
+        //    ConsoleWindow.PrintAppHeader();
+        //    WriteLine();
+        //    WriteLine("Your instruments:");
+        //    WriteLine();
+        //    Write("Guitars:");
+        //    guitar.ListInstruments();
+        //    Write("Basses:");
+        //    bass.ListInstruments();
+        //    Write("Other String Instruments:");
+        //    otherStringInstrument.ListInstruments();
+        //    Write("Keyboards:");
+        //    keyboardInstrument.ListInstruments();
+        //}
 
-        public static void ListInstrumentsByType(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
+        //public static void ListInstrumentsByType(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
+        //{
+        //    if (input == "Guitars")
+        //    {
+        //        guitar.ListInstruments();
+        //    }
+        //    else if (input == "Basses")
+        //    {
+        //        bass.ListInstruments();
+        //    }
+        //    else if (input == "Other")
+        //    {
+        //        otherStringInstrument.ListInstruments();
+        //    }
+        //    else if (input == "Keyboards")
+        //    {
+        //        keyboard.ListInstruments();
+        //    }
+        //}
+
+        public static void ListInstrumentsByType(string input)
         {
             if (input == "Guitars")
             {
-                guitar.ListInstruments();
+                guitarsKeyList.ForEach(WriteLine);
             }
             else if (input == "Basses")
             {
-                bass.ListInstruments();
+                bassesKeyList.ForEach(WriteLine);
             }
             else if (input == "Other")
             {
-                otherStringInstrument.ListInstruments();
+                otherStringInstrumentsKeyList.ForEach(WriteLine);
             }
             else if (input == "Keyboards")
             {
-                keyboard.ListInstruments();
+                keyboardInstrumentsKeyList.ForEach(WriteLine);
             }
+            WriteLine();
         }
 
         public static void SaveInstrumentsToTextFile()
@@ -139,7 +167,7 @@ namespace MyInstruments
 
                 file.WriteLine("Keyboards:");
                 foreach (KeyValuePair<string, KeyboardInstrument> entry4 in keyboards)
-                    file.WriteLine("{0}", entry4.Key);   
+                    file.WriteLine("{0}", entry4.Key);
             }
             file.Close();
 
@@ -149,59 +177,101 @@ namespace MyInstruments
             WriteLine();
         }
 
-        public static void ListInstrumentsInTable()
+        //public static void ListInstrumentsInTable()
+        //{
+        //    ConsoleWindow.PrintAppHeader();
+        //    WriteLine();
+
+        //    ConsoleTableBuilder
+        //        .From(guitars
+        //            .Select(guitar => new object[]
+        //            {
+        //                guitar.Key,
+        //            })
+        //            .ToList())
+        //        .WithColumn("GUITARS")
+        //        .WithFormat(ConsoleTableBuilderFormat.Minimal)
+        //        .ExportAndWriteLine();
+        //    WriteLine();
+
+        //    ConsoleTableBuilder
+        //      .From(basses
+        //          .Select(bass => new object[]
+        //          {
+        //                bass.Key,
+        //          })
+        //          .ToList())
+        //      .WithColumn("BASSES")
+        //      .WithFormat(ConsoleTableBuilderFormat.Minimal)
+        //      .ExportAndWriteLine();
+        //    WriteLine();
+
+        //    ConsoleTableBuilder
+        //      .From(otherStringInstruments
+        //          .Select(otherStringInstrument => new object[]
+        //          {
+        //                otherStringInstrument.Key,
+        //          })
+        //          .ToList())
+        //      .WithColumn("OTHER STRING INSTRUMENTS")
+        //      .WithFormat(ConsoleTableBuilderFormat.Minimal)
+        //      .ExportAndWriteLine();
+        //    WriteLine();
+
+        //    ConsoleTableBuilder
+        //      .From(keyboards
+        //          .Select(keyboard => new object[]
+        //          {
+        //                keyboard.Key,
+        //          })
+        //          .ToList())
+        //      .WithColumn("KEYBOARD INSTRUMENTS")
+        //      .WithFormat(ConsoleTableBuilderFormat.Minimal)
+        //      .ExportAndWriteLine();
+        //    WriteLine();
+        //}
+
+        //public static void ListInstrumentsInColumns()
+        //{
+        //    List<string> guitarKeyList = new List<string>(guitars.Keys);
+        //    List<string> bassKeyList = new List<string>(basses.Keys);
+        //    List<string> otherStringInstrumentKeyList = new List<string>(otherStringInstruments.Keys);
+        //    List<string> keyboardsKeyList = new List<string>(keyboards.Keys);
+
+        //    var count1 = guitarKeyList.Count;
+        //    var count2 = bassKeyList.Count;
+
+        //    for (var i = 0; i < Math.Max(count1, count2); i++)
+        //    {
+        //        Console.WriteLine(String.Format("{0,-10} | {1,-10}",
+        //                                        i < count1 ? guitarKeyList[i] : string.Empty,
+        //                                        i < count2 ? bassKeyList[i] : string.Empty));
+        //    }
+
+        //}
+
+        public static void ListOfInstruments()
         {
             ConsoleWindow.PrintAppHeader();
             WriteLine();
-
-            ConsoleTableBuilder
-                .From(guitars
-                    .Select(guitar=> new object[] 
-                    {
-                        guitar.Key,
-                    })
-                    .ToList())
-                .WithColumn("GUITARS")
-                .WithFormat(ConsoleTableBuilderFormat.Minimal)
-                .ExportAndWriteLine();
+            WriteLine("Your instruments:");
             WriteLine();
-
-            ConsoleTableBuilder
-              .From(basses
-                  .Select(bass => new object[]
-                  {
-                        bass.Key,
-                  })
-                  .ToList())
-              .WithColumn("BASSES")
-              .WithFormat(ConsoleTableBuilderFormat.Minimal)
-              .ExportAndWriteLine();
+            WriteLine("Guitars:");
+            guitarsKeyList.ForEach(WriteLine);
             WriteLine();
-
-            ConsoleTableBuilder
-              .From(otherStringInstruments
-                  .Select(otherStringInstrument => new object[]
-                  {
-                        otherStringInstrument.Key,
-                  })
-                  .ToList())
-              .WithColumn("OTHER STRING INSTRUMENTS")
-              .WithFormat(ConsoleTableBuilderFormat.Minimal)
-              .ExportAndWriteLine();
+            WriteLine("Basses:");
+            bassesKeyList.ForEach(WriteLine);
             WriteLine();
-
-            ConsoleTableBuilder
-              .From(keyboards
-                  .Select(keyboard => new object[]
-                  {
-                        keyboard.Key,
-                  })
-                  .ToList())
-              .WithColumn("KEYBOARD INSTRUMENTS")
-              .WithFormat(ConsoleTableBuilderFormat.Minimal)
-              .ExportAndWriteLine();
-            WriteLine(); 
+            WriteLine("Other String Instruments:");
+            otherStringInstrumentsKeyList.ForEach(WriteLine);
+            WriteLine();
+            WriteLine("Keyboards:");
+            keyboardInstrumentsKeyList.ForEach(WriteLine);
+            WriteLine();
         }
+
+
     }
 }
+
 
