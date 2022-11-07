@@ -2,13 +2,39 @@ using MyInstruments;
 
 namespace BassUnitTests
 {
+    public class BassListOfKeysTest
+    {
+        [Test]
+        public void BassListOfKeysTestValid()
+        {
+            // Arrange
+            Dictionary<string, Bass> testBasses = new Dictionary<string, Bass>()
+                    {
+                        { "Guild Starfire", new Bass() },
+                        { "Fender Jazz Bass", new Bass() },
+                    };
+
+            List<string> testBassesKeyList = new List<string>(testBasses.Keys);
+
+            List<string> expected = testBassesKeyList;
+
+            // Act
+            List<string> actual;
+            actual = new List<string>(testBasses.Keys);
+
+            // Assert
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
+    }
+
     public class BassNameTest
     {
         [Test]
         public void BassNameTestValid()
         {
             // Arrange
-            Guitar bass = new Guitar
+            Bass bass = new Bass
             {
                 Make = "Guild",
                 Model = "Starfire"
@@ -29,7 +55,7 @@ namespace BassUnitTests
         public void BassAgeTestValid()
         {
             // Arrange
-            Guitar bass = new Guitar
+            Bass bass = new Bass
             {
                 Year = 2000
             };
@@ -48,7 +74,7 @@ namespace BassUnitTests
         public void BassStringTestValid()
         {
             // Arrange
-            Guitar bass = new Guitar
+            Bass bass = new Bass
             {
                 StringBrand = "Ernie Ball",
                 StringType = "Regular Slinky Bass",

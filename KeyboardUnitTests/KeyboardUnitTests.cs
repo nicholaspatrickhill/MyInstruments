@@ -4,6 +4,30 @@ using System.Xml.Schema;
 
 namespace KeyboardUnitTests
 {
+    public class KeyboardListOfKeysTest
+    {
+        [Test]
+        public void KeyboardListOfKeysTestValid()
+        {
+            // Arrange
+            Dictionary<string, KeyboardInstrument> testKeyboards = new Dictionary<string, KeyboardInstrument>()
+                    {
+                        { "Moog Grandmother", new KeyboardInstrument() },
+                        { "Sequential Prophet 5", new KeyboardInstrument() },
+                    };
+
+            List<string> testKeyboardsKeyList = new List<string>(testKeyboards.Keys);
+
+            List<string> expected = testKeyboardsKeyList;
+
+            // Act
+            List<string> actual;
+            actual = new List<string>(testKeyboards.Keys);
+
+            //Assert
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+    }
 
     public class KeyboardNameTest
     {

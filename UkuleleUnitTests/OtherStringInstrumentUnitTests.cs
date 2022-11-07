@@ -5,6 +5,30 @@ using System.Reflection;
 
 namespace OtherStringInstrumentUnitTests
 {
+    public class OtherStringInstrumentListOfKeysTest
+    {
+        [Test]
+        public void OtherStringInstrumentListOfKeysTestValid()
+        {
+            // Arrange
+            Dictionary<string, OtherStringInstrument> testOtherStringInstruments = new Dictionary<string, OtherStringInstrument>()
+                    {
+                        { "Martin Ukulele", new OtherStringInstrument() },
+                        { "Fender Banjo", new OtherStringInstrument() },
+                    };
+
+            List<string> testOtherStringInstrumentsKeyList = new List<string>(testOtherStringInstruments.Keys);
+
+            List<string> expected = testOtherStringInstrumentsKeyList;
+
+            // Act
+            List<string> actual;
+            actual = new List<string>(testOtherStringInstruments.Keys);
+
+            //Assert
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+    }
 
     public class OtherStringInstrumentNameTest
     {

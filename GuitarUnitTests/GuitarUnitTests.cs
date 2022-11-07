@@ -3,6 +3,31 @@ using NUnit.Framework.Constraints;
 
 namespace GuitarUnitTests
 {
+    public class GuitarListOfKeysTest
+    {
+        [Test]
+        public void GuitarListOfKeysTestValid()
+        {
+            // Arrange
+            Dictionary<string, Guitar> testGuitars = new Dictionary<string, Guitar>()
+                    {
+                        { "Fender Starcaster", new Guitar() },
+                        { "Jackson Dinky", new Guitar() },
+                    };
+
+            List<string> testGuitarsKeyList = new List<string>(testGuitars.Keys);
+
+            List<string> expected = testGuitarsKeyList;
+
+            // Act
+            List<string> actual;
+            actual = new List<string>(testGuitars.Keys);
+
+            //Assert
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+    }
+
     public class GuitarNameTest
     {
         [Test]

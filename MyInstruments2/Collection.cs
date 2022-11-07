@@ -8,12 +8,7 @@ using static System.Console;
 namespace MyInstruments
 {
     class Collection
-    {
-        public static List<string> guitarsKeyList = new List<string>(guitars.Keys);
-        public static List<string> bassesKeyList = new List<string>(basses.Keys);
-        public static List<string> otherStringInstrumentsKeyList = new List<string>(otherStringInstruments.Keys);
-        public static List<string> keyboardInstrumentsKeyList = new List<string>(keyboards.Keys);
-
+    { 
         public static void ReviewAnyInstrument()
         {
             ConsoleWindow.PrintReviewInstrumentsHeader();
@@ -61,6 +56,11 @@ namespace MyInstruments
             WriteLine();
             WriteLine("You have " + num5 + " total instruments in your collection.");
         }
+
+        public static List<string> guitarsKeyList = new List<string>(guitars.Keys);
+        public static List<string> bassesKeyList = new List<string>(basses.Keys);
+        public static List<string> otherStringInstrumentsKeyList = new List<string>(otherStringInstruments.Keys);
+        public static List<string> keyboardInstrumentsKeyList = new List<string>(keyboards.Keys);
 
         public static void ListInstrumentsByType(string input)
         {
@@ -119,18 +119,18 @@ namespace MyInstruments
         {
             ConsoleWindow.PrintAppHeader();
             WriteLine();
-            WriteLine("Your instruments:");
+            WriteLine("YOUR INSTRUMENTS:");
             WriteLine();
-            WriteLine("Guitars:");
+            WriteLine("GUITARS:");
             guitarsKeyList.ForEach(WriteLine);
             WriteLine();
-            WriteLine("Basses:");
+            WriteLine("BASSES:");
             bassesKeyList.ForEach(WriteLine);
             WriteLine();
-            WriteLine("Other String Instruments:");
+            WriteLine("OTHER STRING INSTRUMENTS:");
             otherStringInstrumentsKeyList.ForEach(WriteLine);
             WriteLine();
-            WriteLine("Keyboards:");
+            WriteLine("KEYBOARDS:");
             keyboardInstrumentsKeyList.ForEach(WriteLine);
         }
 
