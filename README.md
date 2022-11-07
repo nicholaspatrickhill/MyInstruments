@@ -47,7 +47,8 @@ The user stays in this loop until they elect to return to the main menu by typin
 
 Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" calls corresponding methods from the Collection and ConsoleWindow classes. The dictionary keys are converted to Lists by the Collection class for repeated use by its methods.
 
-Selecting "Exit" uses an Exit method to terminate the program.
+Selecting "Exit" loops user input through an If-Else block to confirm the user's wish to exit by pressing Y or N.
+Invalid input recycles the loop until the user inputs a valid command.
 
 The abstract MusicalInstrument class sets properties that are shared by the various musical instrument classes. 
 The InstrumentAge property uses an external factor (the current date) to calculate the age of the instrument. 
