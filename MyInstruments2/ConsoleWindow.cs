@@ -1,14 +1,4 @@
-﻿using Microsoft.VisualBasic.FileIO;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-using static MyInstruments.Program;
-using static System.Console;
+﻿using static System.Console;
 
 namespace MyInstruments
 {

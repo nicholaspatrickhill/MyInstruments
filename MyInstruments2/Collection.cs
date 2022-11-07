@@ -93,19 +93,19 @@ namespace MyInstruments
                 file.WriteLine("MY INSTRUMENTS");
                 file.WriteLine();
 
-                file.WriteLine("Guitars:");
+                file.WriteLine("GUITARS:");
                 guitarsKeyList.ForEach(file.WriteLine);
                 file.WriteLine();
 
-                file.WriteLine("Basses:");
+                file.WriteLine("BASSES:");
                 bassesKeyList.ForEach(file.WriteLine);
                 file.WriteLine();
 
-                file.WriteLine("Other String Instruments:");
+                file.WriteLine("OTHER STRING INSTRUMENTS:");
                 otherStringInstrumentsKeyList.ForEach(file.WriteLine);
                 file.WriteLine();
 
-                file.WriteLine("Keyboards:");
+                file.WriteLine("KEYBOARDS:");
                 keyboardInstrumentsKeyList.ForEach(file.WriteLine);
             }
             file.Close();
@@ -132,6 +132,11 @@ namespace MyInstruments
             WriteLine();
             WriteLine("Keyboards:");
             keyboardInstrumentsKeyList.ForEach(WriteLine);
+        }
+
+        public static void ListAllInstrumentsInTable()
+        {
+
         }
 
     }

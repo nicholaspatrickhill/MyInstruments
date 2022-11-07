@@ -1,15 +1,4 @@
-﻿using MyInstruments;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Runtime.CompilerServices;
-using System.Security;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
-using static MyInstruments.Program;
-using static System.Console;
+﻿using static System.Console;
 
 namespace MyInstruments
 {

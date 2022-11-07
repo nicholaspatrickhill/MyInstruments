@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static MyInstruments.Guitar;
+﻿using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;
-using static MyInstruments.MusicalInstrument;
 using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.UserCommands;
 using static System.Console;
