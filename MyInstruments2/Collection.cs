@@ -37,7 +37,7 @@ namespace MyInstruments
 
                 static string? UserInput()
                 {
-                    ForegroundColor = ConsoleColor.Yellow;
+                    ForegroundColor = ConsoleColor.Cyan;
                     string? input = ReadLine();
                     return input;
                 }
