@@ -46,6 +46,8 @@ namespace MyInstruments
 
         public static void CountAllInstruments()
         {
+            ForegroundColor = ConsoleColor.White;
+
             int num1 = guitars.Count;
             int num2 = basses.Count;
             int num3 = otherStringInstruments.Count;
@@ -110,6 +112,7 @@ namespace MyInstruments
             }
             file.Close();
 
+            ForegroundColor = ConsoleColor.White;
             ConsoleWindow.PrintAppHeader();
             WriteLine();
             WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
@@ -117,6 +120,7 @@ namespace MyInstruments
 
         public static void ListAllInstruments()
         {
+            ForegroundColor = ConsoleColor.White;
             ConsoleWindow.PrintAppHeader();
             WriteLine();
             WriteLine("YOUR INSTRUMENTS:");

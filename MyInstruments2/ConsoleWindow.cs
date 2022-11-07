@@ -11,6 +11,7 @@ namespace MyInstruments
 
         public static void PrintReviewInstrumentsHeader()
         {
+            ForegroundColor = ConsoleColor.White;
             PrintAppHeader();
             WriteLine();
             WriteLine("Type the key of the instrument that you wish to review.");
@@ -21,6 +22,7 @@ namespace MyInstruments
 
         public static void PrintAboutInfo()
         {
+            ForegroundColor = ConsoleColor.White;
             PrintAppHeader();
             WriteLine();
             WriteLine("MyInstruments was created by Nick Hill in 2022.");
@@ -34,6 +36,7 @@ namespace MyInstruments
 
         public static void PrintInstructions()
         {
+            ForegroundColor = ConsoleColor.White;
             PrintAppHeader();
             WriteLine();
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");

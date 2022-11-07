@@ -15,7 +15,7 @@ namespace MyInstruments
         {
             
             string prompt = "\nWelcome to MyInstruments!\nUse the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.\n\nWhat would you like to do? \n";
-            string[] options = { "Instructions", "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "About This App", "Exit" };
+            string[] options = { "Read Instructions", "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "About This App", "Exit" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
@@ -101,6 +101,7 @@ namespace MyInstruments
 
         private static void ExitTheProgram()
         {
+            ForegroundColor = ConsoleColor.White;
             WriteLine();
             WriteLine("Are you sure you wish to exit the program?");
             WriteLine("Type \"Y\" and press enter to exit or type \"N\" and press enter to return to the Main Menu.");

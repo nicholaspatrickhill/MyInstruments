@@ -23,6 +23,8 @@ namespace MyInstruments
 
         private void DisplayOptions()
         {
+            ForegroundColor = ConsoleColor.White;
+
             ConsoleWindow.PrintAppHeader();
             WriteLine(Prompt);
             for (int i = 0; i < Options.Length; i++)
@@ -44,7 +46,9 @@ namespace MyInstruments
                 }
 
                 //WriteLine($"{prefix} << {currentOption} >>");
-                WriteLine($"<< {currentOption} >>");
+                //WriteLine($"<< {currentOption} >>");
+                //WriteLine($"( {currentOption} )");
+                WriteLine(currentOption);
             }
             ResetColor();
         }
