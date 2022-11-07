@@ -67,7 +67,7 @@ Each of those musical instrument classes contains a unique dictionary and may al
 My musical instruments are instantiated as objects within each dictionary. 
 The objects' properties are defined in the dictionary. 
 These properties are returned in ReviewAllInstruments as a concatenated string when the user types in a matching key. 
-This is achieved by calling the PrintInstrument method which is an implementation of the signature in the IMusicalInstrument interface by each musical instrument class.
+This is achieved by calling the PrintInstrument method which is an implementation of the signature in the IPrintInstrument interface by each musical instrument class.
 
 The Tests folder contains several unit tests for each musical instrument class. 
 These quickly and safely test the string concatenations, methods and lists contained within the musical instrument classes, their parent classes and other classes.
@@ -85,7 +85,7 @@ If the console is becoming clogged with user input and data you may refresh it b
 
 Type "Menu" and press enter to return to the Main Menu and select another option.
 
-"List Instruments" shows a complete list of the keys available to the program.
+"List Instruments" provides a complete list of the keys available to the program.
 
 "Count Instruments" provides a count of each instrument type and the total number of instruments in the collection.
 
