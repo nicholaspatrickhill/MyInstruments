@@ -42,12 +42,10 @@ namespace MyInstruments
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
             WriteLine("In \"Review Instruments\" you may review any instrument in my collection by typing its key and then pressing enter.");
-            WriteLine();
-            WriteLine("You may review the keys available to the program by typing \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" and then pressing enter.");
-            WriteLine();
+            WriteLine("You may review the keys available by typing \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" and then pressing enter.");
             WriteLine("Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input.");
             WriteLine();
-            WriteLine("If the console is becoming clogged with user input and data you may refresh it by typing \"Clear.\" and then pressing enter");
+            WriteLine("If the console is becoming clogged with text you may refresh it by typing \"Clear.\" and then pressing enter");
             WriteLine();
             WriteLine("Type \"Menu\" and press enter to return to the Main Menu and select another option.");
             WriteLine();

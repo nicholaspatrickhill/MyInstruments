@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KXKt2tHVQupVVHTSv1Z9jHNYKEEVHxbuh4g4AZW/3aCPtR/YeHEFmqg+9gw5mek6BPCgcqWwCn5qf+baSaguqg==",
+  "dgSpecHash": "NAuc+CbmFpmpnnKLuLpks3I1pKSt0q8EMlfhx6Xaz8h42kdIMg7m4lr4tcYNJaj3VMlZ9lJSS2nOvolpzCEhoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\GuitarUnitTests\\GuitarUnitTests.csproj",
+  "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\GuitarUnitTests\\MusicalInstrumentUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicho\\.nuget\\packages\\betterconsoletables\\1.1.3\\betterconsoletables.1.1.3.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",

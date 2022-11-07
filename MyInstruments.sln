@@ -7,13 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyInstruments", "MyInstrume
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuitarUnitTests", "GuitarUnitTests\GuitarUnitTests.csproj", "{DBAA39B3-4B03-457A-A191-AD33C5A76F16}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BassUnitTests", "BassUnitTests\BassUnitTests.csproj", "{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtherStringInstrumentTests", "UkuleleUnitTests\OtherStringInstrumentTests.csproj", "{479DF79A-F07B-43B1-BEF9-DBC78E331447}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyboardUnitTests", "KeyboardUnitTests\KeyboardUnitTests.csproj", "{DEFFFBC7-543C-4FE6-AF04-06C540AACE89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicalInstrumentUnitTests", "GuitarUnitTests\MusicalInstrumentUnitTests.csproj", "{DBAA39B3-4B03-457A-A191-AD33C5A76F16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,27 +23,12 @@ Global
 		{DBAA39B3-4B03-457A-A191-AD33C5A76F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBAA39B3-4B03-457A-A191-AD33C5A76F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBAA39B3-4B03-457A-A191-AD33C5A76F16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{479DF79A-F07B-43B1-BEF9-DBC78E331447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{479DF79A-F07B-43B1-BEF9-DBC78E331447}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{479DF79A-F07B-43B1-BEF9-DBC78E331447}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{479DF79A-F07B-43B1-BEF9-DBC78E331447}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEFFFBC7-543C-4FE6-AF04-06C540AACE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEFFFBC7-543C-4FE6-AF04-06C540AACE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEFFFBC7-543C-4FE6-AF04-06C540AACE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEFFFBC7-543C-4FE6-AF04-06C540AACE89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DBAA39B3-4B03-457A-A191-AD33C5A76F16} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
-		{F7ED07DD-FC54-4D45-9BD7-F0BE1AD217FB} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
-		{479DF79A-F07B-43B1-BEF9-DBC78E331447} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
-		{DEFFFBC7-543C-4FE6-AF04-06C540AACE89} = {E4041A2F-B6D2-4CB2-8D2C-A4B0D5CE3F19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {409D667E-F260-4FF1-9A67-3A66FA770FEC}
