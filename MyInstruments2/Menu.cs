@@ -34,7 +34,7 @@ namespace MyInstruments
                 {
                     prefix = "*";
                     ForegroundColor = ConsoleColor.Black;
-                    BackgroundColor = ConsoleColor.Green;
+                    BackgroundColor = ConsoleColor.Red;
                 }
                 else
                 {
