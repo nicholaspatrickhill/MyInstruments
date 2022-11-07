@@ -75,7 +75,7 @@ These quickly and safely test the string concatenations, methods and lists conta
 #### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
-In "Review Instruments" you may review any individual instrument in my collection by typing its key into the console.
+In "Review Instruments" you may review any individual instrument in my collection by typing its key and pushing enter.
 
 "You may review the keys available to the program by typing "Guitars", "Basses", "Keyboards" or "Other".
 
