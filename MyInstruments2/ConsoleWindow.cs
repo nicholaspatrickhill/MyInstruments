@@ -41,15 +41,15 @@ namespace MyInstruments
             WriteLine();
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
-            WriteLine("\"Review Instruments\" allows you to review any instrument in my collection by typing its key into the console.");
+            WriteLine("In \"Review Instruments\" you may review any instrument in my collection by typing its key and then pressing enter.");
             WriteLine();
-            WriteLine("You may review the keys available to the program by typing \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\".");
+            WriteLine("You may review the keys available to the program by typing \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" and then pressing enter.");
             WriteLine();
             WriteLine("Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input.");
             WriteLine();
-            WriteLine("If the console is becoming clogged with user input and data you may refresh it by typing \"Clear.\"");
+            WriteLine("If the console is becoming clogged with user input and data you may refresh it by typing \"Clear.\" and then pressing enter");
             WriteLine();
-            WriteLine("Type \"Menu\" to return to the Main Menu and select another option.");
+            WriteLine("Type \"Menu\" and press enter to return to the Main Menu and select another option.");
             WriteLine();
             WriteLine("\"List Instruments\" shows a complete list of the keys available to the program.");
             WriteLine();
@@ -58,7 +58,7 @@ namespace MyInstruments
             WriteLine("\"Save Text File\" saves a list of the instrument keys to a .txt file in the temp folder on the C:\\ drive.");
             WriteLine("Tip: This can be a handy reference guide when woking in the \"Review Instruments\" module.");
             WriteLine();
-            WriteLine("\"Exit\" will terminate the program.");
+            WriteLine("\"Exit\" will terminate the program upon confirmation.");
         }
 
         public static void PrintAppHeader()
