@@ -105,8 +105,10 @@ namespace MyInstruments
             WriteLine("Are you sure you wish to exit the program?");
             WriteLine("Type \"Y\" and press enter to exit or type \"N\" and press enter to return to the Main Menu.");
 
-            ForegroundColor = ConsoleColor.Red;
+            ForegroundColor = ConsoleColor.Yellow;
             string input = ReadLine();
+
+            ForegroundColor = ConsoleColor.White;
 
             if (input == "Y")
             {

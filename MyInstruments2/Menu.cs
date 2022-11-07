@@ -28,22 +28,23 @@ namespace MyInstruments
             for (int i = 0; i < Options.Length; i++)
             {
                 string currentOption = Options[i];
-                string prefix;
+                //string prefix;
 
                 if (i == SelectedIndex)
                 {
-                    prefix = "*";
+                    //prefix = " ";
                     ForegroundColor = ConsoleColor.Black;
-                    BackgroundColor = ConsoleColor.Red;
+                    BackgroundColor = ConsoleColor.Yellow;
                 }
                 else
                 {
-                    prefix = " ";
+                    //prefix = " ";
                     ForegroundColor = ConsoleColor.White;
                     BackgroundColor = ConsoleColor.Black;
                 }
 
-                WriteLine($"{prefix} << {currentOption} >>");
+                //WriteLine($"{prefix} << {currentOption} >>");
+                WriteLine($"<< {currentOption} >>");
             }
             ResetColor();
         }

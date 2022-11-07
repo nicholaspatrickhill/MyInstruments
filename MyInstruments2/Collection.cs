@@ -8,7 +8,12 @@ using static System.Console;
 namespace MyInstruments
 {
     class Collection
-    { 
+    {
+        public static List<string> guitarsKeyList = new List<string>(guitars.Keys);
+        public static List<string> bassesKeyList = new List<string>(basses.Keys);
+        public static List<string> otherStringInstrumentsKeyList = new List<string>(otherStringInstruments.Keys);
+        public static List<string> keyboardInstrumentsKeyList = new List<string>(keyboards.Keys);
+
         public static void ReviewAnyInstrument()
         {
             ConsoleWindow.PrintReviewInstrumentsHeader();
@@ -32,7 +37,7 @@ namespace MyInstruments
 
                 static string? UserInput()
                 {
-                    ForegroundColor = ConsoleColor.Red;
+                    ForegroundColor = ConsoleColor.Yellow;
                     string? input = ReadLine();
                     return input;
                 }
@@ -56,11 +61,6 @@ namespace MyInstruments
             WriteLine();
             WriteLine("You have " + num5 + " total instruments in your collection.");
         }
-
-        public static List<string> guitarsKeyList = new List<string>(guitars.Keys);
-        public static List<string> bassesKeyList = new List<string>(basses.Keys);
-        public static List<string> otherStringInstrumentsKeyList = new List<string>(otherStringInstruments.Keys);
-        public static List<string> keyboardInstrumentsKeyList = new List<string>(keyboards.Keys);
 
         public static void ListInstrumentsByType(string input)
         {
