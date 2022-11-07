@@ -28,7 +28,6 @@ namespace MyInstruments
         {
             WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
             WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It has {NumberOfKeys} {KeyWeight} keys. Its serial number is {Serial}.");;
-            WriteLine();
         }
     }
 }

@@ -34,7 +34,6 @@ namespace MyInstruments
             WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
             WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It is a {Size} instrument. Its serial number is {Serial}.");
             WriteLine($"It uses {InstrumentString} gauge strings.");
-            WriteLine();
         }
     }
 }

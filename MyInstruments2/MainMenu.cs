@@ -97,6 +97,7 @@ namespace MyInstruments
             WriteLine("Are you sure you wish to exit the program?");
             WriteLine("Type \"Y\" and press enter to exit or type \"N\" and press enter to return to the Main Menu.");
             string input = ReadLine();
+
             if (input == "Y")
             {
                 Environment.Exit(0);
@@ -104,6 +105,11 @@ namespace MyInstruments
             else if (input == "N")
             {
                 Start();
+            }
+            else
+            {
+                ConsoleWindow.PrintErrorMessage();
+                ExitProgram();
             }
         }
 

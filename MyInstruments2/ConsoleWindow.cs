@@ -17,7 +17,6 @@ namespace MyInstruments
         public static void PrintErrorMessage()
         {
             WriteLine("Invalid Command. Please try again.");
-            WriteLine();
         }
 
         public static void PrintInstrumentsHeader()
@@ -28,7 +27,6 @@ namespace MyInstruments
             WriteLine("Type \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" to see the keys available for review.");
             WriteLine("Type \"Menu\" to return the Main Menu.");
             WriteLine("Type \"Clear\" to clear the console.");
-            WriteLine();
         }
 
         public static void PrintAboutInfo()

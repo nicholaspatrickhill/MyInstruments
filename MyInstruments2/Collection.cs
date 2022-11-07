@@ -38,6 +38,7 @@ namespace MyInstruments
             {
                 ForegroundColor = ConsoleColor.White;
 
+                WriteLine();
                 WriteLine("Which instrument would you like to review?");
 
                 var guitar = new Guitar();
@@ -94,7 +95,6 @@ namespace MyInstruments
             {
                 keyboardInstrumentsKeyList.ForEach(WriteLine);
             }
-            WriteLine();
         }
 
         public static void SaveInstrumentsToTextFile()
