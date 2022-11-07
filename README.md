@@ -45,20 +45,20 @@ The UserCommands switch also generates an Invalid Input response when there is n
 The log4net nuget package is configured within the program to record invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
 The user stays in this loop until they elect to return to the main menu by typing "Menu".
 
-Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" calls corresponding methods from the Collection and ConsoleWindow classes.
+Selecting "List Instruments", "Count Instruments", "Save Text File," "Instructions" and "About This App" calls corresponding methods from the Collection and ConsoleWindow classes. The dictionary keys are converted to Lists by the Collection class for repeated use by its methods.
 
 Selecting "Exit" uses an Exit method to terminate the program.
 
-The abstract MusicalInstrument class sets properties that are shared by the various instrument classes. 
+The abstract MusicalInstrument class sets properties that are shared by the various musical instrument classes. 
 The InstrumentAge property uses an external factor (the current date) to calculate the age of the instrument. 
-The StringInstrument class inherits from MusicalInstrument and sets additional properties which are shared by the stringed instrument classes. 
+The StringInstrument class inherits from MusicalInstrument and sets additional properties which are shared by the stringed musical instrument classes. 
 The Guitar, Bass, and OtherStringInstrument classes inherit from StringInstrument.
 KeyboardInstrument inherits from MusicalInstrument.
-Each of those instrument classes contains a unique dictionary. 
+Each of those musical instrument classes contains a unique dictionary. 
 My musical instruments are instantiated as objects within each dictionary. 
 The objects' properties are defined in the dictionary. 
 These properties are returned in ReviewAllInstruments as a concatenated string when the user types in a matching key. 
-These instrument classes contain additional methods that are implementations of the signatures in the IMusicalInstrument interface.
+This is achieved by an implementation of the signature in the IMusicalInstrument interface by each musical instrument class.
 
 The Tests folder contains several unit tests for each instrument class. 
 These quickly and safely test the string concatenations and methods contained within the instrument classes and their parent classes.
