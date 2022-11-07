@@ -91,11 +91,20 @@ namespace MyInstruments
             ReturnToMainMenu();
         }
 
-        private void ExitProgram()
+        private static void ExitProgram()
         {
-            WriteLine("\nPress any key to exit...");
-            ReadKey(true);
-            Environment.Exit(0);
+            WriteLine();
+            WriteLine("Are you sure you wish to exit the program?");
+            WriteLine("Type \"Y\" and press enter to exit or type \"N\" and press enter to return to the Main Menu.");
+            string input = ReadLine();
+            if (input == "Y")
+            {
+                Environment.Exit(0);
+            }
+            else if (input == "N")
+            {
+                Start();
+            }
         }
 
         private void ReturnToMainMenu()
