@@ -11,7 +11,7 @@ namespace MyInstruments
 {
     interface IMusicalInstrument
     {
-        public void ListInstruments();
+        //public void ListInstruments();
 
         public void PrintInstrument();
 

@@ -24,13 +24,13 @@ namespace MyInstruments
                 Serial = "unknown", Color = "Natural Wood", NumberOfKeys = "49", KeyWeight = "weighted"} },
         };
 
-        public void ListInstruments()
-        {
-            WriteLine();
-            foreach (KeyValuePair<string, KeyboardInstrument> pair in keyboards)
-                WriteLine(pair.Key);
-            WriteLine();
-        }
+        //public void ListInstruments()
+        //{
+        //    WriteLine();
+        //    foreach (KeyValuePair<string, KeyboardInstrument> pair in keyboards)
+        //        WriteLine(pair.Key);
+        //    WriteLine();
+        //}
 
         public void PrintInstrument()
         {

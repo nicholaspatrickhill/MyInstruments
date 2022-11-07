@@ -23,13 +23,13 @@ namespace MyInstruments
                 Serial = "X0501H152", Color = "Black", Scale = "short", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
         };
 
-        public void ListInstruments()
-        {
-            WriteLine();
-            foreach (KeyValuePair<string, Bass> pair in basses)
-                WriteLine(pair.Key);
-            WriteLine();
-        }
+        //public void ListInstruments()
+        //{
+        //    WriteLine();
+        //    foreach (KeyValuePair<string, Bass> pair in basses)
+        //        WriteLine(pair.Key);
+        //    WriteLine();
+        //}
 
         public void PrintInstrument()
         {

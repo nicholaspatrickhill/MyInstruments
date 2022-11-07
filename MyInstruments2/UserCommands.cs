@@ -20,14 +20,13 @@ namespace MyInstruments
                     ConsoleWindow.PrintReviewInstrumentsHeader();
                     break;
                 case "Menu":
-                    var mainMenu = new MainMenu();
                     MainMenu.Start();
                     break; 
                 case "Guitars": 
                 case "Basses":
                 case "Other":
                 case "Keyboards":
-                    Collection.ListInstrumentsByType( input);
+                    Collection.ListInstrumentsByType(input);
                     break;
                 default:
                     log4net.GlobalContext.Properties["UserInput"] = input;

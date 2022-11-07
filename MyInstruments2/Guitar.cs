@@ -36,13 +36,13 @@ namespace MyInstruments
                 Serial = "921955", Color = "Natural Spruce", StringBrand = "D'Addario", StringType = "Phosphor Bronze", StringGauge ="Light: 12-53", } },
         };
 
-        public void ListInstruments()
-        {
-            WriteLine();
-            foreach (KeyValuePair<string, Guitar> pair in guitars)
-                WriteLine(pair.Key);
-            WriteLine();
-        }
+        //public void ListInstruments()
+        //{
+        //    WriteLine();
+        //    foreach (KeyValuePair<string, Guitar> pair in guitars)
+        //        WriteLine(pair.Key);
+        //    WriteLine();
+        //}
 
         public void PrintInstrument()
         {

@@ -139,6 +139,44 @@ namespace MyInstruments
             WriteLine();
         }
 
+        //public static void SaveInstrumentsToTextFile()
+        //{
+        //    string myInstruments = @"C:\temp\MyInstruments.txt";
+        //    myInstruments = Path.GetFullPath(myInstruments);
+        //    Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
+
+        //    using StreamWriter file = new StreamWriter(myInstruments);
+        //    {
+        //        file.WriteLine("MY INSTRUMENTS");
+        //        file.WriteLine();
+
+        //        file.WriteLine("Guitars:");
+        //        foreach (KeyValuePair<string, Guitar> entry in guitars)
+        //            file.WriteLine("{0}", entry.Key);
+        //        file.WriteLine();
+
+        //        file.WriteLine("Basses:");
+        //        foreach (KeyValuePair<string, Bass> entry2 in basses)
+        //            file.WriteLine("{0}", entry2.Key);
+        //        file.WriteLine();
+
+        //        file.WriteLine("Other String Instruments:");
+        //        foreach (KeyValuePair<string, OtherStringInstrument> entry3 in otherStringInstruments)
+        //            file.WriteLine("{0}", entry3.Key);
+        //        file.WriteLine();
+
+        //        file.WriteLine("Keyboards:");
+        //        foreach (KeyValuePair<string, KeyboardInstrument> entry4 in keyboards)
+        //            file.WriteLine("{0}", entry4.Key);
+        //    }
+        //    file.Close();
+
+        //    ConsoleWindow.PrintAppHeader();
+        //    WriteLine();
+        //    WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
+        //    WriteLine();
+        //}
+
         public static void SaveInstrumentsToTextFile()
         {
             string myInstruments = @"C:\temp\MyInstruments.txt";
@@ -151,23 +189,19 @@ namespace MyInstruments
                 file.WriteLine();
 
                 file.WriteLine("Guitars:");
-                foreach (KeyValuePair<string, Guitar> entry in guitars)
-                    file.WriteLine("{0}", entry.Key);
+                guitarsKeyList.ForEach(file.WriteLine);
                 file.WriteLine();
 
                 file.WriteLine("Basses:");
-                foreach (KeyValuePair<string, Bass> entry2 in basses)
-                    file.WriteLine("{0}", entry2.Key);
+                bassesKeyList.ForEach(file.WriteLine);
                 file.WriteLine();
 
                 file.WriteLine("Other String Instruments:");
-                foreach (KeyValuePair<string, OtherStringInstrument> entry3 in otherStringInstruments)
-                    file.WriteLine("{0}", entry3.Key);
+                otherStringInstrumentsKeyList.ForEach(file.WriteLine);
                 file.WriteLine();
 
                 file.WriteLine("Keyboards:");
-                foreach (KeyValuePair<string, KeyboardInstrument> entry4 in keyboards)
-                    file.WriteLine("{0}", entry4.Key);
+                keyboardInstrumentsKeyList.ForEach(file.WriteLine);
             }
             file.Close();
 

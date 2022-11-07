@@ -29,13 +29,13 @@ namespace MyInstruments
                 Serial = "unknown", Color = "Black",  Size = "short-scale", StringBrand = "Asher", StringType = "Electro Hawaiian EH6-15 Nickel-Wound", StringGauge = "Medium: 15-58"} },
         };
 
-    public void ListInstruments()
-        {
-            WriteLine();
-            foreach (KeyValuePair<string, OtherStringInstrument> pair in otherStringInstruments)
-                WriteLine(pair.Key);
-            WriteLine();
-        }
+    //public void ListInstruments()
+    //    {
+    //        WriteLine();
+    //        foreach (KeyValuePair<string, OtherStringInstrument> pair in otherStringInstruments)
+    //            WriteLine(pair.Key);
+    //        WriteLine();
+    //    }
 
         public void PrintInstrument()
         {
