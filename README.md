@@ -69,19 +69,19 @@ The objects' properties are defined in the dictionary.
 These properties are returned in ReviewAllInstruments as a concatenated string when the user types in a matching key. 
 This is achieved by calling the PrintInstrument method which is an implementation of the signature in the IPrintInstrument interface by each musical instrument class.
 
-The Tests folder contains several unit tests for each musical instrument class. 
+The Tests folder contains the Musical Instruments unit. 
 These quickly and safely test the string concatenations, methods and lists contained within the musical instrument classes, their parent classes and other classes.
 
 #### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
-In "Review Instruments" you may review any individual instrument in my collection by typing its key and then pressing enter.
+"Read Instructions" provides instructions for using the application.
 
-"You may review the keys available to the program by typing "Guitars", "Basses", "Keyboards" or "Other" and then pressing enter.
-
+In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.
+You may review the keys available by typing "Guitars", "Basses", "Keyboards" or "Other" and then pressing enter.
 **Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those instruments.)
 
-If the console is becoming clogged with user input and data you may refresh it by typing "Clear" and pressing enter.
+If the console is becoming clogged with text you may refresh it by typing "Clear" and pressing enter.
 
 Type "Menu" and press enter to return to the Main Menu and select another option.
 
@@ -91,8 +91,6 @@ Type "Menu" and press enter to return to the Main Menu and select another option
 
 "Save Text File" saves a list of the instrument keys to a .txt file in the temp folder on the C:\ drive.  
 TIP: This can be a handy reference guide when woking in the "Review Instruments" module.
-
-"Instructions" provides instructions for using the application.
 
 "About This App" provides some information about the application's purpose and author.
 
