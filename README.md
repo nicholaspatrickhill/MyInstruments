@@ -78,12 +78,10 @@ Use the UP and DOWN arrow keys to highlight the function that you wish to perfor
 "Read Instructions" provides instructions for using the application.
 
 In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.  
-You may review the keys available by typing "Guitars", "Basses", "Keyboards" or "Other" and then pressing enter.  
-Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input (i.e. type "Fender Jazzmaster", "Fender USA Stratocaster", "Hofner Club Bass", etc. to see data about those instruments.)
-
-If the console is becoming clogged with text you may refresh it by typing "Clear" and pressing enter.
-
-Type "Menu" and press enter to return to the Main Menu and select another option.
+---You may review the keys available by typing "Guitars", "Basses", "Keyboards" or "Other" and then pressing enter.  
+---Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input.
+---If the console is becoming clogged with text you may refresh it by typing "Clear" and pressing enter.
+---Type "Menu" and press enter to return to the Main Menu and select another option.
 
 "List Instruments" provides a complete list of the keys available to the program.
 
