@@ -1,4 +1,5 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -13,5 +14,6 @@ namespace MyInstruments
         {
             return log4net.LogManager.GetLogger(filename);
         }
+
     }
 }

@@ -8,12 +8,12 @@ using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.MusicalInstrument;
 using static MyInstruments.KeyboardInstrument;
-using static MyInstruments.UserCommands;
+using static MyInstruments.ReviewAllInstrumentsUserCommands;
 using static System.Console;
 
 namespace MyInstruments
 {
-    public class UserSelection
+    public class ReviewAllInstrumentsUserSelection
     {
         public static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
         {

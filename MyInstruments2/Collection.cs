@@ -8,7 +8,7 @@ using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.MusicalInstrument;
 using static MyInstruments.KeyboardInstrument;
-using static MyInstruments.UserSelection;
+using static MyInstruments.ReviewAllInstrumentsUserSelection;
 using System.Collections;
 using System.Diagnostics.Metrics;
 using System.Drawing;

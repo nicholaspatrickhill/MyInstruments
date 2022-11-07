@@ -1,15 +1,17 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static MyInstruments.UserSelection;
+using static MyInstruments.ReviewAllInstrumentsUserSelection;
 using static System.Console;
 
 namespace MyInstruments
 {
     public class MainMenu
     {
+        private static readonly log4net.ILog log = LogHelper.GetLogger();
         public static void Start()
         {
             var mainMenu = new MainMenu();
@@ -57,7 +59,7 @@ namespace MyInstruments
             ReturnToMainMenu();
         }
 
-        private void ReviewInstruments()
+        private static void ReviewInstruments()
         {
             Clear();
             Collection.ReviewAllInstruments();
@@ -108,6 +110,8 @@ namespace MyInstruments
             }
             else
             {
+                log4net.GlobalContext.Properties["UserInput"] = input;
+                log.Error("Invalid User Input");
                 ConsoleWindow.PrintErrorMessage();
                 ExitProgram();
             }
