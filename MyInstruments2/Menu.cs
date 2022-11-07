@@ -30,24 +30,18 @@ namespace MyInstruments
             for (int i = 0; i < Options.Length; i++)
             {
                 string currentOption = Options[i];
-                //string prefix;
 
                 if (i == SelectedIndex)
                 {
-                    //prefix = " ";
                     ForegroundColor = ConsoleColor.Black;
                     BackgroundColor = ConsoleColor.Cyan;
                 }
                 else
                 {
-                    //prefix = " ";
                     ForegroundColor = ConsoleColor.White;
                     BackgroundColor = ConsoleColor.Black;
                 }
 
-                //WriteLine($"{prefix} << {currentOption} >>");
-                //WriteLine($"<< {currentOption} >>");
-                //WriteLine($"( {currentOption} )");
                 WriteLine(currentOption);
             }
             ResetColor();
