@@ -8,10 +8,8 @@ using static System.Console;
 
 namespace MyInstruments
 {
-    public class Guitar : StringInstrument, IMusicalInstrument
-    // Fulfills Feature List Requirement: "Create an additional class which inhereits one or more properties from its parent"
+    public class Guitar : StringInstrument, IPrintInstrument
     {
-        // Fulfills Feature List Requirement: "Create a dictionary or list, populate with several values, retrieve at least one value, and use it in your program"
         public static Dictionary<string, Guitar> guitars = new Dictionary<string, Guitar>()
         {
             { "Cort Mirage", new Guitar() { Make = "Cort", Model = "M-700 Mirage", Type = "solid-body electric guitar", Country = "Korea", Year = 2000,
@@ -36,14 +34,6 @@ namespace MyInstruments
                 Serial = "921955", Color = "Natural Spruce", StringBrand = "D'Addario", StringType = "Phosphor Bronze", StringGauge ="Light: 12-53", } },
         };
 
-        //public void ListInstruments()
-        //{
-        //    WriteLine();
-        //    foreach (KeyValuePair<string, Guitar> pair in guitars)
-        //        WriteLine(pair.Key);
-        //    WriteLine();
-        //}
-
         public void PrintInstrument()
         {
             WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
@@ -51,11 +41,5 @@ namespace MyInstruments
             WriteLine($"It uses {InstrumentString} gauge strings.");
             WriteLine();
         }
-
-        //public void CountInstruments()
-        //{
-        //    WriteLine("You have " + guitars.Count + " guitars.");
-        //    WriteLine();
-        //}
     }
 }

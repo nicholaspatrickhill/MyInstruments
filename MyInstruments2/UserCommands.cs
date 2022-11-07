@@ -17,7 +17,7 @@ namespace MyInstruments
             {
                 case "Clear":
                     Clear();
-                    ConsoleWindow.PrintReviewInstrumentsHeader();
+                    ConsoleWindow.PrintInstrumentsHeader();
                     break;
                 case "Menu":
                     MainMenu.Start();

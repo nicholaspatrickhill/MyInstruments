@@ -109,3 +109,6 @@ C:\Users\nicho\source\repos\MyInstruments2\KeyboardUnitTests\obj\Debug\net6.0\re
 C:\Users\nicho\source\repos\MyInstruments2\KeyboardUnitTests\obj\Debug\net6.0\KeyboardUnitTests.pdb
 C:\Users\nicho\source\repos\MyInstruments2\KeyboardUnitTests\obj\Debug\net6.0\KeyboardUnitTests.genruntimeconfig.cache
 C:\Users\nicho\source\repos\MyInstruments2\KeyboardUnitTests\obj\Debug\net6.0\ref\KeyboardUnitTests.dll
+C:\Users\nicho\source\repos\MyInstruments2\KeyboardUnitTests\bin\Debug\net6.0\BetterConsoleTables.dll
+C:\Users\nicho\source\repos\MyInstruments2\KeyboardUnitTests\bin\Debug\net6.0\ConsoleTableExt.dll
+C:\Users\nicho\source\repos\MyInstruments2\KeyboardUnitTests\bin\Debug\net6.0\Spectre.Console.dll

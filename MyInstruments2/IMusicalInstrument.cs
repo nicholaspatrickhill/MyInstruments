@@ -9,12 +9,8 @@ using System.Threading.Tasks;
 
 namespace MyInstruments
 {
-    interface IMusicalInstrument
+    interface IPrintInstrument
     {
-        //public void ListInstruments();
-
         public void PrintInstrument();
-
-        //public void CountInstruments();
     }
 }

@@ -13,7 +13,7 @@ using static System.Console;
 
 namespace MyInstruments
 {
-    public class OtherStringInstrument : StringInstrument, IMusicalInstrument
+    public class OtherStringInstrument : StringInstrument, IPrintInstrument
     {
         public string? Size { get; set; }
 
@@ -29,14 +29,6 @@ namespace MyInstruments
                 Serial = "unknown", Color = "Black",  Size = "short-scale", StringBrand = "Asher", StringType = "Electro Hawaiian EH6-15 Nickel-Wound", StringGauge = "Medium: 15-58"} },
         };
 
-    //public void ListInstruments()
-    //    {
-    //        WriteLine();
-    //        foreach (KeyValuePair<string, OtherStringInstrument> pair in otherStringInstruments)
-    //            WriteLine(pair.Key);
-    //        WriteLine();
-    //    }
-
         public void PrintInstrument()
         {
             WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
@@ -44,12 +36,6 @@ namespace MyInstruments
             WriteLine($"It uses {InstrumentString} gauge strings.");
             WriteLine();
         }
-
-        //public void CountInstruments()
-        //{
-        //    WriteLine("You have " + otherStringInstruments.Count + " ukuleles.");
-        //    WriteLine();
-        //}
     }
 }
 

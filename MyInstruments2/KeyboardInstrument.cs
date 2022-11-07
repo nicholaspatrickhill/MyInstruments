@@ -24,25 +24,11 @@ namespace MyInstruments
                 Serial = "unknown", Color = "Natural Wood", NumberOfKeys = "49", KeyWeight = "weighted"} },
         };
 
-        //public void ListInstruments()
-        //{
-        //    WriteLine();
-        //    foreach (KeyValuePair<string, KeyboardInstrument> pair in keyboards)
-        //        WriteLine(pair.Key);
-        //    WriteLine();
-        //}
-
         public void PrintInstrument()
         {
             WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
             WriteLine($"It is {InstrumentAge} years old. It is {Color} in color. It has {NumberOfKeys} {KeyWeight} keys. Its serial number is {Serial}.");;
             WriteLine();
         }
-
-        //public void CountInstruments()
-        //{
-        //    WriteLine("You have " + keyboards.Count + " keyboard instruments.");
-        //    WriteLine();
-        //}
     }
 }

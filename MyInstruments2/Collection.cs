@@ -31,7 +31,7 @@ namespace MyInstruments
 
         public static void ReviewAllInstruments()
         {
-            ConsoleWindow.PrintReviewInstrumentsHeader();
+            ConsoleWindow.PrintInstrumentsHeader();
 
             var repeat = true;
             while (repeat)
@@ -74,49 +74,7 @@ namespace MyInstruments
             WriteLine("You have " + num4 + " keyboard instruments.");
             WriteLine();
             WriteLine("You have " + num5 + " total instruments in your collection.");
-            WriteLine();
         }
-
-        //public static void ListAllInstruments()
-        //{
-        //    var guitar = new Guitar();
-        //    var bass = new Bass();
-        //    var otherStringInstrument = new OtherStringInstrument();
-        //    var keyboardInstrument = new KeyboardInstrument();
-
-        //    ConsoleWindow.PrintAppHeader();
-        //    WriteLine();
-        //    WriteLine("Your instruments:");
-        //    WriteLine();
-        //    Write("Guitars:");
-        //    guitar.ListInstruments();
-        //    Write("Basses:");
-        //    bass.ListInstruments();
-        //    Write("Other String Instruments:");
-        //    otherStringInstrument.ListInstruments();
-        //    Write("Keyboards:");
-        //    keyboardInstrument.ListInstruments();
-        //}
-
-        //public static void ListInstrumentsByType(Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
-        //{
-        //    if (input == "Guitars")
-        //    {
-        //        guitar.ListInstruments();
-        //    }
-        //    else if (input == "Basses")
-        //    {
-        //        bass.ListInstruments();
-        //    }
-        //    else if (input == "Other")
-        //    {
-        //        otherStringInstrument.ListInstruments();
-        //    }
-        //    else if (input == "Keyboards")
-        //    {
-        //        keyboard.ListInstruments();
-        //    }
-        //}
 
         public static void ListInstrumentsByType(string input)
         {
@@ -138,44 +96,6 @@ namespace MyInstruments
             }
             WriteLine();
         }
-
-        //public static void SaveInstrumentsToTextFile()
-        //{
-        //    string myInstruments = @"C:\temp\MyInstruments.txt";
-        //    myInstruments = Path.GetFullPath(myInstruments);
-        //    Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
-
-        //    using StreamWriter file = new StreamWriter(myInstruments);
-        //    {
-        //        file.WriteLine("MY INSTRUMENTS");
-        //        file.WriteLine();
-
-        //        file.WriteLine("Guitars:");
-        //        foreach (KeyValuePair<string, Guitar> entry in guitars)
-        //            file.WriteLine("{0}", entry.Key);
-        //        file.WriteLine();
-
-        //        file.WriteLine("Basses:");
-        //        foreach (KeyValuePair<string, Bass> entry2 in basses)
-        //            file.WriteLine("{0}", entry2.Key);
-        //        file.WriteLine();
-
-        //        file.WriteLine("Other String Instruments:");
-        //        foreach (KeyValuePair<string, OtherStringInstrument> entry3 in otherStringInstruments)
-        //            file.WriteLine("{0}", entry3.Key);
-        //        file.WriteLine();
-
-        //        file.WriteLine("Keyboards:");
-        //        foreach (KeyValuePair<string, KeyboardInstrument> entry4 in keyboards)
-        //            file.WriteLine("{0}", entry4.Key);
-        //    }
-        //    file.Close();
-
-        //    ConsoleWindow.PrintAppHeader();
-        //    WriteLine();
-        //    WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
-        //    WriteLine();
-        //}
 
         public static void SaveInstrumentsToTextFile()
         {
@@ -208,83 +128,9 @@ namespace MyInstruments
             ConsoleWindow.PrintAppHeader();
             WriteLine();
             WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
-            WriteLine();
         }
 
-        //public static void ListInstrumentsInTable()
-        //{
-        //    ConsoleWindow.PrintAppHeader();
-        //    WriteLine();
-
-        //    ConsoleTableBuilder
-        //        .From(guitars
-        //            .Select(guitar => new object[]
-        //            {
-        //                guitar.Key,
-        //            })
-        //            .ToList())
-        //        .WithColumn("GUITARS")
-        //        .WithFormat(ConsoleTableBuilderFormat.Minimal)
-        //        .ExportAndWriteLine();
-        //    WriteLine();
-
-        //    ConsoleTableBuilder
-        //      .From(basses
-        //          .Select(bass => new object[]
-        //          {
-        //                bass.Key,
-        //          })
-        //          .ToList())
-        //      .WithColumn("BASSES")
-        //      .WithFormat(ConsoleTableBuilderFormat.Minimal)
-        //      .ExportAndWriteLine();
-        //    WriteLine();
-
-        //    ConsoleTableBuilder
-        //      .From(otherStringInstruments
-        //          .Select(otherStringInstrument => new object[]
-        //          {
-        //                otherStringInstrument.Key,
-        //          })
-        //          .ToList())
-        //      .WithColumn("OTHER STRING INSTRUMENTS")
-        //      .WithFormat(ConsoleTableBuilderFormat.Minimal)
-        //      .ExportAndWriteLine();
-        //    WriteLine();
-
-        //    ConsoleTableBuilder
-        //      .From(keyboards
-        //          .Select(keyboard => new object[]
-        //          {
-        //                keyboard.Key,
-        //          })
-        //          .ToList())
-        //      .WithColumn("KEYBOARD INSTRUMENTS")
-        //      .WithFormat(ConsoleTableBuilderFormat.Minimal)
-        //      .ExportAndWriteLine();
-        //    WriteLine();
-        //}
-
-        //public static void ListInstrumentsInColumns()
-        //{
-        //    List<string> guitarKeyList = new List<string>(guitars.Keys);
-        //    List<string> bassKeyList = new List<string>(basses.Keys);
-        //    List<string> otherStringInstrumentKeyList = new List<string>(otherStringInstruments.Keys);
-        //    List<string> keyboardsKeyList = new List<string>(keyboards.Keys);
-
-        //    var count1 = guitarKeyList.Count;
-        //    var count2 = bassKeyList.Count;
-
-        //    for (var i = 0; i < Math.Max(count1, count2); i++)
-        //    {
-        //        Console.WriteLine(String.Format("{0,-10} | {1,-10}",
-        //                                        i < count1 ? guitarKeyList[i] : string.Empty,
-        //                                        i < count2 ? bassKeyList[i] : string.Empty));
-        //    }
-
-        //}
-
-        public static void ListOfInstruments()
+        public static void ListOfAllInstruments()
         {
             ConsoleWindow.PrintAppHeader();
             WriteLine();
@@ -301,9 +147,7 @@ namespace MyInstruments
             WriteLine();
             WriteLine("Keyboards:");
             keyboardInstrumentsKeyList.ForEach(WriteLine);
-            WriteLine();
         }
-
 
     }
 }

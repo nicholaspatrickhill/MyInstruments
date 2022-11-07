@@ -7,7 +7,7 @@ using static System.Console;
 
 namespace MyInstruments
 {
-    public class Bass : StringInstrument, IMusicalInstrument 
+    public class Bass : StringInstrument, IPrintInstrument 
     {
         public string? Scale { get; set; }
 
@@ -23,14 +23,6 @@ namespace MyInstruments
                 Serial = "X0501H152", Color = "Black", Scale = "short", StringBrand = "La Bella", StringType = "Deep Talkin' Beatle Bass", StringGauge = "Light: 39-96", } },
         };
 
-        //public void ListInstruments()
-        //{
-        //    WriteLine();
-        //    foreach (KeyValuePair<string, Bass> pair in basses)
-        //        WriteLine(pair.Key);
-        //    WriteLine();
-        //}
-
         public void PrintInstrument()
         {
             WriteLine($"Your {InstrumentName} is a {Type} that was made in {Country} in {Year}.");
@@ -38,11 +30,5 @@ namespace MyInstruments
             WriteLine($"It uses {InstrumentString} gauge strings.");
             WriteLine();
         }
-
-        //public void CountInstruments()
-        //{
-        //    WriteLine("You have " + basses.Count + " basses.");
-        //    WriteLine();
-        //}
     }
 }

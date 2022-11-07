@@ -20,7 +20,7 @@ namespace MyInstruments
             WriteLine();
         }
 
-        public static void PrintReviewInstrumentsHeader()
+        public static void PrintInstrumentsHeader()
         {
             PrintAppHeader();
             WriteLine();
@@ -42,7 +42,6 @@ namespace MyInstruments
             WriteLine("It can be difficult to recall specific details about each instrument in my collection from memory.");
             WriteLine("I am often seeking out information like an instrument's string gauge, serial number and country or age of manufacture.");
             WriteLine("An interactive console app makes this process easier, faster and more fun!");
-            WriteLine();
         }
 
         public static void PrintInstructions()
@@ -69,7 +68,6 @@ namespace MyInstruments
             WriteLine("Tip: This can be a handy reference guide when woking in the \"Review Instruments\" module.");
             WriteLine();
             WriteLine("\"Exit\" will terminate the program.");
-            WriteLine();
         }
 
         public static void PrintAppHeader()

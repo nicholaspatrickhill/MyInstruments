@@ -66,8 +66,7 @@ namespace MyInstruments
         private void ListInstruments()
         {
             Clear();
-            //Collection.ListAllInstruments();
-            Collection.ListOfInstruments();
+            Collection.ListOfAllInstruments();
             ReturnToMainMenu();
         }
 
@@ -101,6 +100,7 @@ namespace MyInstruments
 
         private void ReturnToMainMenu()
         {
+            WriteLine();
             WriteLine("Press any key to return to the menu.");
             ReadKey(true);
             RunMainMenu();

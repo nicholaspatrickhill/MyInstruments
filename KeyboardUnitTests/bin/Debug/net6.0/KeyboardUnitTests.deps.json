@@ -19,6 +19,22 @@
           "KeyboardUnitTests.dll": {}
         }
       },
+      "BetterConsoleTables/1.1.3": {
+        "runtime": {
+          "lib/net5.0/BetterConsoleTables.dll": {
+            "assemblyVersion": "1.1.3.0",
+            "fileVersion": "1.1.3.0"
+          }
+        }
+      },
+      "ConsoleTableExt/3.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/ConsoleTableExt.dll": {
+            "assemblyVersion": "3.1.9.0",
+            "fileVersion": "3.1.9.0"
+          }
+        }
+      },
       "coverlet.collector/3.1.2": {},
       "log4net/2.0.15": {
         "dependencies": {
@@ -372,6 +388,17 @@
       },
       "NUnit.Analyzers/3.3.0": {},
       "NUnit3TestAdapter/4.2.1": {},
+      "Spectre.Console/0.45.0": {
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.45.0.0"
+          }
+        }
+      },
       "System.Collections/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -487,6 +514,7 @@
           "System.Threading": "4.0.11"
         }
       },
+      "System.Memory/4.5.5": {},
       "System.ObjectModel/4.0.12": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -716,6 +744,9 @@
       },
       "MyInstruments/1.0.0": {
         "dependencies": {
+          "BetterConsoleTables": "1.1.3",
+          "ConsoleTableExt": "3.2.0",
+          "Spectre.Console": "0.45.0",
           "log4net": "2.0.15"
         },
         "runtime": {
@@ -729,6 +760,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BetterConsoleTables/1.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ILweE/pGE7gK2v+5+PaddZtvAaa+1p8QSAgR3JhnU3rMD0F7KS8paRCwJsVhWC6qb//Va4jryV2vU28+MJzmhA==",
+      "path": "betterconsoletables/1.1.3",
+      "hashPath": "betterconsoletables.1.1.3.nupkg.sha512"
+    },
+    "ConsoleTableExt/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IhaHj6R2vSbb781aRXngan6nKRp8R5rnL2X5fL0uRW2wRiFyCIUh81T/QOih0//PjzoXMk2Uv4ayBAGDLH338A==",
+      "path": "consoletableext/3.2.0",
+      "hashPath": "consoletableext.3.2.0.nupkg.sha512"
     },
     "coverlet.collector/3.1.2": {
       "type": "package",
@@ -835,6 +880,13 @@
       "path": "nunit3testadapter/4.2.1",
       "hashPath": "nunit3testadapter.4.2.1.nupkg.sha512"
     },
+    "Spectre.Console/0.45.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e//13o8/BCrWmwN26eJ4zCzD2iq7iUlqQd+nDI9nJUdnJ/rYAanYiNFZZ7YHwlv48IKuKtRYYP6/wPt1DG67ww==",
+      "path": "spectre.console/0.45.0",
+      "hashPath": "spectre.console.0.45.0.nupkg.sha512"
+    },
     "System.Collections/4.0.11": {
       "type": "package",
       "serviceable": true,
@@ -911,6 +963,13 @@
       "sha512": "sha512-I+y02iqkgmCAyfbqOmSDOgqdZQ5tTj80Akm5BPSS8EeB0VGWdy6X1KCoYe8Pk6pwDoAKZUOdLVxnTJcExiv5zw==",
       "path": "system.linq.expressions/4.1.0",
       "hashPath": "system.linq.expressions.4.1.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     },
     "System.ObjectModel/4.0.12": {
       "type": "package",
