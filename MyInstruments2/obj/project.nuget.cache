@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "Ho2HB6Y8M2hTJE00+ywoPrSQM3HWNdv1w95Mk0fjmgwEbw+aX4dq3k/0pcsWTtVHLNI3TURU6LRVLvVx4pT0EA==",
+  "dgSpecHash": "X9REMocCldKp6wdUo6vf+TE38ds1mMOkSDF3WxbDlDwAoerBdqFHw9nmaFQ51iqG6Sq9gAuPZ1fqL3m2Mumh3A==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicho\\source\\repos\\MyInstruments2\\MyInstruments2\\MyInstruments.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nicho\\.nuget\\packages\\betterconsoletables\\1.1.3\\betterconsoletables.1.1.3.nupkg.sha512",
-    "C:\\Users\\nicho\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\nicho\\.nuget\\packages\\spectre.console\\0.45.0\\spectre.console.0.45.0.nupkg.sha512",

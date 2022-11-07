@@ -4,6 +4,7 @@ using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.UserSelection;
 using static System.Console;
+using Spectre.Console;
 
 namespace MyInstruments
 {
@@ -46,22 +47,27 @@ namespace MyInstruments
 
         public static void CountAllInstruments()
         {
-            ForegroundColor = ConsoleColor.White;
-
             int num1 = guitars.Count;
             int num2 = basses.Count;
             int num3 = otherStringInstruments.Count;
             int num4 = keyboards.Count;
             int num5 = num1 + num2 + num3 + num4;
 
+            ForegroundColor = ConsoleColor.White;
             ConsoleWindow.PrintAppHeader();
             WriteLine();
-            WriteLine("You have " + num1 + " guitars.");
-            WriteLine("You have " + num2 + " basses.");
-            WriteLine("You have " + num3 + " other string instruments.");
-            WriteLine("You have " + num4 + " keyboard instruments.");
             WriteLine();
-            WriteLine("You have " + num5 + " total instruments in your collection.");
+            WriteLine();
+
+            AnsiConsole.Write(new BarChart()
+                .Width(60)
+                .AddItem("Guitars", num1, Color.Yellow)
+                .AddItem("Basses", num2, Color.Green)
+                .AddItem("Other String Instruments", num3, Color.Red)
+                .AddItem("Keyboard Instruments", num4, Color.Blue));
+
+            WriteLine();
+            WriteLine("You have " + num5 + " total instruments in your collection:");
         }
 
         public static void ListInstrumentsByType(string input)
