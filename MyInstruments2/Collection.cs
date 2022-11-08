@@ -5,8 +5,9 @@ using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.UserSelection;
 using static System.Console;
 using Spectre.Console;
+using Spectre.Console.Rendering;
 
-namespace MyInstruments
+namespace MyInstruments 
 {
     class Collection
     {
@@ -59,15 +60,15 @@ namespace MyInstruments
             WriteLine();
             WriteLine();
 
-            AnsiConsole.Write(new BarChart()
-                .Width(60)
-                .AddItem("Guitars", num1, Color.Yellow)
-                .AddItem("Basses", num2, Color.Green)
-                .AddItem("Other String Instruments", num3, Color.Red)
-                .AddItem("Keyboard Instruments", num4, Color.Blue));
+            AnsiConsole.Write(new BreakdownChart()
+                .Width(65)
+                .AddItem("Guitars", num1, Color.Red)
+                .AddItem("Basses", num2, Color.Blue)
+                .AddItem("Other String Instruments", num3, Color.Green)
+                .AddItem("Keyboard Instruments", num4, Color.Yellow));
 
             WriteLine();
-            WriteLine("You have " + num5 + " total instruments in your collection:");
+            WriteLine("You have " + num5 + " total instruments in your collection.");
         }
 
         public static void ListInstrumentsByType(string input)
@@ -146,9 +147,33 @@ namespace MyInstruments
 
         public static void ListAllInstrumentsInTable()
         {
+            ForegroundColor = ConsoleColor.White;
+            ConsoleWindow.PrintAppHeader();
+            WriteLine();
 
+            var table = new Table();
+
+            table.AddColumn("Guitars:");
+            table.AddColumn("Basses:");
+            table.AddColumn("Other String Instruments:");
+            table.AddColumn("Keyboards:");
+
+            
+
+            foreach (var item in guitarsKeyList)
+                table.AddRow(item);
+
+            foreach (var item2 in bassesKeyList)
+                table.AddRow(item2);
+
+            foreach (var item3 in otherStringInstrumentsKeyList)
+                table.AddRow(item3);
+
+            foreach (var item4 in keyboardInstrumentsKeyList)
+                table.AddRow(item4);         
+
+            AnsiConsole.Write(table);
         }
-
     }
 }
 

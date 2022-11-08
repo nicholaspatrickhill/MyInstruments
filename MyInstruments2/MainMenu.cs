@@ -61,7 +61,8 @@ namespace MyInstruments
         private void ListInstruments()
         {
             Clear();
-            Collection.ListAllInstruments();
+            //Collection.ListAllInstruments();
+            Collection.ListAllInstrumentsInTable();
             ReturnToMainMenu();
         }
 
