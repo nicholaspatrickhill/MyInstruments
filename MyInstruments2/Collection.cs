@@ -71,21 +71,21 @@ namespace MyInstruments
 
         public static void ListInstrumentsByType(string input)
         {
-            if (input == "Guitars")
+       if (input == "Guitars")
             {
-                guitarsKeyList.ForEach(WriteLine);
+                ConsoleWindow.PrintGuitarsKeyList();
             }
             else if (input == "Basses")
             {
-                bassesKeyList.ForEach(WriteLine);
+                ConsoleWindow.PrintBassesKeyList();
             }
             else if (input == "Other")
             {
-                otherStringInstrumentsKeyList.ForEach(WriteLine);
+                ConsoleWindow.PrintOtherStringInstrumentsKeyList();
             }
             else if (input == "Keyboards")
             {
-                keyboardInstrumentsKeyList.ForEach(WriteLine);
+                ConsoleWindow.PrintKeyboardInstrumentsKeyList();
             }
         }
 
@@ -127,22 +127,18 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
             ConsoleWindow.PrintAppHeader();
-
-            WriteLine();
-            ForegroundColor = ConsoleColor.Red;
-            guitarsKeyList.ForEach(WriteLine);
             WriteLine();
 
-            ForegroundColor = ConsoleColor.Blue;
-            bassesKeyList.ForEach(WriteLine);
+            ConsoleWindow.PrintGuitarsKeyList();
             WriteLine();
 
-            ForegroundColor = ConsoleColor.Green;
-            otherStringInstrumentsKeyList.ForEach(WriteLine);
+            ConsoleWindow.PrintBassesKeyList();
             WriteLine();
 
-            ForegroundColor = ConsoleColor.Yellow;
-            keyboardInstrumentsKeyList.ForEach(WriteLine);
+            ConsoleWindow.PrintOtherStringInstrumentsKeyList();
+            WriteLine();
+
+            ConsoleWindow.PrintKeyboardInstrumentsKeyList();
 
             ForegroundColor = ConsoleColor.White;
         }

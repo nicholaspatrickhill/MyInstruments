@@ -1,4 +1,5 @@
 ﻿using static System.Console;
+using static MyInstruments.Collection;
 
 namespace MyInstruments
 {
@@ -7,6 +8,30 @@ namespace MyInstruments
         public static void PrintErrorMessage()
         {
             WriteLine("Invalid Command. Please try again.");
+        }
+
+        public static void PrintGuitarsKeyList()
+        {
+            ForegroundColor = ConsoleColor.Red;
+            guitarsKeyList.ForEach(WriteLine);
+        }
+
+        public static void PrintBassesKeyList()
+        {
+            ForegroundColor = ConsoleColor.Blue;
+            bassesKeyList.ForEach(WriteLine);
+        }
+
+        public static void PrintKeyboardInstrumentsKeyList()
+        {
+            ForegroundColor = ConsoleColor.Yellow;
+            keyboardInstrumentsKeyList.ForEach(WriteLine);
+        }
+
+        public static void PrintOtherStringInstrumentsKeyList()
+        {
+            ForegroundColor = ConsoleColor.Green;
+            otherStringInstrumentsKeyList.ForEach(WriteLine);
         }
 
         public static void PrintReviewInstrumentsHeader()
