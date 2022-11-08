@@ -21,6 +21,10 @@ The following items from the "Feature List" are implemented:
 ⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.
 
 #### NOTES
+MyInstruments uses the log4net and Spectre.Console NuGet packages.
+The correct package references are in the project file.
+Please restore the packages through NuGet (if it wasn't set to do so automatically) or through dotnet CLI by running dotnet build and dotnet run. 
+
 MyInstruments begins by calling the Start method.
 Start creates an instance of MainMenu and calls RunMainMenu to generate an arrow-key driven menu in the console. 
 The menu's functionality and design are established by the Menu class.
@@ -39,7 +43,7 @@ The switch executes cases based on whether or not it finds a match.
 The user may use these commands to review the keys available to the program, to clear the console or to return to the main menu screen.
 If the switch does not find a match it generates an invalid input response through its default case.
 In the event of invalid input, the PrintErrorMessage method is called from the ConsoleWindow class and the invalid input is logged.
-The log4net nuget package is configured within the program to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
+The log4net NuGet package is configured to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
 The user stays in the ReviewAnyInstrument loop until they elect to return to the main menu by typing "Menu".
 
 Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleWindow classes. The various musical instrument dictionary keys are converted to lists by the Collection class for repeated use by its methods.
