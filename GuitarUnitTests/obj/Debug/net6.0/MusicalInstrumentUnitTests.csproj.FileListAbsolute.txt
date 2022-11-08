@@ -15,8 +15,6 @@ C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\Musi
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MusicalInstrumentUnitTests.runtimeconfig.json
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MusicalInstrumentUnitTests.dll
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\MusicalInstrumentUnitTests.pdb
-C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\BetterConsoleTables.dll
-C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\ConsoleTableExt.dll
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\log4net.dll
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\nicho\source\repos\MyInstruments2\GuitarUnitTests\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll

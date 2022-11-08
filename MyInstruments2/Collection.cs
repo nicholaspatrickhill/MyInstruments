@@ -1,13 +1,12 @@
-﻿using static MyInstruments.Guitar;
+﻿using Spectre.Console;
 using static MyInstruments.Bass;
-using static MyInstruments.OtherStringInstrument;
+using static MyInstruments.Guitar;
 using static MyInstruments.KeyboardInstrument;
+using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.UserSelection;
 using static System.Console;
-using Spectre.Console;
-using Spectre.Console.Rendering;
 
-namespace MyInstruments 
+namespace MyInstruments
 {
     class Collection
     {
@@ -56,7 +55,6 @@ namespace MyInstruments
 
             ForegroundColor = ConsoleColor.White;
             ConsoleWindow.PrintAppHeader();
-            WriteLine();
             WriteLine();
             WriteLine();
 
@@ -129,50 +127,24 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
             ConsoleWindow.PrintAppHeader();
+
             WriteLine();
-            WriteLine("YOUR INSTRUMENTS:");
-            WriteLine();
-            WriteLine("GUITARS:");
+            ForegroundColor = ConsoleColor.Red;
             guitarsKeyList.ForEach(WriteLine);
             WriteLine();
-            WriteLine("BASSES:");
+
+            ForegroundColor = ConsoleColor.Blue;
             bassesKeyList.ForEach(WriteLine);
             WriteLine();
-            WriteLine("OTHER STRING INSTRUMENTS:");
+
+            ForegroundColor = ConsoleColor.Green;
             otherStringInstrumentsKeyList.ForEach(WriteLine);
             WriteLine();
-            WriteLine("KEYBOARDS:");
+
+            ForegroundColor = ConsoleColor.Yellow;
             keyboardInstrumentsKeyList.ForEach(WriteLine);
-        }
 
-        public static void ListAllInstrumentsInTable()
-        {
             ForegroundColor = ConsoleColor.White;
-            ConsoleWindow.PrintAppHeader();
-            WriteLine();
-
-            var table = new Table();
-
-            table.AddColumn("Guitars:");
-            table.AddColumn("Basses:");
-            table.AddColumn("Other String Instruments:");
-            table.AddColumn("Keyboards:");
-
-            
-
-            foreach (var item in guitarsKeyList)
-                table.AddRow(item);
-
-            foreach (var item2 in bassesKeyList)
-                table.AddRow(item2);
-
-            foreach (var item3 in otherStringInstrumentsKeyList)
-                table.AddRow(item3);
-
-            foreach (var item4 in keyboardInstrumentsKeyList)
-                table.AddRow(item4);         
-
-            AnsiConsole.Write(table);
         }
     }
 }
