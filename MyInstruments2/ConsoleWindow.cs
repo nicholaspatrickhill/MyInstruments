@@ -103,10 +103,10 @@ namespace MyInstruments
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
             WriteLine("In \"Review Instruments\" you may review any instrument in my collection by typing its key and pressing enter.");
-            WriteLine(" -You may review the keys available by typing \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" and then pressing enter.");
-            WriteLine(" -Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input.");
-            WriteLine(" -If the console is becoming clogged with text you may refresh it by typing \"Clear.\" and pressing enter");
-            WriteLine(" -Type \"Menu\" and press enter to return to the Main Menu and select another option.");
+            WriteLine(" -Please note that all user keys and commands are lower case specific for valid input.");
+            WriteLine(" -You may review the keys available by typing \"guitars\", \"basses\", \"keyboards\" or \"other\" and then pressing enter.");
+            WriteLine(" -If the console is becoming clogged with text you may refresh it by typing \"clear.\" and pressing enter");
+            WriteLine(" -Type \"menu\" and press enter to return to the Main Menu and select another option.");
             WriteLine();
             WriteLine("\"List Instruments\" shows a complete list of the keys available to the program.");
             WriteLine();
