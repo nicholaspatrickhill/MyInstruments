@@ -28,7 +28,7 @@ Please restore the packages through NuGet (if it wasn't set to do so automatical
 
 MyInstruments begins by calling the Start method.
 Start creates an instance of MainMenu and calls RunMainMenu to generate an arrow-key driven menu in the console. 
-The menu's functionality and design are established by an If-Else block and a Do-While loop the Menu class.
+The menu's functionality and design are established by an If-Else block and a Do-While loop in the Menu class.
 RunMainMenu prompts the user to move the cursor with the UP and DOWN arrow keys on their keyboard to highlight the function that they wish to perform.
 The user is prompted to push enter to perform their desired function.
 The user's input executes cases in a Switch that call methods that perform the function desired by the user.
