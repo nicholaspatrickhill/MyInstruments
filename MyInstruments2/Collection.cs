@@ -1,4 +1,5 @@
 ﻿using Spectre.Console;
+using System.Globalization;
 using static MyInstruments.Bass;
 using static MyInstruments.Guitar;
 using static MyInstruments.KeyboardInstrument;
@@ -17,7 +18,8 @@ namespace MyInstruments
 
         public static void ReviewAnyInstrument()
         {
-            ConsoleWindow.PrintReviewInstrumentsHeader();
+            ConsoleWindow.PrintAppHeader();
+            //ConsoleWindow.PrintReviewInstrumentsHeader();
 
             var repeat = true;
             while (repeat)
@@ -25,7 +27,9 @@ namespace MyInstruments
                 ForegroundColor = ConsoleColor.White;
 
                 WriteLine();
-                WriteLine("Which instrument would you like to review?");
+                //WriteLine("Which instrument would you like to review?");
+                WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"help\" for a list of other commands.");
+                WriteLine("What would you like to review?");
 
                 var guitar = new Guitar();
                 var bass = new Bass();
@@ -71,19 +75,19 @@ namespace MyInstruments
 
         public static void ListInstrumentsByType(string input)
         {
-       if (input == "Guitars")
+       if (input == "guitars")
             {
                 ConsoleWindow.PrintGuitarsKeyList();
             }
-            else if (input == "Basses")
+            else if (input == "basses")
             {
                 ConsoleWindow.PrintBassesKeyList();
             }
-            else if (input == "Other")
+            else if (input == "other")
             {
                 ConsoleWindow.PrintOtherStringInstrumentsKeyList();
             }
-            else if (input == "Keyboards")
+            else if (input == "keyboards")
             {
                 ConsoleWindow.PrintKeyboardInstrumentsKeyList();
             }

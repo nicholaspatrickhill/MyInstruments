@@ -13,7 +13,6 @@ namespace MyInstruments
 
         private void RunMainMenu()
         {
-            
             string prompt = "\nWelcome to MyInstruments!\n\nUse the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.\nWhat would you like to do? \n";
             string[] options = { "Read Instructions", "Review Instruments", "List Instruments", "Count Instruments", "Save Text File", "About This App", "Exit" };
             Menu mainMenu = new Menu(prompt, options);
@@ -56,12 +55,12 @@ namespace MyInstruments
         {
             Clear();
             Collection.ReviewAnyInstrument();
+            //ReviewAnyInstrumentMenu.StartReviewAnyInstrumentMenu();
         }
 
         private void ListInstruments()
         {
             Clear();
-            //Collection.ListAllInstruments();
             Collection.ListAllInstruments();
             ReturnToMainMenu();
         }
@@ -105,18 +104,18 @@ namespace MyInstruments
             ForegroundColor = ConsoleColor.White;
             WriteLine();
             WriteLine("Are you sure you wish to exit the program?");
-            WriteLine("Type \"Y\" and press enter to exit or type \"N\" and press enter to return to the Main Menu.");
+            WriteLine("Type \"y\" and press enter to exit or type \"n\" and press enter to return to the Main Menu.");
 
             ForegroundColor = ConsoleColor.Cyan;
             string input = ReadLine();
 
             ForegroundColor = ConsoleColor.White;
 
-            if (input == "Y")
+            if (input == "y")
             {
                 Environment.Exit(0);
             }
-            else if (input == "N")
+            else if (input == "n")
             {
                 Start();
             }

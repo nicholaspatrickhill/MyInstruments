@@ -34,15 +34,28 @@ namespace MyInstruments
             otherStringInstrumentsKeyList.ForEach(WriteLine);
         }
 
-        public static void PrintReviewInstrumentsHeader()
+        //public static void PrintReviewInstrumentsHeader()
+        //{
+        //    ForegroundColor = ConsoleColor.White;
+        //    PrintAppHeader();
+        //    WriteLine();
+        //    WriteLine("Type the key of the instrument that you wish to review and press enter.");
+        //    WriteLine("Type \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" to see the keys available for review.");
+        //    WriteLine("Type \"Menu\" to return the Main Menu.");
+        //    WriteLine("Type \"Clear\" to clear the console.");
+
+        //    WriteLine("Type the key of the instrument that you wish to review and press enter. Or type \"help\" for a list of other commands.");
+        //}
+
+        public static void PrintHelp()
         {
             ForegroundColor = ConsoleColor.White;
-            PrintAppHeader();
-            WriteLine();
-            WriteLine("Type the key of the instrument that you wish to review.");
-            WriteLine("Type \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" to see the keys available for review.");
-            WriteLine("Type \"Menu\" to return the Main Menu.");
-            WriteLine("Type \"Clear\" to clear the console.");
+            WriteLine("Type \"guitars\" to see the guitar keys available for review.");
+            WriteLine("Type \"basses\" to see the bass keys available for review.");
+            WriteLine("Type \"other\" to see the other string instrument keys available for review.");
+            WriteLine("Type \"keyboards\" to see the keyboard instrument keys available for review.");
+            WriteLine("Type \"menu\" to return home to the Main Menu.");
+            WriteLine("Type \"clear\" to clear the console and start over.");
         }
 
         public static void PrintAboutInfo()

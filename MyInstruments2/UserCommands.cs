@@ -15,17 +15,21 @@ namespace MyInstruments
         {
             switch (input)
             {
-                case "Clear":
-                    Clear();
-                    ConsoleWindow.PrintReviewInstrumentsHeader();
+                case "help":
+                    ConsoleWindow.PrintHelp();
                     break;
-                case "Menu":
+                case "clear":
+                    Clear();
+                    //ConsoleWindow.PrintReviewInstrumentsHeader();
+                    Collection.ReviewAnyInstrument();
+                    break;
+                case "menu":
                     MainMenu.Start();
                     break; 
-                case "Guitars": 
-                case "Basses":
-                case "Other":
-                case "Keyboards":
+                case "guitars": 
+                case "basses":
+                case "other":
+                case "keyboards":
                     Collection.ListInstrumentsByType(input);
                     break;
                 default:
