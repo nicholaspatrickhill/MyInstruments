@@ -45,7 +45,7 @@ namespace MyInstruments
 
         private void ReviewGuitars()
         {
-            ConsoleWindow.PrintGuitarsKeyList();
+            ConsoleMessage.PrintGuitarsKeyList();
         }
 
         private void ReviewBasses()

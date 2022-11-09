@@ -25,7 +25,7 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
 
-            ConsoleWindow.PrintAppHeader();
+            ConsoleMessage.PrintAppHeader();
             WriteLine(Prompt);
             for (int i = 0; i < Options.Length; i++)
             {

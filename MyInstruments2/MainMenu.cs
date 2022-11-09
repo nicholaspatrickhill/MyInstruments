@@ -47,7 +47,7 @@ namespace MyInstruments
         private void DisplayInstructions()
         {
             Clear();
-            ConsoleWindow.PrintInstructions();
+            ConsoleMessage.PrintInstructions();
             ReturnToMainMenu();
         }
 
@@ -81,7 +81,7 @@ namespace MyInstruments
         private void DisplayAboutInfo()
         {
             Clear();
-            ConsoleWindow.PrintAboutInfo();
+            ConsoleMessage.PrintAboutInfo();
             ReturnToMainMenu();
         }
 

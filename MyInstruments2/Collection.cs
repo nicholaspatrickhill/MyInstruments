@@ -18,13 +18,13 @@ namespace MyInstruments
 
         public static void ReviewAnyInstrument()
         {
-            ConsoleWindow.PrintAppHeader();
+            ConsoleMessage.PrintAppHeader();
 
             var repeat = true;
             while (repeat)
             {
                 
-                ConsoleWindow.PrintReviewAnyInstrumentHeader();
+                ConsoleMessage.PrintReviewAnyInstrumentHeader();
 
                 var guitar = new Guitar();
                 var bass = new Bass();
@@ -54,7 +54,7 @@ namespace MyInstruments
             int num5 = num1 + num2 + num3 + num4;
 
             ForegroundColor = ConsoleColor.White;
-            ConsoleWindow.PrintAppHeader();
+            ConsoleMessage.PrintAppHeader();
             WriteLine();
             WriteLine();
 
@@ -73,19 +73,19 @@ namespace MyInstruments
         {
        if (input == "guitars")
             {
-                ConsoleWindow.PrintGuitarsKeyList();
+                ConsoleMessage.PrintGuitarsKeyList();
             }
             else if (input == "basses")
             {
-                ConsoleWindow.PrintBassesKeyList();
+                ConsoleMessage.PrintBassesKeyList();
             }
             else if (input == "other")
             {
-                ConsoleWindow.PrintOtherStringInstrumentsKeyList();
+                ConsoleMessage.PrintOtherStringInstrumentsKeyList();
             }
             else if (input == "keyboards")
             {
-                ConsoleWindow.PrintKeyboardInstrumentsKeyList();
+                ConsoleMessage.PrintKeyboardInstrumentsKeyList();
             }
         }
 
@@ -118,7 +118,7 @@ namespace MyInstruments
             file.Close();
 
             ForegroundColor = ConsoleColor.White;
-            ConsoleWindow.PrintAppHeader();
+            ConsoleMessage.PrintAppHeader();
             WriteLine();
             WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
         }
@@ -126,19 +126,19 @@ namespace MyInstruments
         public static void ListAllInstruments()
         {
             ForegroundColor = ConsoleColor.White;
-            ConsoleWindow.PrintAppHeader();
+            ConsoleMessage.PrintAppHeader();
             WriteLine();
 
-            ConsoleWindow.PrintGuitarsKeyList();
+            ConsoleMessage.PrintGuitarsKeyList();
             WriteLine();
 
-            ConsoleWindow.PrintBassesKeyList();
+            ConsoleMessage.PrintBassesKeyList();
             WriteLine();
 
-            ConsoleWindow.PrintOtherStringInstrumentsKeyList();
+            ConsoleMessage.PrintOtherStringInstrumentsKeyList();
             WriteLine();
 
-            ConsoleWindow.PrintKeyboardInstrumentsKeyList();
+            ConsoleMessage.PrintKeyboardInstrumentsKeyList();
 
             ForegroundColor = ConsoleColor.White;
         }

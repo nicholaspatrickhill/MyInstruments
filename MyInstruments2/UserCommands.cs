@@ -16,7 +16,7 @@ namespace MyInstruments
             switch (input)
             {
                 case "help":
-                    ConsoleWindow.PrintHelp();
+                    ConsoleMessage.PrintHelp();
                     break;
                 case "clear":
                     Clear();
