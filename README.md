@@ -41,9 +41,9 @@ ReviewAnyInstrument then prompts the user to enter a new key.
 If the user input is not a matching key, it exits the UserSelection If-Else block and enters the SelectCommand switch in the UserCommands class. 
 The UserCommands switch searches its case names for a match to the user's input.
 The switch executes cases based on whether or not it finds a match.
-The user may use these commands to review the keys available to the program, to clear the console or to return to the main menu screen.
+The user may use these commands to call the help menu, review the keys available to the program, clear the console or return to the main menu screen.
 If the switch does not find a match it generates an invalid input response through its default case.
-In the event of invalid input, the PrintErrorMessage method is called from the ConsoleMessage class and the invalid input is logged.
+In the event of invalid input, the console displays an error message and the invalid input is logged.
 The log4net NuGet package is configured to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
 The user stays in the ReviewAnyInstrument loop until they elect to return to the main menu by typing "menu".
 
