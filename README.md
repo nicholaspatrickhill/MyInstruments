@@ -44,12 +44,12 @@ The user may use these commands to review the keys available to the program, to 
 If the switch does not find a match it generates an invalid input response through its default case.
 In the event of invalid input, the PrintErrorMessage method is called from the ConsoleWindow class and the invalid input is logged.
 The log4net NuGet package is configured to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
-The user stays in the ReviewAnyInstrument loop until they elect to return to the main menu by typing "Menu".
+The user stays in the ReviewAnyInstrument loop until they elect to return to the main menu by typing "menu".
 
 Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleWindow classes. The various musical instrument dictionary keys are converted to lists by the Collection class for repeated use by its methods.
 
 Selecting "Exit" calls the ExitTheProgram method.
-ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "Y" or "N" and then pressing enter.
+ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "y" or "n" and then pressing enter.
 ExitTheProgram cycles the user input through an If-Else block.
 An input of "Y" terminates the program via an Exit method.
 An input of "N" recycles the program by calling the Start method.
@@ -73,7 +73,7 @@ These tests quickly and safely check the string concatenations, methods and list
 #### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
-In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.
+In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.  
 ⦁ Please note that all user keys and commands are lower case specific for valid input.  
 ⦁ You may review the keys available by typing "guitars", "basses", "keyboards" or "other" and then pressing enter.    
 ⦁ Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input.  
