@@ -34,7 +34,7 @@ namespace MyInstruments
                 WriteLine();
                 string? input = UserInput();
 
-                repeat = SelectInstrument(repeat, guitar, bass, otherStringInstrument, keyboard, input);
+                repeat = SelectInstrument(repeat, input);
 
                 static string? UserInput()
                 {

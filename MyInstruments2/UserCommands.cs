@@ -11,7 +11,7 @@ namespace MyInstruments
     public class UserCommands
     {
         private static readonly log4net.ILog log = LogHelper.GetLogger();
-        public static bool SelectCommand(bool repeat, Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
+        public static bool SelectCommand(bool repeat, string input)
         {
             switch (input)
             {
@@ -20,7 +20,6 @@ namespace MyInstruments
                     break;
                 case "clear":
                     Clear();
-                    //ConsoleWindow.PrintReviewInstrumentsHeader();
                     Collection.ReviewAnyInstrument();
                     break;
                 case "menu":

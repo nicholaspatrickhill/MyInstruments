@@ -55,7 +55,6 @@ namespace MyInstruments
         {
             Clear();
             Collection.ReviewAnyInstrument();
-            //ReviewAnyInstrumentMenu.StartReviewAnyInstrumentMenu();
         }
 
         private void ListInstruments()
@@ -126,8 +125,6 @@ namespace MyInstruments
                 WriteLine("Invalid Command. Please try again.");
                 ExitProgram();
             }
-        }
-
-        
+        } 
     }
 }

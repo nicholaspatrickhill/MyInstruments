@@ -9,7 +9,7 @@ namespace MyInstruments
 {
     public class UserSelection
     {
-        public static bool SelectInstrument(bool repeat, Guitar guitar, Bass bass, OtherStringInstrument otherStringInstrument, KeyboardInstrument keyboard, string input)
+        public static bool SelectInstrument(bool repeat, string input)
         {
             ForegroundColor = ConsoleColor.White;
 
@@ -34,7 +34,7 @@ namespace MyInstruments
                 keyboardChoice.PrintInstrument();
             } 
 
-            else repeat = SelectCommand(repeat, guitar, bass, otherStringInstrument, keyboard, input);
+            else repeat = SelectCommand(repeat, input);
             return repeat;
         }
     }  
