@@ -86,7 +86,7 @@ In "Review Instruments" you may review any individual instrument in my collectio
 
 "List Instruments" provides a complete list of the keys available to the program.
 
-"Count Instruments" provides a count of each instrument type and the total number of instruments in the collection.
+"Count Instruments" displays a breakdown chart with the counts of each instrument type and displays the total number of instruments in the collection.
 
 "Save Text File" saves a list of the instrument keys to a .txt file in the temp folder on the C:\ drive.  
 ⦁ TIP: This can be a handy reference guide when woking in the "Review Instruments" module.
