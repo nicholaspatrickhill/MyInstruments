@@ -5,24 +5,6 @@ namespace MyInstruments
 {
     class ConsoleWindow
     {
-        //public static void PrintProgramExitErrorMessage()
-        //{
-        //    WriteLine("Invalid Command. Please try again.");
-        //}
-
-        //public static void PrintReviewAnyInstrumentErrorMessage()
-        //{
-        //    WriteLine("Invalid Command. Please try again.");
-        //    //PrintReviewAnyInstrumentHeader();
-        //}
-
-        //public static void PrintExitProgramHeader()
-        //{
-        //    WriteLine();
-        //    WriteLine("Are you sure you wish to exit the program?");
-        //    WriteLine("Type \"y\" and press enter to exit or type \"n\" and press enter to return to the Main Menu.");
-        //}
-
         public static void PrintReviewAnyInstrumentHeader()
         {
             ForegroundColor = ConsoleColor.White;
@@ -56,19 +38,6 @@ namespace MyInstruments
             otherStringInstrumentsKeyList.ForEach(WriteLine);
         }
 
-        //public static void PrintReviewInstrumentsHeader()
-        //{
-        //    ForegroundColor = ConsoleColor.White;
-        //    PrintAppHeader();
-        //    WriteLine();
-        //    WriteLine("Type the key of the instrument that you wish to review and press enter.");
-        //    WriteLine("Type \"Guitars\", \"Basses\", \"Keyboards\" or \"Other\" to see the keys available for review.");
-        //    WriteLine("Type \"Menu\" to return the Main Menu.");
-        //    WriteLine("Type \"Clear\" to clear the console.");
-
-        //    WriteLine("Type the key of the instrument that you wish to review and press enter. Or type \"help\" for a list of other commands.");
-        //}
-
         public static void PrintHelp()
         {
             ForegroundColor = ConsoleColor.White;
@@ -94,7 +63,6 @@ namespace MyInstruments
             WriteLine("An interactive console app makes this process easier, faster and more fun!");
         }
 
-        //TODO update instructions with help command & lower case syntax
         public static void PrintInstructions()
         {
             ForegroundColor = ConsoleColor.White;
@@ -103,10 +71,10 @@ namespace MyInstruments
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
             WriteLine("In \"Review Instruments\" you may review any instrument in my collection by typing its key and pressing enter.");
-            WriteLine(" -Please note that all user keys and commands are lower case specific for valid input.");
-            WriteLine(" -You may review the keys available by typing \"guitars\", \"basses\", \"keyboards\" or \"other\" and then pressing enter.");
-            WriteLine(" -If the console is becoming clogged with text you may refresh it by typing \"clear.\" and pressing enter");
-            WriteLine(" -Type \"menu\" and press enter to return to the Main Menu and select another option.");
+            WriteLine(" --Please note that all user keys and commands are lower case specific for valid input.");
+            WriteLine(" --You may review the keys available by typing \"guitars\", \"basses\", \"keyboards\" or \"other\" and then pressing enter.");
+            WriteLine(" --If the console is becoming clogged with text you may refresh it by typing \"clear.\" and pressing enter");
+            WriteLine(" --Type \"menu\" and press enter to return to the Main Menu and select another option.");
             WriteLine();
             WriteLine("\"List Instruments\" shows a complete list of the keys available to the program.");
             WriteLine();
