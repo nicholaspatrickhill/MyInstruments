@@ -75,8 +75,7 @@ Use the UP and DOWN arrow keys to highlight the function that you wish to perfor
 
 In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.  
 ⦁ Please note that all user keys and commands are lower case specific for valid input.  
-⦁ You may review the keys available by typing "guitars", "basses", "keyboards" or "other" and then pressing enter.    
-⦁ Please note that keys are case specific and you will need to follow the case as indicated by the list for valid input.  
+⦁ You may review the keys available by typing "guitars", "basses", "keyboards" or "other" and then pressing enter.     
 ⦁ If the console is becoming clogged with text you may refresh it by typing "clear" and pressing enter.  
 ⦁ Type "menu" and press enter to return to the Main Menu and select another option.
 
