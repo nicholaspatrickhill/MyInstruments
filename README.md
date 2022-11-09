@@ -19,6 +19,7 @@ The following items from the "Feature List" are implemented:
 ⦁	Create 3 or more unit tests for your application.  
 ⦁	Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event).  
 ⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.
+⦁ Visualize data in a graph, chart, or other visual representation of data.
 
 #### NOTES
 MyInstruments uses the log4net and Spectre.Console NuGet packages.
