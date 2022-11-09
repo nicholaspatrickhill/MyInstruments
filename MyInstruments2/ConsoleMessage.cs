@@ -8,7 +8,6 @@ namespace MyInstruments
         public static void PrintReviewAnyInstrumentHeader()
         {
             ForegroundColor = ConsoleColor.White;
-
             WriteLine();
             WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"help\" for a list of other commands.");
             WriteLine("What would you like to review?");
@@ -89,7 +88,6 @@ namespace MyInstruments
         public static void PrintAppHeader()
         {
             ForegroundColor = ConsoleColor.White;
-
             WriteLine("███╗   ███╗██╗   ██╗██╗███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗");
             WriteLine("████╗ ████║╚██╗ ██╔╝██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝");
             WriteLine("██╔████╔██║ ╚████╔╝ ██║██╔██╗ ██║███████╗   ██║   ██████╔╝██║   ██║██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗");

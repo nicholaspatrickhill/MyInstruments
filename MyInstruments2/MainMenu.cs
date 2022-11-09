@@ -92,6 +92,7 @@ namespace MyInstruments
 
         private void ReturnToMainMenu()
         {
+            ForegroundColor = ConsoleColor.White;
             WriteLine();
             WriteLine("Press any key to return to the menu.");
             ReadKey(true);

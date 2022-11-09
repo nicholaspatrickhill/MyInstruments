@@ -139,8 +139,6 @@ namespace MyInstruments
             WriteLine();
 
             ConsoleMessage.PrintKeyboardInstrumentsKeyList();
-
-            ForegroundColor = ConsoleColor.White;
         }
     }
 }
