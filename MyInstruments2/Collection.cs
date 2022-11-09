@@ -24,18 +24,21 @@ namespace MyInstruments
             var repeat = true;
             while (repeat)
             {
-                ForegroundColor = ConsoleColor.White;
+                
+                ConsoleWindow.PrintReviewAnyInstrumentHeader();
 
-                WriteLine();
+                //WriteLine();
                 //WriteLine("Which instrument would you like to review?");
-                WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"help\" for a list of other commands.");
-                WriteLine("What would you like to review?");
+                //WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"help\" for a list of other commands.");
+                //WriteLine("What would you like to review?");
+
 
                 var guitar = new Guitar();
                 var bass = new Bass();
                 var otherStringInstrument = new OtherStringInstrument();
                 var keyboard = new KeyboardInstrument();
 
+                WriteLine();
                 string? input = UserInput();
 
                 repeat = SelectInstrument(repeat, guitar, bass, otherStringInstrument, keyboard, input);

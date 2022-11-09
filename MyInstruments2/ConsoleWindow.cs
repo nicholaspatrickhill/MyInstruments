@@ -5,9 +5,31 @@ namespace MyInstruments
 {
     class ConsoleWindow
     {
-        public static void PrintErrorMessage()
+        //public static void PrintProgramExitErrorMessage()
+        //{
+        //    WriteLine("Invalid Command. Please try again.");
+        //}
+
+        //public static void PrintReviewAnyInstrumentErrorMessage()
+        //{
+        //    WriteLine("Invalid Command. Please try again.");
+        //    //PrintReviewAnyInstrumentHeader();
+        //}
+
+        //public static void PrintExitProgramHeader()
+        //{
+        //    WriteLine();
+        //    WriteLine("Are you sure you wish to exit the program?");
+        //    WriteLine("Type \"y\" and press enter to exit or type \"n\" and press enter to return to the Main Menu.");
+        //}
+
+        public static void PrintReviewAnyInstrumentHeader()
         {
-            WriteLine("Invalid Command. Please try again.");
+            ForegroundColor = ConsoleColor.White;
+
+            WriteLine();
+            WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"help\" for a list of other commands.");
+            WriteLine("What would you like to review?");
         }
 
         public static void PrintGuitarsKeyList()
@@ -72,6 +94,7 @@ namespace MyInstruments
             WriteLine("An interactive console app makes this process easier, faster and more fun!");
         }
 
+        //TODO update instructions with help command & lower case syntax
         public static void PrintInstructions()
         {
             ForegroundColor = ConsoleColor.White;
@@ -97,6 +120,8 @@ namespace MyInstruments
 
         public static void PrintAppHeader()
         {
+            ForegroundColor = ConsoleColor.White;
+
             WriteLine("███╗   ███╗██╗   ██╗██╗███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗");
             WriteLine("████╗ ████║╚██╗ ██╔╝██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝");
             WriteLine("██╔████╔██║ ╚████╔╝ ██║██╔██╗ ██║███████╗   ██║   ██████╔╝██║   ██║██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗");

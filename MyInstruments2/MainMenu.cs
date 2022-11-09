@@ -123,9 +123,11 @@ namespace MyInstruments
             {
                 log4net.GlobalContext.Properties["UserInput"] = input;
                 log.Error("Invalid User Input");
-                ConsoleWindow.PrintErrorMessage();
+                WriteLine("Invalid Command. Please try again.");
                 ExitProgram();
             }
         }
+
+        
     }
 }
