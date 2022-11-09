@@ -51,8 +51,8 @@ Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Rea
 Selecting "Exit" calls the ExitTheProgram method.
 ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "y" or "n" and then pressing enter.
 ExitTheProgram cycles the user input through an If-Else block.
-An input of "Y" terminates the program via an Exit method.
-An input of "N" recycles the program by calling the Start method.
+An input of "y" terminates the program via an Exit method.
+An input of "n" recycles the program by calling the Start method.
 Invalid input recalls the ExitTheProgram loop until the user inputs a valid command.
 Invalid input is recorded in the error log.
 
