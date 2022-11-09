@@ -1,7 +1,7 @@
 ### MyInstruments
 
 **MyInstruments** is my capstone project for Code Kentucky's Software Development Course 1. 
-This console application was developed to help me manage my collection of musical instruments. 
+This Windows console application was developed to help me manage my collection of musical instruments. 
 It can be difficult to recall specific details about each instrument in my collection from memory. 
 I am often seeking out information like an instrument's age, string gauge, serial number and country of manufacture. 
 An interactive console app makes this process easier, faster and more fun.
@@ -18,7 +18,7 @@ The following items from the "Feature List" are implemented:
 ⦁	Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program.  
 ⦁	Create 3 or more unit tests for your application.  
 ⦁	Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event).  
-⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.
+⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.  
 ⦁ Visualize data in a graph, chart, or other visual representation of data.
 
 #### NOTES
@@ -47,7 +47,11 @@ In the event of invalid input, the PrintErrorMessage method is called from the C
 The log4net NuGet package is configured to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
 The user stays in the ReviewAnyInstrument loop until they elect to return to the main menu by typing "menu".
 
-Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleWindow classes. The various musical instrument dictionary keys are converted to lists by the Collection class for repeated use by its methods.
+Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleWindow classes. 
+The various musical instrument dictionary keys are converted to lists in the Collection class.
+These lists are printed to the console in "List Instruments" and elsewhere.
+"Count Instruments" uses Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
+"Save Text File" uses Streamwriter to write the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
 
 Selecting "Exit" calls the ExitTheProgram method.
 ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "y" or "n" and then pressing enter.
