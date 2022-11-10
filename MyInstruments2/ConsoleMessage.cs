@@ -9,7 +9,8 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
             WriteLine();
-            WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"help\" for a list of other commands.");
+            WriteLine("Type \"menu\" to return to the main menu or type \"help\" for a list of other commands.");
+            WriteLine("Type the key of the instrument that you wish to review and press enter.");
             WriteLine("What would you like to review?");
         }
 
