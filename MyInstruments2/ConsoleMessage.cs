@@ -67,7 +67,7 @@ namespace MyInstruments
             ForegroundColor = ConsoleColor.White;
             PrintAppHeader();
             WriteLine();
-            WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
+            WriteLine("On the main menu, use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
             WriteLine("In \"Review Instruments\" you may review any instrument in my collection by typing its key and pressing enter.");
             WriteLine(" --You may review the keys available by typing \"guitars\", \"basses\", \"keyboards\" or \"other\" and then pressing enter.");
@@ -76,7 +76,7 @@ namespace MyInstruments
             WriteLine();
             WriteLine("\"List Instruments\" shows a complete list of the keys available to the program.");
             WriteLine();
-            WriteLine("\"Count Instruments\" provides a count of each instrument type and the total number of instruments in the collection.");
+            WriteLine("\"Count Instruments\" displays a breakdown chart with the counts of each instrument type and displays the total number of instruments in the collection.");
             WriteLine();
             WriteLine("\"Save Text File\" saves a list of the instrument keys to a .txt file in the temp folder on the C:\\ drive.");
             WriteLine(" -Tip: This can be a handy reference guide when woking in the \"Review Instruments\" module.");
