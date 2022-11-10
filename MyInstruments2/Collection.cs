@@ -15,6 +15,77 @@ namespace MyInstruments
         public static List<string> bassesKeyList = new List<string>(basses.Keys);
         public static List<string> otherStringInstrumentsKeyList = new List<string>(otherStringInstruments.Keys);
         public static List<string> keyboardInstrumentsKeyList = new List<string>(keyboards.Keys);
+        public static void ListInstrumentsByType(string input)
+        {
+            if (input == "guitars")
+            {
+                ConsoleMessage.PrintGuitarsKeyList();
+            }
+            else if (input == "basses")
+            {
+                ConsoleMessage.PrintBassesKeyList();
+            }
+            else if (input == "other")
+            {
+                ConsoleMessage.PrintOtherStringInstrumentsKeyList();
+            }
+            else if (input == "keyboards")
+            {
+                ConsoleMessage.PrintKeyboardInstrumentsKeyList();
+            }
+        }
+
+        public static void ListAllInstruments()
+        {
+            ForegroundColor = ConsoleColor.White;
+            ConsoleMessage.PrintAppHeader();
+            WriteLine();
+
+            ConsoleMessage.PrintGuitarsKeyList();
+            WriteLine();
+
+            ConsoleMessage.PrintBassesKeyList();
+            WriteLine();
+
+            ConsoleMessage.PrintOtherStringInstrumentsKeyList();
+            WriteLine();
+
+            ConsoleMessage.PrintKeyboardInstrumentsKeyList();
+        }
+
+        public static void SaveInstrumentsToTextFile()
+        {
+            string myInstruments = @"C:\temp\MyInstruments.txt";
+            myInstruments = Path.GetFullPath(myInstruments);
+            Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
+
+            using StreamWriter file = new StreamWriter(myInstruments);
+            {
+                file.WriteLine("MY INSTRUMENTS");
+                file.WriteLine();
+
+                file.WriteLine("GUITARS:");
+                guitarsKeyList.ForEach(file.WriteLine);
+                file.WriteLine();
+
+                file.WriteLine("BASSES:");
+                bassesKeyList.ForEach(file.WriteLine);
+                file.WriteLine();
+
+                file.WriteLine("OTHER STRING INSTRUMENTS:");
+                otherStringInstrumentsKeyList.ForEach(file.WriteLine);
+                file.WriteLine();
+
+                file.WriteLine("KEYBOARDS:");
+                keyboardInstrumentsKeyList.ForEach(file.WriteLine);
+            }
+            file.Close();
+
+            ForegroundColor = ConsoleColor.White;
+            ConsoleMessage.PrintAppHeader();
+            WriteLine();
+            WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
+        }
 
         public static void ReviewAnyInstrument()
         {
@@ -67,78 +138,6 @@ namespace MyInstruments
 
             WriteLine();
             WriteLine("You have " + num5 + " total instruments in your collection.");
-        }
-
-        public static void ListInstrumentsByType(string input)
-        {
-       if (input == "guitars")
-            {
-                ConsoleMessage.PrintGuitarsKeyList();
-            }
-            else if (input == "basses")
-            {
-                ConsoleMessage.PrintBassesKeyList();
-            }
-            else if (input == "other")
-            {
-                ConsoleMessage.PrintOtherStringInstrumentsKeyList();
-            }
-            else if (input == "keyboards")
-            {
-                ConsoleMessage.PrintKeyboardInstrumentsKeyList();
-            }
-        }
-
-        public static void SaveInstrumentsToTextFile()
-        {
-            string myInstruments = @"C:\temp\MyInstruments.txt";
-            myInstruments = Path.GetFullPath(myInstruments);
-            Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
-
-            using StreamWriter file = new StreamWriter(myInstruments);
-            {
-                file.WriteLine("MY INSTRUMENTS");
-                file.WriteLine();
-
-                file.WriteLine("GUITARS:");
-                guitarsKeyList.ForEach(file.WriteLine);
-                file.WriteLine();
-
-                file.WriteLine("BASSES:");
-                bassesKeyList.ForEach(file.WriteLine);
-                file.WriteLine();
-
-                file.WriteLine("OTHER STRING INSTRUMENTS:");
-                otherStringInstrumentsKeyList.ForEach(file.WriteLine);
-                file.WriteLine();
-
-                file.WriteLine("KEYBOARDS:");
-                keyboardInstrumentsKeyList.ForEach(file.WriteLine);
-            }
-            file.Close();
-
-            ForegroundColor = ConsoleColor.White;
-            ConsoleMessage.PrintAppHeader();
-            WriteLine();
-            WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
-        }
-
-        public static void ListAllInstruments()
-        {
-            ForegroundColor = ConsoleColor.White;
-            ConsoleMessage.PrintAppHeader();
-            WriteLine();
-
-            ConsoleMessage.PrintGuitarsKeyList();
-            WriteLine();
-
-            ConsoleMessage.PrintBassesKeyList();
-            WriteLine();
-
-            ConsoleMessage.PrintOtherStringInstrumentsKeyList();
-            WriteLine();
-
-            ConsoleMessage.PrintKeyboardInstrumentsKeyList();
         }
     }
 }
