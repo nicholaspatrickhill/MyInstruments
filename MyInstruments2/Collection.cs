@@ -94,13 +94,8 @@ namespace MyInstruments
             var repeat = true;
             while (repeat)
             {
-                
-                ConsoleMessage.PrintReviewAnyInstrumentHeader();
 
-                var guitar = new Guitar();
-                var bass = new Bass();
-                var otherStringInstrument = new OtherStringInstrument();
-                var keyboard = new KeyboardInstrument();
+                ConsoleMessage.PrintReviewAnyInstrumentHeader();
 
                 WriteLine();
                 string? input = UserInput();
@@ -118,11 +113,11 @@ namespace MyInstruments
 
         public static void CountAllInstruments()
         {
-            int num1 = guitars.Count;
-            int num2 = basses.Count;
-            int num3 = otherStringInstruments.Count;
-            int num4 = keyboards.Count;
-            int num5 = num1 + num2 + num3 + num4;
+            int guitarsCount = Guitar.guitars.Count;
+            int bassesCount = Bass.basses.Count;
+            int otherCount = otherStringInstruments.Count;
+            int keyboardsCount = KeyboardInstrument.keyboards.Count;
+            int totalCount = guitarsCount + bassesCount + otherCount + keyboardsCount;
 
             ForegroundColor = ConsoleColor.White;
             ConsoleMessage.PrintAppHeader();
@@ -131,13 +126,13 @@ namespace MyInstruments
 
             AnsiConsole.Write(new BreakdownChart()
                 .Width(65)
-                .AddItem("Guitars", num1, Color.Red)
-                .AddItem("Basses", num2, Color.Blue)
-                .AddItem("Other String Instruments", num3, Color.Green)
-                .AddItem("Keyboard Instruments", num4, Color.Yellow));
+                .AddItem("Guitars", guitarsCount, Color.Red)
+                .AddItem("Basses", bassesCount, Color.Blue)
+                .AddItem("Other String Instruments", otherCount, Color.Green)
+                .AddItem("Keyboard Instruments", keyboardsCount, Color.Yellow));
 
             WriteLine();
-            WriteLine("You have " + num5 + " total instruments in your collection.");
+            WriteLine("You have " + totalCount + " total instruments in your collection.");
         }
     }
 }
