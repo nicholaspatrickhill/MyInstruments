@@ -83,7 +83,7 @@ In "Review Instruments" you may review any individual instrument in my collectio
 ⦁ If the console is becoming clogged with text you may refresh it by typing "clear" and pressing enter.  
 ⦁ Type "menu" and press enter to return to the Main Menu and select another option.
 
-"List Instruments" provides a complete list of the keys available to the program.
+"List Instruments" provides a complete list of instruments in the collection. These names also serve as the keys in "Review Instruments"
 
 "Count Instruments" displays a breakdown chart with the counts of each instrument type and displays the total number of instruments in the collection.
 
