@@ -76,7 +76,7 @@ The Tests folder contains the Musical Instruments unit tests.
 These tests quickly and safely check the string concatenations, methods and lists used by the musical instrument classes, their parent classes and other classes.
 
 #### INSTRUCTIONS
-Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
+On the main menu, use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
 In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.  
 ⦁ You may review the keys available by typing "guitars", "basses", "keyboards" or "other" and then pressing enter.     
