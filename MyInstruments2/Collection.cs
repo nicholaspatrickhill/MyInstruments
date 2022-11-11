@@ -65,19 +65,36 @@ namespace MyInstruments
                 file.WriteLine();
 
                 file.WriteLine("GUITARS:");
-                guitarsKeyList.ForEach(file.WriteLine);
+                string[] guitarArray = guitarsKeyList.ToArray();
+                foreach (string i in guitarArray)
+                {
+                    file.WriteLine(i.ToUpper());
+                }
                 file.WriteLine();
 
                 file.WriteLine("BASSES:");
-                bassesKeyList.ForEach(file.WriteLine);
+                string[] bassesArray = bassesKeyList.ToArray();
+                foreach (string i in bassesArray)
+                {
+                    file.WriteLine(i.ToUpper());
+                }
                 file.WriteLine();
 
                 file.WriteLine("OTHER STRING INSTRUMENTS:");
-                otherStringInstrumentsKeyList.ForEach(file.WriteLine);
+                string[] otherStringInstrumentsArray = otherStringInstrumentsKeyList.ToArray();
+                foreach (string i in otherStringInstrumentsArray)
+                {
+                    file.WriteLine(i.ToUpper());
+                }
                 file.WriteLine();
 
                 file.WriteLine("KEYBOARDS:");
-                keyboardInstrumentsKeyList.ForEach(file.WriteLine);
+                string[] keyboardInstrumentsArray = keyboardInstrumentsKeyList.ToArray();
+                foreach (string i in keyboardInstrumentsArray)
+                {
+                    file.WriteLine(i.ToUpper());
+                }
+                file.WriteLine();
             }
             file.Close();
 
@@ -105,7 +122,8 @@ namespace MyInstruments
                 {
                     ForegroundColor = ConsoleColor.Cyan;
                     string? input = ReadLine().ToLower();
-                    return input;
+                        
+                    return input;    
                 }
             }
         }

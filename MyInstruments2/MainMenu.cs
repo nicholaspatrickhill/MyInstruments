@@ -75,7 +75,6 @@ namespace MyInstruments
         private void SaveTextFile()
         {
             Clear();
-            string guitar = "guitar";
             Collection.SaveInstrumentsToTextFile();
             ReturnToMainMenu();
         }
@@ -112,7 +111,6 @@ namespace MyInstruments
             string input = ReadLine().ToLower();
 
             ForegroundColor = ConsoleColor.White;
-
             if (input == "y")
             {
                 Environment.Exit(0);
