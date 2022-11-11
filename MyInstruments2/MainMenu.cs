@@ -1,5 +1,6 @@
 ﻿using static System.Console;
 
+
 namespace MyInstruments
 {
     public class MainMenu
@@ -74,6 +75,7 @@ namespace MyInstruments
         private void SaveTextFile()
         {
             Clear();
+            string guitar = "guitar";
             Collection.SaveInstrumentsToTextFile();
             ReturnToMainMenu();
         }

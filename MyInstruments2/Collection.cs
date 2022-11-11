@@ -94,7 +94,6 @@ namespace MyInstruments
             var repeat = true;
             while (repeat)
             {
-
                 ConsoleMessage.PrintReviewAnyInstrumentHeader();
 
                 WriteLine();

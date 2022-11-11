@@ -23,6 +23,7 @@ namespace MyInstruments
                     Collection.ReviewAnyInstrument();
                     break;
                 case "menu":
+                case "back":
                     MainMenu.Start();
                     break; 
                 case "guitars": 

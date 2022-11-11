@@ -1,4 +1,6 @@
-﻿using static System.Console;
+﻿using System.Threading.Tasks.Dataflow;
+using Spectre.Console;
+using static System.Console;
 using static MyInstruments.Collection;
 
 namespace MyInstruments
