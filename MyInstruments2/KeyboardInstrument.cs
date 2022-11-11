@@ -7,7 +7,7 @@ namespace MyInstruments
         public string? NumberOfKeys { get; set; }
         public string? KeyWeight { get; set; }
 
-        public static Dictionary<string, KeyboardInstrument> keyboards = new Dictionary<string, KeyboardInstrument>
+        public static readonly Dictionary<string, KeyboardInstrument> keyboards = new Dictionary<string, KeyboardInstrument>
         {
             { "casio cdp-100", new KeyboardInstrument() { Make = "Casio", Model = "CDP-100", Type = "digital piano", Country = "China", Year = 2009,
                 Serial = "6032098R", Color = "Black", NumberOfKeys = "88", KeyWeight = "weighted"} },

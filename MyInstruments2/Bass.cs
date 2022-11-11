@@ -11,7 +11,7 @@ namespace MyInstruments
     {
         public string? Scale { get; set; }
 
-        public static Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
+        public static readonly Dictionary<string, Bass> basses = new Dictionary<string, Bass>()
         {
             { "fender dimension bass", new Bass() { Make = "Fender", Model = "Dimension Bass", Type = "solid-body electric bass", Country = "USA", Year = 2016, 
                 Serial = "US16030876", Color = "Black", Scale = "long", StringBrand = "D'Addario", StringType = "Chrome Flat Wound Long Scale", StringGauge= "Custom Light: 40-100", } },

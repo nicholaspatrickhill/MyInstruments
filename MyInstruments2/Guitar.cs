@@ -10,7 +10,7 @@ namespace MyInstruments
 {
     public class Guitar : StringInstrument, IPrintInstrument
     {
-        public static Dictionary<string, Guitar> guitars = new Dictionary<string, Guitar>()
+        public static readonly Dictionary<string, Guitar> guitars = new Dictionary<string, Guitar>()
         {
             { "cort mirage", new Guitar() { Make = "Cort", Model = "M-700 Mirage", Type = "solid-body electric guitar", Country = "Korea", Year = 2000,
                 Serial = "00043393", Color = "Cherry-burst", StringBrand = "D'addario", StringType = "Pure Nickel XL", StringGauge = "Light 10-45", } },
