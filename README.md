@@ -51,7 +51,7 @@ Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Rea
 The various musical instrument dictionary keys are converted to lists in the Collection class.
 These lists are printed to the console in "List Instruments" and elsewhere.
 "Count Instruments" uses Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
-"Save Text File" uses Streamwriter to write the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
+"Save Text File" converts the lists to arrays and uses Streamwriter and calls ToUpper to write a capitalized, sorted list of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
 
 Selecting "Exit" calls the ExitTheProgram method.
 ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "y" or "n" and then pressing enter.
