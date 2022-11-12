@@ -11,10 +11,10 @@ namespace MyInstruments
 {
     class Collection
     {
-        private static string[] guitarKeysArray = guitars.Keys.ToArray();
-        private static string[] bassKeysArray = basses.Keys.ToArray();
-        private static string[] otherStringInstrumentKeysArray = otherStringInstruments.Keys.ToArray();
-        private static string[] keyboardKeysArray = keyboards.Keys.ToArray();
+        private static readonly string[] guitarKeysArray = guitars.Keys.ToArray();
+        private static readonly string[] bassKeysArray = basses.Keys.ToArray();
+        private static readonly string[] otherStringInstrumentKeysArray = otherStringInstruments.Keys.ToArray();
+        private static readonly string[] keyboardKeysArray = keyboards.Keys.ToArray();
 
         public static void PrintGuitarKeysArray()
         {
@@ -93,6 +93,17 @@ namespace MyInstruments
             PrintKeyboardKeysArray();
         }
 
+        public static void SearchForFenderInstruments()
+        {
+            var allInstrumentsArray = guitarKeysArray.Concat(bassKeysArray).Concat(otherStringInstrumentKeysArray).Concat(keyboardKeysArray).ToArray();
+
+            var search = allInstrumentsArray.Where(p => p.Contains("fender"));
+            foreach (var result in search)
+            {
+                WriteLine("{0}", result);
+            }
+        }
+
         public static void SaveInstrumentsToTextFile()
         {
             {
@@ -145,8 +156,6 @@ namespace MyInstruments
                 }
             }
         }
-
-       
 
         public static void CountAllInstruments()
         {

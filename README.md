@@ -19,7 +19,8 @@ The following items from the "Feature List" are implemented:
 ⦁	Create 3 or more unit tests for your application.  
 ⦁	Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event).  
 ⦁ Implement a log that records errors, invalid inputs, or other important events and writes them to a text file.  
-⦁ Visualize data in a graph, chart, or other visual representation of data.
+⦁ Visualize data in a graph, chart, or other visual representation of data.  
+⦁ Use a LINQ query to retrieve information from a data structure (such as a list or array) or file.  
 
 #### NOTES
 MyInstruments uses the log4net and Spectre.Console NuGet packages.
@@ -33,7 +34,7 @@ RunMainMenu prompts the user to move the cursor with the UP and DOWN arrow keys 
 The user is prompted to push enter to perform their desired function.
 The user's input executes cases in a Switch that call methods that perform the function desired by the user.
 
-Selecting "Review Instruments" calls the ReviewAnyInstrument method from the Collection class.
+Selecting "Review Instruments" calls the ReviewAnyInstrument method from the UserReview class.
 ReviewAnyInstrument prompts the user to input the key of the musical instrument that they wish to review.
 ReviewAnyInstrument loops the user input through the SelectInstrument If-Else block in the UserSelection class to search the various musical instrument dictionaries for a matching key.
 The ToLower method is called on the user input which allows for input to be case insensitive as the program searches for a matching key.
@@ -55,6 +56,8 @@ Converting this data to arrays allows for the keys to be printed as sorted and c
 This allows for udpating the dictionaries later without having to worry about keeping them alphabetically sorted.
 "Count Instruments" uses Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
 "Save Text File" uses Streamwriter and calls ToUpper to write a capitalized, sorted list of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
+
+If the user inputs "fenders" during the ReviewAnyInstrument loop, the SearchForFenderInstruments method is called from the Collection Class. There are multiple Fender musical instruments in my collection across the various musical instrument types. SearchForFenderInstrumnets initializes an array which concatenates the other musical instrument keys arrays. It then uses a linq query to search the array for instruments containing "Fender" and then prints those instrument keys on the screen. 
 
 Selecting "Exit" calls the ExitTheProgram method.
 ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "y" or "n" and then pressing enter.
@@ -79,7 +82,7 @@ The Tests folder contains the Musical Instruments unit tests.
 These tests quickly and safely check the string concatenations, methods and lists used by the musical instrument classes, their parent classes and other classes.
 
 #### INSTRUCTIONS
-On the main menu, use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
+Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
 In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.  
 ⦁ You may review the keys available by typing "guitars", "basses", "keyboards" or "other" and then pressing enter.     

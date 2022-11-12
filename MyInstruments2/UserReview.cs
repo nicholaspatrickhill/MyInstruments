@@ -8,7 +8,7 @@ using static MyInstruments.UserSelection;
 
 namespace MyInstruments
 {
-    internal class UserInstrumentReview
+    internal class UserReview
     {
         public static void ReviewAnyInstrument()
         {

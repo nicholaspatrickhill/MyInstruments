@@ -20,7 +20,7 @@ namespace MyInstruments
                     break;
                 case "clear":
                     Clear();
-                    UserInstrumentReview.ReviewAnyInstrument();
+                    UserReview.ReviewAnyInstrument();
                     break;
                 case "menu":
                 case "back":
@@ -31,6 +31,12 @@ namespace MyInstruments
                 case "other":
                 case "keyboards":
                     Collection.ListInstrumentsByType(input);
+                    break;
+                case "fenders":
+                    Collection.SearchForFenderInstruments();
+                    break;
+                case "all":
+                    Collection.ListAllInstruments();
                     break;
                 default:
                     log4net.GlobalContext.Properties["UserInput"] = input;
