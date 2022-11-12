@@ -35,7 +35,8 @@ The user's input executes cases in a Switch that call methods that perform the f
 
 Selecting "Review Instruments" calls the ReviewAnyInstrument method from the Collection class.
 ReviewAnyInstrument prompts the user to input the key of the musical instrument that they wish to review.
-ReviewAnyInstrument loops the user input through the SelectInstrument If-Else block in the UserSelection class to search the various musical instrument dictionaries for a matching key. 
+ReviewAnyInstrument loops the user input through the SelectInstrument If-Else block in the UserSelection class to search the various musical instrument dictionaries for a matching key.
+The ToLower method allows for user input to be case insensitive as the program searches for a matching key.
 If there is a matching key in one of the dictionaries, the program calls the PrintInstrument method from the appropriate musical instrument class.
 ReviewAnyInstrument then prompts the user to enter a new key.
 If the user input is not a matching key, it exits the UserSelection If-Else block and enters the SelectCommand switch in the UserCommands class. 
@@ -50,7 +51,8 @@ The user stays in the ReviewAnyInstrument loop until they elect to return to the
 Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleMessage classes. 
 The various musical instrument dictionary keys are converted to arrays in the Collection class.
 These arrays are printed to the console in "List Instruments" and elsewhere.
-The arrays allow for the keys to be printed as sorted and color-coded lists to the console.
+Converting this data to arrays allows for the keys to be printed as sorted and color-coded lists to the console.
+This allows for udpating the dictionaries later without having to worry about keeping them alphabetically sorted.
 "Count Instruments" uses Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
 "Save Text File" uses Streamwriter and calls ToUpper to write a capitalized, sorted list of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
 
