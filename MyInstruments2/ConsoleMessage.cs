@@ -23,7 +23,7 @@ namespace MyInstruments
             WriteLine("Type \"basses\" to see the bass keys available for review.");
             WriteLine("Type \"other\" to see the other string instrument keys available for review.");
             WriteLine("Type \"keyboards\" to see the keyboard instrument keys available for review.");
-            WriteLine("Type \"fenders\" to see your fender instrument keys available for review.");
+            WriteLine("Type \"fenders\" to see the fender instrument keys available for review.");
             WriteLine("Type \"menu\" to return home to the Main Menu.");
             WriteLine("Type \"clear\" to clear the console and start over.");
         }
@@ -50,7 +50,7 @@ namespace MyInstruments
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
             WriteLine("In \"Review Instruments\" you may review any instrument in my collection by typing its key and pressing enter.");
-            WriteLine(" --You may review the keys by typing \"guitars\", \"basses\", \"keyboards\", \"other\", \"fenders\" or \"all\" and pressing enter.");
+            WriteLine(" --You may review the keys by typing \"guitars\", \"basses\", \"keyboards\", \"other\", or \"fenders\" and pressing enter.");
             WriteLine(" --If the console is becoming clogged with text you may refresh it by typing \"clear\" and pressing enter.");
             WriteLine(" --Type \"menu\" and press enter to return to the Main Menu and select another option.");
             WriteLine();

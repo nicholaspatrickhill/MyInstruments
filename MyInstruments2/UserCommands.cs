@@ -35,9 +35,6 @@ namespace MyInstruments
                 case "fenders":
                     Collection.SearchForFenderInstruments();
                     break;
-                case "all":
-                    Collection.ListAllInstruments();
-                    break;
                 default:
                     log4net.GlobalContext.Properties["UserInput"] = input;
                     log.Error("Invalid User Input");
