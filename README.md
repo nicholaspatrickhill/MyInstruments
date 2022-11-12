@@ -58,7 +58,7 @@ This allows for udpating the dictionaries later without having to worry about ke
 If the user inputs "fenders" during the ReviewAnyInstrument loop, the SearchForFenderInstruments method is called from the Collection Class. 
 There are multiple Fender musical instruments in my collection. 
 SearchForFenderInstruments initializes the allInstrumentsArray which concatenates the other musical instrument keys arrays.
-It then uses a linq query to search the array for all instrument keys containing "fender".
+It then uses a linq query to search the new array for all instrument keys containing "fender".
 It then prints the results of its search to the console.
 This way, all instruments containing "fender" are displayed regardless of their type.
 
@@ -88,7 +88,7 @@ These tests quickly and safely check the string concatenations, methods and list
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
 In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.  
-⦁ You may review the keys available by typing "guitars", "basses", "keyboards" or "other" and then pressing enter.     
+⦁ You may review the keys available by typing "guitars", "basses", "keyboards", "other", "fenders" or "all" and pressing enter.     
 ⦁ If the console is becoming clogged with text you may refresh it by typing "clear" and pressing enter.  
 ⦁ Type "menu" and press enter to return to the Main Menu and select another option.
 
