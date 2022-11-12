@@ -20,7 +20,7 @@ namespace MyInstruments
                     break;
                 case "clear":
                     Clear();
-                    Collection.ReviewAnyInstrument();
+                    UserInstrumentReview.ReviewAnyInstrument();
                     break;
                 case "menu":
                 case "back":

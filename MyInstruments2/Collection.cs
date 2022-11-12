@@ -4,7 +4,7 @@ using static MyInstruments.Bass;
 using static MyInstruments.Guitar;
 using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.OtherStringInstrument;
-using static MyInstruments.UserSelection;
+
 using static System.Console;
 
 namespace MyInstruments
@@ -146,29 +146,7 @@ namespace MyInstruments
             }
         }
 
-        public static void ReviewAnyInstrument()
-        {
-            ConsoleMessage.PrintAppHeader();
-
-            var repeat = true;
-            while (repeat)
-            {
-                ConsoleMessage.PrintReviewAnyInstrumentHeader();
-
-                WriteLine();
-                string? input = UserInput();
-
-                repeat = SelectInstrument(repeat, input);
-
-                static string? UserInput()
-                {
-                    ForegroundColor = ConsoleColor.Cyan;
-                    string? input = ReadLine().ToLower();
-
-                    return input;
-                }
-            }
-        }
+       
 
         public static void CountAllInstruments()
         {

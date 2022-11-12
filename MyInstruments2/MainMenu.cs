@@ -55,7 +55,7 @@ namespace MyInstruments
         private static void ReviewInstruments()
         {
             Clear();
-            Collection.ReviewAnyInstrument();
+            UserInstrumentReview.ReviewAnyInstrument();
         }
 
         private void ListInstruments()
