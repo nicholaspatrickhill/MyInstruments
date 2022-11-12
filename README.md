@@ -6,7 +6,7 @@ It can be difficult to recall specific details about each instrument in my colle
 I am often seeking out information like an instrument's age, string gauge, serial number and country of manufacture. 
 An interactive console app makes this process easier, faster and more fun.
 
-The app takes input from the user and prints information about the instrument of their choosing, or information about the entire collection, on the screen.
+The app takes input from the user and prints information about the instruments in my collection to the console.
 
 #### FEATURES
 The following items from the "Feature List" are implemented:
