@@ -50,7 +50,7 @@ namespace MyInstruments
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
             WriteLine("In \"Review Instruments\" you may review any instrument in my collection by typing its key and pressing enter.");
-            WriteLine(" --You may review the keys by typing \"guitars\", \"basses\", \"keyboards\", \"other\", or \"fenders\" and pressing enter.");
+            WriteLine(" --You may review the keys by typing \"guitars\", \"basses\", \"keyboards\", \"other\" or \"fenders\" and pressing enter.");
             WriteLine(" --If the console is becoming clogged with text you may refresh it by typing \"clear\" and pressing enter.");
             WriteLine(" --Type \"menu\" and press enter to return to the Main Menu and select another option.");
             WriteLine();

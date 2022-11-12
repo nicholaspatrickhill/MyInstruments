@@ -3,10 +3,10 @@ using NUnit.Framework.Constraints;
 
 namespace MusicalInstrumentUnitTests
 {
-    public class ListOfKeysTest
+    public class ArrayOfKeysTest
     {
         [Test]
-        public void ListOfKeysTestValid()
+        public void ArrayOfKeysTestValid()
         {
             // Arrange
             Dictionary<string, Guitar> testGuitars = new Dictionary<string, Guitar>()
@@ -14,17 +14,17 @@ namespace MusicalInstrumentUnitTests
                         { "Fender Starcaster", new Guitar() },
                         { "Jackson Dinky", new Guitar() },
                         { "PRS SE24", new Guitar() },
-                        { "Gisbon SG", new Guitar() },
+                        { "Gibson SG", new Guitar() },
                         { "Parker Fly", new Guitar() },
                     };
 
-            List<string> testGuitarsKeyList = new List<string>(testGuitars.Keys);
+            string[] testGuitarKeysArray = testGuitars.Keys.ToArray();
 
-            List<string> expected = testGuitarsKeyList;
+            string[] expected = testGuitarKeysArray;
 
             // Act
-            List<string> actual;
-            actual = new List<string>(testGuitars.Keys);
+            string[] actual;
+            actual = testGuitars.Keys.ToArray();
 
             //Assert
             Assert.That(actual, Is.EqualTo(expected));

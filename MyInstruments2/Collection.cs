@@ -4,7 +4,6 @@ using static MyInstruments.Bass;
 using static MyInstruments.Guitar;
 using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.OtherStringInstrument;
-
 using static System.Console;
 
 namespace MyInstruments
@@ -180,7 +179,6 @@ namespace MyInstruments
             WriteLine();
             WriteLine("You have " + totalCount + " total instruments in your collection.");
         }
-
     }
 }
 
