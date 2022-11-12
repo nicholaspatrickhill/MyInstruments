@@ -28,7 +28,7 @@ Please restore the packages through NuGet (if it wasn't set to do so automatical
 MyInstruments begins by calling the Start method.
 Start creates an instance of MainMenu and calls RunMainMenu to generate an arrow-key driven menu in the console. 
 The menu's functionality and design are established by an If-Else block and a Do-While loop in the Menu class.
-RunMainMenu prompts the user to move the cursor with the UP and DOWN arrow keys on their keyboard to highlight the function that they wish to perform.
+RunMainMenu prompts the user to move the cursor with the up and down arrow keys on their keyboard to highlight the function that they wish to perform.
 The user is prompted to push enter to perform their desired function.
 The user's input executes cases in a Switch that call methods that perform the function desired by the user.
 
@@ -87,19 +87,19 @@ These tests quickly and safely check the string concatenations, methods and list
 #### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
-In "Review Instruments" you may review any individual instrument in my collection by typing its key and pressing enter.  
+In REVIEW INSTRUMENTS you may review any individual instrument in my collection by typing its key and pressing enter.  
 ⦁ You may review the keys available by typing "guitars", "basses", "keyboards", "other" or "fenders" and pressing enter.     
 ⦁ If the console is becoming clogged with text you may refresh it by typing "clear" and pressing enter.  
 ⦁ Type "menu" and press enter to return to the Main Menu and select another option.
 
-"List Instruments" provides a complete list of instruments in the collection. These names also serve as the keys in "Review Instruments"
+LIST INSTRUMENTS provides a complete list of instruments in the collection. These names also serve as the keys in "Review Instruments"
 
-"Count Instruments" displays a breakdown chart with the counts of each instrument type and displays the total number of instruments in the collection.
+COUNT INSTRUMENTS displays a breakdown chart with the counts of each instrument type and displays the total number of instruments in the collection.
 
-"Save Text File" saves a list of the instrument keys to a .txt file in the temp folder on the C:\ drive.  
+SAVE TEXT FILE saves a list of the instrument keys to a .txt file in the temp folder on the C:\ drive.  
 ⦁ TIP: This can be a handy reference guide when woking in the "Review Instruments" module.
 
-"About This App" provides some information about the application's purpose and author.
+ABOUT THIS APP provides some information about the application's purpose and author.
 
-"Exit" will terminate the program upon confirmation.
+EXIT will terminate the program upon confirmation.
 
