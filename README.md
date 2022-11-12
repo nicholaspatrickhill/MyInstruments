@@ -49,9 +49,8 @@ The user stays in the ReviewAnyInstrument loop until they elect to return to the
 
 Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleMessage classes. 
 The various musical instrument dictionary keys are converted to arrays in the Collection class.
-These arrays are printed to the console in "List Instruments" and elsewhere.
-Converting this data to arrays allows for the keys to be printed as sorted and color-coded lists to the console.
-This allows for udpating the dictionaries later without having to worry about keeping them alphabetically sorted.
+Converting this data to arrays allows for the keys to be displayed as sorted and color-coded lists by various methods.
+With sorted arrays, the dictionaries can be updated with new acquistions without having to worry about alphabetically sorting them.
 "Count Instruments" uses Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
 "Save Text File" uses Streamwriter and calls ToUpper to write a capitalized, sorted list of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
 
