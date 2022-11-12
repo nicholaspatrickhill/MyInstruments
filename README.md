@@ -47,19 +47,21 @@ In the event of invalid input, the console displays an error message and the inv
 The log4net NuGet package is configured to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
 The user stays in the ReviewAnyInstrument loop until they elect to return to the main menu by typing "menu".
 
-Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleMessage classes. 
+Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleMessage classes.
+
 The various musical instrument dictionary keys are converted to arrays in the Collection class.
 Converting this data to arrays allows for the keys to be displayed as sorted and color-coded lists by various methods.
-With sorted arrays, the dictionaries can be updated with new acquistions without having to worry about alphabetically sorting them.
-"Count Instruments" uses Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
-"Save Text File" uses Streamwriter and calls ToUpper to write a capitalized, sorted list of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
+By using sorted arrays in the Collection methods, the dictionaries can easily be appended with new acquistions.
 
-If the user inputs "fenders" during the ReviewAnyInstrument loop, the SearchForFenderInstruments method is called from the Collection Class. 
-There are multiple Fender musical instruments in my collection.
-SearchForFenderInstruments initializes the allInstrumentsArray which concatenates the other musical instrument keys arrays.
+If the user inputs "fenders" during the ReviewAnyInstrument loop, the SearchForFenderInstruments method is called from the Collection Class.
+SearchForFenderInstruments initializes the allInstrumentsArray which concatenates the various musical instrument key arrays.
 It then uses a linq query to search the new array for all instrument keys containing "fender".
-It then prints the results of its search to the console.
+The results of this search are printed to the console.
 All instruments containing "fender" are displayed regardless of their type.
+
+"Count Instruments" uses Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
+
+"Save Text File" uses Streamwriter and calls ToUpper to write a capitalized, sorted list of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
 
 Selecting "Exit" calls the ExitTheProgram method.
 ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "y" or "n" and then pressing enter.
@@ -76,12 +78,12 @@ The Guitar, Bass, and OtherStringInstrument musical instrument classes inherit f
 KeyboardInstrument inherits from MusicalInstrument.
 Each of those musical instrument classes contains a unique dictionary and may also contain additional properties. 
 My musical instruments are instantiated as objects within each dictionary. 
-The objects' properties are defined in their dictionary. 
-These properties are returned in ReviewAllInstruments as a concatenated string when the user types in a matching key. 
+The objects' values are assigned in their dictionary. 
+These values are returned in ReviewAllInstruments as a concatenated string when the user types in a matching key. 
 This is achieved by calling the PrintInstrument method which is an implementation of the signature in the IPrintInstrument interface by each musical instrument class.
 
 The Tests folder contains the Musical Instruments unit tests. 
-These tests quickly and safely check the string concatenations, methods and lists used by the musical instrument classes, their parent classes and other classes.
+These tests quickly and safely check the string concatenations, methods and arrays used by the musical instrument classes, their parent classes and other classes.
 
 #### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
