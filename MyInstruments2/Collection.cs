@@ -11,10 +11,10 @@ namespace MyInstruments
 {
     class Collection
     {
-        public static string[] guitarKeysArray = guitars.Keys.ToArray();
-        public static string[] bassKeysArray = basses.Keys.ToArray();
-        public static string[] otherStringInstrumentKeysArray = otherStringInstruments.Keys.ToArray();
-        public static string[] keyboardKeysArray = keyboards.Keys.ToArray();
+        private static string[] guitarKeysArray = guitars.Keys.ToArray();
+        private static string[] bassKeysArray = basses.Keys.ToArray();
+        private static string[] otherStringInstrumentKeysArray = otherStringInstruments.Keys.ToArray();
+        private static string[] keyboardKeysArray = keyboards.Keys.ToArray();
 
         public static void PrintGuitarKeysArray()
         {
@@ -193,6 +193,7 @@ namespace MyInstruments
             WriteLine();
             WriteLine("You have " + totalCount + " total instruments in your collection.");
         }
+
     }
 }
 
