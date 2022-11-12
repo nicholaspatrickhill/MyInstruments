@@ -8,8 +8,6 @@ An interactive console app makes this process easier, faster and more fun.
 
 The app takes input from the user and prints information about the instrument of their choosing, or information about the entire collection, on the screen.
 
-The long-term goal for this app is to develop a web and/or mobile version that replaces the dictionaries with an external database so that other users could store and retrieve data about their own collections.
-
 #### FEATURES
 The following items from the "Feature List" are implemented:
 
@@ -57,7 +55,12 @@ This allows for udpating the dictionaries later without having to worry about ke
 "Count Instruments" uses Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
 "Save Text File" uses Streamwriter and calls ToUpper to write a capitalized, sorted list of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
 
-If the user inputs "fenders" during the ReviewAnyInstrument loop, the SearchForFenderInstruments method is called from the Collection Class. There are multiple Fender musical instruments in my collection across the various musical instrument types. SearchForFenderInstrumnets initializes an array which concatenates the other musical instrument keys arrays. It then uses a linq query to search the array for instruments containing "Fender" and then prints those instrument keys on the screen. 
+If the user inputs "fenders" during the ReviewAnyInstrument loop, the SearchForFenderInstruments method is called from the Collection Class. 
+There are multiple Fender musical instruments in my collection. 
+SearchForFenderInstruments initializes the allInstrumentsArray which concatenates the other musical instrument keys arrays.
+It then uses a linq query to search the array for all instrument keys containing "fender".
+It then prints the results of its search to the console.
+This way, all instruments containing "fender" are displayed regardless of their type.
 
 Selecting "Exit" calls the ExitTheProgram method.
 ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "y" or "n" and then pressing enter.
