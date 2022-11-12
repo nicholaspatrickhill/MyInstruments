@@ -16,30 +16,6 @@ namespace MyInstruments
             WriteLine("What would you like to review?");
         }
 
-        //public static void PrintGuitarsKeyList()
-        //{
-        //    ForegroundColor = ConsoleColor.Red;
-        //    guitarsKeyList.ForEach(WriteLine);
-        //}
-
-        //public static void PrintBassesKeyList()
-        //{
-        //    ForegroundColor = ConsoleColor.Blue;
-        //    bassesKeyList.ForEach(WriteLine);
-        //}
-
-        //public static void PrintKeyboardInstrumentsKeyList()
-        //{
-        //    ForegroundColor = ConsoleColor.Yellow;
-        //    keyboardInstrumentsKeyList.ForEach(WriteLine);
-        //}
-
-        //public static void PrintOtherStringInstrumentsKeyList()
-        //{
-        //    ForegroundColor = ConsoleColor.Green;
-        //    otherStringInstrumentsKeyList.ForEach(WriteLine);
-        //}
-
         public static void PrintHelp()
         {
             ForegroundColor = ConsoleColor.White;

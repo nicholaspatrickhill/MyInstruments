@@ -11,11 +11,6 @@ namespace MyInstruments
 {
     class Collection
     {
-        //public static List<string> guitarsKeyList = new List<string>(guitars.Keys);
-        //public static List<string> bassesKeyList = new List<string>(basses.Keys);
-        //public static List<string> otherStringInstrumentsKeyList = new List<string>(otherStringInstruments.Keys);
-        //public static List<string> keyboardInstrumentsKeyList = new List<string>(keyboards.Keys);
-
         public static string[] guitarKeysArray = guitars.Keys.ToArray();
         public static string[] bassKeysArray = basses.Keys.ToArray();
         public static string[] otherStringInstrumentKeysArray = otherStringInstruments.Keys.ToArray();
@@ -85,44 +80,6 @@ namespace MyInstruments
             }
         }
 
-        //public static void ListInstrumentsByType(string input)
-        //{
-        //    if (input == "guitars")
-        //    {
-        //        ConsoleMessage.PrintGuitarsKeyList();
-        //    }
-        //    else if (input == "basses")
-        //    {
-        //        ConsoleMessage.PrintBassesKeyList();
-        //    }
-        //    else if (input == "other")
-        //    {
-        //        ConsoleMessage.PrintOtherStringInstrumentsKeyList();
-        //    }
-        //    else if (input == "keyboards")
-        //    {
-        //        ConsoleMessage.PrintKeyboardInstrumentsKeyList();
-        //    }
-        //}
-
-        //public static void ListAllInstruments()
-        //{
-        //    ForegroundColor = ConsoleColor.White;
-        //    ConsoleMessage.PrintAppHeader();
-        //    WriteLine();
-
-        //    ConsoleMessage.PrintGuitarsKeyList();
-        //    WriteLine();
-
-        //    ConsoleMessage.PrintBassesKeyList();
-        //    WriteLine();
-
-        //    ConsoleMessage.PrintOtherStringInstrumentsKeyList();
-        //    WriteLine();
-
-        //    ConsoleMessage.PrintKeyboardInstrumentsKeyList();
-        //}
-
         public static void ListAllInstruments()
         {
             ConsoleMessage.PrintAppHeader();
@@ -188,61 +145,6 @@ namespace MyInstruments
                 }
             }
         }
-        //public static void SaveInstrumentsToTextFile()
-        //{
-        //    string myInstruments = @"C:\temp\MyInstruments.txt";
-        //    myInstruments = Path.GetFullPath(myInstruments);
-        //    Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
-
-        //    using StreamWriter file = new StreamWriter(myInstruments);
-        //    {
-        //        file.WriteLine("MY INSTRUMENTS");
-        //        file.WriteLine();
-
-        //        file.WriteLine("GUITARS:");
-        //        string[] guitarArray = guitarsKeyList.ToArray();
-        //        Array.Sort(guitarArray);
-        //        foreach (string i in guitarArray)
-        //        {
-        //            file.WriteLine(i.ToUpper());
-        //        }
-        //        file.WriteLine();
-
-        //        file.WriteLine("BASSES:");
-        //        string[] bassesArray = bassesKeyList.ToArray();
-        //        Array.Sort(bassesArray);
-        //        foreach (string i in bassesArray)
-        //        {
-        //            file.WriteLine(i.ToUpper());
-        //        }
-        //        file.WriteLine();
-
-        //        file.WriteLine("OTHER STRING INSTRUMENTS:");
-        //        string[] otherStringInstrumentsArray = otherStringInstrumentsKeyList.ToArray();
-        //        Array.Sort(otherStringInstrumentsArray);
-        //        foreach (string i in otherStringInstrumentsArray)
-        //        {
-        //            file.WriteLine(i.ToUpper());
-        //        }
-        //        file.WriteLine();
-
-        //        file.WriteLine("KEYBOARDS:");
-        //        string[] keyboardInstrumentsArray = keyboardInstrumentsKeyList.ToArray();
-        //        Array.Sort (keyboardInstrumentsArray);
-        //        foreach (string i in keyboardInstrumentsArray)
-        //        {
-        //            file.WriteLine(i.ToUpper());
-        //        }
-        //        file.WriteLine();
-        //    }
-        //    file.Close();
-
-        //    ForegroundColor = ConsoleColor.White;
-        //    ConsoleMessage.PrintAppHeader();
-        //    WriteLine();
-        //    WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
-        //}
-        //}
 
         public static void ReviewAnyInstrument()
         {
