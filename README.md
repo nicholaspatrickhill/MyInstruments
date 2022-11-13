@@ -1,5 +1,3 @@
-### MyInstruments
-
 **MyInstruments** is my capstone project for Code Kentucky's Software Development Course 1. 
 This Windows console application was developed to help me manage my collection of musical instruments. 
 It can be difficult to recall specific details about each instrument in my collection from memory. 
@@ -8,7 +6,7 @@ An interactive console app makes this process easier, faster and more fun.
 
 The app takes input from the user and prints information about the instruments in my collection to the console.
 
-#### FEATURES
+### FEATURES
 The following items from the "Feature List" are implemented:
 
 ⦁ Implement a "master loop" console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program.  
@@ -20,7 +18,7 @@ The following items from the "Feature List" are implemented:
 ⦁ Visualize data in a graph, chart, or other visual representation of data.  
 ⦁ Use a LINQ query to retrieve information from a data structure (such as a list or array) or file.  
 
-#### NOTES
+### NOTES
 **NUGET PACKAGES:** MyInstruments uses the log4net and Spectre.Console NuGet packages.
 The package references are in the project file.
 Please restore the packages through NuGet (if it wasn't set to do so automatically) or through dotnet CLI by running dotnet build and dotnet run. 
@@ -91,7 +89,7 @@ This is achieved by calling the PrintInstrument method which is an implementatio
 **UNIT TESTING:** The Tests folder contains the Musical Instruments unit tests. 
 These tests quickly and safely check the string concatenations, methods, counts, arrays and math used by the musical instrument classes, their parent classes and other classes.
 
-#### INSTRUCTIONS
+### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
 In REVIEW INSTRUMENTS you may review any individual instrument in my collection by typing its key and pressing enter.  
