@@ -29,7 +29,7 @@ namespace MyInstruments
         private static string UserInput()
         {
             ForegroundColor = ConsoleColor.Cyan;
-            var input = ReadLine().ToLower();
+            string input = ReadLine().ToLower();
             return input;
         } 
     }

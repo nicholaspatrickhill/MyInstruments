@@ -1,7 +1,7 @@
-﻿using static MyInstruments.Guitar;
-using static MyInstruments.Bass;
-using static MyInstruments.OtherStringInstrument;
+﻿using static MyInstruments.Bass;
+using static MyInstruments.Guitar;
 using static MyInstruments.KeyboardInstrument;
+using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.UserCommands;
 using static System.Console;
 
@@ -28,14 +28,14 @@ namespace MyInstruments
                 OtherStringInstrument oherStringInstrumentChoice = otherStringInstruments[input];
                 oherStringInstrumentChoice.PrintInstrument();
             }
-            else if (keyboardInstruments.ContainsKey(input)) 
+            else if (keyboardInstruments.ContainsKey(input))
             {
                 KeyboardInstrument keyboardInstrumentChoice = keyboardInstruments[input];
                 keyboardInstrumentChoice.PrintInstrument();
-            } 
+            }
 
             else repeat = SelectCommand(repeat, input);
             return repeat;
         }
-    }  
+    }
 }

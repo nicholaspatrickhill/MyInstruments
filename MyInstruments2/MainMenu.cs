@@ -109,7 +109,7 @@ namespace MyInstruments
             WriteLine("Type \"y\" and press enter to exit or type \"n\" and press enter to return to the Main Menu.");
 
             ForegroundColor = ConsoleColor.Cyan;
-            var input = ReadLine().ToLower();
+            string input = ReadLine().ToLower();
 
             switch (input)
             {
@@ -126,7 +126,7 @@ namespace MyInstruments
                     WriteLine("Invalid Command. Please try again.");
                     ExitProgram();
                     break;
-            }           
+            }
         }   
     }
 }

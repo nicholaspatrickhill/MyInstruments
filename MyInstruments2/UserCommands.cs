@@ -1,10 +1,4 @@
-﻿using log4net;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
+﻿using static System.Console;
 
 namespace MyInstruments
 {
@@ -25,8 +19,8 @@ namespace MyInstruments
                 case "menu":
                 case "back":
                     MainMenu.Start();
-                    break; 
-                case "guitars": 
+                    break;
+                case "guitars":
                 case "basses":
                 case "other":
                 case "keyboards":

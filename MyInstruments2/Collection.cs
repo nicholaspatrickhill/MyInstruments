@@ -105,55 +105,45 @@ namespace MyInstruments
 
         public static void SaveInstrumentsToTextFile()
         {
+            ForegroundColor = ConsoleColor.White;
+            ConsoleMessage.PrintAppHeader();
+            WriteLine();
+            WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
+
+            string myInstruments = @"C:\temp\MyInstruments.txt";
+            using StreamWriter file = new StreamWriter(myInstruments);
             {
-                string myInstruments = @"C:\temp\MyInstruments.txt";
-                myInstruments = Path.GetFullPath(myInstruments);
-                Directory.CreateDirectory(Path.GetDirectoryName(myInstruments));
-
-                using StreamWriter file = new StreamWriter(myInstruments);
+                file.WriteLine("MY INSTRUMENTS");
+                file.WriteLine();
+                file.WriteLine("GUITARS:");
+                foreach (string guitar in guitarKeysArray)
                 {
-                    file.WriteLine("MY INSTRUMENTS");
-                    file.WriteLine();
-
-                    file.WriteLine("GUITARS:");
-                    foreach (string guitar in guitarKeysArray)
-                    {
-                        Array.Sort(guitarKeysArray);
-                        file.WriteLine(guitar.ToUpper());
-                    }
-                    file.WriteLine();
-
-                    file.WriteLine("BASSES:");
-                    foreach (string bass in bassKeysArray)
-                    {
-                        Array.Sort(bassKeysArray);
-                        file.WriteLine(bass.ToUpper());
-                    }
-                    file.WriteLine();
-
-                    file.WriteLine("OTHER STRING INSTRUMENTS:");
-                    foreach (string other in otherStringInstrumentKeysArray)
-                    {
-                        Array.Sort(otherStringInstrumentKeysArray);
-                        file.WriteLine(other.ToUpper());
-                    }
-                    file.WriteLine();
-
-                    file.WriteLine("KEYBOARDS");
-                    foreach (string keyboard in keyboardInstrumentKeysArray)
-                    {
-                        Array.Sort(keyboardInstrumentKeysArray);
-                        file.WriteLine(keyboard.ToUpper());
-                    }
-
-                    file.Close();
-
-                    ForegroundColor = ConsoleColor.White;
-                    ConsoleMessage.PrintAppHeader();
-                    WriteLine();
-                    WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
+                    Array.Sort(guitarKeysArray);
+                    file.WriteLine(guitar.ToUpper());
                 }
-            }
+                file.WriteLine();
+                file.WriteLine("BASSES:");
+                foreach (string bass in bassKeysArray)
+                {
+                    Array.Sort(bassKeysArray);
+                    file.WriteLine(bass.ToUpper());
+                }
+                file.WriteLine();
+                file.WriteLine("OTHER STRING INSTRUMENTS:");
+                foreach (string other in otherStringInstrumentKeysArray)
+                {
+                    Array.Sort(otherStringInstrumentKeysArray);
+                    file.WriteLine(other.ToUpper());
+                }
+                file.WriteLine();
+                file.WriteLine("KEYBOARDS:");
+                foreach (string keyboard in keyboardInstrumentKeysArray)
+                {
+                    Array.Sort(keyboardInstrumentKeysArray);
+                    file.WriteLine(keyboard.ToUpper());
+                }
+                file.Close();
+            } 
         }
     }
 }
