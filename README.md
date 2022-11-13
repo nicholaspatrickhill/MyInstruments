@@ -69,8 +69,8 @@ Math.Round is then called to round the doubles back to the nearest integers for 
 "Save Text File" initializes Streamwriter and calls ToUpper on each musical instrument array to write a capitalized, sorted list of all of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
 
 Selecting "Exit" calls the ExitTheProgram method.
-ExitTheProgram prompts the user to confirm that they wish to teriminate the program by first typing "y" or "n" and then pressing enter.
-ExitTheProgram cycles the user input through an If-Else block.
+ExitTheProgram prompts the user to confirm that they wish to terminate the program by first typing "y" or "n" and then pressing enter.
+The user's input executes cases in a switch by searching case names for a match.
 An input of "y" terminates the program via an Exit method.
 An input of "n" recycles the program by calling the Start method.
 Invalid input recalls the ExitTheProgram loop until the user inputs a valid command.
