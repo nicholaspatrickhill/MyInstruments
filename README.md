@@ -58,7 +58,7 @@ It then uses a LINQ query to search the new array for all instrument keys contai
 The results of this search are printed to the console.
 All instruments containing "fender" are displayed.
 
-**MATH FUNCTIONS:** "Count Instruments" calls the methods from the CollectionCount class.
+**COUNT & MATH FUNCTIONS:** "Count Instruments" calls the methods from the CollectionCount class.
 CollectionCount calls the Count method on the musical instrument dictionaries to generate the total counts of each instrument type.
 PrintInstrumentBreakdownChart configures Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
 PrintTotalInstrumentCount displays the total count of all musical instruments by adding up all of the values returned by the Count method.
@@ -72,7 +72,7 @@ ExitTheProgram prompts the user to confirm that they wish to terminate the progr
 The user's input executes cases in a switch by searching case names for a match.
 An input of "y" terminates the program via an Exit method.
 An input of "n" recycles the program by calling the Start method.
-Invalid input calls the default case which prompts the user a valid command and calls ExitTheProgram.
+Invalid input calls the default case which prompts the user to enter a valid command and calls ExitTheProgram.
 Invalid input is recorded in the error log.
 
 **ABSTRACTION, DICTIONARIES & OBJECTS:** The abstract MusicalInstrument class establishes properties that are shared by the various musical instrument classes. 
