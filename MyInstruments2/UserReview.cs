@@ -20,16 +20,16 @@ namespace MyInstruments
                 ConsoleMessage.PrintReviewAnyInstrumentHeader();
 
                 WriteLine();
-                string? input = UserInput();
+                string input = UserInput();
 
                 repeat = SelectInstrument(repeat, input);
             }
         }
 
-        static string UserInput()
+        private static string UserInput()
         {
             ForegroundColor = ConsoleColor.Cyan;
-            string? input = ReadLine().ToLower();
+            var input = ReadLine().ToLower();
             return input;
         } 
     }

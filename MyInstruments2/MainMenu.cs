@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Diagnostics;
+using static System.Console;
 
 
 namespace MyInstruments
@@ -108,23 +109,24 @@ namespace MyInstruments
             WriteLine("Type \"y\" and press enter to exit or type \"n\" and press enter to return to the Main Menu.");
 
             ForegroundColor = ConsoleColor.Cyan;
-            string? input = ReadLine().ToLower();
+            var input = ReadLine().ToLower();
 
             ForegroundColor = ConsoleColor.White;
-            if (input == "y")
+
+            switch (input)
             {
-                Environment.Exit(0);
-            }
-            else if (input == "n")
-            {
-                Start();
-            }
-            else
-            {
-                log4net.GlobalContext.Properties["UserInput"] = input;
-                log.Error("Invalid User Input");
-                WriteLine("Invalid Command. Please try again.");
-                ExitProgram();
+                case "y":
+                    Environment.Exit(0);
+                    break;
+                case "n":
+                    Start();
+                    break;
+                default:
+                    log4net.GlobalContext.Properties["UserInput"] = input;
+                    log.Error("Invalid User Input");
+                    WriteLine("Invalid Command. Please try again.");
+                    ExitProgram();
+                    break;
             }
         } 
     }
