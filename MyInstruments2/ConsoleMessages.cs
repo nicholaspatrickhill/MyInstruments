@@ -9,9 +9,9 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
             WriteLine();
-            WriteLine("Type \"menu\" to return to the main menu or type \"help\" for a list of other commands.");
-            WriteLine("Type the key of the instrument that you wish to review and press enter.");
-            WriteLine("------------------------------------------------------------------------------------------------------------------------");
+            WriteLine("Type \"back\" to return to the previous menu or type \"help\" for a list of other commands.");
+            //WriteLine("Type the key of the instrument that you wish to review and press enter.");
+            WriteLine("-----------------------------------------------------------------------------------------------------------------");
         }
 
         public static void PrintHelp()
@@ -23,7 +23,7 @@ namespace MyInstruments
             WriteLine("\"other\" to see the other string instrument keys available for review.");
             WriteLine("\"keyboards\" to see the keyboard instrument keys available for review.");
             WriteLine("\"fenders\" to see the fender instrument keys available for review.");
-            WriteLine("\"menu\" to return home to the Main Menu.");
+            WriteLine("\"back\" to return home to the Main Menu.");
             WriteLine("\"clear\" to clear the console and start over.");
         }
 
@@ -39,7 +39,7 @@ namespace MyInstruments
             WriteLine("It can be difficult to recall specific details about each instrument in my collection from memory.");
             WriteLine("I am often seeking out information like an instrument's string gauge, serial number and country or age of manufacture.");
             WriteLine("An interactive console app makes this process easier, faster and more fun!");
-            WriteLine("------------------------------------------------------------------------------------------------------------------------");
+            WriteLine("----------------------------------------------------------------------------------------------------------------------");
             WriteLine(" The following features are demonstrated:");
             WriteLine(" --Create at least one class, then create at least one object of that class and populate it with data.");
             WriteLine(" --Create and call at least 3 functions or methods.");

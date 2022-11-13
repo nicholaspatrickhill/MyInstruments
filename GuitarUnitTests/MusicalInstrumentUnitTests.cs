@@ -123,7 +123,6 @@ namespace MusicalInstrumentUnitTests
                 StringBrand = "Ernie Ball",
                 StringType = "Regular Slinky",
                 StringGauge = "10-46"
-
             };
             string expected = "Ernie Ball Regular Slinky 10-46";
 

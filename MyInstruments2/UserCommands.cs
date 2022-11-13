@@ -12,13 +12,14 @@ namespace MyInstruments
                 case "help":
                     ConsoleMessages.PrintHelp();
                     break;
-                case "clear":
-                    Clear();
-                    UserReview.ReviewAnyInstrument();
-                    break;
+                //case "clear":
+                //    Clear();
+                //    UserReview.ReviewAnyInstrument();
+                //    break;
                 case "menu":
                 case "back":
-                    MainMenu.Start();
+                    //MainMenu.Start();
+                    ReviewAnyInstrumentMenu.RunReviewAnyInstrumentMenu();
                     break;
                 case "guitars":
                 case "basses":
@@ -32,7 +33,7 @@ namespace MyInstruments
                 default:
                     log4net.GlobalContext.Properties["UserInput"] = input;
                     log.Error("Invalid User Input");
-                    WriteLine("Invalid Command. Type \"menu\" to return to the main menu or type \"help\" for a list of other commands.");
+                    WriteLine("Invalid Command. Type \"back\" to return to the main menu or type \"help\" for a list of other commands.");
                     break;
             }
 

@@ -3,7 +3,7 @@ using static MyInstruments.UserSelection;
 
 namespace MyInstruments
 {
-    internal class UserReview
+    public class UserReview
     {
         public static void ReviewAnyInstrument()
         {

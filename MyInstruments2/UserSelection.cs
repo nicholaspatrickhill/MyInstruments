@@ -25,8 +25,8 @@ namespace MyInstruments
             }
             else if (otherStringInstruments.ContainsKey(input))
             {
-                OtherStringInstrument oherStringInstrumentChoice = otherStringInstruments[input];
-                oherStringInstrumentChoice.PrintInstrument();
+                OtherStringInstrument otherStringInstrumentChoice = otherStringInstruments[input];
+                otherStringInstrumentChoice.PrintInstrument();
             }
             else if (keyboardInstruments.ContainsKey(input))
             {
