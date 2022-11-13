@@ -23,15 +23,14 @@ namespace MyInstruments
                 string? input = UserInput();
 
                 repeat = SelectInstrument(repeat, input);
-
-                static string? UserInput()
-                {
-                    ForegroundColor = ConsoleColor.Cyan;
-                    string? input = ReadLine().ToLower();
-
-                    return input;
-                }
             }
         }
+
+        static string UserInput()
+        {
+            ForegroundColor = ConsoleColor.Cyan;
+            string? input = ReadLine().ToLower();
+            return input;
+        } 
     }
 }
