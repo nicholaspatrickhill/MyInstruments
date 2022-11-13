@@ -163,7 +163,6 @@ namespace MyInstruments
             int otherCount = otherStringInstruments.Count;
             int keyboardsCount = keyboards.Count;
             int totalCount = guitarsCount + bassesCount + otherCount + keyboardsCount;
-
             
             ConsoleMessage.PrintAppHeader();
             WriteLine();
@@ -193,7 +192,6 @@ namespace MyInstruments
             int keyboardInstrumentsPercent = (int)Math.Round(((double)keyboardsCount / (double)totalCount) * 100);
             WriteLine($"{keyboardInstrumentsPercent}% of your instruments are keyboard instruments.");
         }
-
     }
 }
 
