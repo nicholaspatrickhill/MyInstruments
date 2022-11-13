@@ -101,7 +101,7 @@ Use the UP and DOWN arrow keys to highlight the function that you wish to perfor
 
 In REVIEW INSTRUMENTS you may review any individual instrument in my collection.  
 ⦁ First, use the UP and DOWN arrow keys to select which type of instrument you with to review and press enter.   
-⦁ Type any key from the displayed list and press enter to review data specific to that instrument.
+⦁ Type any key from the displayed list and press enter to review data specific to that instrument.  
 ⦁ Type "back" and press enter to return to the previous and select another option.
 
 LIST INSTRUMENTS provides a complete list of instruments in the collection. These names also serve as the keys in "Review Instruments"
