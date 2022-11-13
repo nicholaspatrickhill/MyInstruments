@@ -79,7 +79,7 @@ namespace MyInstruments
 
         public static void ListAllInstruments()
         {
-            ConsoleMessage.PrintAppHeader();
+            ConsoleMessages.PrintAppHeader();
             WriteLine();
             PrintGuitarKeysArray();
             WriteLine();
@@ -104,7 +104,7 @@ namespace MyInstruments
         public static void SaveInstrumentsToTextFile()
         {
             ForegroundColor = ConsoleColor.White;
-            ConsoleMessage.PrintAppHeader();
+            ConsoleMessages.PrintAppHeader();
             WriteLine();
             WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
 

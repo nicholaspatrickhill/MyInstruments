@@ -48,7 +48,7 @@ namespace MyInstruments
         private void DisplayInstructions()
         {
             Clear();
-            ConsoleMessage.PrintInstructions();
+            ConsoleMessages.PrintInstructions();
             ReturnToMainMenu();
         }
 
@@ -68,7 +68,7 @@ namespace MyInstruments
         private void CountInstruments()
         {
             Clear();
-            CollectionCount.DisplayAllInstrumentCounts();
+            CollectionCounts.DisplayAllInstrumentCounts();
             ReturnToMainMenu();
         }
 
@@ -82,7 +82,7 @@ namespace MyInstruments
         private void DisplayAboutInfo()
         {
             Clear();
-            ConsoleMessage.PrintAboutInfo();
+            ConsoleMessages.PrintAboutInfo();
             ReturnToMainMenu();
         }
 
@@ -113,6 +113,7 @@ namespace MyInstruments
             switch (input)
             {
                 case "y":
+                    ForegroundColor = ConsoleColor.White;
                     Environment.Exit(0);
                     break;
                 case "n":

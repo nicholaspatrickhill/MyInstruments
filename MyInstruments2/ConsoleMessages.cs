@@ -3,7 +3,7 @@ using static System.Console;
 
 namespace MyInstruments
 {
-    class ConsoleMessage
+    class ConsoleMessages
     {
         public static void PrintReviewAnyInstrumentHeader()
         {

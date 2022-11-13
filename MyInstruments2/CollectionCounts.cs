@@ -7,7 +7,7 @@ using static System.Console;
 
 namespace MyInstruments
 {
-    public class CollectionCount
+    public class CollectionCounts
     {
         private static readonly int guitarsCount = guitars.Count;
         private static readonly int bassesCount = basses.Count;
@@ -17,7 +17,7 @@ namespace MyInstruments
 
         public static void DisplayAllInstrumentCounts()
         {
-            ConsoleMessage.PrintAppHeader();
+            ConsoleMessages.PrintAppHeader();
             WriteLine();
             WriteLine();            
             PrintInstrumentBreakDownChart();

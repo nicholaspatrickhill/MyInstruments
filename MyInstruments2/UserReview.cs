@@ -7,13 +7,12 @@ namespace MyInstruments
     {
         public static void ReviewAnyInstrument()
         {
-            ConsoleMessage.PrintAppHeader();
-            ConsoleMessage.PrintReviewAnyInstrumentHeader();
+            ConsoleMessages.PrintAppHeader();
+            ConsoleMessages.PrintReviewAnyInstrumentHeader();
 
             var repeat = true;
             while (repeat)
             {
-                //ConsoleMessage.PrintReviewAnyInstrumentHeader();
                 ForegroundColor = ConsoleColor.White;
                 WriteLine();
                 WriteLine("What would you like to review?");

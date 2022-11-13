@@ -2,7 +2,7 @@
 
 namespace MyInstruments
 {
-    internal class Menu
+    public class Menu
     {
         private int SelectedIndex;
         private string[] Options;
@@ -19,7 +19,7 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
 
-            ConsoleMessage.PrintAppHeader();
+            ConsoleMessages.PrintAppHeader();
             WriteLine(Prompt);
             for (int i = 0; i < Options.Length; i++)
             {
