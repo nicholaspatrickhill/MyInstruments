@@ -4,7 +4,7 @@ namespace MyInstruments
 {
     public class OtherStringInstrument : StringInstrument, IPrintInstrument
     {
-        public string? Size { get; set; }
+        private string? Size { get; set; }
 
         public static readonly Dictionary<string, OtherStringInstrument> otherStringInstruments = new Dictionary<string, OtherStringInstrument>
         {

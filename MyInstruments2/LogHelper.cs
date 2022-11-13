@@ -14,6 +14,5 @@ namespace MyInstruments
         {
             return log4net.LogManager.GetLogger(filename);
         }
-
     }
 }

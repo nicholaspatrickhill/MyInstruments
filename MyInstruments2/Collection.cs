@@ -13,7 +13,7 @@ namespace MyInstruments
         private static readonly string[] guitarKeysArray = guitars.Keys.ToArray();
         private static readonly string[] bassKeysArray = basses.Keys.ToArray();
         private static readonly string[] otherStringInstrumentKeysArray = otherStringInstruments.Keys.ToArray();
-        private static readonly string[] keyboardKeysArray = keyboards.Keys.ToArray();
+        private static readonly string[] keyboardInstrumentKeysArray = keyboardInstruments.Keys.ToArray();
 
         public static void PrintGuitarKeysArray()
         {
@@ -48,11 +48,11 @@ namespace MyInstruments
             }
         }
 
-        public static void PrintKeyboardKeysArray()
+        public static void PrintKeyboardInstrumentKeysArray()
         {
-            Array.Sort(keyboardKeysArray);
+            Array.Sort(keyboardInstrumentKeysArray);
 
-            foreach (string keyboard in keyboardKeysArray)
+            foreach (string keyboard in keyboardInstrumentKeysArray)
             {
                 ForegroundColor = ConsoleColor.Yellow;
                 WriteLine(keyboard);
@@ -75,7 +75,7 @@ namespace MyInstruments
             }
             else if (input == "keyboards")
             {
-                PrintKeyboardKeysArray();
+                PrintKeyboardInstrumentKeysArray();
             }
         }
 
@@ -89,12 +89,12 @@ namespace MyInstruments
             WriteLine();
             PrintOtherStringInstrumentKeysArray();
             WriteLine();
-            PrintKeyboardKeysArray();
+            PrintKeyboardInstrumentKeysArray();
         }
 
         public static void SearchForFenderInstruments()
         {
-            var allInstrumentsArray = guitarKeysArray.Concat(bassKeysArray).Concat(otherStringInstrumentKeysArray).Concat(keyboardKeysArray).ToArray();
+            var allInstrumentsArray = guitarKeysArray.Concat(bassKeysArray).Concat(otherStringInstrumentKeysArray).Concat(keyboardInstrumentKeysArray).ToArray();
 
             var search = allInstrumentsArray.Where(p => p.Contains("fender"));
             foreach (var result in search)
@@ -140,9 +140,9 @@ namespace MyInstruments
                     file.WriteLine();
 
                     file.WriteLine("KEYBOARDS");
-                    foreach (string keyboard in keyboardKeysArray)
+                    foreach (string keyboard in keyboardInstrumentKeysArray)
                     {
-                        Array.Sort(keyboardKeysArray);
+                        Array.Sort(keyboardInstrumentKeysArray);
                         file.WriteLine(keyboard.ToUpper());
                     }
 
@@ -154,43 +154,6 @@ namespace MyInstruments
                     WriteLine("Your instruments have been saved to a text file at C:\\temp\\MyInstruments.txt.");
                 }
             }
-        }
-
-        public static void CountAllInstruments()
-        {
-            int guitarsCount = guitars.Count;
-            int bassesCount = basses.Count;
-            int otherCount = otherStringInstruments.Count;
-            int keyboardsCount = keyboards.Count;
-            int totalCount = guitarsCount + bassesCount + otherCount + keyboardsCount;
-            
-            ConsoleMessage.PrintAppHeader();
-            WriteLine();
-            WriteLine();
-
-            AnsiConsole.Write(new BreakdownChart()
-                .Width(65)
-                .AddItem("Guitars", guitarsCount, Color.Red)
-                .AddItem("Basses", bassesCount, Color.Blue)
-                .AddItem("Other String Instruments", otherCount, Color.Green)
-                .AddItem("Keyboard Instruments", keyboardsCount, Color.Yellow));
-
-            ForegroundColor = ConsoleColor.White;
-            WriteLine();
-            WriteLine("You have " + totalCount + " total instruments in your collection.");
-            WriteLine();
-
-            int guitarPercent = (int)Math.Round(((double)guitarsCount / (double)totalCount) * 100);
-            WriteLine($"{guitarPercent}% of your instruments are guitars." );
-
-            int bassPercent = (int)Math.Round(((double)bassesCount / (double)totalCount) * 100);
-            WriteLine($"{bassPercent}% of your instruments are basses.");
-
-            int otherStringInstrumentPercent = (int)Math.Round(((double)otherCount / (double)totalCount) * 100);
-            WriteLine($"{otherStringInstrumentPercent}% of your instruments are other string instruments.");
-
-            int keyboardInstrumentsPercent = (int)Math.Round(((double)keyboardsCount / (double)totalCount) * 100);
-            WriteLine($"{keyboardInstrumentsPercent}% of your instruments are keyboard instruments.");
         }
     }
 }

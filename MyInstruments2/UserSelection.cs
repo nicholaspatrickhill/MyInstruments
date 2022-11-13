@@ -28,10 +28,10 @@ namespace MyInstruments
                 OtherStringInstrument oherStringInstrumentChoice = otherStringInstruments[input];
                 oherStringInstrumentChoice.PrintInstrument();
             }
-            else if (keyboards.ContainsKey(input)) 
+            else if (keyboardInstruments.ContainsKey(input)) 
             {
-                KeyboardInstrument keyboardChoice = keyboards[input];
-                keyboardChoice.PrintInstrument();
+                KeyboardInstrument keyboardInstrumentChoice = keyboardInstruments[input];
+                keyboardInstrumentChoice.PrintInstrument();
             } 
 
             else repeat = SelectCommand(repeat, input);
