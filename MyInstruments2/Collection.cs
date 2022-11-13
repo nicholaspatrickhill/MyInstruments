@@ -13,7 +13,7 @@ namespace MyInstruments
         private static readonly string[] otherStringInstrumentKeysArray = otherStringInstruments.Keys.ToArray();
         private static readonly string[] keyboardInstrumentKeysArray = keyboardInstruments.Keys.ToArray();
 
-        public static void PrintGuitarKeysArray()
+        private static void PrintGuitarKeysArray()
         {
             Array.Sort(guitarKeysArray);
             
@@ -24,7 +24,7 @@ namespace MyInstruments
                 }
         }
 
-        public static void PrintBassKeysArray()
+        private static void PrintBassKeysArray()
         {
             Array.Sort(bassKeysArray);
 
@@ -35,7 +35,7 @@ namespace MyInstruments
             }
         }
 
-        public static void PrintOtherStringInstrumentKeysArray()
+        private static void PrintOtherStringInstrumentKeysArray()
         {
             Array.Sort(otherStringInstrumentKeysArray);
 
@@ -46,7 +46,7 @@ namespace MyInstruments
             }
         }
 
-        public static void PrintKeyboardInstrumentKeysArray()
+        private static void PrintKeyboardInstrumentKeysArray()
         {
             Array.Sort(keyboardInstrumentKeysArray);
 
