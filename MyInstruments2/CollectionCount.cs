@@ -12,15 +12,15 @@ using static System.Console;
 
 namespace MyInstruments
 {
-    public class InstrumentCount
+    public class CollectionCount
     {
-        private static int guitarsCount = guitars.Count;
-        private static int bassesCount = basses.Count;
-        private static int otherCount = otherStringInstruments.Count;
-        private static int keyboardsCount = keyboardInstruments.Count;
-        private static int totalCount = guitarsCount + bassesCount + otherCount + keyboardsCount;
+        private static readonly int guitarsCount = guitars.Count;
+        private static readonly int bassesCount = basses.Count;
+        private static readonly int otherCount = otherStringInstruments.Count;
+        private static readonly int keyboardsCount = keyboardInstruments.Count;
+        private static readonly int totalCount = guitarsCount + bassesCount + otherCount + keyboardsCount;
 
-        public static void DisplayCountInstrumnents()
+        public static void DisplayAllInstrumentCounts()
         {
             ConsoleMessage.PrintAppHeader();
             WriteLine();

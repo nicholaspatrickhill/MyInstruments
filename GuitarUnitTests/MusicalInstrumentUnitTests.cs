@@ -3,13 +3,9 @@ using NUnit.Framework.Constraints;
 
 namespace MusicalInstrumentUnitTests
 {
-    public class ArrayOfKeysTest
+    public class TestDictionary
     {
-        [Test]
-        public void ArrayOfKeysTestValid()
-        {
-            // Arrange
-            Dictionary<string, Guitar> testGuitars = new Dictionary<string, Guitar>()
+        public Dictionary<string, Guitar> testGuitars = new Dictionary<string, Guitar>()
                     {
                         { "Fender Starcaster", new Guitar() },
                         { "Jackson Dinky", new Guitar() },
@@ -17,7 +13,14 @@ namespace MusicalInstrumentUnitTests
                         { "Gibson SG", new Guitar() },
                         { "Parker Fly", new Guitar() },
                     };
+    }
 
+    public class ArrayOfKeysTest : TestDictionary
+    {
+        [Test]
+        public void ArrayOfKeysTestValid()
+        {
+            // Arrange
             string[] testGuitarKeysArray = testGuitars.Keys.ToArray();
 
             string[] expected = testGuitarKeysArray;
@@ -25,6 +28,44 @@ namespace MusicalInstrumentUnitTests
             // Act
             string[] actual;
             actual = testGuitars.Keys.ToArray();
+
+            //Assert
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+    }
+
+    public class InstrumentCountTest : TestDictionary
+    {
+        [Test]
+        public void InstrumentCountTestValid()
+        {
+            // Arrange
+            int testGuitarsCount = testGuitars.Count;
+
+            int expected = 5;
+
+            // Act
+            int actual = testGuitarsCount;
+
+            //Assert
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+    }
+
+    public class InstrumentPercentageTest : TestDictionary
+    {
+        [Test]
+        public void InstrumentPercentageTestValid()
+        {
+            // Arrange
+            int testGuitarsCount = testGuitars.Count;
+            int totalCount = 10;
+            int testGuitarsPercentage = (int)Math.Round(((double)testGuitarsCount / (double)totalCount) * 100);
+
+            int expected = 50;
+
+            // Act
+            int actual = testGuitarsPercentage;
 
             //Assert
             Assert.That(actual, Is.EqualTo(expected));
@@ -45,7 +86,7 @@ namespace MusicalInstrumentUnitTests
             string expected = "Fender Starcaster";
 
             // Act
-            string actual = guitar.InstrumentName;
+            string? actual = guitar.InstrumentName;
 
             // Assert
             Assert.That(actual, Is.EqualTo(expected));
@@ -87,7 +128,7 @@ namespace MusicalInstrumentUnitTests
             string expected = "Ernie Ball Regular Slinky 10-46";
 
             // Act
-            string actual = guitar.InstrumentString;
+            string? actual = guitar.InstrumentString;
 
             // Assert
             Assert.That(actual, Is.EqualTo(expected));

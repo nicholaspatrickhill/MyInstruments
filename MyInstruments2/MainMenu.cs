@@ -68,7 +68,7 @@ namespace MyInstruments
         private void CountInstruments()
         {
             Clear();
-            InstrumentCount.DisplayCountInstrumnents();
+            CollectionCount.DisplayAllInstrumentCounts();
             ReturnToMainMenu();
         }
 

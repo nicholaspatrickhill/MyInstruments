@@ -59,8 +59,8 @@ It then uses a linq query to search the new array for all instrument keys contai
 The results of this search are printed to the console.
 All instruments containing "fender" are displayed regardless of their type.
 
-"Count Instruments" calls the methods from the InstrumentCount class.
-InstrumentCount calls the Count method on the musical instrument dictionaries to generate the total counts of each instrument type.
+"Count Instruments" calls the methods from the CollectionCount class.
+CollectionCount calls the Count method on the musical instrument dictionaries to generate the total counts of each instrument type.
 PrintInstrumentBreakdownChart configures Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
 PrintTotalInstrumentCount displays the total count of all musical instruments by adding up all of the values returned by the Count method.
 PrintInstrumentPercentages displays the percentage that each musical instrument type occupies in the collection by converting the musical instrument counts from ints to doubles, dividing the counts by the total and multiplying those numbers by 100.
@@ -88,7 +88,7 @@ These values are returned in ReviewAllInstruments as a concatenated string when 
 This is achieved by calling the PrintInstrument method which is an implementation of the signature in the IPrintInstrument interface by each musical instrument class.
 
 The Tests folder contains the Musical Instruments unit tests. 
-These tests quickly and safely check the string concatenations, methods and arrays used by the musical instrument classes, their parent classes and other classes.
+These tests quickly and safely check the string concatenations, methods, counts, arrays and math used by the musical instrument classes, their parent classes and other classes.
 
 #### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
