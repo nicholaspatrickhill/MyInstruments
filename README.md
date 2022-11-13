@@ -73,7 +73,7 @@ ExitTheProgram prompts the user to confirm that they wish to terminate the progr
 The user's input executes cases in a switch by searching case names for a match.
 An input of "y" terminates the program via an Exit method.
 An input of "n" recycles the program by calling the Start method.
-Invalid input recalls the ExitTheProgram loop until the user inputs a valid command.
+Invalid input calls the default case which prompts the user a valid command and calls ExitTheProgram.
 Invalid input is recorded in the error log.
 
 The abstract MusicalInstrument class establishes properties that are shared by the various musical instrument classes. 
