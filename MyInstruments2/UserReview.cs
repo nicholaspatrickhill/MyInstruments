@@ -17,7 +17,7 @@ namespace MyInstruments
                 WriteLine();
                 WriteLine("What would you like to review?");
 
-                string input = UserInput();
+                string input = UserInput().ToLower();
 
                 repeat = SelectInstrument(repeat, input);
             }
@@ -26,7 +26,7 @@ namespace MyInstruments
         private static string UserInput()
         {
             ForegroundColor = ConsoleColor.Cyan;
-            string input = ReadLine().ToLower();
+            string input = ReadLine() ?? String.Empty;
             return input;
         } 
     }

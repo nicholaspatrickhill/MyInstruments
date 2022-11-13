@@ -108,9 +108,9 @@ namespace MyInstruments
             WriteLine("Type \"y\" and press enter to exit or type \"n\" and press enter to return to the Main Menu.");
 
             ForegroundColor = ConsoleColor.Cyan;
-            string input = ReadLine().ToLower();
+            string input = ReadLine() ?? String.Empty;
 
-            switch (input)
+            switch (input.ToLower())
             {
                 case "y":
                     ForegroundColor = ConsoleColor.White;
