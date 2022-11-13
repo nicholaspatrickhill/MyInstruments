@@ -1,9 +1,4 @@
 ﻿using Spectre.Console;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;

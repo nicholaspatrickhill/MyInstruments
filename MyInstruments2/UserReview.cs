@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
+﻿using static System.Console;
 using static MyInstruments.UserSelection;
 
 namespace MyInstruments
@@ -13,11 +8,15 @@ namespace MyInstruments
         public static void ReviewAnyInstrument()
         {
             ConsoleMessage.PrintAppHeader();
+            ConsoleMessage.PrintReviewAnyInstrumentHeader();
 
             var repeat = true;
             while (repeat)
             {
-                ConsoleMessage.PrintReviewAnyInstrumentHeader();
+                //ConsoleMessage.PrintReviewAnyInstrumentHeader();
+                ForegroundColor = ConsoleColor.White;
+                WriteLine();
+                WriteLine("What would you like to review?");
 
                 string input = UserInput();
 

@@ -1,6 +1,4 @@
-﻿using Spectre.Console;
-using System.Globalization;
-using static MyInstruments.Bass;
+﻿using static MyInstruments.Bass;
 using static MyInstruments.Guitar;
 using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.OtherStringInstrument;

@@ -32,7 +32,7 @@ namespace MyInstruments
                 default:
                     log4net.GlobalContext.Properties["UserInput"] = input;
                     log.Error("Invalid User Input");
-                    WriteLine("Invalid Command. Please try again.");
+                    WriteLine("Invalid Command. Type \"menu\" to return to the main menu or type \"help\" for a list of other commands.");
                     break;
             }
 
