@@ -111,8 +111,6 @@ namespace MyInstruments
             ForegroundColor = ConsoleColor.Cyan;
             var input = ReadLine().ToLower();
 
-            ForegroundColor = ConsoleColor.White;
-
             switch (input)
             {
                 case "y":
@@ -124,10 +122,11 @@ namespace MyInstruments
                 default:
                     log4net.GlobalContext.Properties["UserInput"] = input;
                     log.Error("Invalid User Input");
+                    ForegroundColor = ConsoleColor.White;
                     WriteLine("Invalid Command. Please try again.");
                     ExitProgram();
                     break;
-            }
-        } 
+            }           
+        }   
     }
 }
