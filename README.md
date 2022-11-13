@@ -33,7 +33,7 @@ The user's input executes cases in a Switch that call methods that perform the f
 Selecting "Review Instruments" calls the ReviewAnyInstrument method from the UserReview class.
 Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleMessage classes.
 
-**LOOPING, USER INPUT and LOGGING::** ReviewAnyInstrument prompts the user to input the key of the musical instrument that they wish to review.
+**LOOPING, USER INPUT, CONDITIONS & LOGGING:** ReviewAnyInstrument prompts the user to input the key of the musical instrument that they wish to review.
 ReviewAnyInstrument loops the user input through the SelectInstrument If-Else block in the UserSelection class to search the various musical instrument dictionaries for a matching key.
 The ToLower method is called on the user input which allows for input to be case insensitive as the program searches for a matching key.
 If there is a matching key in one of the dictionaries, the program calls the PrintInstrument method from the appropriate musical instrument class.
