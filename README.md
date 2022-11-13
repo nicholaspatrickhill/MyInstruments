@@ -30,33 +30,40 @@ RunMainMenu prompts the user to move the cursor with the up and down arrow keys 
 The user is prompted to push enter to perform their desired function.
 The user's input executes cases in a Switch that call methods that perform the function desired by the user.
 
-Selecting "Review Instruments" calls the ReviewAnyInstrument method from the UserReview class.
+Selecting "Review Instruments" calls the RunReviewInstrumentsMenu method from the ReviewInstrumentsMenu class.
 Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleMessage classes.
 
-**LOOPING, USER INPUT, CONDITIONS & LOGGING:** ReviewAnyInstrument prompts the user to input the key of the musical instrument that they wish to review.
-ReviewAnyInstrument loops the user input through the SelectInstrument If-Else block in the UserSelection class to search the various musical instrument dictionaries for a matching key.
+**LOOPING, USER INPUT, CONDITIONS & LOGGING:** RunReviewInstrumentsMenu displays a submenu for selecting the type of musical instrument that the user wishes to review.
+RunReviewInstrumentsMenu initilazies another instance of the Menu class.
+The menu's functionality and design are the same as that of the Main Menu.
+The user's input executes cases in a switch that call methods to enable the user to review that instrument type.
+
+Selecting any of Guitars, Basses, Other String Instruments, Keyboards or Fenders prompts the user to input the key of the musical instrument that they wish to review.
+The keys are displayed by calling the appropriate methods from the Collection class.
+Each of the Review methods loops the user input through an If-Else block to search the appropriate musical instrument dictionary for a matching key.
 The ToLower method is called on the user input which allows for input to be case insensitive as the program searches for a matching key.
 If there is a matching key in one of the dictionaries, the program calls the PrintInstrument method from the appropriate musical instrument class.
-ReviewAnyInstrument then prompts the user to enter a new key.
-If the user input is not a matching key, it exits the UserSelection If-Else block and enters the SelectCommand switch in the UserCommands class. 
+The user is then prompted to enter a new key.
+If the user input is not a matching key, it exits the If-Else block and enters the SelectCommand switch in the UserCommands class. 
 The UserCommands switch searches its case names for a match to the user's input.
 The switch executes cases based on whether or not it finds a match.
-The user may use these commands to call the help menu, review the keys available to the program, clear the console or return to the main menu screen.
+The user may use these commands to call the help menu, review the keys available to the program, or return to the menu screen.
 If the switch does not find a match it generates an invalid input response through its default case.
 In the event of invalid input, the console displays an error message and the invalid input is logged.
 The log4net NuGet package is configured to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
-The user stays in the ReviewAnyInstrument loop until they elect to return to the main menu by typing "menu".
+The user stays in the Review loop they selected until they elect to return to the previous menu by typing "back".
 
 **ARRAYS:** The various musical instrument dictionary keys are converted to arrays by methods in the Collection class.
 Converting this data to arrays allows for the keys to be displayed as sorted and color-coded lists by other Collection methods.
 By using sorted arrays in the Collection methods, the dictionaries in each musical instrument class can easily be appended with new acquistions.
 
 **LINQ QUERY:** There are multiple instruments in my collection made by the guitar manufacturer, Fender.
-If the user inputs "fenders" during the ReviewAnyInstrument loop, the SearchForFenderInstruments method is called from the Collection Class.
+If the user selects Fenders from the Review Instruments menu, the SearchForFenderInstruments method is called from the Collection Class.
 SearchForFenderInstruments initializes the allInstrumentsArray which concatenates the various musical instrument key arrays.
 It then uses a LINQ query to search the new array for all instrument keys containing "fender".
 The results of this search are printed to the console.
 All instruments containing "fender" are displayed.
+The user is then prompted to type the key of the instrument that they wish to review.
 
 **COUNT & MATH FUNCTIONS:** "Count Instruments" calls the methods from the CollectionCount class.
 CollectionCount calls the Count method on the musical instrument dictionaries to generate the total counts of each instrument type.
@@ -92,9 +99,10 @@ These tests quickly and safely check the string concatenations, methods, counts,
 ### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
-In REVIEW INSTRUMENTS you may review any individual instrument in my collection by typing its key and pressing enter.  
-⦁ You may review the keys available by typing "guitars", "basses", "keyboards", "other" or "fenders" and pressing enter.  
-⦁ Type "menu" and press enter to return to the Main Menu and select another option.
+In REVIEW INSTRUMENTS you may review any individual instrument in my collection.  
+⦁ First, use the UP and DOWN arrow keys to select which type of instrument you with to review and press enter.   
+⦁ Type any key from the displayed list and press enter to review data specific to that instrument.
+⦁ Type "back" and press enter to return to the previous and select another option.
 
 LIST INSTRUMENTS provides a complete list of instruments in the collection. These names also serve as the keys in "Review Instruments"
 

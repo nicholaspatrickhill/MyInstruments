@@ -9,22 +9,8 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
             WriteLine();
-            WriteLine("Type \"back\" to return to the previous menu or type \"help\" for a list of other commands.");
-            //WriteLine("Type the key of the instrument that you wish to review and press enter.");
+            WriteLine("Type \"back\" to return to the previous menu.");
             WriteLine("-----------------------------------------------------------------------------------------------------------------");
-        }
-
-        public static void PrintHelp()
-        {
-            ForegroundColor = ConsoleColor.White;
-            WriteLine("Type...");
-            WriteLine("\"guitars\" to see the guitar keys available for review.");
-            WriteLine("\"basses\" to see the bass keys available for review.");
-            WriteLine("\"other\" to see the other string instrument keys available for review.");
-            WriteLine("\"keyboards\" to see the keyboard instrument keys available for review.");
-            WriteLine("\"fenders\" to see the fender instrument keys available for review.");
-            WriteLine("\"back\" to return home to the Main Menu.");
-            WriteLine("\"clear\" to clear the console and start over.");
         }
 
         public static void PrintAboutInfo()
@@ -61,8 +47,9 @@ namespace MyInstruments
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
             WriteLine("In REVIEW INSTRUMENTS you may review any instrument in my collection by typing its key and pressing enter.");
-            WriteLine(" --You may review the keys by typing \"guitars\", \"basses\", \"keyboards\", \"other\" or \"fenders\" and pressing enter.");
-            WriteLine(" --Type \"menu\" and press enter to return to the Main Menu and select another option.");
+            WriteLine(" --First, use the UP and DOWN arrow keys to select which type of instrument you wish to review and press enter.");
+            WriteLine(" --Type any key from the displayed list and press enter to review data specific to that instrument.");
+            WriteLine(" --Type \"back\" and press enter to return to the Main Menu and select another option.");
             WriteLine();
             WriteLine("LIST INSTRUMENTS shows a complete list of the keys available to the program.");
             WriteLine();

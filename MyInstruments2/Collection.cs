@@ -57,26 +57,6 @@ namespace MyInstruments
             }
         }
 
-        public static void ListInstrumentsByType(string input)
-        {
-            if (input == "guitars")
-            {
-                PrintGuitarKeysArray();
-            }
-            else if (input == "basses")
-            {
-                PrintBassKeysArray();
-            }
-            else if (input == "other")
-            {
-                PrintOtherStringInstrumentKeysArray();
-            }
-            else if (input == "keyboards")
-            {
-                PrintKeyboardInstrumentKeysArray();
-            }
-        }
-
         public static void ListAllInstruments()
         {
             ConsoleMessages.PrintAppHeader();
@@ -92,7 +72,7 @@ namespace MyInstruments
 
         public static void SearchForFenderInstruments()
         {
-            var allInstrumentsArray = guitarKeysArray.Concat(bassKeysArray).Concat(otherStringInstrumentKeysArray).Concat(keyboardInstrumentKeysArray).ToArray();
+            var allInstrumentsArray = guitarKeysArray.Concat(bassKeysArray).ToArray();
 
             var search = allInstrumentsArray.Where(p => p.Contains("fender"));
             foreach (var result in search)

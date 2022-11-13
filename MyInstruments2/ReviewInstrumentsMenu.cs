@@ -13,12 +13,12 @@ using static MyInstruments.UserCommands;
 
 namespace MyInstruments
 {
-    public class ReviewAnyInstrumentMenu
+    public class ReviewInstrumentsMenu
     {
-        public static void RunReviewAnyInstrumentMenu()
+        public static void RunReviewInstrumentsMenu()
         {
             string prompt = "\nUse the UP and DOWN arrow keys to highlight the instruments that you wish to review and then press enter.\n";
-            string[] options = { "Guitars", "Basses", "Other String Instruments", "Keyboards", "Return To Main Menu" };
+            string[] options = { "Guitars", "Basses", "Other String Instruments", "Keyboards", "Fenders", "Return To Main Menu" };
             Menu userReviewAnyInstrumentMenu = new Menu(prompt, options);
             int selectedIndex = userReviewAnyInstrumentMenu.Run();
 
@@ -37,6 +37,9 @@ namespace MyInstruments
                     ReviewKeyboardInstruments();
                     break;
                 case 4:
+                    ReviewFenderInstruments();
+                    break;
+                case 5:
                     ReturnToMainMenu();
                     break;
             }
@@ -113,7 +116,7 @@ namespace MyInstruments
                 return repeat;
             }
         }
-       
+
         private static void ReviewOtherStringInstruments()
         {
             Clear();
@@ -174,6 +177,44 @@ namespace MyInstruments
                 {
                     KeyboardInstrument keyboardInstrumentChoice = keyboardInstruments[input];
                     keyboardInstrumentChoice.PrintInstrument();
+                }
+                else repeat = SelectCommand(repeat, input);
+                return repeat;
+            }
+        }
+
+        private static void ReviewFenderInstruments()
+        {
+            Clear();
+            ConsoleMessages.PrintAppHeader();
+            ConsoleMessages.PrintReviewAnyInstrumentHeader();
+            WriteLine("Your Fender Instruments:");
+            Collection.SearchForFenderInstruments();
+
+            var repeat = true;
+            while (repeat)
+            {
+                ForegroundColor = ConsoleColor.White;
+                WriteLine();
+                WriteLine("Which Fender instrument would you like to review?");
+
+                string input = UserInput().ToLower();
+
+                repeat = SelectFenderInstrument(repeat, input);
+            }
+
+            static bool SelectFenderInstrument(bool repeat, string input)
+            {
+                ForegroundColor = ConsoleColor.White;
+                if (guitars.ContainsKey(input))
+                {
+                    Guitar guitarChoice = guitars[input];
+                    guitarChoice.PrintInstrument();
+                }
+                else if (basses.ContainsKey(input))
+                {
+                    Bass bassChoice = basses[input];
+                    bassChoice.PrintInstrument();
                 }
                 else repeat = SelectCommand(repeat, input);
                 return repeat;

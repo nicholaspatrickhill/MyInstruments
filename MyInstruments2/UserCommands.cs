@@ -9,31 +9,14 @@ namespace MyInstruments
         {
             switch (input)
             {
-                case "help":
-                    ConsoleMessages.PrintHelp();
-                    break;
-                //case "clear":
-                //    Clear();
-                //    UserReview.ReviewAnyInstrument();
-                //    break;
                 case "menu":
                 case "back":
-                    //MainMenu.Start();
-                    ReviewAnyInstrumentMenu.RunReviewAnyInstrumentMenu();
-                    break;
-                case "guitars":
-                case "basses":
-                case "other":
-                case "keyboards":
-                    Collection.ListInstrumentsByType(input);
-                    break;
-                case "fenders":
-                    Collection.SearchForFenderInstruments();
+                    ReviewInstrumentsMenu.RunReviewInstrumentsMenu();
                     break;
                 default:
                     log4net.GlobalContext.Properties["UserInput"] = input;
                     log.Error("Invalid User Input");
-                    WriteLine("Invalid Command. Type \"back\" to return to the main menu or type \"help\" for a list of other commands.");
+                    WriteLine("Invalid Command. Try again or type \"back\" to return to the main menu.");
                     break;
             }
 

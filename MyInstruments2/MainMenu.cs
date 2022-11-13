@@ -56,7 +56,7 @@ namespace MyInstruments
         {
             Clear();
             //UserReview.ReviewAnyInstrument();
-            ReviewAnyInstrumentMenu.RunReviewAnyInstrumentMenu();
+            ReviewInstrumentsMenu.RunReviewInstrumentsMenu();
         }
 
         private void ListInstruments()
