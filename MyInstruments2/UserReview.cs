@@ -19,7 +19,6 @@ namespace MyInstruments
             {
                 ConsoleMessage.PrintReviewAnyInstrumentHeader();
 
-                WriteLine();
                 string input = UserInput();
 
                 repeat = SelectInstrument(repeat, input);

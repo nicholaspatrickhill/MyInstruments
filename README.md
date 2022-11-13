@@ -94,13 +94,13 @@ These tests quickly and safely check the string concatenations, methods, counts,
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
 In REVIEW INSTRUMENTS you may review any individual instrument in my collection by typing its key and pressing enter.  
-⦁ You may review the keys available by typing "guitars", "basses", "keyboards", "other" or "fenders" and pressing enter.     
-⦁ If the console is becoming clogged with text you may refresh it by typing "clear" and pressing enter.  
+⦁ You may review the keys available by typing "guitars", "basses", "keyboards", "other" or "fenders" and pressing enter.  
 ⦁ Type "menu" and press enter to return to the Main Menu and select another option.
 
 LIST INSTRUMENTS provides a complete list of instruments in the collection. These names also serve as the keys in "Review Instruments"
 
-COUNT INSTRUMENTS displays a breakdown chart with the counts of each instrument type and displays the total number of instruments in the collection.
+COUNT INSTRUMENTS displays a breakdown chart with the counts of each instrument type.
+The total number of instruments in the collection and the percentages of each instrument type are also displayed.
 
 SAVE TEXT FILE saves a list of the instrument keys to a .txt file in the temp folder on the C:\ drive.  
 ⦁ TIP: This can be a handy reference guide when woking in the "Review Instruments" module.
