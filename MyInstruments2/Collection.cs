@@ -158,13 +158,13 @@ namespace MyInstruments
 
         public static void CountAllInstruments()
         {
-            int guitarsCount = Guitar.guitars.Count;
-            int bassesCount = Bass.basses.Count;
+            int guitarsCount = guitars.Count;
+            int bassesCount = basses.Count;
             int otherCount = otherStringInstruments.Count;
-            int keyboardsCount = KeyboardInstrument.keyboards.Count;
+            int keyboardsCount = keyboards.Count;
             int totalCount = guitarsCount + bassesCount + otherCount + keyboardsCount;
 
-            ForegroundColor = ConsoleColor.White;
+            
             ConsoleMessage.PrintAppHeader();
             WriteLine();
             WriteLine();
@@ -176,9 +176,24 @@ namespace MyInstruments
                 .AddItem("Other String Instruments", otherCount, Color.Green)
                 .AddItem("Keyboard Instruments", keyboardsCount, Color.Yellow));
 
+            ForegroundColor = ConsoleColor.White;
             WriteLine();
             WriteLine("You have " + totalCount + " total instruments in your collection.");
+            WriteLine();
+
+            int guitarPercent = (int)Math.Round(((double)guitarsCount / (double)totalCount) * 100);
+            WriteLine($"{guitarPercent}% of your instruments are guitars." );
+
+            int bassPercent = (int)Math.Round(((double)bassesCount / (double)totalCount) * 100);
+            WriteLine($"{bassPercent}% of your instruments are basses.");
+
+            int otherStringInstrumentPercent = (int)Math.Round(((double)otherCount / (double)totalCount) * 100);
+            WriteLine($"{otherStringInstrumentPercent}% of your instruments are other string instruments.");
+
+            int keyboardInstrumentsPercent = (int)Math.Round(((double)keyboardsCount / (double)totalCount) * 100);
+            WriteLine($"{keyboardInstrumentsPercent}% of your instruments are keyboard instruments.");
         }
+
     }
 }
 
