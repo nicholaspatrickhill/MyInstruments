@@ -11,7 +11,7 @@ namespace MyInstruments
             ForegroundColor = ConsoleColor.White;
             WriteLine();
             WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"back\" to return to the previous menu.");
-            WriteLine("-----------------------------------------------------------------------------------------------------------------");
+            WriteLine("-------------------------------------------------------------------------------------------------------------------");
         }
 
         public static void PrintAboutInfo()

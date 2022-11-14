@@ -60,7 +60,7 @@ namespace MyInstruments
 
             string input = UserInput().ToLower();
 
-            ForegroundColor = ConsoleColor.White;
+            ForegroundColor = ConsoleColor.Gray;
             if (guitars.ContainsKey(input))
             {
                 Guitar guitarChoice = guitars[input];
@@ -86,7 +86,7 @@ namespace MyInstruments
 
             string input = UserInput().ToLower();
 
-            ForegroundColor = ConsoleColor.White;
+            ForegroundColor = ConsoleColor.Gray;
             if (basses.ContainsKey(input))
             {
                 Bass bassChoice = basses[input];
@@ -112,7 +112,7 @@ namespace MyInstruments
 
             string input = UserInput().ToLower();
 
-            ForegroundColor = ConsoleColor.White;
+            ForegroundColor = ConsoleColor.Gray;
             if (otherStringInstruments.ContainsKey(input))
             {
                 OtherStringInstrument otherStringInstrumentChoice = otherStringInstruments[input];
@@ -138,7 +138,7 @@ namespace MyInstruments
 
             string input = UserInput().ToLower();
 
-            ForegroundColor = ConsoleColor.White;
+            ForegroundColor = ConsoleColor.Gray;
             if (keyboardInstruments.ContainsKey(input))
             {
                 KeyboardInstrument keyboardInstrumentChoice = keyboardInstruments[input];
@@ -167,7 +167,7 @@ namespace MyInstruments
 
             var guitarKeys = guitars.Keys.Any(key => key.Contains("fender"));
 
-            ForegroundColor = ConsoleColor.White;
+            ForegroundColor = ConsoleColor.Gray;
             if (guitars.ContainsKey(input))
             {
                 if (input.Contains("fender"))
@@ -214,7 +214,7 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
             WriteLine();
-            WriteLine("Press any key to start again.");
+            WriteLine("Press any key to start over and review another instrument.");
             ReadKey(true);
         }
 
