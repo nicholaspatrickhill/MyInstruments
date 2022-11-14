@@ -10,11 +10,13 @@ using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.UserCommands;
+using log4net;
 
 namespace MyInstruments
 {
     public class ReviewInstrumentsMenu
     {
+        private static readonly log4net.ILog log = LogHelper.GetLogger();
         public static void RunReviewInstrumentsMenu()
         {
             string prompt = "\nUse the UP and DOWN arrow keys to highlight the instruments that you wish to review and then press enter.\n";
@@ -205,16 +207,36 @@ namespace MyInstruments
 
             static bool SelectFenderInstrument(bool repeat, string input)
             {
+                var guitarKeys = guitars.Keys.Any(key => key.Contains("fender"));
+
                 ForegroundColor = ConsoleColor.White;
                 if (guitars.ContainsKey(input))
                 {
-                    Guitar guitarChoice = guitars[input];
-                    guitarChoice.PrintInstrument();
+                    if (input.Contains("fender"))
+                    {
+                        Guitar guitarChoice = guitars[input];
+                        guitarChoice.PrintInstrument();
+                    }
+                    else
+                    {
+                        log4net.GlobalContext.Properties["UserInput"] = input;
+                        log.Error("Invalid User Input");
+                        WriteLine("Invalid Command. Try again or type \"back\" to return to the main menu.");
+                    }
                 }
                 else if (basses.ContainsKey(input))
                 {
-                    Bass bassChoice = basses[input];
-                    bassChoice.PrintInstrument();
+                    if (input.Contains("fender"))
+                    {
+                        Bass bassChoice = basses[input];
+                        bassChoice.PrintInstrument();
+                    }
+                    else
+                    {
+                        log4net.GlobalContext.Properties["UserInput"] = input;
+                        log.Error("Invalid User Input");
+                        WriteLine("Invalid Command. Try again or type \"back\" to return to the main menu.");
+                    }
                 }
                 else repeat = SelectCommand(repeat, input);
                 return repeat;
