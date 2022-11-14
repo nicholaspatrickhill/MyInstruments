@@ -56,7 +56,7 @@ namespace MyInstruments
             WriteLine(" --Type \"back\" and press enter to return to the Main Menu and select another option.");
             WriteLine();
             ForegroundColor = ConsoleColor.Yellow;
-            WriteLine("LIST INSTRUMENTS shows a complete list of the keys available to the program.");
+            WriteLine("LIST INSTRUMENTS shows a complete list of the instruments in the collection.");
             WriteLine();
             ForegroundColor = ConsoleColor.Green;
             WriteLine("COUNT INSTRUMENTS displays a breakdown chart with the counts of each instrument type and displays.");
@@ -64,7 +64,6 @@ namespace MyInstruments
             WriteLine();
             ForegroundColor = ConsoleColor.Blue;
             WriteLine("SAVE TEXT FILE saves a list of the instrument keys to a .txt file in the temp folder on the C:\\ drive.");
-            WriteLine(" --Tip: This can be a handy reference guide when woking in the \"Review Instruments\" module.");
             WriteLine();
             ForegroundColor = ConsoleColor.Red;
             WriteLine("EXIT will terminate the program upon confirmation.");

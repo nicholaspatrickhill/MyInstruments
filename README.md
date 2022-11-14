@@ -105,15 +105,14 @@ Use the UP and DOWN arrow keys to highlight the function that you wish to perfor
 In REVIEW INSTRUMENTS you may review any individual instrument in my collection.  
 ⦁ First, use the UP and DOWN arrow keys to select which type of instrument you with to review and press enter.   
 ⦁ Type any key from the displayed list and press enter to review data specific to that instrument.  
-⦁ Type "back" and press enter to return to the previous and select another option.
+⦁ Type "back" and press enter to return to the previous menu and select another option.
 
-LIST INSTRUMENTS provides a complete list of instruments in the collection. These names also serve as the keys in "Review Instruments"
+LIST INSTRUMENTS provides a complete list of the instruments in the collection.
 
 COUNT INSTRUMENTS displays a breakdown chart with the counts of each instrument type.
 The total number of instruments in the collection and the percentages of each instrument type are also displayed.
 
 SAVE TEXT FILE saves a list of the instrument keys to a .txt file in the temp folder on the C:\ drive.  
-⦁ TIP: This can be a handy reference guide when woking in the "Review Instruments" module.
 
 ABOUT THIS APP provides some information about the application's purpose and author.
 
