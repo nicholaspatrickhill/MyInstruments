@@ -33,7 +33,7 @@ The user's input executes cases in a Switch that call methods that perform the f
 Selecting "Review Instruments" calls the RunReviewInstrumentsMenu method from the ReviewInstrumentsMenu class.
 Selecting any of "List Instruments", "Count Instruments", "Save Text File," "Read Instructions" or "About This App" calls corresponding methods from the Collection and ConsoleMessage classes.
 
-**LOOPING, USER INPUT, CONDITIONS & LOGGING:** RunReviewInstrumentsMenu displays a submenu for selecting the type of musical instrument that the user wishes to review.
+**USER INPUT, CONDITIONS & LOGGING:** RunReviewInstrumentsMenu displays a submenu for selecting the type of musical instrument that the user wishes to review.
 RunReviewInstrumentsMenu initilazies another instance of the Menu class.
 The menu's functionality and design are the same as that of the Main Menu.
 The user's input executes cases in a switch that call methods to enable the user to review that instrument type.
