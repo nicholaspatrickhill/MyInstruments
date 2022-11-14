@@ -102,12 +102,12 @@ These tests quickly and safely check the string concatenations, methods, counts,
 ### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
-In REVIEW INSTRUMENTS you may review any individual instrument in my collection.    
-⦁ First, use the UP and DOWN arrow keys to select which type of instrument you wish to review and press enter. 
-⦁ The names of all of the instruments of that type will be displayed on the console.    
+In REVIEW INSTRUMENTS you may review any individual instrument in my collection.  
+⦁ First, use the UP and DOWN arrow keys to select which type of instrument you wish to review and press enter.  
+⦁ The names of all of the instruments of that type will be displayed on the console.  
 ⦁ Type the full name of the instrument that you wish to reivew and press enter.  
-⦁ The console will display data specific to that instrument. 
-⦁ When you are finished reviewing the data, press any key to start again.
+⦁ The console will display data specific to that instrument.  
+⦁ When you are finished reviewing the data, press any key to start again.  
 ⦁ Type "back" and press enter to return to the previous menu and select another option.
 
 LIST INSTRUMENTS provides a complete list of the instruments in the collection.
