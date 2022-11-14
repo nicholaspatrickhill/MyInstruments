@@ -123,6 +123,7 @@ namespace MyInstruments
                     log4net.GlobalContext.Properties["UserInput"] = input;
                     log.Error("Invalid User Input");
                     ForegroundColor = ConsoleColor.White;
+                    WriteLine();
                     WriteLine("Invalid Command. Please try again.");
                     ExitProgram();
                     break;
