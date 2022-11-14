@@ -72,6 +72,7 @@ namespace MyInstruments
                 if (guitars.ContainsKey(input))
                 {
                     Guitar guitarChoice = guitars[input];
+                    WriteLine();
                     guitarChoice.PrintInstrument();
                 }
                 else repeat = SelectCommand(repeat, input);
@@ -105,6 +106,7 @@ namespace MyInstruments
                 if (basses.ContainsKey(input))
                 {
                     Bass bassChoice = basses[input];
+                    WriteLine();
                     bassChoice.PrintInstrument();
                 }
                 else repeat = SelectCommand(repeat, input);
@@ -138,6 +140,7 @@ namespace MyInstruments
                 if (otherStringInstruments.ContainsKey(input))
                 {
                     OtherStringInstrument otherStringInstrumentChoice = otherStringInstruments[input];
+                    WriteLine();
                     otherStringInstrumentChoice.PrintInstrument();
                 }
                 else repeat = SelectCommand(repeat, input);
@@ -171,6 +174,7 @@ namespace MyInstruments
                 if (keyboardInstruments.ContainsKey(input))
                 {
                     KeyboardInstrument keyboardInstrumentChoice = keyboardInstruments[input];
+                    WriteLine();
                     keyboardInstrumentChoice.PrintInstrument();
                 }
                 else repeat = SelectCommand(repeat, input);
@@ -208,6 +212,7 @@ namespace MyInstruments
                     if (input.Contains("fender"))
                     {
                         Guitar guitarChoice = guitars[input];
+                        WriteLine();
                         guitarChoice.PrintInstrument();
                     }
                     else
@@ -222,6 +227,7 @@ namespace MyInstruments
                     if (input.Contains("fender"))
                     {
                         Bass bassChoice = basses[input];
+                        WriteLine();
                         bassChoice.PrintInstrument();
                     }
                     else
