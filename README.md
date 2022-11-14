@@ -46,7 +46,7 @@ If there is a matching key in one of the dictionaries, the program calls the Pri
 The user is then prompted to press any key to start over.
 If the user input does not match one of the dictionary keys, it exits the If-Else block and enters the SelectCommand switch in the UserCommands class. 
 The UserCommands switch searches its case names for a match to the user's input.
-The switch executes cases based on whether or not the user's input matches one of its case names.
+The switch executes cases based on whether or not it finds a match.
 The user may elect to return to the previous menu screen by typing "back".
 If the switch does not find a match it generates an invalid input response through its default case.
 In the event of invalid input, the console displays an error message and the invalid input is logged.
