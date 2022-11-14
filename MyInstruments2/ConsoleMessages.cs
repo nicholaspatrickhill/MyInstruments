@@ -26,9 +26,8 @@ namespace MyInstruments
             WriteLine("It can be difficult to recall specific details about each instrument in my collection from memory.");
             WriteLine("I am often seeking out information like an instrument's string gauge, serial number and country or age of manufacture.");
             WriteLine("An interactive console app makes this process easier, faster and more fun!");
-            ForegroundColor = ConsoleColor.White;
-            WriteLine("----------------------------------------------------------------------------------------------------------------------");
-            ForegroundColor = ConsoleColor.Magenta;
+            WriteLine();
+            ForegroundColor = ConsoleColor.Green;
             WriteLine(" The following features are demonstrated:");
             WriteLine(" --Create at least one class, then create at least one object of that class and populate it with data.");
             WriteLine(" --Create and call at least 3 functions or methods.");

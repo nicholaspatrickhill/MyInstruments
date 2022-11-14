@@ -125,7 +125,7 @@ namespace MyInstruments
             {
                 ForegroundColor = ConsoleColor.White;
                 WriteLine();
-                WriteLine("Which other string instrument would you like to review?");
+                WriteLine("Which string instrument would you like to review?");
 
                 string input = UserInput().ToLower();
 

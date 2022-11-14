@@ -64,6 +64,9 @@ It then uses a LINQ query to search the new array for all instrument keys contai
 The results of this search are printed to the console.
 All instruments containing "fender" are displayed.
 The user is then prompted to type the key of the instrument that they wish to review.
+A nested If-Else block checks to see if the user has searched for one of the Fender instruments.
+If so, the data about that instrument is printed to the console.
+If not, an invalid input response is generated and the error is logged.
 
 **COUNT & MATH FUNCTIONS:** "Count Instruments" calls the methods from the CollectionCount class.
 CollectionCount calls the Count method on the musical instrument dictionaries to generate the total counts of each instrument type.
