@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
+﻿using static System.Console;
 using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.KeyboardInstrument;
 using static MyInstruments.UserCommands;
-using log4net;
 
 namespace MyInstruments
 {
@@ -75,7 +68,7 @@ namespace MyInstruments
 
             static bool SelectGuitar(bool repeat, string input)
             {
-                ForegroundColor = ConsoleColor.White;
+                ForegroundColor = ConsoleColor.Gray;
                 if (guitars.ContainsKey(input))
                 {
                     Guitar guitarChoice = guitars[input];
@@ -108,7 +101,7 @@ namespace MyInstruments
 
             static bool SelectBass(bool repeat, string input)
             {
-                ForegroundColor = ConsoleColor.White;
+                ForegroundColor = ConsoleColor.Gray;
                 if (basses.ContainsKey(input))
                 {
                     Bass bassChoice = basses[input];
@@ -141,7 +134,7 @@ namespace MyInstruments
 
             static bool SelectOtherStringInstrument(bool repeat, string input)
             {
-                ForegroundColor = ConsoleColor.White;
+                ForegroundColor = ConsoleColor.Gray;
                 if (otherStringInstruments.ContainsKey(input))
                 {
                     OtherStringInstrument otherStringInstrumentChoice = otherStringInstruments[input];
@@ -174,7 +167,7 @@ namespace MyInstruments
 
             static bool SelectKeyboardInstrument(bool repeat, string input)
             {
-                ForegroundColor = ConsoleColor.White;
+                ForegroundColor = ConsoleColor.Gray;
                 if (keyboardInstruments.ContainsKey(input))
                 {
                     KeyboardInstrument keyboardInstrumentChoice = keyboardInstruments[input];
@@ -209,7 +202,7 @@ namespace MyInstruments
             {
                 var guitarKeys = guitars.Keys.Any(key => key.Contains("fender"));
 
-                ForegroundColor = ConsoleColor.White;
+                ForegroundColor = ConsoleColor.Gray;
                 if (guitars.ContainsKey(input))
                 {
                     if (input.Contains("fender"))
