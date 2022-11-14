@@ -40,14 +40,14 @@ The user's input executes cases in a switch that call methods to enable the user
 
 Selecting any of Guitars, Basses, Other String Instruments, Keyboards or Fenders prompts the user to input the key of the musical instrument that they wish to review.
 The keys are displayed by calling the appropriate methods from the Collection class.
-Each of the Review methods loops the user input through an If-Else block to search the appropriate musical instrument dictionary for a matching key.
+Each of the Review methods checks the user input against the appropriate musical instrument dictionary for a matching key via an If-Else block.
 The ToLower method is called on the user input which allows for input to be case insensitive as the program searches for a matching key.
 If there is a matching key in one of the dictionaries, the program calls the PrintInstrument method from the appropriate musical instrument class.
-The user is then prompted to enter a new key.
+The user is then prompted to press any key to start over.
 If the user input is not a matching key, it exits the If-Else block and enters the SelectCommand switch in the UserCommands class. 
 The UserCommands switch searches its case names for a match to the user's input.
 The switch executes cases based on whether or not it finds a match.
-The user may use these commands to call the help menu, review the keys available to the program, or return to the menu screen.
+The user may elect to return to the previous menu screen by typing "back".
 If the switch does not find a match it generates an invalid input response through its default case.
 In the event of invalid input, the console displays an error message and the invalid input is logged.
 The log4net NuGet package is configured to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
