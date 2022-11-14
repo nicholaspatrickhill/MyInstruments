@@ -38,15 +38,15 @@ RunReviewInstrumentsMenu initilazies another instance of the Menu class.
 The menu's functionality and design are the same as that of the Main Menu.
 The user's input executes cases in a switch that call methods to enable the user to review that instrument type.
 
-Selecting any of Guitars, Basses, Other String Instruments, Keyboards or Fenders prompts the user to input the key of the musical instrument that they wish to review.
-The keys are displayed by calling the appropriate methods from the Collection class.
+Selecting any of Guitars, Basses, Other String Instruments, Keyboards or Fenders prompts the user to input the full name of the musical instrument that they wish to review.
+The names of the instruments are displayed by calling the appropriate methods from the Collection class.
 Each of the Review methods checks the user input against the appropriate musical instrument dictionary for a matching key via an If-Else block.
 The ToLower method is called on the user input which allows for input to be case insensitive as the program searches for a matching key.
 If there is a matching key in one of the dictionaries, the program calls the PrintInstrument method from the appropriate musical instrument class.
 The user is then prompted to press any key to start over.
-If the user input is not a matching key, it exits the If-Else block and enters the SelectCommand switch in the UserCommands class. 
+If the user input does not match one of the dictionary keys, it exits the If-Else block and enters the SelectCommand switch in the UserCommands class. 
 The UserCommands switch searches its case names for a match to the user's input.
-The switch executes cases based on whether or not it finds a match.
+The switch executes cases based on whether or not the user's input matches one of its case names.
 The user may elect to return to the previous menu screen by typing "back".
 If the switch does not find a match it generates an invalid input response through its default case.
 In the event of invalid input, the console displays an error message and the invalid input is logged.
@@ -54,28 +54,28 @@ The log4net NuGet package is configured to record the invalid user input and wri
 The user stays in the Review loop they selected until they elect to return to the previous menu by typing "back".
 
 **ARRAYS:** The various musical instrument dictionary keys are converted to arrays by methods in the Collection class.
-Converting this data to arrays allows for the keys to be displayed as sorted and color-coded lists by other Collection methods.
-By using sorted arrays in the Collection methods, the dictionaries in each musical instrument class can easily be appended with new acquistions.
+Converting this data to arrays allows for the keys to be displayed as sorted and color-coded lists of the instrument names by other methods.
+By using sorted arrays in the various methods, the dictionaries in each musical instrument class can easily be appended with new acquistions.
 
 **LINQ QUERY:** There are multiple instruments in my collection made by the guitar manufacturer, Fender.
 If the user selects Fenders from the Review Instruments menu, the SearchForFenderInstruments method is called from the Collection Class.
-SearchForFenderInstruments initializes the allInstrumentsArray which concatenates the various musical instrument key arrays.
+SearchForFenderInstruments initializes the allInstrumentsArray which concatenates the appropriate musical instrument key arrays.
 It then uses a LINQ query to search the new array for all instrument keys containing "fender".
 The results of this search are printed to the console.
 All instruments containing "fender" are displayed.
-The user is then prompted to type the key of the instrument that they wish to review.
+The user is then prompted to type the full name of the instrument that they wish to review.
 A nested If-Else block checks to see if the user has searched for one of the Fender instruments.
 If so, the data about that instrument is printed to the console.
 If not, an invalid input response is generated and the error is logged.
 
-**COUNT & MATH FUNCTIONS:** "Count Instruments" calls the methods from the CollectionCount class.
-CollectionCount calls the Count method on the musical instrument dictionaries to generate the total counts of each instrument type.
+**COUNT & MATH FUNCTIONS:** "Count Instruments" calls the methods from the CollectionCounts class.
+CollectionCounts calls the Count method on the musical instrument dictionaries to generate the total counts of each instrument type.
 PrintInstrumentBreakdownChart configures Spectre.Console to display the counts of each musical instrument type in a color-coded breakdown chart.
 PrintTotalInstrumentCount displays the total count of all musical instruments by adding up all of the values returned by the Count method.
 PrintInstrumentPercentages displays the percentage that each musical instrument type occupies in the collection by converting the musical instrument counts from ints to doubles, dividing the counts by the total and multiplying those numbers by 100.
 Math.Round is then called to round the doubles back to the nearest integers for easier-to-read display on the console.
 
-**SAVING TO TEXT FILE:** "Save Text File" initializes Streamwriter and calls ToUpper on each musical instrument array to write a capitalized, sorted list of all of the musical instrument keys to a .txt file in the temp folder on the C:\ drive.
+**SAVING TO TEXT FILE:** "Save Text File" initializes Streamwriter and calls ToUpper on each musical instrument array to write a capitalized, sorted list of all of the musical instrument names to a .txt file in the temp folder on the C:\ drive.
 
 **EXITING THE PROGRAM:** Selecting "Exit" calls the ExitTheProgram method.
 ExitTheProgram prompts the user to confirm that they wish to terminate the program by first typing "y" or "n" and then pressing enter.
@@ -102,9 +102,12 @@ These tests quickly and safely check the string concatenations, methods, counts,
 ### INSTRUCTIONS
 Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.
 
-In REVIEW INSTRUMENTS you may review any individual instrument in my collection.  
-⦁ First, use the UP and DOWN arrow keys to select which type of instrument you with to review and press enter.   
-⦁ Type any key from the displayed list and press enter to review data specific to that instrument.  
+In REVIEW INSTRUMENTS you may review any individual instrument in my collection.    
+⦁ First, use the UP and DOWN arrow keys to select which type of instrument you wish to review and press enter. 
+⦁ The names of all of the instruments of that type will be displayed on the console.    
+⦁ Type the full name of the instrument that you wish to reivew and press enter.  
+⦁ The console will display data specific to that instrument. 
+⦁ When you are finished reviewing the data, press any key to start again.
 ⦁ Type "back" and press enter to return to the previous menu and select another option.
 
 LIST INSTRUMENTS provides a complete list of the instruments in the collection.

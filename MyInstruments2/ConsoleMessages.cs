@@ -10,8 +10,8 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
             WriteLine();
-            WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"back\" to return to the previous menu.");
-            WriteLine("-------------------------------------------------------------------------------------------------------------------");
+            WriteLine("Type the full name of the instrument that you wish to review & press enter. Type \"back\" to return to the previous menu.");
+            WriteLine("-----------------------------------------------------------------------------------------------------------------------");
         }
 
         public static void PrintAboutInfo()
@@ -50,9 +50,12 @@ namespace MyInstruments
             WriteLine("Use the UP and DOWN arrow keys to highlight the function that you wish to perform and then press enter.");
             WriteLine();
             ForegroundColor = ConsoleColor.Cyan;
-            WriteLine("In REVIEW INSTRUMENTS you may review any instrument in my collection by typing its key and pressing enter.");
+            WriteLine("In REVIEW INSTRUMENTS you may review any individual instrument in my collection.");
             WriteLine(" --First, use the UP and DOWN arrow keys to select which type of instrument you wish to review and press enter.");
-            WriteLine(" --Type any key from the displayed list and press enter to review data specific to that instrument.");
+            WriteLine(" --The names of all of the instruments of that type will be displayed on the console.");
+            WriteLine(" --Type the full name of the instrument that you wish to reivew and press enter.");
+            WriteLine(" --The console will display the data specific to that instrument.");
+            WriteLine(" --When you are finished reviewing the data, press any key to start again.");
             WriteLine(" --Type \"back\" and press enter to return to the Main Menu and select another option.");
             WriteLine();
             ForegroundColor = ConsoleColor.Yellow;
