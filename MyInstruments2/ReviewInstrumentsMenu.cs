@@ -54,30 +54,22 @@ namespace MyInstruments
             WriteLine("Your Guitars:");
             Collection.PrintGuitarKeysArray();
 
-            var repeat = true;
-            while (repeat)
+            ForegroundColor = ConsoleColor.White;
+            WriteLine();
+            WriteLine("Which guitar would you like to review?");
+
+            string input = UserInput().ToLower();
+
+            ForegroundColor = ConsoleColor.White;
+            if (guitars.ContainsKey(input))
             {
-                ForegroundColor = ConsoleColor.White;
+                Guitar guitarChoice = guitars[input];
                 WriteLine();
-                WriteLine("Type the key of the guitar that you wish to review and press enter. Which guitar would you like to review?");
-
-                string input = UserInput().ToLower();
-
-                repeat = SelectGuitar(repeat, input);
+                guitarChoice.PrintInstrument();
             }
+            else SelectCommand(input);
 
-            static bool SelectGuitar(bool repeat, string input)
-            {
-                ForegroundColor = ConsoleColor.Gray;
-                if (guitars.ContainsKey(input))
-                {
-                    Guitar guitarChoice = guitars[input];
-                    WriteLine();
-                    guitarChoice.PrintInstrument();
-                }
-                else repeat = SelectCommand(repeat, input);
-                return repeat;
-            }
+            ReturnToGuitarMenu();
         }
 
         private static void ReviewBasses()
@@ -88,30 +80,22 @@ namespace MyInstruments
             WriteLine("Your Basses:");
             Collection.PrintBassKeysArray();
 
-            var repeat = true;
-            while (repeat)
+            ForegroundColor = ConsoleColor.White;
+            WriteLine();
+            WriteLine("Which bass would you like to review?");
+
+            string input = UserInput().ToLower();
+
+            ForegroundColor = ConsoleColor.White;
+            if (basses.ContainsKey(input))
             {
-                ForegroundColor = ConsoleColor.White;
+                Bass bassChoice = basses[input];
                 WriteLine();
-                WriteLine("Which bass would you like to review?");
-
-                string input = UserInput().ToLower();
-
-                repeat = SelectBass(repeat, input);
+                bassChoice.PrintInstrument();
             }
+            else SelectCommand(input);
 
-            static bool SelectBass(bool repeat, string input)
-            {
-                ForegroundColor = ConsoleColor.Gray;
-                if (basses.ContainsKey(input))
-                {
-                    Bass bassChoice = basses[input];
-                    WriteLine();
-                    bassChoice.PrintInstrument();
-                }
-                else repeat = SelectCommand(repeat, input);
-                return repeat;
-            }
+            ReturnToBassMenu();
         }
 
         private static void ReviewOtherStringInstruments()
@@ -122,30 +106,22 @@ namespace MyInstruments
             WriteLine("Your Other String Instruments:");
             Collection.PrintOtherStringInstrumentKeysArray();
 
-            var repeat = true;
-            while (repeat)
+            ForegroundColor = ConsoleColor.White;
+            WriteLine();
+            WriteLine("Which string instrument would you like to review?");
+
+            string input = UserInput().ToLower();
+
+            ForegroundColor = ConsoleColor.White;
+            if (otherStringInstruments.ContainsKey(input))
             {
-                ForegroundColor = ConsoleColor.White;
+                OtherStringInstrument otherStringInstrumentChoice = otherStringInstruments[input];
                 WriteLine();
-                WriteLine("Which string instrument would you like to review?");
-
-                string input = UserInput().ToLower();
-
-                repeat = SelectOtherStringInstrument(repeat, input);
+                otherStringInstrumentChoice.PrintInstrument();
             }
+            else SelectCommand(input);
 
-            static bool SelectOtherStringInstrument(bool repeat, string input)
-            {
-                ForegroundColor = ConsoleColor.Gray;
-                if (otherStringInstruments.ContainsKey(input))
-                {
-                    OtherStringInstrument otherStringInstrumentChoice = otherStringInstruments[input];
-                    WriteLine();
-                    otherStringInstrumentChoice.PrintInstrument();
-                }
-                else repeat = SelectCommand(repeat, input);
-                return repeat;
-            }
+            ReturnToOtherStringInstrumentsMenu();
         }
 
         private static void ReviewKeyboardInstruments()
@@ -156,30 +132,22 @@ namespace MyInstruments
             WriteLine("Your Keyboards:");
             Collection.PrintKeyboardInstrumentKeysArray();
 
-            var repeat = true;
-            while (repeat)
+            ForegroundColor = ConsoleColor.White;
+            WriteLine();
+            WriteLine("Which keyboard instrument would you like to review?");
+
+            string input = UserInput().ToLower();
+
+            ForegroundColor = ConsoleColor.White;
+            if (keyboardInstruments.ContainsKey(input))
             {
-                ForegroundColor = ConsoleColor.White;
+                KeyboardInstrument keyboardInstrumentChoice = keyboardInstruments[input];
                 WriteLine();
-                WriteLine("Which keyboard instrument would you like to review?");
-
-                string input = UserInput().ToLower();
-
-                repeat = SelectKeyboardInstrument(repeat, input);
+                keyboardInstrumentChoice.PrintInstrument();
             }
+            else SelectCommand(input);
 
-            static bool SelectKeyboardInstrument(bool repeat, string input)
-            {
-                ForegroundColor = ConsoleColor.Gray;
-                if (keyboardInstruments.ContainsKey(input))
-                {
-                    KeyboardInstrument keyboardInstrumentChoice = keyboardInstruments[input];
-                    WriteLine();
-                    keyboardInstrumentChoice.PrintInstrument();
-                }
-                else repeat = SelectCommand(repeat, input);
-                return repeat;
-            }
+            ReturnToKeyBoardInstrumentsMenu();
         }
 
         private static void ReviewFenderInstruments()
@@ -190,63 +158,94 @@ namespace MyInstruments
             WriteLine("Your Fender Instruments:");
             Collection.SearchForFenderInstruments();
 
-            var repeat = true;
-            while (repeat)
+
+            ForegroundColor = ConsoleColor.White;
+            WriteLine();
+            WriteLine("Which Fender instrument would you like to review?");
+
+            string input = UserInput().ToLower();
+
+            var guitarKeys = guitars.Keys.Any(key => key.Contains("fender"));
+
+            ForegroundColor = ConsoleColor.White;
+            if (guitars.ContainsKey(input))
             {
-                ForegroundColor = ConsoleColor.White;
-                WriteLine();
-                WriteLine("Which Fender instrument would you like to review?");
-
-                string input = UserInput().ToLower();
-
-                repeat = SelectFenderInstrument(repeat, input);
+                if (input.Contains("fender"))
+                {
+                    Guitar guitarChoice = guitars[input];
+                    WriteLine();
+                    guitarChoice.PrintInstrument();
+                }
+                else
+                {
+                    log4net.GlobalContext.Properties["UserInput"] = input;
+                    log.Error("Invalid User Input");
+                    WriteLine();
+                    WriteLine("Invalid Command. Please try again.");
+                }
             }
-
-            static bool SelectFenderInstrument(bool repeat, string input)
+            else if (basses.ContainsKey(input))
             {
-                var guitarKeys = guitars.Keys.Any(key => key.Contains("fender"));
-
-                ForegroundColor = ConsoleColor.Gray;
-                if (guitars.ContainsKey(input))
+                if (input.Contains("fender"))
                 {
-                    if (input.Contains("fender"))
-                    {
-                        Guitar guitarChoice = guitars[input];
-                        WriteLine();
-                        guitarChoice.PrintInstrument();
-                    }
-                    else
-                    {
-                        log4net.GlobalContext.Properties["UserInput"] = input;
-                        log.Error("Invalid User Input");
-                        WriteLine();
-                        WriteLine("Invalid Command. Try again or type \"back\" to return to the main menu.");
-                    }
+                    Bass bassChoice = basses[input];
+                    WriteLine();
+                    bassChoice.PrintInstrument();
                 }
-                else if (basses.ContainsKey(input))
+                else
                 {
-                    if (input.Contains("fender"))
-                    {
-                        Bass bassChoice = basses[input];
-                        WriteLine();
-                        bassChoice.PrintInstrument();
-                    }
-                    else
-                    {
-                        log4net.GlobalContext.Properties["UserInput"] = input;
-                        log.Error("Invalid User Input");
-                        WriteLine();
-                        WriteLine("Invalid Command. Try again or type \"back\" to return to the main menu.");
-                    }
+                    log4net.GlobalContext.Properties["UserInput"] = input;
+                    log.Error("Invalid User Input");
+                    WriteLine();
+                    WriteLine("Invalid Command. Please try Again");
                 }
-                else repeat = SelectCommand(repeat, input);
-                return repeat;
             }
+            else SelectCommand(input);
+
+            ReturnToFenderInstrumentsMenu();
         }
 
         private static void ReturnToMainMenu()
         {
             MainMenu.Start();
+        }
+
+        private static void StartAgain()
+        {
+            ForegroundColor = ConsoleColor.White;
+            WriteLine();
+            WriteLine("Press any key to start again.");
+            ReadKey(true);
+        }
+
+        private static void ReturnToGuitarMenu()
+        {
+            StartAgain();
+            ReviewGuitars();
+        }
+
+        private static void ReturnToBassMenu()
+        {
+            StartAgain();
+            ReviewBasses();
+        }
+
+        private static void ReturnToOtherStringInstrumentsMenu()
+        {
+            StartAgain();
+            ReviewOtherStringInstruments();
+        }
+
+        private static void ReturnToKeyBoardInstrumentsMenu()
+        {
+            StartAgain();
+            ReviewKeyboardInstruments();
+        }
+
+        private static void ReturnToFenderInstrumentsMenu()
+        {
+            StartAgain();
+            ReviewFenderInstruments();
         }
     }
 }

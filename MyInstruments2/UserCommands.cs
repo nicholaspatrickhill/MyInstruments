@@ -5,7 +5,7 @@ namespace MyInstruments
     public class UserCommands
     {
         private static readonly log4net.ILog log = LogHelper.GetLogger();
-        public static bool SelectCommand(bool repeat, string input)
+        public static void SelectCommand(string input)
         {
             switch (input)
             {
@@ -17,11 +17,9 @@ namespace MyInstruments
                     log4net.GlobalContext.Properties["UserInput"] = input;
                     log.Error("Invalid User Input");
                     WriteLine();
-                    WriteLine("Invalid Command. Try again or type \"back\" to return to the main menu.");
+                    WriteLine("Invalid Command. Please try again.");
                     break;
             }
-
-            return repeat;
         }
     }
 }

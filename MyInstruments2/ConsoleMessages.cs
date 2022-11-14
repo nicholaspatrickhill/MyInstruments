@@ -1,4 +1,5 @@
 ﻿using Spectre.Console;
+using System.Diagnostics;
 using static System.Console;
 
 namespace MyInstruments
@@ -9,7 +10,7 @@ namespace MyInstruments
         {
             ForegroundColor = ConsoleColor.White;
             WriteLine();
-            WriteLine("Type \"back\" to return to the previous menu.");
+            WriteLine("Type the key of the instrument that you wish to review and press enter. Type \"back\" to return to the previous menu.");
             WriteLine("-----------------------------------------------------------------------------------------------------------------");
         }
 
