@@ -100,38 +100,8 @@ namespace MyInstruments
             RunMainMenu();
         }
 
-        //private static void ExitTheProgram()
-        //{
-        //    ForegroundColor = ConsoleColor.White;
-        //    WriteLine();
-        //    WriteLine("Are you sure you wish to exit the program?");
-        //    WriteLine("Type \"y\" and press enter to exit or type \"n\" and press enter to return to the Main Menu.");
-
-        //    ForegroundColor = ConsoleColor.Cyan;
-        //    string input = ReadLine() ?? String.Empty;
-
-        //    switch (input.ToLower())
-        //    {
-        //        case "y":
-        //            ForegroundColor = ConsoleColor.White;
-        //            Environment.Exit(0);
-        //            break;
-        //        case "n":
-        //            Start();
-        //            break;
-        //        default:
-        //            log4net.GlobalContext.Properties["UserInput"] = input;
-        //            log.Error("Invalid User Input");
-        //            ForegroundColor = ConsoleColor.White;
-        //            WriteLine();
-        //            WriteLine("Invalid Command. Please try again.");
-        //            ExitProgram();
-        //            break;
-        //    }
-
         private static void ExitTheProgram()
         {
-            Thread.Sleep(500);
             ForegroundColor = ConsoleColor.White;
             string prompt = "\nAre you sure you wish to exit the program?";
             string[] options = { "\nyes", "no" };

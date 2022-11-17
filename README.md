@@ -78,12 +78,11 @@ Math.Round is then called to round the doubles back to the nearest integers for 
 **SAVING TO TEXT FILE:** "Save Text File" initializes Streamwriter and calls ToUpper on each musical instrument array to write a capitalized, sorted list of all of the musical instrument names to a .txt file in the temp folder on the C:\ drive.
 
 **EXITING THE PROGRAM:** Selecting "Exit" calls the ExitTheProgram method.
-ExitTheProgram prompts the user to confirm that they wish to terminate the program by first typing "y" or "n" and then pressing enter.
-The user's input executes cases in a switch by searching case names for a match.
-An input of "y" terminates the program via an Exit method.
-An input of "n" recycles the program by calling the Start method.
-Invalid input calls the default case which prompts the user to enter a valid command and calls ExitTheProgram.
-Invalid input is recorded in the error log.
+ExitTheProgram prompts the user to confirm that they wish to terminate the program by selecting "yes" or "no."
+ExitTheProgram initializes a new instance of the menu class.
+The user's input executes cases in a switch.
+Selecting "yes" calls an exit method to terminate the program.
+Selecting "no" calls the Start method to return the user to the home menu.
 
 **ABSTRACTION, DICTIONARIES & OBJECTS:** The abstract MusicalInstrument class establishes properties that are shared by the various musical instrument classes. 
 The InstrumentAge property uses an external factor (the current date) to calculate the age of the instrument. 
