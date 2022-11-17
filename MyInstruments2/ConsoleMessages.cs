@@ -1,11 +1,19 @@
-﻿using Spectre.Console;
-using System.Diagnostics;
-using static System.Console;
+﻿using static System.Console;
 
 namespace MyInstruments
 {
     class ConsoleMessages
     {
+        private static readonly log4net.ILog log = LogHelper.GetLogger();
+        public static void PrintInvalidInputResponse(string input)
+        {
+            ForegroundColor = ConsoleColor.White;
+            log4net.GlobalContext.Properties["UserInput"] = input;
+            log.Error("Invalid User Input");
+            WriteLine();
+            WriteLine("Invalid Command. Please try Again");
+        }
+
         public static void PrintReviewAnyInstrumentHeader()
         {
             ForegroundColor = ConsoleColor.White;

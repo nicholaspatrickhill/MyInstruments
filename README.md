@@ -49,7 +49,7 @@ The UserCommands switch searches its case names for a match to the user's input.
 The switch executes cases based on whether or not it finds a match.
 The user may elect to return to the previous menu screen by typing "back".
 If the switch does not find a match it generates an invalid input response through its default case.
-In the event of invalid input, the console displays an error message and the invalid input is logged.
+In the event of invalid input, the console displays an error message and the invalid input is logged by calling the PrintInvalidInputResponse method from the ConsoleMessages class.
 The log4net NuGet package is configured to record the invalid user input and write the log to a .txt file in the temp folder on the C:\ drive.
 The user stays in the Review loop they selected until they elect to return to the previous menu by typing "back".
 
@@ -66,7 +66,7 @@ All instruments containing "fender" are displayed.
 The user is then prompted to type the full name of the instrument that they wish to review.
 A nested If-Else block checks to see if the user has searched for one of the Fender instruments.
 If so, the data about that instrument is printed to the console.
-If not, an invalid input response is generated and the error is logged.
+If not, an invalid input response is generated and the error is logged by calling PrintInvalidInputResponse.
 
 **COUNT & MATH FUNCTIONS:** "Count Instruments" calls the methods from the CollectionCounts class.
 CollectionCounts calls the Count method on the musical instrument dictionaries to generate the total counts of each instrument type.

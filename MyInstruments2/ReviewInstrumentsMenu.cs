@@ -9,7 +9,6 @@ namespace MyInstruments
 {
     public class ReviewInstrumentsMenu
     {
-        private static readonly log4net.ILog log = LogHelper.GetLogger();
         public static void RunReviewInstrumentsMenu()
         {
             string prompt = "\nUse the UP and DOWN arrow keys to highlight the instruments that you wish to review and then press enter.\n";
@@ -178,10 +177,7 @@ namespace MyInstruments
                 }
                 else
                 {
-                    log4net.GlobalContext.Properties["UserInput"] = input;
-                    log.Error("Invalid User Input");
-                    WriteLine();
-                    WriteLine("Invalid Command. Please try again.");
+                    ConsoleMessages.PrintInvalidInputResponse(input);
                 }
             }
             else if (basses.ContainsKey(input))
@@ -194,10 +190,7 @@ namespace MyInstruments
                 }
                 else
                 {
-                    log4net.GlobalContext.Properties["UserInput"] = input;
-                    log.Error("Invalid User Input");
-                    WriteLine();
-                    WriteLine("Invalid Command. Please try Again");
+                    ConsoleMessages.PrintInvalidInputResponse(input);
                 }
             }
             else SelectCommand(input);
