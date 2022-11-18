@@ -3,7 +3,6 @@ using static MyInstruments.Guitar;
 using static MyInstruments.Bass;
 using static MyInstruments.OtherStringInstrument;
 using static MyInstruments.KeyboardInstrument;
-using static MyInstruments.UserCommands;
 
 namespace MyInstruments
 {
@@ -198,6 +197,19 @@ namespace MyInstruments
             ReturnToFenderInstrumentsMenu();
         }
 
+        public static void SelectCommand(string input)
+        {
+            switch (input)
+            {
+                case "menu":
+                case "back":
+                    ReviewInstrumentsMenu.RunReviewInstrumentsMenu();
+                    break;
+                default:
+                    ConsoleMessages.PrintInvalidInputResponse(input);
+                    break;
+            }
+        }
         private static void ReturnToMainMenu()
         {
             MainMenu.Start();

@@ -44,8 +44,8 @@ Each of the Review methods checks the user input against the appropriate musical
 The ToLower method is called on the user input which allows for input to be case insensitive as the program searches for a matching key.
 If there is a matching key in one of the dictionaries, the program calls the PrintInstrument method from the appropriate musical instrument class.
 The user is then prompted to press any key to start over.
-If the user input does not match one of the dictionary keys, it exits the If-Else block and enters the SelectCommand switch in the UserCommands class. 
-The UserCommands switch searches its case names for a match to the user's input.
+If the user input does not match one of the dictionary keys, it exits the If-Else block and enters the SelectCommand switch. 
+The SelectCommand switch searches its case names for a match to the user's input.
 The switch executes cases based on whether or not it finds a match.
 The user may elect to return to the previous menu screen by typing "back".
 If the switch does not find a match it generates an invalid input response through its default case.
