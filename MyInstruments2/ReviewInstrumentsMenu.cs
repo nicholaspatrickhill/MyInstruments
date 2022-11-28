@@ -33,14 +33,14 @@ namespace MyInstruments
                     ReviewFenderInstruments();
                     break;
                 case 5:
-                    ReturnToMainMenu();
+                    MainMenu.Start();
                     break;
             }
         }
         private static string UserInput()
         {
             ForegroundColor = ConsoleColor.Cyan;
-            string input = ReadLine() ?? string.Empty;
+            string? input = ReadLine() ?? string.Empty;
             return input;
         }
 
@@ -148,7 +148,7 @@ namespace MyInstruments
             ReturnToKeyBoardInstrumentsMenu();
         }
 
-        private static void ReviewFenderInstruments()
+        private static void ReviewFenderInstruments() 
         {
             Clear();
             ConsoleMessages.PrintAppHeader();
@@ -166,31 +166,18 @@ namespace MyInstruments
             var guitarKeys = guitars.Keys.Any(key => key.Contains("fender"));
 
             ForegroundColor = ConsoleColor.Gray;
-            if (guitars.ContainsKey(input))
+            
+            if (guitars.ContainsKey(input) && input.Contains("fender"))
             {
-                if (input.Contains("fender"))
-                {
-                    Guitar guitarChoice = guitars[input];
-                    WriteLine();
-                    guitarChoice.PrintInstrument();
-                }
-                else
-                {
-                    ConsoleMessages.PrintInvalidInputResponse(input);
-                }
+                Guitar guitarChoice = guitars[input];
+                WriteLine();
+                guitarChoice.PrintInstrument();
             }
-            else if (basses.ContainsKey(input))
+            else if (basses.ContainsKey(input) && input.Contains("fender"))
             {
-                if (input.Contains("fender"))
-                {
-                    Bass bassChoice = basses[input];
-                    WriteLine();
-                    bassChoice.PrintInstrument();
-                }
-                else
-                {
-                    ConsoleMessages.PrintInvalidInputResponse(input);
-                }
+                Bass bassChoice = basses[input];
+                WriteLine();
+                bassChoice.PrintInstrument();
             }
             else SelectCommand(input);
 
@@ -209,10 +196,6 @@ namespace MyInstruments
                     ConsoleMessages.PrintInvalidInputResponse(input);
                     break;
             }
-        }
-        private static void ReturnToMainMenu()
-        {
-            MainMenu.Start();
         }
 
         private static void StartAgain()

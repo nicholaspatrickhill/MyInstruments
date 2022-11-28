@@ -40,7 +40,7 @@ namespace MyInstruments
                     DisplayAboutInfo();
                     break;
                 case 6:
-                    ExitProgram();
+                    ExitTheProgram();
                     break;
             }
         }
@@ -86,10 +86,6 @@ namespace MyInstruments
             ReturnToMainMenu();
         }
 
-        private static void ExitProgram()
-        {
-            ExitTheProgram();
-        }
 
         private void ReturnToMainMenu()
         {
